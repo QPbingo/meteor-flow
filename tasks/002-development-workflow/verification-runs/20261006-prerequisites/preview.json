@@ -1,0 +1,70 @@
+{
+  "schema_version": "1",
+  "mode": "range",
+  "repository": "/private/tmp/meteor-flow-docs-20261006",
+  "from": "1ec4cd8a0ac7cd5e4095509b2a9c3b75d32b02b7",
+  "to": "879a60dd1a8ca83eec2637c72a88a2f90a5a04bf",
+  "merge_base": "1ec4cd8a0ac7cd5e4095509b2a9c3b75d32b02b7",
+  "total_files": 9,
+  "reviewable_count": 9,
+  "excluded_count": 0,
+  "total_insertions": 104,
+  "total_deletions": 16,
+  "reviewable_files": [
+    {
+      "path": ".agents/skills/meteor-flow-verification/SKILL.md",
+      "status": "modified",
+      "insertions": 8,
+      "deletions": 5
+    },
+    {
+      "path": ".agents/skills/open-code-review-delegate/SKILL.md",
+      "status": "modified",
+      "insertions": 3,
+      "deletions": 1
+    },
+    {
+      "path": ".agents/skills/test-master/SKILL.md",
+      "status": "modified",
+      "insertions": 2,
+      "deletions": 0
+    },
+    {
+      "path": "AGENTS.md",
+      "status": "modified",
+      "insertions": 11,
+      "deletions": 3
+    },
+    {
+      "path": "CLAUDE.md",
+      "status": "modified",
+      "insertions": 1,
+      "deletions": 0
+    },
+    {
+      "path": "README.md",
+      "status": "modified",
+      "insertions": 1,
+      "deletions": 0
+    },
+    {
+      "path": "scripts/workflow/sources.lock.json",
+      "status": "modified",
+      "insertions": 4,
+      "deletions": 4
+    },
+    {
+      "path": "tasks/002-development-workflow/skill-prerequisites.md",
+      "status": "added",
+      "insertions": 68,
+      "deletions": 0
+    },
+    {
+      "path": "tasks/002-development-workflow/workflow.md",
+      "status": "modified",
+      "insertions": 6,
+      "deletions": 3
+    }
+  ],
+  "excluded_files": []
+}

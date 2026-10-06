@@ -1,0 +1,29 @@
+{
+  "codex": {
+    "restored_link": "../../.agents/skills/test-master",
+    "candidate_sha256": {
+      "queue_sample.py": "51a9e41949d8c71e88f5180ca60b8c904c2a04b8e4422a2d8980d5fd4c725d12",
+      "test_queue_sample.py": "bbf888791b51dd81e61531b896b324475ac79fdd6edee349b4579edb6ad3c828"
+    },
+    "candidate_unchanged": true,
+    "tracked_diff": ""
+  },
+  "claude": {
+    "restored_link": "../../.agents/skills/test-master",
+    "candidate_sha256": {
+      "queue_sample.py": "51a9e41949d8c71e88f5180ca60b8c904c2a04b8e4422a2d8980d5fd4c725d12",
+      "test_queue_sample.py": "bbf888791b51dd81e61531b896b324475ac79fdd6edee349b4579edb6ad3c828"
+    },
+    "candidate_unchanged": true,
+    "tracked_diff": ""
+  },
+  "claude-retry": {
+    "restored_link": "../../.agents/skills/test-master",
+    "candidate_sha256": {
+      "queue_sample.py": "51a9e41949d8c71e88f5180ca60b8c904c2a04b8e4422a2d8980d5fd4c725d12",
+      "test_queue_sample.py": "bbf888791b51dd81e61531b896b324475ac79fdd6edee349b4579edb6ad3c828"
+    },
+    "candidate_unchanged": true,
+    "tracked_diff": ""
+  }
+}

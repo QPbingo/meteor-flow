@@ -7,6 +7,7 @@
 - [本地 Agent 控制台需求（已确认）](tasks/001-local-agent-console/requirements.md)
 - [需求方案 review 与验收追踪](tasks/001-local-agent-console/review.md)
 - [开发工作流、安装状态与使用方式](tasks/002-development-workflow/workflow.md)
+- [Skills 使用条件与开发前置要求](tasks/002-development-workflow/skill-prerequisites.md)
 - [六类强制场景与需求映射](tasks/002-development-workflow/mandatory-scenarios.md)
 - [工作流接入验证记录](tasks/002-development-workflow/validation.md)
 

@@ -1,0 +1,291 @@
+{
+  "schema_version": 1,
+  "task": "tasks/002-development-workflow",
+  "run_id": "20261006-prerequisites",
+  "baseline": {
+    "head": "879a60dd1a8ca83eec2637c72a88a2f90a5a04bf",
+    "content_sha256": "6b261a900863d33dbc673ab89562ecd0c61054b77a3ff5d11742bfa4abc539e4"
+  },
+  "scope": {
+    "kind": "behavioral",
+    "requirements": [
+      "skill-prerequisites: 适用条件、缺失先引入、当前宿主验证后再开发"
+    ],
+    "summary": "补充项目技能使用条件和开发前置要求；只有协作/技能指令变更，无产品或工作流运行时代码变更。"
+  },
+  "scenarios": {
+    "state-transition": {
+      "applicability": "applicable",
+      "reason": "技能准备须区分缺失、已引入待验证、就绪与阻塞。",
+      "cases": [
+        {
+          "id": "PRE-01",
+          "requirements": [
+            "skill-prerequisites: 适用条件、缺失先引入、当前宿主验证后再开发"
+          ],
+          "setup": "独立副本缺少 Claude test-master 入口；首轮 Claude 命令权限不完整。",
+          "action": "分别在 Codex、受限 Claude 和补齐命令权限的 Claude 副本执行准备。",
+          "expected": "检查失败保持 blocked；加载与能力检查完成才能就绪。",
+          "status": "pass",
+          "actual": "首轮 Claude 恢复入口后仍因命令受限记录 blocked；Codex 与最终 Claude 完成能力检查记录就绪。",
+          "evidence": [
+            "codex-skill-readiness.md",
+            "claude-initial-skill-readiness.md",
+            "claude-skill-readiness.md"
+          ]
+        }
+      ]
+    },
+    "idempotency": {
+      "applicability": "not-applicable",
+      "reason": "本轮仅修改指令，不实现安装器、重复提交或幂等键逻辑；未执行重复安装验证，不宣称其通过。",
+      "cases": []
+    },
+    "ordering": {
+      "applicability": "applicable",
+      "reason": "缺失技能必须在依赖它的开发前准备。",
+      "cases": [
+        {
+          "id": "PRE-02",
+          "requirements": [
+            "skill-prerequisites: 适用条件、缺失先引入、当前宿主验证后再开发"
+          ],
+          "setup": "缺少入口的纯 Python CLI 准备任务，明确不授权候选代码修改。",
+          "action": "执行当前阶段技能检查、修复与能力探针。",
+          "expected": "检测缺失→恢复入口→检查就绪；不执行候选开发或完整验收。",
+          "status": "pass",
+          "actual": "最终 Claude 先 doctor 退出 2，再恢复链接后 doctor 退出 0；只写 skill-readiness，三份副本候选文件均未改变。",
+          "evidence": [
+            "claude-skill-readiness.md",
+            "host-state.json",
+            "preparation-clarification-review.json"
+          ]
+        }
+      ]
+    },
+    "recovery": {
+      "applicability": "applicable",
+      "reason": "要求先修复已批准技能缺失，而不是立即结束任务。",
+      "cases": [
+        {
+          "id": "PRE-03",
+          "requirements": [
+            "skill-prerequisites: 适用条件、缺失先引入、当前宿主验证后再开发"
+          ],
+          "setup": "三个独立副本均缺失项目 Claude test-master 链接。",
+          "action": "宿主依据项目源恢复链接；对命令受限首轮保留阻塞记录，另建权限充分副本复验。",
+          "expected": "可恢复缺失自动修复；不可完成验证时不冒报成功。",
+          "status": "pass",
+          "actual": "三份副本均恢复项目相对链接；受限首轮如实阻塞，最终副本就绪。未验证远程全新技能安装。",
+          "evidence": [
+            "host-state.json",
+            "claude-initial-blocked-commands.md",
+            "claude-skill-readiness.md",
+            "codex-readiness-result.md"
+          ]
+        }
+      ]
+    },
+    "association": {
+      "applicability": "applicable",
+      "reason": "当前 agent 必须关联准确项目技能来源，不能以个人同名技能替代。",
+      "cases": [
+        {
+          "id": "PRE-04",
+          "requirements": [
+            "skill-prerequisites: 适用条件、缺失先引入、当前宿主验证后再开发"
+          ],
+          "setup": "读取项目技能、来源锁和宿主准备记录。",
+          "action": "运行 doctor，检查双端加载/链接，独立审查待安装技能官方定位。",
+          "expected": "已接入内容及来源一致；未接入选型可定位但不能声明已就绪。",
+          "status": "pass",
+          "actual": "doctor 和三份 SKILL 静态检查通过；宿主记录项目源加载；审查发现来源定位缺口后补齐并复核。",
+          "evidence": [
+            "static-checks.log",
+            "codex-skill-readiness.md",
+            "claude-skill-readiness.md",
+            "upstream-verification.md",
+            "review.md"
+          ]
+        }
+      ]
+    },
+    "isolation": {
+      "applicability": "applicable",
+      "reason": "准备操作仅作用于独立任务环境，不得越权开始候选实现。",
+      "cases": [
+        {
+          "id": "PRE-05",
+          "requirements": [
+            "skill-prerequisites: 适用条件、缺失先引入、当前宿主验证后再开发"
+          ],
+          "setup": "互不共享 Git 副本，候选代码和测试有固定 SHA-256。",
+          "action": "各宿主完成准备后从外部检查 tracked diff、链接目标和候选文件哈希。",
+          "expected": "来源均为各自项目，候选代码/测试保持原状。",
+          "status": "pass",
+          "actual": "三份副本 tracked diff 均为空，两个候选文件哈希一致；未执行产品测试或真实 herdr E2E。",
+          "evidence": [
+            "host-state.json",
+            "summary.md"
+          ]
+        }
+      ]
+    }
+  },
+  "checks": {
+    "backend": {
+      "status": "not-applicable",
+      "reason": "本次未修改产品或工作流可执行脚本；宿主准备行为与工具探针证据另行记录，不能冒充后端产品测试。",
+      "evidence": []
+    },
+    "e2e": {
+      "status": "not-applicable",
+      "reason": "仅技能准备指令变更，没有产品浏览器流程；真实 Codex/Claude 准备演练不代表产品端到端验收。",
+      "evidence": []
+    },
+    "ui": {
+      "status": "not-applicable",
+      "reason": "没有 UI 代码或交互变更。",
+      "evidence": []
+    },
+    "architecture": {
+      "status": "pass",
+      "reason": "独立上下文检查阶段职责、来源锁、双宿主入口和准备/验收边界。",
+      "evidence": [
+        "review.md",
+        "coverage.json",
+        "preparation-clarification-review.json"
+      ]
+    }
+  },
+  "commands": [
+    {
+      "command": "python3 scripts/workflow/check.py doctor",
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": [
+        "static-checks.log"
+      ]
+    },
+    {
+      "command": "skill-creator quick_validate.py 对三个项目 SKILL.md 分别校验",
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": [
+        "static-checks.log"
+      ]
+    },
+    {
+      "command": "python3 scripts/workflow/ocr.py delegate preview --format json --from=1ec4cd8a0ac7cd5e4095509b2a9c3b75d32b02b7 --to=879a60dd1a8ca83eec2637c72a88a2f90a5a04bf",
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": [
+        "preview.json"
+      ]
+    }
+  ],
+  "evidence": {
+    "claude-initial-blocked-commands.md": "01ccc020026cea554dcec3a0f57fde47f3077a923b69ba0fac1bccdaed19db7e",
+    "claude-initial-skill-readiness.md": "6843b8456cd6705821b111aba77b0b869c518e60daf0ff72b23dac11c641cc2d",
+    "claude-permission-blocked.md": "4841d1ef0916bbe492903f1386989016320bd06dbfc0cacd207f52bb37aef365",
+    "claude-readiness-result.md": "fe59b6b9b52b6131e5270305e485383ca0dae9936ce5a46b4d2b3e956cd6ee95",
+    "claude-skill-readiness.md": "51ba667c8faad9fcd6f17ca5860fef06b2dfb2c66b9ce321fac28b4fe6645718",
+    "codex-readiness-result.md": "986afe4676155e072fadf40922192de25f5160196d48bbe64c9de371dd6603a4",
+    "codex-skill-readiness.md": "7d8e79a5ea97fb03246c82fc7908a3f5fa166a8df0e086d7ecfd7a62e8253467",
+    "coverage.json": "1c600e338d213f6c4351105005face62133f2f38cfd8790c2b5a0af8e787d5b6",
+    "findings.json": "e297e50cd46d8a3f1d870e0296601c8d2b06b28736337f84936bd034591ce5b9",
+    "host-state.json": "1097780aafcfa46c28cb1aa8888ce7d0ca64c5b5a5571530d410a8e0048bc415",
+    "preparation-clarification-review.json": "48f81213ed6e890cf308639d2034aa8ca708ec2c346be18ab2ece3cf3425210c",
+    "preview.json": "717980eabc83bdb64c4b5dd10cd6d01a34e9ab91f33fd913da3e4f455ca22495",
+    "review.md": "c280d53eb1384f3f4bc85450bc49191da592bbeaebdcb3a488f7f44105d9a7a5",
+    "static-checks.log": "cb0332109115790f72355ba2978a99b84d9d392ab70ebf940dfd54f80b2c926c",
+    "summary.md": "1995192005dcbb8da7f757c9edc15902faab7e841e775e26e711a8e03810f0c4",
+    "upstream-verification.md": "a9f8a89a9d0cb6b7bdf45ae62f178272ed4c49420e50e248be68fc96e5b93970"
+  },
+  "review": {
+    "status": "pass",
+    "author_context": "/root",
+    "reviewer_context": "/root/prerequisites_review",
+    "preview": "preview.json",
+    "files": [
+      {
+        "path": ".agents/skills/meteor-flow-verification/SKILL.md",
+        "status": "modified",
+        "outcome": "reviewed",
+        "reason": "核对新触发范围、先准备后执行、doctor 边界与前端补齐顺序。 已复核仅前置准备与候选代码验收的记录边界：准备只写 skill-readiness，仍执行必需能力检查。"
+      },
+      {
+        "path": ".agents/skills/open-code-review-delegate/SKILL.md",
+        "status": "modified",
+        "outcome": "reviewed",
+        "reason": "完整读取上游及适配，确认固定 CLI、独立上下文与项目覆盖规则优先。"
+      },
+      {
+        "path": ".agents/skills/test-master/SKILL.md",
+        "status": "modified",
+        "outcome": "reviewed",
+        "reason": "完整读取并核对新增前置条件、引用完整性与纯文档豁免。"
+      },
+      {
+        "path": "AGENTS.md",
+        "status": "modified",
+        "outcome": "reviewed",
+        "reason": "核对共享入口、编码前包含验收技能、会话隔离与能力声明。"
+      },
+      {
+        "path": "CLAUDE.md",
+        "status": "modified",
+        "outcome": "reviewed",
+        "reason": "核对 @AGENTS.md 导入和项目链接目录、显式前置入口。"
+      },
+      {
+        "path": "README.md",
+        "status": "modified",
+        "outcome": "reviewed",
+        "reason": "核对新增文档入口存在且落在 tasks。"
+      },
+      {
+        "path": "scripts/workflow/sources.lock.json",
+        "status": "modified",
+        "outcome": "reviewed",
+        "reason": "doctor 校验所有已登记文件哈希；变更只更新适配哈希及适配说明，原来源提交/原文哈希未漂移。"
+      },
+      {
+        "path": "tasks/002-development-workflow/workflow.md",
+        "status": "modified",
+        "outcome": "reviewed",
+        "reason": "核对选型状态、阶段规则、补齐路径及 CI/产品能力边界；待接入来源 F1 已修复并复核。"
+      },
+      {
+        "path": "tasks/002-development-workflow/skill-prerequisites.md",
+        "status": "added",
+        "outcome": "reviewed",
+        "reason": "全文核对所有触发条件、缺失恢复、双端加载、用户改动保护与就绪判定；F1 首次接入来源缺口已修复并复核。 已复核仅前置准备与候选代码验收的记录边界：准备只写 skill-readiness，仍执行必需能力检查。"
+      }
+    ],
+    "exclusions": [],
+    "findings": [
+      {
+        "id": "F1",
+        "severity": "medium",
+        "content": "待接入已选技能缺准确上游定位，可能导致同名误装或重复询问选型。",
+        "disposition": "fixed",
+        "rationale": "补齐官方来源/入口，区分来源定位和实际提交锁定；独立 reviewer 已复核关闭。",
+        "evidence": [
+          "review.md",
+          "upstream-verification.md",
+          "findings.json"
+        ]
+      }
+    ],
+    "evidence": [
+      "review.md",
+      "coverage.json",
+      "preparation-clarification-review.json"
+    ]
+  },
+  "human_acceptance": {
+    "status": "pending",
+    "evidence": []
+  }
+}

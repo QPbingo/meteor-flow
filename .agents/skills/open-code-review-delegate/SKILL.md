@@ -21,6 +21,8 @@ A skill for performing AI code review where OCR provides deterministic engineeri
 ## Meteor Flow 项目适配（2026-10-06）
 
 执行前读取仓库 `AGENTS.md` 和 `.agents/skills/meteor-flow-verification/SKILL.md`。
+使用条件见 `tasks/002-development-workflow/skill-prerequisites.md`：代码/测试/技能指令/工作流约束的行为变更及明确 review 请求需要独立审查，相关编码前先准备此技能与固定 CLI。
+当前执行者或独立 reviewer 未引入时，先加载本仓库技能、补齐 CLI 并验证，再继续依赖它的开发或审查；不得等到验收才补装。
 下文所有 `ocr` 命令在本项目替换为 `python3 scripts/workflow/ocr.py`；先用 `install` 安装固定版本，再运行 `--version`。
 只使用 delegate preview / delegate rule，不调用托管 review / scan，不创建 OCR LLM endpoint 配置。
 CLI 的仓库与规则固定为本仓库；缺失、哈希或版本错误即阻塞，不全局安装、升级或退回文本解析。

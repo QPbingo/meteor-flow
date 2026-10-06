@@ -24,11 +24,19 @@
 - 产品技术选型、组件和实现逻辑尚未确认，产品代码尚未获准实现。
 - 开发工作流接入已于 2026-10-06 获准实施；这不等于授权实现本地 Agent 控制台。
 
-## 代码完成后的验证关卡
+## Skills 使用与开发前置条件
+
+- 每个执行 agent（含新会话、恢复会话、独立 reviewer）先读 [Skills 使用条件与前置要求](tasks/002-development-workflow/skill-prerequisites.md)，按当前阶段及范围确定必需 skills。
+- 编码前同时准备本次实现和后续验收所需能力：可执行代码至少准备 meteor-flow-verification、test-master、OCR 委托；涉及浏览器/界面时再准备 Playwright、Impeccable。按触发条件使用 brainstorming → forge-idea、Spec Kit specify → clarify → checklist。
+- **当前 agent 未引入任何适用的必需 skill 时，先完成项目级引入/加载、依赖准备及实际可用性验证，再继续该阶段或开发；禁止先开发后补装。** 已确认选型的准备工作无需重复询问选型；无法补齐则记录具体阻塞。
+- 区分“已选定、已引入待验证、当前执行环境就绪”；仓库有文件或其他会话用过不等于当前 agent 已加载。个人同名技能不能替代项目适配。任务范围改变后重新核对必需清单。
+- 来源、触发原因、实际加载/能力检查和阻塞写入对应任务记录；详情与缺失修复顺序见上面的前置要求。安装技能不自动授予产品编码权限。
+
+## 编码准备与完成后的验证关卡
 
 - 工作流与安装状态见 [开发工作流](tasks/002-development-workflow/workflow.md)。
-- 修改代码、请求 review、测试或验收时，使用本仓库 `.agents/skills/meteor-flow-verification/SKILL.md`；Codex 可显式调用 `$meteor-flow-verification`，Claude Code 可调用 `/meteor-flow-verification`。
-- 后端由 test-master 组织实际测试；前端使用已选定的 Playwright 与 Impeccable。调用前检查是否已安装，缺失能力标记阻塞，不虚报可用。
+- 编码准备、修改代码/技能/工作流规则、请求 review、测试或验收时，使用本仓库 `.agents/skills/meteor-flow-verification/SKILL.md`；Codex 可显式调用 `$meteor-flow-verification`，Claude Code 可调用 `/meteor-flow-verification`。
+- 后端由 test-master 组织实际测试；前端使用已选定的 Playwright 与 Impeccable。按前置要求在相关开发前补齐必需技能和工具，失败时保持阻塞，不虚报可用。
 - OCR 仅使用委托模式。审查者须与编写者处于独立上下文；可创建独立审查 agent，不支持时用新会话完成，不以自审代替。审查者不直接修复待审代码。
 - 每次行为变更必须分析状态迁移、幂等、时序、恢复、关联、隔离六类场景，关联需求、具体用例和证据；不适用必须给出理由。
 - 先分析场景，执行测试与独立审查，修订后复验，最后交人工验收。缺失执行证据、关键测试未执行、未完成审查或存在未关闭的 critical/high 问题，不得宣布验收就绪。

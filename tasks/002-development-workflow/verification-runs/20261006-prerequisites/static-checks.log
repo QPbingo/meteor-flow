@@ -1,0 +1,15 @@
+$ python3 scripts/workflow/check.py doctor
+PASS: skills、双端链接、来源哈希与规则完整；宿主实际加载需要单独验证。
+exit_code=0
+
+$ python3 /Users/heybox/.codex/skills/.system/skill-creator/scripts/quick_validate.py .agents/skills/meteor-flow-verification
+Skill is valid!
+exit_code=0
+
+$ python3 /Users/heybox/.codex/skills/.system/skill-creator/scripts/quick_validate.py .agents/skills/test-master
+Skill is valid!
+exit_code=0
+
+$ python3 /Users/heybox/.codex/skills/.system/skill-creator/scripts/quick_validate.py .agents/skills/open-code-review-delegate
+Skill is valid!
+exit_code=0

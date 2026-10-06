@@ -1,0 +1,63 @@
+{
+  "total_files": 9,
+  "reviewed_files": 9,
+  "skipped_files": 0,
+  "coverage_rate": 1.0,
+  "excluded_files": [],
+  "files": [
+    {
+      "path": ".agents/skills/meteor-flow-verification/SKILL.md",
+      "status": "modified",
+      "outcome": "reviewed",
+      "reason": "核对新触发范围、先准备后执行、doctor 边界与前端补齐顺序。 已复核仅前置准备与候选代码验收的记录边界：准备只写 skill-readiness，仍执行必需能力检查。"
+    },
+    {
+      "path": ".agents/skills/open-code-review-delegate/SKILL.md",
+      "status": "modified",
+      "outcome": "reviewed",
+      "reason": "完整读取上游及适配，确认固定 CLI、独立上下文与项目覆盖规则优先。"
+    },
+    {
+      "path": ".agents/skills/test-master/SKILL.md",
+      "status": "modified",
+      "outcome": "reviewed",
+      "reason": "完整读取并核对新增前置条件、引用完整性与纯文档豁免。"
+    },
+    {
+      "path": "AGENTS.md",
+      "status": "modified",
+      "outcome": "reviewed",
+      "reason": "核对共享入口、编码前包含验收技能、会话隔离与能力声明。"
+    },
+    {
+      "path": "CLAUDE.md",
+      "status": "modified",
+      "outcome": "reviewed",
+      "reason": "核对 @AGENTS.md 导入和项目链接目录、显式前置入口。"
+    },
+    {
+      "path": "README.md",
+      "status": "modified",
+      "outcome": "reviewed",
+      "reason": "核对新增文档入口存在且落在 tasks。"
+    },
+    {
+      "path": "scripts/workflow/sources.lock.json",
+      "status": "modified",
+      "outcome": "reviewed",
+      "reason": "doctor 校验所有已登记文件哈希；变更只更新适配哈希及适配说明，原来源提交/原文哈希未漂移。"
+    },
+    {
+      "path": "tasks/002-development-workflow/workflow.md",
+      "status": "modified",
+      "outcome": "reviewed",
+      "reason": "核对选型状态、阶段规则、补齐路径及 CI/产品能力边界；待接入来源 F1 已修复并复核。"
+    },
+    {
+      "path": "tasks/002-development-workflow/skill-prerequisites.md",
+      "status": "added",
+      "outcome": "reviewed",
+      "reason": "全文核对所有触发条件、缺失恢复、双端加载、用户改动保护与就绪判定；F1 首次接入来源缺口已修复并复核。 已复核仅前置准备与候选代码验收的记录边界：准备只写 skill-readiness，仍执行必需能力检查。"
+    }
+  ]
+}

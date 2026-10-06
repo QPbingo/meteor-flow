@@ -1,0 +1,40 @@
+test_backend_pass_requires_executed_command (test_checks.WorkflowTests) ... ok
+test_behavior_cannot_exempt_all_scenarios (test_checks.WorkflowTests) ... ok
+test_broken_claude_link_detected (test_checks.WorkflowTests) ... ok
+test_case_failure_cannot_hide_under_other_passes (test_checks.WorkflowTests) ... ok
+test_changed_vendored_skill_detected (test_checks.WorkflowTests) ... ok
+test_complete_record_is_ready_but_not_accepted (test_checks.WorkflowTests) ... ok
+test_deleted_file_cannot_be_exempted (test_checks.WorkflowTests) ... ok
+test_deleted_generated_file_also_requires_review (test_checks.WorkflowTests) ... ok
+test_each_unfinished_status_blocks (test_checks.WorkflowTests) ... ok
+test_false_positive_needs_evidence (test_checks.WorkflowTests) ... ok
+test_incomplete_review_blocks (test_checks.WorkflowTests) ... ok
+test_init_rejects_escaping_evidence_directory (test_checks.WorkflowTests) ... ok
+test_invalid_baseline_after_code_change (test_checks.WorkflowTests) ... ok
+test_missing_evidence_rejected (test_checks.WorkflowTests) ... ok
+test_missing_preview_file_entry_rejected (test_checks.WorkflowTests) ... ok
+test_missing_scenario_rejected (test_checks.WorkflowTests) ... ok
+test_nonzero_exit_cannot_be_pass (test_checks.WorkflowTests) ... ok
+test_path_escape_and_external_symlink_rejected (test_checks.WorkflowTests) ... ok
+test_reject_overwriting_history (test_checks.WorkflowTests) ... ok
+test_report_artifacts_do_not_invalidate_baseline (test_checks.WorkflowTests) ... ok
+test_self_review_rejected (test_checks.WorkflowTests) ... ok
+test_skipped_file_blocks (test_checks.WorkflowTests) ... ok
+test_stale_or_empty_preview_cannot_hide_changes (test_checks.WorkflowTests) ... ok
+test_tampered_log_rejected (test_checks.WorkflowTests) ... ok
+test_unaccounted_exclusion_rejected (test_checks.WorkflowTests) ... ok
+test_unresolved_high_cannot_be_deferred (test_checks.WorkflowTests) ... ok
+test_hash_mismatch_does_not_install (test_ocr_installer.InstallerTests) ... ok
+test_interrupted_download_preserves_existing_file_and_cleans_partial (test_ocr_installer.InstallerTests) ... ok
+test_success_after_failed_attempt (test_ocr_installer.InstallerTests) ... ok
+test_verified_install_is_idempotent_and_offline (test_ocr_installer.InstallerTests) ... ok
+test_does_not_allow_managed_mode_or_rule_override (test_ocr_integration.OCRIntegrationTests) ... ok
+test_evidence_growth_is_outside_scope (test_ocr_integration.OCRIntegrationTests) ... ok
+test_preview_includes_test_and_reports_real_exclusion_schema (test_ocr_integration.OCRIntegrationTests) ... ok
+test_rejects_other_repository_and_unknown_schema (test_ocr_integration.OCRIntegrationTests) ... ok
+test_rule_contains_project_requirements (test_ocr_integration.OCRIntegrationTests) ... ok
+
+----------------------------------------------------------------------
+Ran 35 tests in 6.203s
+
+OK

@@ -1,0 +1,270 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "reviewer_context": "/root/workflow_review",
+  "author_context": "/root",
+  "mode": "range",
+  "from": "3eb93d8c2f188c62ed956aed9f1ebf65dc40ef5c",
+  "to": "d026fb7cbb656f29a65a60e0d2198eb92905b877",
+  "merge_base": "3eb93d8c2f188c62ed956aed9f1ebf65dc40ef5c",
+  "content_sha256": "569640de44411f0756694f53ed46d4d805286e887e1d2c17ce78990da5ca9443",
+  "preview_sha256": "fcda9690d32a155bbe705f2c2627bf990462e6de154cf870e932a3095408529f",
+  "total_files": 33,
+  "reviewed_files": 33,
+  "skipped_files": 0,
+  "coverage_rate": 1.0,
+  "files": [
+    {
+      "path": ".agents/skills/meteor-flow-verification/SKILL.md",
+      "status": "added",
+      "outcome": "reviewed",
+      "sha256": "b42d913270f603177c7f79fb70e1600bb07afb606e7d569929eb4a10bf33c069"
+    },
+    {
+      "path": ".agents/skills/open-code-review-delegate/LICENSE",
+      "status": "added",
+      "outcome": "reviewed",
+      "sha256": "1945665fdb6968a66ea29438ddee0aee23035365c862e5c4a75b62b303340acf"
+    },
+    {
+      "path": ".agents/skills/open-code-review-delegate/SKILL.md",
+      "status": "added",
+      "outcome": "reviewed",
+      "sha256": "87380931d45652b495e70f930f88c97c1d3cdc839b73d5e3bc28901300c4db6b"
+    },
+    {
+      "path": ".agents/skills/test-master/LICENSE",
+      "status": "added",
+      "outcome": "reviewed",
+      "sha256": "06dcddbb6908a0c6dd4a9e8ec822eea41d5a460a53089fecccc8a68049e99241"
+    },
+    {
+      "path": ".agents/skills/test-master/SKILL.md",
+      "status": "added",
+      "outcome": "reviewed",
+      "sha256": "3a6cdf4e3cce251e91a7909776903a9369b13ca933a8a895933f09aeb8c1bf11"
+    },
+    {
+      "path": ".agents/skills/test-master/references/automation-frameworks.md",
+      "status": "added",
+      "outcome": "reviewed",
+      "sha256": "407d5778b282cdf1bc72ccb18e81e9f8479198218da4dd8f35cbeda40e8a4c00"
+    },
+    {
+      "path": ".agents/skills/test-master/references/e2e-testing.md",
+      "status": "added",
+      "outcome": "reviewed",
+      "sha256": "b9b731c88e0bce4a2dc35f2f97b7c37e83104c075cd8f5f81b267a0632c855ae"
+    },
+    {
+      "path": ".agents/skills/test-master/references/integration-testing.md",
+      "status": "added",
+      "outcome": "reviewed",
+      "sha256": "2330ec33787f4afcde1486c0c041b33f015396d995b0799372f081601631dfa8"
+    },
+    {
+      "path": ".agents/skills/test-master/references/performance-testing.md",
+      "status": "added",
+      "outcome": "reviewed",
+      "sha256": "8ba93c666af382e91c8ee1bd4ccc02e213c3c3b986b1b88f53321214bd2d6955"
+    },
+    {
+      "path": ".agents/skills/test-master/references/qa-methodology.md",
+      "status": "added",
+      "outcome": "reviewed",
+      "sha256": "9277588309c80929241df3302150cae1c966cb83dd1dc2be3125a943fa4d4477"
+    },
+    {
+      "path": ".agents/skills/test-master/references/security-testing.md",
+      "status": "added",
+      "outcome": "reviewed",
+      "sha256": "aa4fe58e2e1341fc8e9ce2c50abe940b378571fa0b9233904aa567a31d8bb6fc"
+    },
+    {
+      "path": ".agents/skills/test-master/references/tdd-iron-laws.md",
+      "status": "added",
+      "outcome": "reviewed",
+      "sha256": "1f719ea75af92dac32762b9e27d7f1bd6dfd7be9d71c8b8db7b1c8842b34bed1"
+    },
+    {
+      "path": ".agents/skills/test-master/references/test-reports.md",
+      "status": "added",
+      "outcome": "reviewed",
+      "sha256": "9202c94244a2da9981fec66042634244478bf8d762061856f71d202e0e4744cf"
+    },
+    {
+      "path": ".agents/skills/test-master/references/testing-anti-patterns.md",
+      "status": "added",
+      "outcome": "reviewed",
+      "sha256": "ae653194178f04a7fe7662d256e2d11da763d6d2e04fcd091f7b374d70b28945"
+    },
+    {
+      "path": ".agents/skills/test-master/references/unit-testing.md",
+      "status": "added",
+      "outcome": "reviewed",
+      "sha256": "6165c82a10c79295ce45329fa16895128888ffd874269ee509af56061291c43a"
+    },
+    {
+      "path": ".claude/skills/meteor-flow-verification",
+      "status": "added",
+      "outcome": "reviewed",
+      "sha256": "7c4811d8f9132dc283f5909c400290bc64500fb7945eb1ba3ab6c590825d70db"
+    },
+    {
+      "path": ".claude/skills/open-code-review-delegate",
+      "status": "added",
+      "outcome": "reviewed",
+      "sha256": "16f6218b574110bdf132e26a9f30f9d231a76d846ef7a46c65008dd547e43d32"
+    },
+    {
+      "path": ".claude/skills/test-master",
+      "status": "added",
+      "outcome": "reviewed",
+      "sha256": "c0840387b43ea79446490ffecb31865b8865b24ae12673b69f12e10b6670f742"
+    },
+    {
+      "path": ".gitignore",
+      "status": "added",
+      "outcome": "reviewed",
+      "sha256": "6e0f36cfeafafc04e578691e57342189c7ba2fdbdbd797de2e5dab39f34935d3"
+    },
+    {
+      "path": ".opencodereview/rule.json",
+      "status": "added",
+      "outcome": "reviewed",
+      "sha256": "fd02dc45370f4086555ef44b1f33ee4c789e90fb3cb4a2f1a336f7ce085d2665"
+    },
+    {
+      "path": "AGENTS.md",
+      "status": "modified",
+      "outcome": "reviewed",
+      "sha256": "e3211ed8d4363903425f2daee19136bd5effe10a068233e1f9d05ebd7a1b94c2"
+    },
+    {
+      "path": "CLAUDE.md",
+      "status": "added",
+      "outcome": "reviewed",
+      "sha256": "bbef2f17e788d9b110527856b98ac0adbc766fe0ab982e638b810faa69c52761"
+    },
+    {
+      "path": "README.md",
+      "status": "modified",
+      "outcome": "reviewed",
+      "sha256": "db7997e3b90c56f489d846fb685efb156fe6a71cfde5fe662e525a019d23f415"
+    },
+    {
+      "path": "scripts/workflow/check.py",
+      "status": "added",
+      "outcome": "reviewed",
+      "sha256": "229cb6db6cdb3517ca95210ad1413b15ec8f02b34f029767dc2c846b2cfea87c"
+    },
+    {
+      "path": "scripts/workflow/ocr.py",
+      "status": "added",
+      "outcome": "reviewed",
+      "sha256": "df8c04a53772cb2b3333a4b5f9eaa88259b8d570a4af38bca62a5dcfc6c5cab8"
+    },
+    {
+      "path": "scripts/workflow/sources.lock.json",
+      "status": "added",
+      "outcome": "reviewed",
+      "sha256": "e23e16dcdcdc0ceee74b97ac79f82749f8eed4fe37cabf09e15c4096ad7882ea"
+    },
+    {
+      "path": "scripts/workflow/tests/host_fixture.py",
+      "status": "added",
+      "outcome": "reviewed",
+      "sha256": "5105942a07eae1ac3df3181fd3037880cc9dc0cd394b5a54133321e5f6f3da63"
+    },
+    {
+      "path": "scripts/workflow/tests/test_checks.py",
+      "status": "added",
+      "outcome": "reviewed",
+      "sha256": "a2bb6679760e85f4a23f57145e47bb15060dc80c7b2fbdff75b45de98ba485a4"
+    },
+    {
+      "path": "scripts/workflow/tests/test_ocr_installer.py",
+      "status": "added",
+      "outcome": "reviewed",
+      "sha256": "2bc8664976708c3db630f46ba8e9839e167b49aa93507fb8e85dd2a87dc45cd7"
+    },
+    {
+      "path": "scripts/workflow/tests/test_ocr_integration.py",
+      "status": "added",
+      "outcome": "reviewed",
+      "sha256": "cbac2a4c362774fc052240e2fdd3184684abba6b5aea791f99e791bc58408300"
+    },
+    {
+      "path": "tasks/002-development-workflow/mandatory-scenarios.md",
+      "status": "added",
+      "outcome": "reviewed",
+      "sha256": "f9e1d636b4089884d7a1587d570a9a789e0dd72cd60c4c4c729d4aa50c2b2c6d"
+    },
+    {
+      "path": "tasks/002-development-workflow/validation.md",
+      "status": "added",
+      "outcome": "reviewed",
+      "sha256": "b66359b8ccbc3c99903dc38bb4df614058d11c00efebdcb96dd7a1963f59d4e8"
+    },
+    {
+      "path": "tasks/002-development-workflow/workflow.md",
+      "status": "added",
+      "outcome": "reviewed",
+      "sha256": "5eac80d55ae2f16f711c96f65d40a2663795f5ca57b465189dfa596b3ca52f61"
+    }
+  ],
+  "exclusions": [],
+  "findings": [
+    {
+      "id": "F1",
+      "path": "scripts/workflow/check.py",
+      "start_line": 212,
+      "end_line": 224,
+      "category": "bug",
+      "severity": "high",
+      "content": "初版仅比对 report 与附件 preview 清单，不核对 preview 的版本、仓库或实际变更范围。来自其他仓库的空清单可通过 validate，遗漏全部代码审查。",
+      "reproduction": "reproduce.py foreign_empty_preview 返回 []。",
+      "recommendation": "校验 preview 元数据，并用固定入口重新获取相应范围，与所附 preview 比对。",
+      "disposition": "fixed"
+    },
+    {
+      "id": "F2",
+      "path": "scripts/workflow/check.py",
+      "start_line": 225,
+      "end_line": 228,
+      "category": "bug",
+      "severity": "medium",
+      "content": "初版允许删除/超大排除项标记 not-applicable，违反必须补查影响的项目规则。第一轮修订仅判断 exclude_reason，真实 OCR 对已跟踪 deleted.generated.py 的删除返回 status=deleted、exclude_reason=user_exclude，仍漏掉强制补查。",
+      "reproduction": "reproduce.py deleted_file_without_manual_review 返回 []；probe_revision.py 输出真实 user_exclude 删除条目。",
+      "recommendation": "同时根据 status=deleted 与 too_large 原因约束只能 reviewed-manually 或 blocked，并测试真实 CLI 输出。",
+      "disposition": "fixed"
+    },
+    {
+      "id": "F3",
+      "path": "scripts/workflow/check.py",
+      "start_line": 112,
+      "end_line": 126,
+      "category": "bug",
+      "severity": "medium",
+      "content": "初版 init 只解析 task 路径，不验证 verification-runs 的真实目标。该目录是外部软链接时，命令成功在仓库外写入新的 report.json。",
+      "reproduction": "reproduce.py init_symlink_escape 的 outside_repository 与 report_written 均为 true。",
+      "recommendation": "创建运行前校验完整目标解析后仍在指定 task 内，拒绝后确认外部无新增目录。",
+      "disposition": "fixed"
+    }
+  ],
+  "evidence_hashes_verified": {
+    "host-evaluation.md": "c12864ad57a1025003077e94f2a26c5d65cc1896dad82aa375f5c19d7c35c9f3",
+    "ocr-release-verification.json": "e1eb42804179ca31a7ce7dad25ce7bef6875fc3b7b50ae834895831c1f4ce5ec",
+    "sources-verification.json": "3678066de9fcfb6ca8bc37144a49fdb47f4759909cd9e0d3e57284a6157fe919",
+    "initial-findings.json": "e5055f2e253c038bf85e58338b9643e6c764c28745298a0c099258a734b4a141",
+    "codex-behavior.md": "c5f7e427500160ac739ef7a197e7adf7857075f2db8b393821b342b0314c73fa",
+    "claude-behavior.md": "96b69e20e022d37cf8cf9c8fbad301bf99788b3ce7cae0e2eae74cc4c6aa1797",
+    "tool-checks.log": "6cb58880300db3983177b7c7950c3d0b41681cda835daad31f13613014f94cd3",
+    "tests.log": "62b21ca1c422161aebba2576e1280683573a4600ad8012a6de4d5b08388f9fc0",
+    "claude-final-load.md": "7f5520658702119124b97b4a8e6c08f05246f82ef3fa9988110cfa5aeddb7d47",
+    "preview.json": "fcda9690d32a155bbe705f2c2627bf990462e6de154cf870e932a3095408529f",
+    "codex-final-load.md": "a8a47a12c19dcbd3a41696915d4a6e768c7c2138b710136e937309680e1139d8"
+  },
+  "human_acceptance": "pending",
+  "local_gate_status": "pending_registration_of_review.md_and_author_check"
+}

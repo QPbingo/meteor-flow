@@ -1,0 +1,214 @@
+{
+  "schema_version": "1",
+  "mode": "range",
+  "repository": "/private/tmp/meteor-flow-docs-20261006",
+  "from": "3eb93d8c2f188c62ed956aed9f1ebf65dc40ef5c",
+  "to": "d026fb7cbb656f29a65a60e0d2198eb92905b877",
+  "merge_base": "3eb93d8c2f188c62ed956aed9f1ebf65dc40ef5c",
+  "total_files": 33,
+  "reviewable_count": 33,
+  "excluded_count": 0,
+  "total_insertions": 3392,
+  "total_deletions": 2,
+  "reviewable_files": [
+    {
+      "path": ".agents/skills/meteor-flow-verification/SKILL.md",
+      "status": "added",
+      "insertions": 45,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/open-code-review-delegate/LICENSE",
+      "status": "added",
+      "insertions": 201,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/open-code-review-delegate/SKILL.md",
+      "status": "added",
+      "insertions": 199,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/test-master/LICENSE",
+      "status": "added",
+      "insertions": 21,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/test-master/SKILL.md",
+      "status": "added",
+      "insertions": 110,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/test-master/references/automation-frameworks.md",
+      "status": "added",
+      "insertions": 294,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/test-master/references/e2e-testing.md",
+      "status": "added",
+      "insertions": 128,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/test-master/references/integration-testing.md",
+      "status": "added",
+      "insertions": 120,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/test-master/references/performance-testing.md",
+      "status": "added",
+      "insertions": 118,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/test-master/references/qa-methodology.md",
+      "status": "added",
+      "insertions": 247,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/test-master/references/security-testing.md",
+      "status": "added",
+      "insertions": 127,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/test-master/references/tdd-iron-laws.md",
+      "status": "added",
+      "insertions": 174,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/test-master/references/test-reports.md",
+      "status": "added",
+      "insertions": 104,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/test-master/references/testing-anti-patterns.md",
+      "status": "added",
+      "insertions": 231,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/test-master/references/unit-testing.md",
+      "status": "added",
+      "insertions": 113,
+      "deletions": 0
+    },
+    {
+      "path": ".claude/skills/meteor-flow-verification",
+      "status": "added",
+      "insertions": 1,
+      "deletions": 0
+    },
+    {
+      "path": ".claude/skills/open-code-review-delegate",
+      "status": "added",
+      "insertions": 1,
+      "deletions": 0
+    },
+    {
+      "path": ".claude/skills/test-master",
+      "status": "added",
+      "insertions": 1,
+      "deletions": 0
+    },
+    {
+      "path": ".gitignore",
+      "status": "added",
+      "insertions": 3,
+      "deletions": 0
+    },
+    {
+      "path": ".opencodereview/rule.json",
+      "status": "added",
+      "insertions": 40,
+      "deletions": 0
+    },
+    {
+      "path": "AGENTS.md",
+      "status": "modified",
+      "insertions": 13,
+      "deletions": 1
+    },
+    {
+      "path": "CLAUDE.md",
+      "status": "added",
+      "insertions": 4,
+      "deletions": 0
+    },
+    {
+      "path": "README.md",
+      "status": "modified",
+      "insertions": 4,
+      "deletions": 1
+    },
+    {
+      "path": "scripts/workflow/check.py",
+      "status": "added",
+      "insertions": 325,
+      "deletions": 0
+    },
+    {
+      "path": "scripts/workflow/ocr.py",
+      "status": "added",
+      "insertions": 72,
+      "deletions": 0
+    },
+    {
+      "path": "scripts/workflow/sources.lock.json",
+      "status": "added",
+      "insertions": 103,
+      "deletions": 0
+    },
+    {
+      "path": "scripts/workflow/tests/host_fixture.py",
+      "status": "added",
+      "insertions": 78,
+      "deletions": 0
+    },
+    {
+      "path": "scripts/workflow/tests/test_checks.py",
+      "status": "added",
+      "insertions": 208,
+      "deletions": 0
+    },
+    {
+      "path": "scripts/workflow/tests/test_ocr_installer.py",
+      "status": "added",
+      "insertions": 61,
+      "deletions": 0
+    },
+    {
+      "path": "scripts/workflow/tests/test_ocr_integration.py",
+      "status": "added",
+      "insertions": 74,
+      "deletions": 0
+    },
+    {
+      "path": "tasks/002-development-workflow/mandatory-scenarios.md",
+      "status": "added",
+      "insertions": 25,
+      "deletions": 0
+    },
+    {
+      "path": "tasks/002-development-workflow/validation.md",
+      "status": "added",
+      "insertions": 42,
+      "deletions": 0
+    },
+    {
+      "path": "tasks/002-development-workflow/workflow.md",
+      "status": "added",
+      "insertions": 105,
+      "deletions": 0
+    }
+  ],
+  "excluded_files": []
+}

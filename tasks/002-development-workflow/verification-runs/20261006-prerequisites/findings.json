@@ -1,0 +1,24 @@
+[
+  {
+    "id": "F1",
+    "path": "tasks/002-development-workflow/skill-prerequisites.md",
+    "start_line": 38,
+    "end_line": 38,
+    "category": "documentation",
+    "severity": "medium",
+    "content": "首次触发尚未接入的必需技能时，缺少已确认选型的准确来源指针。此处要求按已确认选型接入且禁止同名替换，但仓库只记录 brainstorming、forge-idea、Spec Kit、Playwright、Impeccable 的名称，未记录这些选择对应的上游仓库/子技能路径；sources.lock.json 仅覆盖已接入的 test-master/OCR。新会话不能仅凭这些名称可靠区分已选实现，容易安装个人同名技能或重新询问已确认选型。应把已经确认的上游项目及入口记录在待接入选型表中；首次接入时再固定提交和资产哈希，无需现在安装不适用技能。",
+    "disposition": "fixed",
+    "evidence": [
+      "workflow.md:12-16 只有名称",
+      "sources.lock.json skills 仅含 test-master / open-code-review-delegate",
+      "仓库 rg 全文检索未见其他待接入来源记录"
+    ],
+    "resolution": "作者在 skill-prerequisites.md 的缺失修复流程前补齐唯一来源定位表，区分未接入来源定位和实际版本锁定，并保留 tasks/人工关卡/项目级安装约束。独立复核全部新增项目入口及相关官方能力说明后关闭。",
+    "resolution_evidence": [
+      "tasks/002-development-workflow/skill-prerequisites.md:35",
+      "upstream-verification.md",
+      "baseline.json",
+      "preview.json"
+    ]
+  }
+]

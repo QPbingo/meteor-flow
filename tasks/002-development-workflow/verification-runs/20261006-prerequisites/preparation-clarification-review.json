@@ -1,0 +1,24 @@
+{
+  "scope": [
+    ".agents/skills/meteor-flow-verification/SKILL.md",
+    "tasks/002-development-workflow/skill-prerequisites.md"
+  ],
+  "files": [
+    {
+      "path": ".agents/skills/meteor-flow-verification/SKILL.md",
+      "before_sha256": "28f90752a60c56eab75a5176e827042afaf8c774c26a524de4211bae873cf957",
+      "after_sha256": "5d92c02c7504d8eab98cbe541183f0662f1e5daaf59e783ee9b2055eee2163d3",
+      "outcome": "reviewed",
+      "findings": []
+    },
+    {
+      "path": "tasks/002-development-workflow/skill-prerequisites.md",
+      "before_sha256": "39a6812459a79c40a0353cfa82ab12f523a10fb7f04955d3dfb414e80cd944ea",
+      "after_sha256": "ff93725ce7b2e5681cb77ba1a54ec02a822877cd353f48b93d1a6025a24a4a5c",
+      "outcome": "reviewed",
+      "findings": []
+    }
+  ],
+  "host_tests_run": false,
+  "product_tests_run": false
+}

@@ -6,7 +6,10 @@
 
 - [本地 Agent 控制台需求（已确认）](tasks/001-local-agent-console/requirements.md)
 - [需求方案 review 与验收追踪](tasks/001-local-agent-console/review.md)
+- [开发工作流、安装状态与使用方式](tasks/002-development-workflow/workflow.md)
+- [六类强制场景与需求映射](tasks/002-development-workflow/mandatory-scenarios.md)
+- [工作流接入验证记录](tasks/002-development-workflow/validation.md)
 
 所有后续需求与方案统一放在 `tasks/` 下，协作约定见 [AGENTS.md](AGENTS.md)。
 
-当前处于文档阶段：需求已确认，技术选型与实现逻辑待单独确认，产品代码尚未开始实现。
+产品需求已确认，技术选型与实现逻辑待单独确认，产品代码尚未开始实现。仓库同时提供可由 Codex 与 Claude Code 使用的测试和审查工作流。

@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "skills": [
+    {
+      "name": "test-master",
+      "repository": "https://github.com/Jeffallan/claude-skills",
+      "commit": "1be15d8064f88fc25216442406d40add8fd23b53",
+      "files": {
+        ".agents/skills/test-master/LICENSE": {
+          "upstream_path": "LICENSE",
+          "upstream_sha256": "06dcddbb6908a0c6dd4a9e8ec822eea41d5a460a53089fecccc8a68049e99241",
+          "sha256": "06dcddbb6908a0c6dd4a9e8ec822eea41d5a460a53089fecccc8a68049e99241"
+        },
+        ".agents/skills/test-master/SKILL.md": {
+          "upstream_path": "skills/test-master/SKILL.md",
+          "upstream_sha256": "93c3710547afb31d51962b090dbc282d10d7f35528967ca307f135771460bb41",
+          "sha256": "3a6cdf4e3cce251e91a7909776903a9369b13ca933a8a895933f09aeb8c1bf11"
+        },
+        ".agents/skills/test-master/references/automation-frameworks.md": {
+          "upstream_path": "skills/test-master/references/automation-frameworks.md",
+          "upstream_sha256": "407d5778b282cdf1bc72ccb18e81e9f8479198218da4dd8f35cbeda40e8a4c00",
+          "sha256": "407d5778b282cdf1bc72ccb18e81e9f8479198218da4dd8f35cbeda40e8a4c00"
+        },
+        ".agents/skills/test-master/references/e2e-testing.md": {
+          "upstream_path": "skills/test-master/references/e2e-testing.md",
+          "upstream_sha256": "b9b731c88e0bce4a2dc35f2f97b7c37e83104c075cd8f5f81b267a0632c855ae",
+          "sha256": "b9b731c88e0bce4a2dc35f2f97b7c37e83104c075cd8f5f81b267a0632c855ae"
+        },
+        ".agents/skills/test-master/references/integration-testing.md": {
+          "upstream_path": "skills/test-master/references/integration-testing.md",
+          "upstream_sha256": "2330ec33787f4afcde1486c0c041b33f015396d995b0799372f081601631dfa8",
+          "sha256": "2330ec33787f4afcde1486c0c041b33f015396d995b0799372f081601631dfa8"
+        },
+        ".agents/skills/test-master/references/performance-testing.md": {
+          "upstream_path": "skills/test-master/references/performance-testing.md",
+          "upstream_sha256": "8ba93c666af382e91c8ee1bd4ccc02e213c3c3b986b1b88f53321214bd2d6955",
+          "sha256": "8ba93c666af382e91c8ee1bd4ccc02e213c3c3b986b1b88f53321214bd2d6955"
+        },
+        ".agents/skills/test-master/references/qa-methodology.md": {
+          "upstream_path": "skills/test-master/references/qa-methodology.md",
+          "upstream_sha256": "9277588309c80929241df3302150cae1c966cb83dd1dc2be3125a943fa4d4477",
+          "sha256": "9277588309c80929241df3302150cae1c966cb83dd1dc2be3125a943fa4d4477"
+        },
+        ".agents/skills/test-master/references/security-testing.md": {
+          "upstream_path": "skills/test-master/references/security-testing.md",
+          "upstream_sha256": "aa4fe58e2e1341fc8e9ce2c50abe940b378571fa0b9233904aa567a31d8bb6fc",
+          "sha256": "aa4fe58e2e1341fc8e9ce2c50abe940b378571fa0b9233904aa567a31d8bb6fc"
+        },
+        ".agents/skills/test-master/references/tdd-iron-laws.md": {
+          "upstream_path": "skills/test-master/references/tdd-iron-laws.md",
+          "upstream_sha256": "1f719ea75af92dac32762b9e27d7f1bd6dfd7be9d71c8b8db7b1c8842b34bed1",
+          "sha256": "1f719ea75af92dac32762b9e27d7f1bd6dfd7be9d71c8b8db7b1c8842b34bed1"
+        },
+        ".agents/skills/test-master/references/test-reports.md": {
+          "upstream_path": "skills/test-master/references/test-reports.md",
+          "upstream_sha256": "9202c94244a2da9981fec66042634244478bf8d762061856f71d202e0e4744cf",
+          "sha256": "9202c94244a2da9981fec66042634244478bf8d762061856f71d202e0e4744cf"
+        },
+        ".agents/skills/test-master/references/testing-anti-patterns.md": {
+          "upstream_path": "skills/test-master/references/testing-anti-patterns.md",
+          "upstream_sha256": "ae653194178f04a7fe7662d256e2d11da763d6d2e04fcd091f7b374d70b28945",
+          "sha256": "ae653194178f04a7fe7662d256e2d11da763d6d2e04fcd091f7b374d70b28945"
+        },
+        ".agents/skills/test-master/references/unit-testing.md": {
+          "upstream_path": "skills/test-master/references/unit-testing.md",
+          "upstream_sha256": "6165c82a10c79295ce45329fa16895128888ffd874269ee509af56061291c43a",
+          "sha256": "6165c82a10c79295ce45329fa16895128888ffd874269ee509af56061291c43a"
+        }
+      },
+      "adaptations": "项目覆盖规则位于 SKILL.md 的 Meteor Flow 项目适配段；其余文件保持上游原文。"
+    },
+    {
+      "name": "open-code-review-delegate",
+      "repository": "https://github.com/alibaba/open-code-review",
+      "commit": "182898cf522da3d04157b422752d028417974e19",
+      "files": {
+        ".agents/skills/open-code-review-delegate/LICENSE": {
+          "upstream_path": "LICENSE",
+          "upstream_sha256": "1945665fdb6968a66ea29438ddee0aee23035365c862e5c4a75b62b303340acf",
+          "sha256": "1945665fdb6968a66ea29438ddee0aee23035365c862e5c4a75b62b303340acf"
+        },
+        ".agents/skills/open-code-review-delegate/SKILL.md": {
+          "upstream_path": "skills/open-code-review-delegate/SKILL.md",
+          "upstream_sha256": "20828a50b05465496468c733270be2256c7764d2e5c29181a7706c58cfc64087",
+          "sha256": "87380931d45652b495e70f930f88c97c1d3cdc839b73d5e3bc28901300c4db6b"
+        }
+      },
+      "adaptations": "项目覆盖规则位于 SKILL.md 的 Meteor Flow 项目适配段；其余文件保持上游原文。 上游 compatibility frontmatter 移到正文 CLI 前提以兼容 Codex 校验器。"
+    }
+  ],
+  "ocr_cli": {
+    "version": "v1.12.12",
+    "repository": "https://github.com/alibaba/open-code-review",
+    "assets": {
+      "opencodereview-darwin-amd64": "a9023c8286fd00c032919d9b675aa09d2600be948bfc0d9ae8b37fc75c183cc5",
+      "opencodereview-darwin-arm64": "4448bb750e2d818b9b6d68c997df64191ad22bbdfc1617afb00d0f4c38f95296",
+      "opencodereview-linux-amd64": "3e34d6250d27d3a75b3979752d2816a8723f0070e89662b5b953ce2c9473b233",
+      "opencodereview-linux-arm64": "dc79922857f5e444f7d2754d077a7c4278f457bc393f61a907f90893b1a95f06",
+      "opencodereview-windows-amd64.exe": "c34033f9da77e65aebddd64e37e671b4dd773ad4868e4f73922d13766ee6bb82",
+      "opencodereview-windows-arm64.exe": "d848ac9db1fa3f9deca6375ba525e817615160425df4c7ace078ee5d9b8cbe05"
+    }
+  }
+}

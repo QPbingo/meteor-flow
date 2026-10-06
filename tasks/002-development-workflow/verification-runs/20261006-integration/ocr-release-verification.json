@@ -1,0 +1,26 @@
+{
+  "opencodereview-darwin-amd64": {
+    "official_digest": "sha256:a9023c8286fd00c032919d9b675aa09d2600be948bfc0d9ae8b37fc75c183cc5",
+    "matches": true
+  },
+  "opencodereview-darwin-arm64": {
+    "official_digest": "sha256:4448bb750e2d818b9b6d68c997df64191ad22bbdfc1617afb00d0f4c38f95296",
+    "matches": true
+  },
+  "opencodereview-linux-amd64": {
+    "official_digest": "sha256:3e34d6250d27d3a75b3979752d2816a8723f0070e89662b5b953ce2c9473b233",
+    "matches": true
+  },
+  "opencodereview-linux-arm64": {
+    "official_digest": "sha256:dc79922857f5e444f7d2754d077a7c4278f457bc393f61a907f90893b1a95f06",
+    "matches": true
+  },
+  "opencodereview-windows-amd64.exe": {
+    "official_digest": "sha256:c34033f9da77e65aebddd64e37e671b4dd773ad4868e4f73922d13766ee6bb82",
+    "matches": true
+  },
+  "opencodereview-windows-arm64.exe": {
+    "official_digest": "sha256:d848ac9db1fa3f9deca6375ba525e817615160425df4c7ace078ee5d9b8cbe05",
+    "matches": true
+  }
+}

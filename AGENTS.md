@@ -21,7 +21,19 @@
 
 - [本地 Agent 控制台需求](tasks/001-local-agent-console/requirements.md)：2026-10-06 已由用户确认。
 - [需求方案 review](tasks/001-local-agent-console/review.md)：修订规则已纳入需求，运行时行为尚待实现验证。
-- 当前只建立文档基线；技术选型、组件和实现逻辑尚未确认，产品代码尚未获准实现。
+- 产品技术选型、组件和实现逻辑尚未确认，产品代码尚未获准实现。
+- 开发工作流接入已于 2026-10-06 获准实施；这不等于授权实现本地 Agent 控制台。
+
+## 代码完成后的验证关卡
+
+- 工作流与安装状态见 [开发工作流](tasks/002-development-workflow/workflow.md)。
+- 修改代码、请求 review、测试或验收时，使用本仓库 `.agents/skills/meteor-flow-verification/SKILL.md`；Codex 可显式调用 `$meteor-flow-verification`，Claude Code 可调用 `/meteor-flow-verification`。
+- 后端由 test-master 组织实际测试；前端使用已选定的 Playwright 与 Impeccable。调用前检查是否已安装，缺失能力标记阻塞，不虚报可用。
+- OCR 仅使用委托模式。审查者须与编写者处于独立上下文；可创建独立审查 agent，不支持时用新会话完成，不以自审代替。审查者不直接修复待审代码。
+- 每次行为变更必须分析状态迁移、幂等、时序、恢复、关联、隔离六类场景，关联需求、具体用例和证据；不适用必须给出理由。
+- 先分析场景，执行测试与独立审查，修订后复验，最后交人工验收。缺失执行证据、关键测试未执行、未完成审查或存在未关闭的 critical/high 问题，不得宣布验收就绪。
+- 代码或约束变化后重新核对证据基线；模拟通过不能冒充真实 herdr 集成通过；本地检查只检查记录与证据完整性，不证明测试真实充分，也不强制拦截 Git/CI。
+- 执行记录归入对应任务的 `verification-runs/<run-id>/`，此目录只存报告和证据，禁止放业务代码或需求正文。人工验收不得由 agent 自行签署。
 
 ## 后续文档维护
 

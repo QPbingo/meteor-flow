@@ -1,0 +1,44 @@
+{
+  "reviewer_context": "/root/workflow_review",
+  "author_context": "/root",
+  "status": "changes-requested",
+  "findings": [
+    {
+      "id": "F1",
+      "path": "scripts/workflow/check.py",
+      "start_line": 212,
+      "end_line": 224,
+      "category": "bug",
+      "severity": "high",
+      "content": "初版仅比对 report 与附件 preview 清单，不核对 preview 的版本、仓库或实际变更范围。来自其他仓库的空清单可通过 validate，遗漏全部代码审查。",
+      "reproduction": "reproduce.py foreign_empty_preview 返回 []。",
+      "recommendation": "校验 preview 元数据，并用固定入口重新获取相应范围，与所附 preview 比对。"
+    },
+    {
+      "id": "F2",
+      "path": "scripts/workflow/check.py",
+      "start_line": 225,
+      "end_line": 228,
+      "category": "bug",
+      "severity": "medium",
+      "content": "初版允许删除/超大排除项标记 not-applicable，违反必须补查影响的项目规则。第一轮修订仅判断 exclude_reason，真实 OCR 对已跟踪 deleted.generated.py 的删除返回 status=deleted、exclude_reason=user_exclude，仍漏掉强制补查。",
+      "reproduction": "reproduce.py deleted_file_without_manual_review 返回 []；probe_revision.py 输出真实 user_exclude 删除条目。",
+      "recommendation": "同时根据 status=deleted 与 too_large 原因约束只能 reviewed-manually 或 blocked，并测试真实 CLI 输出。"
+    },
+    {
+      "id": "F3",
+      "path": "scripts/workflow/check.py",
+      "start_line": 112,
+      "end_line": 126,
+      "category": "bug",
+      "severity": "medium",
+      "content": "初版 init 只解析 task 路径，不验证 verification-runs 的真实目标。该目录是外部软链接时，命令成功在仓库外写入新的 report.json。",
+      "reproduction": "reproduce.py init_symlink_escape 的 outside_repository 与 report_written 均为 true。",
+      "recommendation": "创建运行前校验完整目标解析后仍在指定 task 内，拒绝后确认外部无新增目录。"
+    }
+  ],
+  "initial_test_result": {"command": "python3 -m unittest discover -s scripts/workflow/tests -v", "exit_code": 0, "tests": 22},
+  "revision_test_result": {"log": "revision-tests.log", "exit_code": 0, "tests": 30},
+  "sources": {"upstream_files_verified": 14, "ocr_asset_digests_verified": 6},
+  "limits": ["只读审查待审仓库，未修复作者代码", "测试为工作流关卡及 OCR 集成；无产品 E2E 结论", "不能通过记录检查证明日志真实性、测试充分性或审查身份"]
+}

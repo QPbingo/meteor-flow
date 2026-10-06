@@ -1,0 +1,418 @@
+{
+  "schema_version": 1,
+  "task": "tasks/002-development-workflow",
+  "run_id": "20261006-integration",
+  "baseline": {
+    "head": "d026fb7cbb656f29a65a60e0d2198eb92905b877",
+    "content_sha256": "569640de44411f0756694f53ed46d4d805286e887e1d2c17ce78990da5ca9443"
+  },
+  "scope": {
+    "kind": "behavioral",
+    "requirements": [
+      "workflow.md#W01-W06"
+    ],
+    "summary": "共享技能、OCR 委托与本地验收关卡；仅工作流基础设施，非产品实现"
+  },
+  "scenarios": {
+    "state-transition": {
+      "applicability": "applicable",
+      "reason": "本次工作流逻辑涉及此约束；范围仅工具及记录，不代表产品六类验收",
+      "cases": [
+        {
+          "id": "state-transition-workflow",
+          "requirements": [
+            "W03/W04"
+          ],
+          "setup": "完整记录与 fail/blocked/not-run 变体",
+          "action": "依次校验记录",
+          "expected": "完整记录只达到人工待验收，未完成状态阻塞",
+          "status": "pass",
+          "actual": "test_each_unfinished_status_blocks / test_complete_record_is_ready_but_not_accepted：测试通过，见执行日志",
+          "evidence": [
+            "tests.log"
+          ]
+        }
+      ]
+    },
+    "idempotency": {
+      "applicability": "applicable",
+      "reason": "本次工作流逻辑涉及此约束；范围仅工具及记录，不代表产品六类验收",
+      "cases": [
+        {
+          "id": "idempotency-workflow",
+          "requirements": [
+            "W02/W05"
+          ],
+          "setup": "已校验工具与已有运行目录",
+          "action": "重复 install / 同名 init",
+          "expected": "工具不重复下载，历史记录不被覆盖",
+          "status": "pass",
+          "actual": "test_verified_install_is_idempotent_and_offline / test_reject_overwriting_history：测试通过，见执行日志",
+          "evidence": [
+            "tests.log"
+          ]
+        }
+      ]
+    },
+    "ordering": {
+      "applicability": "applicable",
+      "reason": "本次工作流逻辑涉及此约束；范围仅工具及记录，不代表产品六类验收",
+      "cases": [
+        {
+          "id": "ordering-workflow",
+          "requirements": [
+            "W03/W05"
+          ],
+          "setup": "先生成记录/preview",
+          "action": "修改代码或替换为空 preview 后 check",
+          "expected": "旧基线/旧清单不能通过",
+          "status": "pass",
+          "actual": "test_invalid_baseline_after_code_change / test_stale_or_empty_preview_cannot_hide_changes：测试通过，见执行日志",
+          "evidence": [
+            "tests.log"
+          ]
+        }
+      ]
+    },
+    "recovery": {
+      "applicability": "applicable",
+      "reason": "本次工作流逻辑涉及此约束；范围仅工具及记录，不代表产品六类验收",
+      "cases": [
+        {
+          "id": "recovery-workflow",
+          "requirements": [
+            "W02/W05"
+          ],
+          "setup": "独立临时工具目录",
+          "action": "注入下载失败后重试正确内容",
+          "expected": "保留原文件，清理部分下载，后续校验安装成功",
+          "status": "pass",
+          "actual": "test_interrupted_download_preserves_existing_file_and_cleans_partial / test_success_after_failed_attempt：测试通过，见执行日志",
+          "evidence": [
+            "tests.log"
+          ]
+        }
+      ]
+    },
+    "association": {
+      "applicability": "applicable",
+      "reason": "本次工作流逻辑涉及此约束；范围仅工具及记录，不代表产品六类验收",
+      "cases": [
+        {
+          "id": "association-workflow",
+          "requirements": [
+            "W04/W05"
+          ],
+          "setup": "本仓库 preview 与报告",
+          "action": "替换仓库/schema/模式或遗漏文件",
+          "expected": "错误仓库与遗漏审查范围被拒绝",
+          "status": "pass",
+          "actual": "test_rejects_other_repository_and_unknown_schema / test_missing_preview_file_entry_rejected：测试通过，见执行日志",
+          "evidence": [
+            "tests.log"
+          ]
+        }
+      ]
+    },
+    "isolation": {
+      "applicability": "applicable",
+      "reason": "本次工作流逻辑涉及此约束；范围仅工具及记录，不代表产品六类验收",
+      "cases": [
+        {
+          "id": "isolation-workflow",
+          "requirements": [
+            "W05"
+          ],
+          "setup": "临时 task 与外部目录",
+          "action": "让证据/运行目录经链接越界",
+          "expected": "拒绝越界，外部不创建报告",
+          "status": "pass",
+          "actual": "test_path_escape_and_external_symlink_rejected / test_init_rejects_escaping_evidence_directory：测试通过，见执行日志",
+          "evidence": [
+            "tests.log"
+          ]
+        }
+      ]
+    }
+  },
+  "checks": {
+    "backend": {
+      "status": "pass",
+      "reason": "本次是工作流 CLI 逻辑；无产品后端",
+      "evidence": [
+        "tests.log"
+      ]
+    },
+    "e2e": {
+      "status": "not-applicable",
+      "reason": "本次无页面与产品后台；真实 Codex/Claude 调用另有集成证据，不冒充浏览器或 herdr E2E",
+      "evidence": []
+    },
+    "ui": {
+      "status": "not-applicable",
+      "reason": "未修改用户界面；Playwright/Impeccable 仍待项目接入",
+      "evidence": []
+    },
+    "architecture": {
+      "status": "pass",
+      "reason": "独立审查检查共享单一来源、语言无关的技能、规则与证据职责、范围与扩展边界",
+      "evidence": [
+        "review.md"
+      ]
+    }
+  },
+  "commands": [
+    {
+      "command": "python3 -m unittest discover -s scripts/workflow/tests -v",
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": [
+        "tests.log"
+      ]
+    },
+    {
+      "command": "python3 scripts/workflow/check.py doctor",
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": [
+        "tool-checks.log"
+      ]
+    },
+    {
+      "command": "python3 scripts/workflow/ocr.py delegate preview --format json --from=3eb93d8c2f188c62ed956aed9f1ebf65dc40ef5c --to=d026fb7cbb656f29a65a60e0d2198eb92905b877",
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": [
+        "preview.json"
+      ]
+    }
+  ],
+  "evidence": {
+    "host-evaluation.md": "c12864ad57a1025003077e94f2a26c5d65cc1896dad82aa375f5c19d7c35c9f3",
+    "ocr-release-verification.json": "e1eb42804179ca31a7ce7dad25ce7bef6875fc3b7b50ae834895831c1f4ce5ec",
+    "sources-verification.json": "3678066de9fcfb6ca8bc37144a49fdb47f4759909cd9e0d3e57284a6157fe919",
+    "initial-findings.json": "e5055f2e253c038bf85e58338b9643e6c764c28745298a0c099258a734b4a141",
+    "codex-behavior.md": "c5f7e427500160ac739ef7a197e7adf7857075f2db8b393821b342b0314c73fa",
+    "claude-behavior.md": "96b69e20e022d37cf8cf9c8fbad301bf99788b3ce7cae0e2eae74cc4c6aa1797",
+    "tool-checks.log": "19b00ff2efaa9baf1c6a1cc675e2f0b0a927d5585c6dfb0a539b41506bacf934",
+    "tests.log": "62b21ca1c422161aebba2576e1280683573a4600ad8012a6de4d5b08388f9fc0",
+    "claude-final-load.md": "7f5520658702119124b97b4a8e6c08f05246f82ef3fa9988110cfa5aeddb7d47",
+    "preview.json": "fcda9690d32a155bbe705f2c2627bf990462e6de154cf870e932a3095408529f",
+    "codex-final-load.md": "a8a47a12c19dcbd3a41696915d4a6e768c7c2138b710136e937309680e1139d8",
+    "review.md": "f386d268fbfabbb1639a38d290fa37e084065c55800e521aef847a0f307cfbc2",
+    "final-coverage.json": "ce2a906053b2b9b755bac1d5ed6997ed52ec102761775645b15bebd94c6fbf9d"
+  },
+  "review": {
+    "status": "pass",
+    "author_context": "/root implementation session",
+    "reviewer_context": "/root/workflow_review independent context",
+    "preview": "preview.json",
+    "files": [
+      {
+        "path": ".agents/skills/meteor-flow-verification/SKILL.md",
+        "status": "added",
+        "outcome": "reviewed"
+      },
+      {
+        "path": ".agents/skills/open-code-review-delegate/LICENSE",
+        "status": "added",
+        "outcome": "reviewed"
+      },
+      {
+        "path": ".agents/skills/open-code-review-delegate/SKILL.md",
+        "status": "added",
+        "outcome": "reviewed"
+      },
+      {
+        "path": ".agents/skills/test-master/LICENSE",
+        "status": "added",
+        "outcome": "reviewed"
+      },
+      {
+        "path": ".agents/skills/test-master/SKILL.md",
+        "status": "added",
+        "outcome": "reviewed"
+      },
+      {
+        "path": ".agents/skills/test-master/references/automation-frameworks.md",
+        "status": "added",
+        "outcome": "reviewed"
+      },
+      {
+        "path": ".agents/skills/test-master/references/e2e-testing.md",
+        "status": "added",
+        "outcome": "reviewed"
+      },
+      {
+        "path": ".agents/skills/test-master/references/integration-testing.md",
+        "status": "added",
+        "outcome": "reviewed"
+      },
+      {
+        "path": ".agents/skills/test-master/references/performance-testing.md",
+        "status": "added",
+        "outcome": "reviewed"
+      },
+      {
+        "path": ".agents/skills/test-master/references/qa-methodology.md",
+        "status": "added",
+        "outcome": "reviewed"
+      },
+      {
+        "path": ".agents/skills/test-master/references/security-testing.md",
+        "status": "added",
+        "outcome": "reviewed"
+      },
+      {
+        "path": ".agents/skills/test-master/references/tdd-iron-laws.md",
+        "status": "added",
+        "outcome": "reviewed"
+      },
+      {
+        "path": ".agents/skills/test-master/references/test-reports.md",
+        "status": "added",
+        "outcome": "reviewed"
+      },
+      {
+        "path": ".agents/skills/test-master/references/testing-anti-patterns.md",
+        "status": "added",
+        "outcome": "reviewed"
+      },
+      {
+        "path": ".agents/skills/test-master/references/unit-testing.md",
+        "status": "added",
+        "outcome": "reviewed"
+      },
+      {
+        "path": ".claude/skills/meteor-flow-verification",
+        "status": "added",
+        "outcome": "reviewed"
+      },
+      {
+        "path": ".claude/skills/open-code-review-delegate",
+        "status": "added",
+        "outcome": "reviewed"
+      },
+      {
+        "path": ".claude/skills/test-master",
+        "status": "added",
+        "outcome": "reviewed"
+      },
+      {
+        "path": ".gitignore",
+        "status": "added",
+        "outcome": "reviewed"
+      },
+      {
+        "path": ".opencodereview/rule.json",
+        "status": "added",
+        "outcome": "reviewed"
+      },
+      {
+        "path": "AGENTS.md",
+        "status": "modified",
+        "outcome": "reviewed"
+      },
+      {
+        "path": "CLAUDE.md",
+        "status": "added",
+        "outcome": "reviewed"
+      },
+      {
+        "path": "README.md",
+        "status": "modified",
+        "outcome": "reviewed"
+      },
+      {
+        "path": "scripts/workflow/check.py",
+        "status": "added",
+        "outcome": "reviewed"
+      },
+      {
+        "path": "scripts/workflow/ocr.py",
+        "status": "added",
+        "outcome": "reviewed"
+      },
+      {
+        "path": "scripts/workflow/sources.lock.json",
+        "status": "added",
+        "outcome": "reviewed"
+      },
+      {
+        "path": "scripts/workflow/tests/host_fixture.py",
+        "status": "added",
+        "outcome": "reviewed"
+      },
+      {
+        "path": "scripts/workflow/tests/test_checks.py",
+        "status": "added",
+        "outcome": "reviewed"
+      },
+      {
+        "path": "scripts/workflow/tests/test_ocr_installer.py",
+        "status": "added",
+        "outcome": "reviewed"
+      },
+      {
+        "path": "scripts/workflow/tests/test_ocr_integration.py",
+        "status": "added",
+        "outcome": "reviewed"
+      },
+      {
+        "path": "tasks/002-development-workflow/mandatory-scenarios.md",
+        "status": "added",
+        "outcome": "reviewed"
+      },
+      {
+        "path": "tasks/002-development-workflow/validation.md",
+        "status": "added",
+        "outcome": "reviewed"
+      },
+      {
+        "path": "tasks/002-development-workflow/workflow.md",
+        "status": "added",
+        "outcome": "reviewed"
+      }
+    ],
+    "exclusions": [],
+    "findings": [
+      {
+        "content": "F1: OCR preview 未绑定当前仓库与范围",
+        "severity": "high",
+        "disposition": "fixed",
+        "rationale": "重跑固定 CLI preview，比对 schema/仓库/模式/范围/清单；补实际 CLI 负例",
+        "evidence": [
+          "review.md",
+          "tests.log"
+        ]
+      },
+      {
+        "content": "F2: 删除/超大排除项可绕过补查",
+        "severity": "medium",
+        "disposition": "fixed",
+        "rationale": "按 status 与 exclude_reason 同时检查，包含生成文件删除",
+        "evidence": [
+          "review.md",
+          "tests.log"
+        ]
+      },
+      {
+        "content": "F3: 运行记录初始化目录可经符号链接越界",
+        "severity": "medium",
+        "disposition": "fixed",
+        "rationale": "初始化前验证最终路径仍在任务目录，负例无外部写入",
+        "evidence": [
+          "review.md",
+          "tests.log"
+        ]
+      }
+    ],
+    "evidence": [
+      "review.md"
+    ]
+  },
+  "human_acceptance": {
+    "status": "pending",
+    "evidence": []
+  }
+}

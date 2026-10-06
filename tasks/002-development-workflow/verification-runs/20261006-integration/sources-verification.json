@@ -1,0 +1,86 @@
+[
+  {
+    "path": ".agents/skills/test-master/LICENSE",
+    "url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/1be15d8064f88fc25216442406d40add8fd23b53/LICENSE",
+    "upstream_matches": true,
+    "local_matches": true
+  },
+  {
+    "path": ".agents/skills/test-master/SKILL.md",
+    "url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/1be15d8064f88fc25216442406d40add8fd23b53/skills/test-master/SKILL.md",
+    "upstream_matches": true,
+    "local_matches": true
+  },
+  {
+    "path": ".agents/skills/test-master/references/automation-frameworks.md",
+    "url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/1be15d8064f88fc25216442406d40add8fd23b53/skills/test-master/references/automation-frameworks.md",
+    "upstream_matches": true,
+    "local_matches": true
+  },
+  {
+    "path": ".agents/skills/test-master/references/e2e-testing.md",
+    "url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/1be15d8064f88fc25216442406d40add8fd23b53/skills/test-master/references/e2e-testing.md",
+    "upstream_matches": true,
+    "local_matches": true
+  },
+  {
+    "path": ".agents/skills/test-master/references/integration-testing.md",
+    "url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/1be15d8064f88fc25216442406d40add8fd23b53/skills/test-master/references/integration-testing.md",
+    "upstream_matches": true,
+    "local_matches": true
+  },
+  {
+    "path": ".agents/skills/test-master/references/performance-testing.md",
+    "url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/1be15d8064f88fc25216442406d40add8fd23b53/skills/test-master/references/performance-testing.md",
+    "upstream_matches": true,
+    "local_matches": true
+  },
+  {
+    "path": ".agents/skills/test-master/references/qa-methodology.md",
+    "url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/1be15d8064f88fc25216442406d40add8fd23b53/skills/test-master/references/qa-methodology.md",
+    "upstream_matches": true,
+    "local_matches": true
+  },
+  {
+    "path": ".agents/skills/test-master/references/security-testing.md",
+    "url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/1be15d8064f88fc25216442406d40add8fd23b53/skills/test-master/references/security-testing.md",
+    "upstream_matches": true,
+    "local_matches": true
+  },
+  {
+    "path": ".agents/skills/test-master/references/tdd-iron-laws.md",
+    "url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/1be15d8064f88fc25216442406d40add8fd23b53/skills/test-master/references/tdd-iron-laws.md",
+    "upstream_matches": true,
+    "local_matches": true
+  },
+  {
+    "path": ".agents/skills/test-master/references/test-reports.md",
+    "url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/1be15d8064f88fc25216442406d40add8fd23b53/skills/test-master/references/test-reports.md",
+    "upstream_matches": true,
+    "local_matches": true
+  },
+  {
+    "path": ".agents/skills/test-master/references/testing-anti-patterns.md",
+    "url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/1be15d8064f88fc25216442406d40add8fd23b53/skills/test-master/references/testing-anti-patterns.md",
+    "upstream_matches": true,
+    "local_matches": true
+  },
+  {
+    "path": ".agents/skills/test-master/references/unit-testing.md",
+    "url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/1be15d8064f88fc25216442406d40add8fd23b53/skills/test-master/references/unit-testing.md",
+    "upstream_matches": true,
+    "local_matches": true
+  },
+  {
+    "path": ".agents/skills/open-code-review-delegate/LICENSE",
+    "url": "https://raw.githubusercontent.com/alibaba/open-code-review/182898cf522da3d04157b422752d028417974e19/LICENSE",
+    "upstream_matches": true,
+    "local_matches": true
+  },
+  {
+    "path": ".agents/skills/open-code-review-delegate/SKILL.md",
+    "url": "https://raw.githubusercontent.com/alibaba/open-code-review/182898cf522da3d04157b422752d028417974e19/skills/open-code-review-delegate/SKILL.md",
+    "upstream_matches": true,
+    "local_matches": true
+  }
+]

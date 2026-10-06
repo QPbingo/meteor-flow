@@ -1,0 +1,40 @@
+{
+  "include": [
+    "**/*_test.*",
+    "**/test_*.*",
+    "**/*.test.*",
+    "**/*.spec.*",
+    "**/*_spec.*",
+    "**/*Test.*",
+    "**/*Tests.*",
+    "**/*Spec.*",
+    "**/test/**",
+    "**/tests/**",
+    "**/__tests__/**",
+    "**/spec/**",
+    "**/fixtures/**",
+    "**/testdata/**",
+    "**/__snapshots__/**",
+    "**/*.snap",
+    "**/*.md"
+  ],
+  "exclude": [
+    "**/node_modules/**",
+    "**/.venv/**",
+    "**/vendor/**",
+    "**/dist/**",
+    "**/target/**",
+    "**/*.generated.*",
+    "**/*.gen.go",
+    "**/*.pb.*",
+    "**/__pycache__/**",
+    "tasks/*/verification-runs/**"
+  ],
+  "rules": [
+    {
+      "path": "**/*",
+      "merge_system_rule": true,
+      "rule": "Read AGENTS.md and the confirmed requirement and acceptance records for this task. Review state transitions, idempotency, event ordering, crash/reconnect recovery, entity/artifact associations, and workdir/session/test-resource isolation. Record applicability, concrete evidence, and requirement gaps; do not invent product semantics. Inspect tests as well as implementation, callers and deletion effects. Check module boundaries, dependency direction, error handling, migration/compatibility, maintainability and confirmed extension needs; avoid speculative abstractions. Apply language/framework builtins only when they fit the actual project. Review requires an independent context; keep evidence and false-positive rationale. File coverage is not semantic or test coverage."
+    }
+  ]
+}

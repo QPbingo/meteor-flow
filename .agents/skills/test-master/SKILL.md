@@ -22,6 +22,8 @@ Comprehensive testing specialist ensuring software quality through functional, p
 ## Meteor Flow 项目适配（2026-10-06）
 
 执行前读取仓库 `AGENTS.md` 和 `.agents/skills/meteor-flow-verification/SKILL.md`，适用性与结果必须按项目六类场景记录。
+使用条件见 `tasks/002-development-workflow/skill-prerequisites.md`：编写/修改可执行代码与测试前准备策略和能力，验证阶段实际执行；纯文档不强制新增无关测试。
+若当前 agent 尚未加载此项目技能、引用或必需工具，先按前置要求引入并验证再开发；不能仅因个人环境有同名技能就视为就绪。
 本项目覆盖上游以下默认要求：v1 在本地实际运行测试，不新增 CI/CD；CI 为后续事项。
 测试框架随已确认产品技术栈选择，文中 Jest/pytest 等仅为示例。只在单元测试中 mock 外部依赖；集成和 E2E 使用隔离测试环境。
 禁止把 flaky 测试重跑为绿当成修复；保留首次失败和根因。TDD 引用不授权删除既有实现或撤销用户工作。

@@ -14,7 +14,7 @@
         ".agents/skills/test-master/SKILL.md": {
           "upstream_path": "skills/test-master/SKILL.md",
           "upstream_sha256": "93c3710547afb31d51962b090dbc282d10d7f35528967ca307f135771460bb41",
-          "sha256": "3a6cdf4e3cce251e91a7909776903a9369b13ca933a8a895933f09aeb8c1bf11"
+          "sha256": "929b60806857b0ef9e94e13b4edb1466ec61862da8b6daef1b87f89b216573a9"
         },
         ".agents/skills/test-master/references/automation-frameworks.md": {
           "upstream_path": "skills/test-master/references/automation-frameworks.md",
@@ -67,7 +67,7 @@
           "sha256": "6165c82a10c79295ce45329fa16895128888ffd874269ee509af56061291c43a"
         }
       },
-      "adaptations": "项目覆盖规则位于 SKILL.md 的 Meteor Flow 项目适配段；其余文件保持上游原文。"
+      "adaptations": "项目覆盖规则位于 SKILL.md 的 Meteor Flow 项目适配段；其余文件保持上游原文。 补充项目使用条件与开发前先引入/验证要求。"
     },
     {
       "name": "open-code-review-delegate",
@@ -82,10 +82,10 @@
         ".agents/skills/open-code-review-delegate/SKILL.md": {
           "upstream_path": "skills/open-code-review-delegate/SKILL.md",
           "upstream_sha256": "20828a50b05465496468c733270be2256c7764d2e5c29181a7706c58cfc64087",
-          "sha256": "87380931d45652b495e70f930f88c97c1d3cdc839b73d5e3bc28901300c4db6b"
+          "sha256": "1037e84461991121c8f2ad733d091c82cf5b781558433f7309730922e121cae8"
         }
       },
-      "adaptations": "项目覆盖规则位于 SKILL.md 的 Meteor Flow 项目适配段；其余文件保持上游原文。 上游 compatibility frontmatter 移到正文 CLI 前提以兼容 Codex 校验器。"
+      "adaptations": "项目覆盖规则位于 SKILL.md 的 Meteor Flow 项目适配段；其余文件保持上游原文。 上游 compatibility frontmatter 移到正文 CLI 前提以兼容 Codex 校验器。 补充项目使用条件与开发前先引入/验证要求。"
     }
   ],
   "ocr_cli": {

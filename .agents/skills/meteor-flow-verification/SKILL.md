@@ -1,18 +1,21 @@
 ---
 name: meteor-flow-verification
-description: Verify Meteor Flow changes against confirmed requirements using test-master, independent OCR delegation review, and six mandatory scenario classes. Use after coding or when asked to review, test, walk through, or prepare acceptance of this repository's changes.
+description: Prepare required project skills before developing Meteor Flow, then verify changes with test-master, independent OCR delegation review, and six mandatory scenario classes. Use before coding, when changing project skills or workflow rules, and for review, testing, walkthroughs, or acceptance.
 ---
 
 # Meteor Flow 验证入口
 
-本技能只约束本项目代码完成后的验证。先读仓库根目录 `AGENTS.md` 与
+本技能约束本项目编码前的技能准备与完成后的验证。先读仓库根目录 `AGENTS.md` 与
 `tasks/002-development-workflow/workflow.md`，确认本次需求、已授权范围和实际可用的工具。
 路径以 Git 根目录为准，不依赖调用者当前子目录。不将产品规划授权当成产品编码授权。
 
 ## 执行
 
-1. 运行 `python3 scripts/workflow/check.py doctor`。确认本技能、test-master、OCR 都来自
-   本仓库 `.agents/skills/`；个人同名技能不能替代项目规则。
+1. 先读 `tasks/002-development-workflow/skill-prerequisites.md`，按当前阶段和范围核对必需技能。
+   编码前同时准备后续验收所需能力；缺少技能或当前会话未加载时，按该文档先引入、补齐依赖并验证，
+   不得先开发后补装。运行 `python3 scripts/workflow/check.py doctor` 后仍需检查当前宿主实际加载与能力；
+   该命令不覆盖尚未接入的技能。只请求编码前准备时，只写 skill-readiness 并记录就绪/阻塞后结束；
+   不执行步骤 2–7 的候选测试、init/evidence/check 或完整验收，不把缺少 report.json 作为准备阶段的阻塞。
 2. 读取本次任务的需求、验收与实现方案，以及
    `tasks/002-development-workflow/mandatory-scenarios.md`。逐项决定六类场景的适用性，
    给出需求编号、前置状态、操作顺序、预期业务结论和副作用。不适用须解释。
@@ -20,7 +23,7 @@ description: Verify Meteor Flow changes against confirmed requirements using tes
    不覆盖历史运行。先补测试或修复时，完成修改后再创建最终复验记录，不能给旧证据换基线。
 4. 加载本仓库 `.agents/skills/test-master/SKILL.md` 和相关 references，实际运行原生项目测试。
    后端集成测试使用独立测试数据/数据库/端口；单元 mock 不替代集成验证。
-   前端相关变更调用已选定的 Playwright、Impeccable；发现未安装或无法运行就记录阻塞。
+   前端相关变更调用已选定的 Playwright、Impeccable；发现准备遗漏时先补齐并验证，失败则保持阻塞。
    真实 E2E 必须检查 UI 操作及后台持久化/结果关联，只有页面截图不够。
 5. 将需求、准确变更基线与原始材料交给独立上下文审查者。审查者加载本仓库
    `.agents/skills/open-code-review-delegate/SKILL.md`，使用

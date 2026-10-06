@@ -23,6 +23,9 @@
 
 ## 双端使用与安装
 
+所有技能的使用条件、编码前检查、缺失时的先引入流程，统一见 [Skills 使用条件与前置要求](skill-prerequisites.md)。
+表中“待接入”不构成跳过理由：任务一旦触发该技能，必须先完成引入和当前执行环境验证，再开展相关开发。
+
 技能单一来源为 `.agents/skills/`；Claude 目录通过相对软链接复用，根 `CLAUDE.md` 导入公共约束。
 完整保留 test-master 的 10 个 references、MIT 许可证和来源；OCR 保留 Apache-2.0 许可证。
 来源提交、原文哈希、适配后哈希、OCR 发布版及官方资产校验值在 `scripts/workflow/sources.lock.json`。
@@ -46,9 +49,9 @@ Codex 使用 `$meteor-flow-verification`；Claude Code 使用 `/meteor-flow-veri
 
 ## 执行约束
 
-1. 明确任务需求、范围和版本，逐项分析 [六类场景](mandatory-scenarios.md)。
+1. 明确任务需求、范围和版本；按 [前置要求](skill-prerequisites.md) 先引入并验证当前阶段及后续验收必需 skills，再继续该阶段。编码准备时提前逐项分析 [六类场景](mandatory-scenarios.md)。
 2. test-master 组织并实际执行测试；沿用项目已确认框架。mock 单元测试、真实隔离集成、故障模拟和真实 E2E 分别报告。
-3. 前端交互使用 Playwright；UI 技术/体验使用 Impeccable。相关能力缺失标记 blocked，不能只用 checklist 代替执行。
+3. 前端交互使用 Playwright；UI 技术/体验使用 Impeccable。相关开发前就应补齐能力；遗漏时先补齐，失败标记 blocked，不能只用 checklist 代替执行。
 4. 独立审查者运行 OCR 委托，对照需求查代码与测试、调用方、删除影响、关联关系、模块边界、依赖方向、错误处理、兼容迁移及已确认扩展场景。
 5. 编写者修订，重新测试并由独立上下文复查。保留原始问题、失败和误报关闭理由；不能重跑到绿或悄悄删除不利结果。
 6. 汇总证据，运行本地检查，通过后交人工验收。未解决 critical/high 阻塞；medium/low 遗留需说明风险，由人工决定最终接受。
@@ -100,6 +103,6 @@ python3 -m unittest discover -s scripts/workflow/tests -v
 
 - test-master 上游的 CI/CD 默认要求改为本地实际执行；示例框架不成为产品选型；TDD 引用不授权删除既有代码。
 - OCR 项目入口固定仓库和规则、只允许委托命令；不使用上游的自动修复、静默丢弃误报、版本不匹配时文本降级行为。
-- 未安装环节仅登记选型状态；未来按已确认方案独立接入并验证。当前没有产品后端或页面，不宣称产品测试或 E2E 已通过。
+- 未安装环节登记选型状态；一旦本次任务触发其使用条件，必须先按已确认方案接入并验证，才能开展相关开发。当前没有产品后端或页面，不宣称产品测试或 E2E 已通过。
 
 来源：[test-master](https://github.com/Jeffallan/claude-skills/tree/1be15d8064f88fc25216442406d40add8fd23b53/skills/test-master)、[OCR 委托技能](https://github.com/alibaba/open-code-review/blob/182898cf522da3d04157b422752d028417974e19/skills/open-code-review-delegate/SKILL.md)。

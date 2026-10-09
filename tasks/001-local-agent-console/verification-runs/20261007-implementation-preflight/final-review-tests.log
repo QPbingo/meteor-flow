@@ -1,0 +1,26 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ ✓ apps/server/src/http/server.test.ts (10 tests) 2548ms
+   ✓ keeps observers read-only, gives every page a redraw, and arbitrates two controllers with revocation  448ms
+   ✓ holds all four download slots until slow responses finish and aborts them on service close  828ms
+ ✓ apps/server/src/adapters/herdr/real-herdr.test.ts (2 tests) 2848ms
+   ✓ connects, snapshots and subscribes to an isolated real herdr 0.9.3 server  1207ms
+   ✓ uses real official terminal observe/control streams in a dedicated shell without model calls  1640ms
+ ✓ apps/server/src/storage/store.test.ts (5 tests) 935ms
+   ✓ dedicated real database writer > recovers a committed-but-unacknowledged transaction without creating a second writer or replaying work (V04/V24)  642ms
+ ✓ apps/server/src/storage/database.test.ts (5 tests) 32ms
+ ✓ apps/server/src/application/console.test.ts (11 tests) 1881ms
+   ✓ application orchestration against real DB and collectors > runs an independent task behind an unmet dependency on another binding (V14)  320ms
+ ✓ tests/integration/dev.test.ts (5 tests) 18969ms
+   ✓ development proxy serves the browser with authenticated API/WS while rejecting foreign boundaries  1622ms
+   ✓ dev requires an explicit session and never starts services after a failed initial build  536ms
+   ✓ reaps a resistant build descendant after the build is failed  5505ms
+   ✓ reaps a resistant build descendant after the build is interrupted  5454ms
+   ✓ dev builds first, forwards CLI options, restarts on child-code changes and reaps its process groups  5851ms
+
+ Test Files  6 passed (6)
+      Tests  38 passed (38)
+   Start at  11:12:33
+   Duration  19.51s (transform 186ms, setup 0ms, collect 965ms, tests 27.21s, environment 1ms, prepare 232ms)
+

@@ -1,0 +1,7 @@
+{
+  "kind": "isolated-case-alias-probe",
+  "caseInsensitive": true,
+  "parent": "/private/var/folders/zz/x9yvm9fs0wjbmxrh_2hw470w0000gn/T/meteor-case-review-XEq1xp/Source",
+  "child": "/private/var/folders/zz/x9yvm9fs0wjbmxrh_2hw470w0000gn/T/meteor-case-review-XEq1xp/Source/Child",
+  "overlap": true
+}

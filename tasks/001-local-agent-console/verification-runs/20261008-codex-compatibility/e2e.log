@@ -1,0 +1,193 @@
+Error: Vitest failed to access its internal state.
+
+One of the following is possible:
+- "vitest" is imported directly without running "vitest" command
+- "vitest" is imported inside "globalSetup" (to fix this, use "setupFiles" instead, because "globalSetup" runs in a different context)
+- "vitest" is imported inside Vite / Vitest config file
+- Otherwise, it might be a Vitest bug. Please report it to https://github.com/vitest-dev/vitest/issues
+
+    at getWorkerState (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/utils.XdZDrNZV.js:9:9)
+    at getCurrentEnvironment (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/utils.XdZDrNZV.js:23:16)
+    at createExpect (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/vi.bdSIJ99Y.js:426:16)
+    at /Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/vi.bdSIJ99Y.js:464:22
+Error: Vitest failed to access its internal state.
+
+One of the following is possible:
+- "vitest" is imported directly without running "vitest" command
+- "vitest" is imported inside "globalSetup" (to fix this, use "setupFiles" instead, because "globalSetup" runs in a different context)
+- "vitest" is imported inside Vite / Vitest config file
+- Otherwise, it might be a Vitest bug. Please report it to https://github.com/vitest-dev/vitest/issues
+
+    at getWorkerState (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/utils.XdZDrNZV.js:9:9)
+    at getCurrentEnvironment (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/utils.XdZDrNZV.js:23:16)
+    at createExpect (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/vi.bdSIJ99Y.js:426:16)
+    at /Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/vi.bdSIJ99Y.js:464:22
+Error: Vitest failed to access its internal state.
+
+One of the following is possible:
+- "vitest" is imported directly without running "vitest" command
+- "vitest" is imported inside "globalSetup" (to fix this, use "setupFiles" instead, because "globalSetup" runs in a different context)
+- "vitest" is imported inside Vite / Vitest config file
+- Otherwise, it might be a Vitest bug. Please report it to https://github.com/vitest-dev/vitest/issues
+
+    at getWorkerState (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/utils.XdZDrNZV.js:9:9)
+    at getCurrentEnvironment (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/utils.XdZDrNZV.js:23:16)
+    at createExpect (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/vi.bdSIJ99Y.js:426:16)
+    at /Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/vi.bdSIJ99Y.js:464:22
+Error: Vitest failed to access its internal state.
+
+One of the following is possible:
+- "vitest" is imported directly without running "vitest" command
+- "vitest" is imported inside "globalSetup" (to fix this, use "setupFiles" instead, because "globalSetup" runs in a different context)
+- "vitest" is imported inside Vite / Vitest config file
+- Otherwise, it might be a Vitest bug. Please report it to https://github.com/vitest-dev/vitest/issues
+
+    at getWorkerState (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/utils.XdZDrNZV.js:9:9)
+    at getCurrentEnvironment (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/utils.XdZDrNZV.js:23:16)
+    at createExpect (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/vi.bdSIJ99Y.js:426:16)
+    at /Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/vi.bdSIJ99Y.js:464:22
+Error: Vitest failed to access its internal state.
+
+One of the following is possible:
+- "vitest" is imported directly without running "vitest" command
+- "vitest" is imported inside "globalSetup" (to fix this, use "setupFiles" instead, because "globalSetup" runs in a different context)
+- "vitest" is imported inside Vite / Vitest config file
+- Otherwise, it might be a Vitest bug. Please report it to https://github.com/vitest-dev/vitest/issues
+
+    at getWorkerState (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/utils.XdZDrNZV.js:9:9)
+    at getCurrentEnvironment (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/utils.XdZDrNZV.js:23:16)
+    at createExpect (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/vi.bdSIJ99Y.js:426:16)
+    at /Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/vi.bdSIJ99Y.js:464:22
+Error: Vitest failed to access its internal state.
+
+One of the following is possible:
+- "vitest" is imported directly without running "vitest" command
+- "vitest" is imported inside "globalSetup" (to fix this, use "setupFiles" instead, because "globalSetup" runs in a different context)
+- "vitest" is imported inside Vite / Vitest config file
+- Otherwise, it might be a Vitest bug. Please report it to https://github.com/vitest-dev/vitest/issues
+
+    at getWorkerState (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/utils.XdZDrNZV.js:9:9)
+    at getCurrentEnvironment (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/utils.XdZDrNZV.js:23:16)
+    at createExpect (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/vi.bdSIJ99Y.js:426:16)
+    at /Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/vi.bdSIJ99Y.js:464:22
+Error: Vitest failed to access its internal state.
+
+One of the following is possible:
+- "vitest" is imported directly without running "vitest" command
+- "vitest" is imported inside "globalSetup" (to fix this, use "setupFiles" instead, because "globalSetup" runs in a different context)
+- "vitest" is imported inside Vite / Vitest config file
+- Otherwise, it might be a Vitest bug. Please report it to https://github.com/vitest-dev/vitest/issues
+
+    at getWorkerState (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/utils.XdZDrNZV.js:9:9)
+    at getCurrentEnvironment (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/utils.XdZDrNZV.js:23:16)
+    at createExpect (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/vi.bdSIJ99Y.js:426:16)
+    at /Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/vi.bdSIJ99Y.js:464:22
+Error: Vitest failed to access its internal state.
+
+One of the following is possible:
+- "vitest" is imported directly without running "vitest" command
+- "vitest" is imported inside "globalSetup" (to fix this, use "setupFiles" instead, because "globalSetup" runs in a different context)
+- "vitest" is imported inside Vite / Vitest config file
+- Otherwise, it might be a Vitest bug. Please report it to https://github.com/vitest-dev/vitest/issues
+
+    at getWorkerState (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/utils.XdZDrNZV.js:9:9)
+    at getCurrentEnvironment (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/utils.XdZDrNZV.js:23:16)
+    at createExpect (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/vi.bdSIJ99Y.js:426:16)
+    at /Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/vi.bdSIJ99Y.js:464:22
+Error: Vitest failed to access its internal state.
+
+One of the following is possible:
+- "vitest" is imported directly without running "vitest" command
+- "vitest" is imported inside "globalSetup" (to fix this, use "setupFiles" instead, because "globalSetup" runs in a different context)
+- "vitest" is imported inside Vite / Vitest config file
+- Otherwise, it might be a Vitest bug. Please report it to https://github.com/vitest-dev/vitest/issues
+
+    at getWorkerState (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/utils.XdZDrNZV.js:9:9)
+    at getCurrentEnvironment (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/utils.XdZDrNZV.js:23:16)
+    at createExpect (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/vi.bdSIJ99Y.js:426:16)
+    at /Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/vi.bdSIJ99Y.js:464:22
+Error: Vitest failed to access its internal state.
+
+One of the following is possible:
+- "vitest" is imported directly without running "vitest" command
+- "vitest" is imported inside "globalSetup" (to fix this, use "setupFiles" instead, because "globalSetup" runs in a different context)
+- "vitest" is imported inside Vite / Vitest config file
+- Otherwise, it might be a Vitest bug. Please report it to https://github.com/vitest-dev/vitest/issues
+
+    at getWorkerState (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/utils.XdZDrNZV.js:9:9)
+    at getCurrentEnvironment (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/utils.XdZDrNZV.js:23:16)
+    at createExpect (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/vi.bdSIJ99Y.js:426:16)
+    at /Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/vi.bdSIJ99Y.js:464:22
+Error: Vitest failed to access its internal state.
+
+One of the following is possible:
+- "vitest" is imported directly without running "vitest" command
+- "vitest" is imported inside "globalSetup" (to fix this, use "setupFiles" instead, because "globalSetup" runs in a different context)
+- "vitest" is imported inside Vite / Vitest config file
+- Otherwise, it might be a Vitest bug. Please report it to https://github.com/vitest-dev/vitest/issues
+
+    at getWorkerState (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/utils.XdZDrNZV.js:9:9)
+    at getCurrentEnvironment (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/utils.XdZDrNZV.js:23:16)
+    at createExpect (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/vi.bdSIJ99Y.js:426:16)
+    at /Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/vi.bdSIJ99Y.js:464:22
+Error: Vitest failed to access its internal state.
+
+One of the following is possible:
+- "vitest" is imported directly without running "vitest" command
+- "vitest" is imported inside "globalSetup" (to fix this, use "setupFiles" instead, because "globalSetup" runs in a different context)
+- "vitest" is imported inside Vite / Vitest config file
+- Otherwise, it might be a Vitest bug. Please report it to https://github.com/vitest-dev/vitest/issues
+
+    at getWorkerState (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/utils.XdZDrNZV.js:9:9)
+    at getCurrentEnvironment (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/utils.XdZDrNZV.js:23:16)
+    at createExpect (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/vi.bdSIJ99Y.js:426:16)
+    at /Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/vi.bdSIJ99Y.js:464:22
+Error: Vitest failed to access its internal state.
+
+One of the following is possible:
+- "vitest" is imported directly without running "vitest" command
+- "vitest" is imported inside "globalSetup" (to fix this, use "setupFiles" instead, because "globalSetup" runs in a different context)
+- "vitest" is imported inside Vite / Vitest config file
+- Otherwise, it might be a Vitest bug. Please report it to https://github.com/vitest-dev/vitest/issues
+
+    at getWorkerState (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/utils.XdZDrNZV.js:9:9)
+    at getCurrentEnvironment (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/utils.XdZDrNZV.js:23:16)
+    at createExpect (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/vi.bdSIJ99Y.js:426:16)
+    at /Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/vi.bdSIJ99Y.js:464:22
+Error: Vitest failed to access its internal state.
+
+One of the following is possible:
+- "vitest" is imported directly without running "vitest" command
+- "vitest" is imported inside "globalSetup" (to fix this, use "setupFiles" instead, because "globalSetup" runs in a different context)
+- "vitest" is imported inside Vite / Vitest config file
+- Otherwise, it might be a Vitest bug. Please report it to https://github.com/vitest-dev/vitest/issues
+
+    at getWorkerState (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/utils.XdZDrNZV.js:9:9)
+    at getCurrentEnvironment (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/utils.XdZDrNZV.js:23:16)
+    at createExpect (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/vi.bdSIJ99Y.js:426:16)
+    at /Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/vi.bdSIJ99Y.js:464:22
+Error: Vitest failed to access its internal state.
+
+One of the following is possible:
+- "vitest" is imported directly without running "vitest" command
+- "vitest" is imported inside "globalSetup" (to fix this, use "setupFiles" instead, because "globalSetup" runs in a different context)
+- "vitest" is imported inside Vite / Vitest config file
+- Otherwise, it might be a Vitest bug. Please report it to https://github.com/vitest-dev/vitest/issues
+
+    at getWorkerState (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/utils.XdZDrNZV.js:9:9)
+    at getCurrentEnvironment (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/utils.XdZDrNZV.js:23:16)
+    at createExpect (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/vi.bdSIJ99Y.js:426:16)
+    at /Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/vi.bdSIJ99Y.js:464:22
+Error: Vitest failed to access its internal state.
+
+One of the following is possible:
+- "vitest" is imported directly without running "vitest" command
+- "vitest" is imported inside "globalSetup" (to fix this, use "setupFiles" instead, because "globalSetup" runs in a different context)
+- "vitest" is imported inside Vite / Vitest config file
+- Otherwise, it might be a Vitest bug. Please report it to https://github.com/vitest-dev/vitest/issues
+
+    at getWorkerState (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/utils.XdZDrNZV.js:9:9)
+    at getCurrentEnvironment (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/utils.XdZDrNZV.js:23:16)
+    at createExpect (/Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/vi.bdSIJ99Y.js:426:16)
+    at /Users/heybox/Documents/herdrflow/meteor-flow/node_modules/.pnpm/vitest@3.2.7_@types+node@24.19.1_tsx@4.23.15_yaml@2.9.1/node_modules/vitest/dist/chunks/vi.bdSIJ99Y.js:464:22
+

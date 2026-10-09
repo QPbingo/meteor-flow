@@ -1,0 +1,8 @@
+{
+  "scope": "real Console/SQLite/HTTP SSE + browser, fake herdr boundary",
+  "latencyMs": 13.326750000000175,
+  "pollingIntervalOverriddenToMs": 60000,
+  "changeSequence": "2",
+  "samples": 1,
+  "note": "单次功能测量，含持久化调用耗时，不是 p95 性能结论"
+}

@@ -1,0 +1,30 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ × tests/integration/real-agent.test.ts > real isolated codex: startup, readiness, structured result and durable archive 17070ms
+   → real task ended in needs_confirmation: 投递结果未知，不重发：HerdrError: agent target term_65d36bbcf40001 not found
+stdout | tests/integration/real-agent.test.ts > real isolated claude: startup, readiness, structured result and durable archive
+REAL_AGENT_BLOCKED claude: first-run onboarding requires human interaction
+
+ ↓ tests/integration/real-agent.test.ts > real isolated claude: startup, readiness, structured result and durable archive 2966ms [first-run onboarding requires human interaction]
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/integration/real-agent.test.ts > real isolated codex: startup, readiness, structured result and durable archive
+Error: real task ended in needs_confirmation: 投递结果未知，不重发：HerdrError: agent target term_65d36bbcf40001 not found
+ ❯ tests/integration/real-agent.test.ts:154:90
+    152|         if (current.phase === 'succeeded') break;
+    153|         const blocker = reason(await screen()); if (blocker) await blo…
+    154|         if (['failed', 'cancelled', 'needs_confirmation'].includes(cur…
+       |                                                                                          ^
+    155|         await delay(250);
+    156|       }
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 1 skipped (2)
+   Start at  10:18:40
+   Duration  20.38s (transform 85ms, setup 0ms, collect 172ms, tests 20.04s, environment 0ms, prepare 48ms)
+

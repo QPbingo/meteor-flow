@@ -1,0 +1,12 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ ✓ apps/server/src/terminal/bridge.test.ts (22 tests) 22ms
+ ✓ apps/server/src/http/server.test.ts (5 tests) 1353ms
+   ✓ keeps observers read-only, gives every page a redraw, and arbitrates two controllers with revocation  588ms
+
+ Test Files  2 passed (2)
+      Tests  27 passed (27)
+   Start at  10:29:34
+   Duration  1.76s (transform 136ms, setup 0ms, collect 369ms, tests 1.38s, environment 0ms, prepare 95ms)
+

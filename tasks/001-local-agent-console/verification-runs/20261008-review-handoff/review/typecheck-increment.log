@@ -1,0 +1,9 @@
+$ tsc --noEmit
+apps/server/src/application/console.test.ts(61,38): error TS2339: Property 'resolveStart' does not exist on type 'AgentConsole'.
+apps/server/src/application/console.test.ts(63,34): error TS2339: Property 'resolveStart' does not exist on type 'AgentConsole'.
+apps/server/src/application/console.test.ts(65,34): error TS2339: Property 'resolveStart' does not exist on type 'AgentConsole'.
+apps/server/src/application/console.test.ts(67,34): error TS2339: Property 'resolveStart' does not exist on type 'AgentConsole'.
+apps/server/src/application/console.test.ts(69,42): error TS2339: Property 'resolveStart' does not exist on type 'AgentConsole'.
+apps/server/src/application/console.test.ts(72,34): error TS2339: Property 'resolveStart' does not exist on type 'AgentConsole'.
+apps/server/src/application/console.test.ts(73,34): error TS2339: Property 'resolveStart' does not exist on type 'AgentConsole'.
+[ELIFECYCLE] Command failed with exit code 2.

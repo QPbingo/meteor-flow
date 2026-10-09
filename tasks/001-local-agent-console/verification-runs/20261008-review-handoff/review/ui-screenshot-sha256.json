@@ -1,0 +1,9 @@
+{
+  "ui-review-mobile.png": "3cdbebe2aedab4cc126dd61906975ba7703dcf67a74271a5a52c05ad60016189",
+  "ui-retry-stale-detail.png": "a6b90f6011d848d661ba418d4e9a0e9fcf26a779ba2d213421fdbc5f3e122216",
+  "ui-archived-dependency-missing.png": "7af11685ba7404e28111ac1f04be4bae25d534cacd46ecc29a303d8dc7209783",
+  "ui-manual-declaration-blocked.png": "dc641940e6232bf6af02df5e44b21d995fd37a7fe499ec85c149e634d25242cf",
+  "ui-review-mobile-viewport.png": "10724cba44a0d1a510e8479ceda546faa5dacca6eff50b8f0543fdf0940fbe85",
+  "ui-review-desktop.png": "e98d278cb750362b31764b638cec0858720db34078b3a760317e0860222a4249",
+  "ui-archived-retry-stuck.png": "96b707cd52844c9546ce118361218967c19429e84a1648770f4cdb8387017fad"
+}

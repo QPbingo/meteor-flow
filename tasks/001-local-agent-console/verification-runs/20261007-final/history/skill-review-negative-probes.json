@@ -1,0 +1,42 @@
+{
+  "kind": "isolated-skill-integration-probes-not-product-tests",
+  "results": [
+    {
+      "case": "doctor-intact",
+      "actual": "PASS: skills、双端链接、来源哈希与规则完整；宿主实际加载需要单独验证。",
+      "pass": true
+    },
+    {
+      "case": "playwright-cli-missing-reference",
+      "actual": "来源文件缺失或未登记变更: .agents/skills/playwright-cli/references/session-management.md",
+      "pass": true
+    },
+    {
+      "case": "playwright-cli-broken-link",
+      "actual": "Claude 链接错误: playwright-cli",
+      "pass": true
+    },
+    {
+      "case": "impeccable-missing-reference",
+      "actual": "来源文件缺失或未登记变更: .agents/skills/impeccable/reference/audit.md",
+      "pass": true
+    },
+    {
+      "case": "impeccable-broken-link",
+      "actual": "Claude 链接错误: impeccable",
+      "pass": true
+    },
+    {
+      "case": "missing-engine",
+      "exit_code": 127,
+      "actual": "缺少固定 Impeccable 引擎；按项目准备记录安装。\n",
+      "pass": true
+    },
+    {
+      "case": "mismatched-engine",
+      "exit_code": 127,
+      "actual": "Impeccable 校验失败\n",
+      "pass": true
+    }
+  ]
+}

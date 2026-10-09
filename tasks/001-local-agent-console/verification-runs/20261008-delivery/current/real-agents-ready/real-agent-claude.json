@@ -1,0 +1,16 @@
+{
+  "type": "claude",
+  "date": "2026-10-08T09:48:40.247Z",
+  "session": "meteor-flow-test-claude-140c0346",
+  "cwd": "/private/tmp/mf-agent-fdDRZ6/project",
+  "isolation": "dedicated herdr XDG/session/cwd; existing model configuration read-only; user config writes denied",
+  "status": "failed",
+  "timeline": [],
+  "versions": {
+    "herdr": "herdr 0.9.3",
+    "agent": "2.1.195 (Claude Code)",
+    "node": "v24.21.0"
+  },
+  "error": "agent target pane w1:p1 is not an available shell",
+  "protectedConfigurationUnchanged": true
+}

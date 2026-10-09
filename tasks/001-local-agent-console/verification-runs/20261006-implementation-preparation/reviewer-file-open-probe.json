@@ -1,0 +1,12 @@
+{
+  "scope": "OS primitive feasibility probe only; not product acceptance",
+  "blocking_open": {
+    "blocked": true,
+    "observation": "No FIFO writer; os.open(O_RDONLY|O_NOFOLLOW) did not return within 0.3s; owned subprocess killed and reaped."
+  },
+  "nonblocking_open": {
+    "opened": true,
+    "is_regular": false
+  },
+  "temporary_resources": "Owned temporary directory and FIFO removed"
+}

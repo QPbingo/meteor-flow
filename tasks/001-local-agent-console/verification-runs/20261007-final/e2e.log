@@ -1,0 +1,21 @@
+
+Running 13 tests using 1 worker
+
+(node:78285) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/13] tests/e2e/web-console.spec.ts:64:1 › bootstrap fragment is removed and project filters remain URL-restorable
+[2/13] tests/e2e/web-console.spec.ts:77:1 › ambiguous task submit preserves fields and reuses operation ID with one accepted task
+[3/13] tests/e2e/web-console.spec.ts:105:1 › pending writes cannot duplicate and state failure preserves snapshot while disabling writes
+[4/13] tests/e2e/web-console.spec.ts:127:1 › details keep attempt ownership and strip active Markdown and remote resources
+[5/13] tests/e2e/web-console.spec.ts:142:1 › Markdown image mapping respects attempt, root, frozen IDs, MIME and size boundaries
+[6/13] tests/e2e/web-console.spec.ts:176:1 › terminal observes without resize, takes a token lease and never replays input after disconnect
+[7/13] tests/e2e/web-console.spec.ts:220:1 › storage outage exposes explicit emergency interrupt without changing task ownership
+[8/13] tests/e2e/web-console.spec.ts:241:1 › forms have keyboard focus and layout survives narrow viewport and 200 percent text
+[9/13] tests/e2e/web-console.spec.ts:285:1 › terminal rejects unknown protocol and malformed control without granting input
+[10/13] tests/e2e/web-console.spec.ts:323:1 › unknown event protocol closes stream while snapshot calibration remains usable
+[11/13] tests/e2e/web-console.spec.ts:333:1 › narrow touch controls have 44px targets and the task table responds to a swipe
+[12/13] tests/e2e/web-console.spec.ts:359:1 › definitive rejection removes pending operation so a corrected operation can proceed
+[13/13] tests/e2e/web-server.spec.ts:14:1 › browser creates project, confirms agent, completes a file task and reads durable evidence
+  13 passed (14.3s)

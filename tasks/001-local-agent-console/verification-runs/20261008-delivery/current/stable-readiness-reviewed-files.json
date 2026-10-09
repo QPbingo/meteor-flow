@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-08",
+  "reviewer": "/root/technical_review",
+  "probe_source_matches": true,
+  "files": [
+    {
+      "path": "tests/integration/real-agent.test.ts",
+      "status": "added",
+      "insertions": 236,
+      "deletions": 0,
+      "outcome": "reviewed",
+      "sha256": "3a18fb937eb675217380b7f39676958f6a5c8a1594dee2f78029f07e090a703c",
+      "current_sha256": "3a18fb937eb675217380b7f39676958f6a5c8a1594dee2f78029f07e090a703c",
+      "review_source": "stable-readiness-review.md",
+      "rationale": "本批仅连续就绪采样前置增量，独立静态检查+原循环虚拟计时探针。"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "findings": [
+    {
+      "id": "BR01",
+      "path": "apps/server/src/domain/model.ts",
+      "start_line": 101,
+      "category": "bug",
+      "severity": "high",
+      "status": "fixed",
+      "content": "冲突声明进入待确认后，idle 仍可自动成功并满足下游；现以持久化 result.conflict 阻断，终态不翻转。",
+      "evidence": [
+        "technical-probe-results.json",
+        "technical-retest.log",
+        "technical-probe-fixed.json"
+      ]
+    },
+    {
+      "id": "BR02",
+      "path": "apps/server/src/application/console.ts",
+      "start_line": 237,
+      "category": "bug",
+      "severity": "medium",
+      "status": "fixed",
+      "content": "启动排在会话切换后却捕获旧 port，留下未发送 intent；现 serial 内绑定 port/generation。",
+      "evidence": [
+        "technical-probe-results.json",
+        "technical-retest.log",
+        "technical-probe-fixed.json"
+      ]
+    },
+    {
+      "id": "BR03",
+      "path": "apps/server/src/application/console.ts",
+      "start_line": 182,
+      "category": "bug",
+      "severity": "medium",
+      "status": "fixed",
+      "content": "同terminal出现替换实例时，旧PID确实退出仍无法人工解除占用；现独立检查原进程身份/ESRCH。",
+      "evidence": [
+        "technical-replaced-agent-verified.json",
+        "technical-retest.log",
+        "technical-replaced-agent-fixed.json"
+      ]
+    },
+    {
+      "id": "BR04",
+      "path": "apps/server/src/application/console.ts",
+      "start_line": 250,
+      "category": "bug",
+      "severity": "medium",
+      "status": "fixed",
+      "content": "无实例的 unknown start 缺人工核对解除入口；现有明确人工证据和fresh防护的 dismissed 路径，无自动副作用。",
+      "evidence": [
+        "technical-retest.log",
+        "technical-http-replay-retest.log"
+      ]
+    },
+    {
+      "id": "BR05",
+      "path": "apps/server/src/http/server.test.ts",
+      "start_line": 189,
+      "category": "test",
+      "severity": "medium",
+      "status": "fixed",
+      "content": "不存在的 fake.discover 未注入枚举故障；作者改为 onList 后独立单项复验通过。",
+      "evidence": [
+        "technical-retest-before.json",
+        "technical-http-replay-retest.log",
+        "typecheck-http-fixture.log"
+      ]
+    }
+  ],
+  "open_findings": 0,
+  "report": "backend-review.md"
+}

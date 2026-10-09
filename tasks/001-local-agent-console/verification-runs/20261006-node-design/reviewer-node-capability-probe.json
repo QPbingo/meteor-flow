@@ -1,0 +1,30 @@
+{
+  "kind": "capability-probe-only",
+  "node": "v24.21.0",
+  "platform": "darwin",
+  "arch": "arm64",
+  "koffi": "3.3.2",
+  "betterSqlite3": "13.0.3",
+  "openatRegularRead": "pass",
+  "symlinkRejection": "pass",
+  "directoryFifoRejection": "pass",
+  "fifoWithoutWriterOpenMs": 0.0328749999999971,
+  "fifoRejectedBeforeRead": true,
+  "bigintMetadata": "pass",
+  "flockContentionAndRelease": "pass",
+  "closeOnExecFlag": "pass",
+  "dbWorker": {
+    "sqlite": "3.53.4",
+    "journal": "wal",
+    "foreignKeys": 1,
+    "synchronous": 2,
+    "transactionRollback": "pass"
+  },
+  "excluded": [
+    "directory swap race",
+    "lock owner crash/child inheritance",
+    "DB worker acknowledgement loss",
+    "product integration",
+    "herdr integration"
+  ]
+}

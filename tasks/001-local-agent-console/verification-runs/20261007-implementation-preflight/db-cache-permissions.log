@@ -1,0 +1,30 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ ✓ apps/server/src/storage/database.test.ts > real SQLite transactional repository > persists one operation and one task for duplicate browser submissions (V03) 11ms
+ ✓ apps/server/src/storage/database.test.ts > real SQLite transactional repository > rolls back state, events and operation record when any FK write fails 5ms
+ ✓ apps/server/src/storage/database.test.ts > real SQLite transactional repository > rejects a cycle without mutating task revision, dependencies or timeline (V16) 8ms
+ ✓ apps/server/src/storage/database.test.ts > real SQLite transactional repository > stores a dispatch intent once and denies another active attempt on the binding 6ms
+ ✓ apps/server/src/storage/database.test.ts > real SQLite transactional repository > backs up an existing v0 database before migration and refuses a future version 7ms
+ ✓ apps/server/src/storage/store.test.ts > dedicated real database writer > does not create a writer when close wins the asynchronous opening boundary 2ms
+ ✓ apps/server/src/storage/store.test.ts > dedicated real database writer > serializes concurrent identical operations to one persisted project (V03) 83ms
+ ✓ apps/server/src/storage/store.test.ts > dedicated real database writer > keeps the writer healthy after a domain conflict 76ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > allows explicitly confirmed existing agents even without managed interactive readiness 227ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > a manual switch after preparation but before final dispatch prevents all prompt input 183ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > accepts cancel while prompt acknowledgement is pending, sends one interrupt and retains occupancy (V03/V11/V12) 238ms
+ ✓ apps/server/src/storage/store.test.ts > dedicated real database writer > recovers a committed-but-unacknowledged transaction without creating a second writer or replaying work (V04/V24) 644ms
+ ✓ apps/server/src/storage/store.test.ts > fails closed on a real SQLITE_FULL commit failure without publishing or recording the operation (V25) 145ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > never retries a prompt with a lost acknowledgement, including after service restart (V04/V05/V24) 269ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > persists a startup intent once and preserves an unknown startup without repeating it (V03/V06) 135ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > runs an independent task behind an unmet dependency on another binding (V14) 294ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > rejects confirming an agent whose work directory overlaps private service data (V21/V22) 72ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > rejects extra output roots overlapping private service data (V22) 74ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > does not start an external agent after storage fails immediately after the durable startup intent 72ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > does not send an unrecorded emergency interrupt after storage recovers during identity observation 140ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > does not dispatch when a real work directory refuses frozen-input writes (V25) 174ms
+
+ Test Files  3 passed (3)
+      Tests  21 passed (21)
+   Start at  10:51:53
+   Duration  2.19s (transform 150ms, setup 0ms, collect 411ms, tests 2.86s, environment 0ms, prepare 141ms)
+

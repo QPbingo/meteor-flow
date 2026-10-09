@@ -1,0 +1,13 @@
+{
+  "umask": "22",
+  "files": [
+    {
+      "name": "state.sqlite",
+      "mode": "600"
+    },
+    {
+      "name": "state.sqlite.before-v1-1791338177185.bak",
+      "mode": "644"
+    }
+  ]
+}

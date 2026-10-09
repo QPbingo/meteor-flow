@@ -1,0 +1,97 @@
+{
+  "date": "2026-10-08",
+  "captured_at": "2026-10-08T09:39:56.932479+00:00",
+  "reviewer": "/root/technical_review",
+  "files": [
+    {
+      "path": "packages/contracts/src/index.ts",
+      "initial_sha256": "9208696d9d3be414f62f477cbcbceaab6ca8c2e144326af7bae7d6683add0b6c",
+      "sha256": "9208696d9d3be414f62f477cbcbceaab6ca8c2e144326af7bae7d6683add0b6c",
+      "current_sha256": "9208696d9d3be414f62f477cbcbceaab6ca8c2e144326af7bae7d6683add0b6c",
+      "status": "added",
+      "outcome": "reviewed",
+      "review_source": "compatibility-review.md"
+    },
+    {
+      "path": "apps/server/src/adapters/herdr/index.ts",
+      "initial_sha256": "2033bcba8a61e1a039a19fd53d0b167f9c6c474b7c7e293a6a8acbea4a0061f2",
+      "sha256": "2033bcba8a61e1a039a19fd53d0b167f9c6c474b7c7e293a6a8acbea4a0061f2",
+      "current_sha256": "2033bcba8a61e1a039a19fd53d0b167f9c6c474b7c7e293a6a8acbea4a0061f2",
+      "status": "added",
+      "outcome": "reviewed",
+      "review_source": "compatibility-review.md"
+    },
+    {
+      "path": "apps/server/src/adapters/herdr/index.test.ts",
+      "initial_sha256": "7f66678943693dd3d64d63ead26808f2a12be95a550bbf0a6fcb943bafbf830d",
+      "sha256": "7f66678943693dd3d64d63ead26808f2a12be95a550bbf0a6fcb943bafbf830d",
+      "current_sha256": "7f66678943693dd3d64d63ead26808f2a12be95a550bbf0a6fcb943bafbf830d",
+      "status": "added",
+      "outcome": "reviewed",
+      "review_source": "compatibility-review.md"
+    },
+    {
+      "path": "apps/server/src/domain/model.ts",
+      "initial_sha256": "3580e4b50c0895f0b26080e4ae12749ee068e8eac0bfe7d38545a682f5fb6fb3",
+      "sha256": "3580e4b50c0895f0b26080e4ae12749ee068e8eac0bfe7d38545a682f5fb6fb3",
+      "current_sha256": "3580e4b50c0895f0b26080e4ae12749ee068e8eac0bfe7d38545a682f5fb6fb3",
+      "status": "added",
+      "outcome": "reviewed",
+      "review_source": "compatibility-review.md"
+    },
+    {
+      "path": "apps/server/src/domain/model.test.ts",
+      "initial_sha256": "3200233e045779aca45c7fd806601259d985b960187ae044418e0e216fea331c",
+      "sha256": "3200233e045779aca45c7fd806601259d985b960187ae044418e0e216fea331c",
+      "current_sha256": "3200233e045779aca45c7fd806601259d985b960187ae044418e0e216fea331c",
+      "status": "added",
+      "outcome": "reviewed",
+      "review_source": "compatibility-review.md"
+    },
+    {
+      "path": "apps/server/src/application/console.test.ts",
+      "initial_sha256": "f47ba39a0dce0e79dc3a8b10907239ba2a8bdb043ac74e10e369474d85ae5742",
+      "sha256": "f47ba39a0dce0e79dc3a8b10907239ba2a8bdb043ac74e10e369474d85ae5742",
+      "current_sha256": "f47ba39a0dce0e79dc3a8b10907239ba2a8bdb043ac74e10e369474d85ae5742",
+      "status": "added",
+      "outcome": "reviewed",
+      "review_source": "compatibility-review.md"
+    },
+    {
+      "path": "tests/integration/real-agent.test.ts",
+      "initial_sha256": "5a43822c7fef71ba97b8bd518063eba121f11778a6fefc00420aeb60d0b549d3",
+      "sha256": "5a43822c7fef71ba97b8bd518063eba121f11778a6fefc00420aeb60d0b549d3",
+      "current_sha256": "5a43822c7fef71ba97b8bd518063eba121f11778a6fefc00420aeb60d0b549d3",
+      "status": "added",
+      "outcome": "reviewed",
+      "review_source": "compatibility-review.md"
+    },
+    {
+      "path": "tasks/001-local-agent-console/technical-design.md",
+      "initial_sha256": "a2b5dff0e30e7f6e7e58c6a27d2352fff3d676cefcac6470a375e1ea80749ec0",
+      "sha256": "a2b5dff0e30e7f6e7e58c6a27d2352fff3d676cefcac6470a375e1ea80749ec0",
+      "current_sha256": "a2b5dff0e30e7f6e7e58c6a27d2352fff3d676cefcac6470a375e1ea80749ec0",
+      "status": "added",
+      "outcome": "reviewed",
+      "review_source": "compatibility-review.md"
+    },
+    {
+      "path": "tasks/001-local-agent-console/usage.md",
+      "initial_sha256": "5257bfcb2801cf1cae38aab319ee07332cc93826ed1479ac8d96b510549cf6ef",
+      "sha256": "ddfa90befad02bfb52c230e04c3e7aee6f8975a394131383e14b0a663ee4fdf4",
+      "current_sha256": "ddfa90befad02bfb52c230e04c3e7aee6f8975a394131383e14b0a663ee4fdf4",
+      "status": "added",
+      "outcome": "reviewed",
+      "review_source": "compatibility-review.md"
+    },
+    {
+      "path": "package.json",
+      "initial_sha256": null,
+      "sha256": "0d398b844b352af607f4c4f2ab8b76670fc262ef826ce3e061805eeef09ec70e",
+      "current_sha256": "0d398b844b352af607f4c4f2ab8b76670fc262ef826ce3e061805eeef09ec70e",
+      "status": "added",
+      "outcome": "reviewed",
+      "review_source": "compatibility-review.md"
+    }
+  ]
+}

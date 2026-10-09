@@ -1,0 +1,6 @@
+{
+  "apps/server/src/adapters/herdr/index.ts": "8858d780fcc5b811937f6e12da93bc3128adc2f69d53133ae88d172a3ed80664",
+  "apps/server/src/adapters/herdr/index.test.ts": "79c057ae0dac1b26a0d62a149693005377325b09d6043997b566333d041bf260",
+  "apps/server/src/terminal/bridge.ts": "80b648baf7bf28b3f61238c212ec27162ab4499958aed3b12bf57f1a65769fcf",
+  "apps/server/src/terminal/bridge.test.ts": "be36d641efe83014df1f922e9bf56bab7c079f2a42160efb8e8c56701933777b"
+}

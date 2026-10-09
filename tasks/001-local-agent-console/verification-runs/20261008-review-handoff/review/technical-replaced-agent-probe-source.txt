@@ -1,0 +1,30 @@
+import { mkdtemp, mkdir, realpath, rm } from 'node:fs/promises';
+import { join } from 'node:path';
+import { spawn } from 'node:child_process';
+import { once } from 'node:events';
+import { AgentConsole } from '/Users/heybox/Documents/herdrflow/meteor-flow/apps/server/dist/application/console.js';
+import { FakeHerdr } from '/Users/heybox/Documents/herdrflow/meteor-flow/tests/fixtures/fake-herdr.ts';
+import { processIdentity } from '/Users/heybox/Documents/herdrflow/meteor-flow/packages/posix-fs/dist/index.js';
+const node='/tmp/meteor-flow-node-design-probe-20261006/node_modules/node/bin/node';
+const root=await realpath(await mkdtemp('/tmp/mf-replaced-review-'));const dataDir=join(root,'data');const cwd=join(root,'project');await mkdir(dataDir);await mkdir(cwd);
+const child=spawn(node,['-e','setInterval(()=>{},1000)'],{stdio:'ignore'});await once(child,'spawn');
+const oldPid=child.pid!;const oldStart=processIdentity(oldPid);if(!oldStart){child.kill('SIGTERM');await rm(root,{recursive:true,force:true});throw Error('owned child identity unavailable');}
+const fake=new FakeHerdr({agents:[{terminalId:'terminal-1',cwd,pid:oldPid,processStart:oldStart}]});
+Object.assign(fake.agents.get('terminal-1')!,{pid:oldPid,processStart:oldStart});
+const service=new AgentConsole({dataDir,session:fake.session,executable:'/unused',portFactory:()=>fake,pollMs:1000000,minFreeBytes:0});
+try {
+ await service.open();const project=await service.createProject({operation_id:'project',name:'review',root:cwd});
+ const binding:any=await service.attach({operation_id:'attach',projectId:project.id,terminalId:'terminal-1',label:'review'});
+ await service.bindingAction(binding.id,{operation_id:'confirm',action:'confirm',evidence:'isolated reviewer fixture'});
+ await service.bindingAction(binding.id,{operation_id:'auto',action:'automatic'});
+ const task:any=await service.saveTask({operation_id:'task',projectId:project.id,bindingId:binding.id,title:'review',instructions:'fake only',dependencies:[],requiredArtifacts:[],outputRoots:[]});
+ await service.tick();fake.setStatus('terminal-1','working');await service.tick();
+ const exited=once(child,'exit');child.kill('SIGTERM');await exited;
+ let oldGone=false;try{process.kill(oldPid,0);}catch(e){oldGone=(e as any).code==='ESRCH';}
+ Object.assign(fake.agents.get('terminal-1')!,{pid:process.pid,processStart:processIdentity(process.pid),fingerprint:'replacement-instance',status:'idle'});
+ await service.refresh();const before=service.store.state.attempts[0]!;
+ await service.taskAction(task.id,{operation_id:'manual-stop',action:'record-conclusion',outcome:'cancelled',stopped:true,reason:'Original owned child has exited',evidence:`reviewer awaited child exit and kill(${oldPid},0) returned ESRCH`});
+ const after=service.store.state.attempts[0]!;
+ let confirmError:any;try{await service.bindingAction(binding.id,{operation_id:'confirm-new',action:'confirm',evidence:'new isolated process'});}catch(e){confirmError={code:(e as any).code,message:(e as Error).message};}
+ console.log(JSON.stringify({oldGone,oldPid,replacementPid:process.pid,before:{phase:before.phase,occupies:before.occupies},after:{phase:after.phase,occupies:after.occupies,source:after.source,reason:after.reason},confirmError},null,2));
+} finally {child.kill('SIGTERM');await service.close();await rm(root,{recursive:true,force:true});}

@@ -1,0 +1,4 @@
+7f12894ecf08580d1b43b5ee878c625e77244515f80cac6500004998ff1a87b6  packages/posix-fs/src/index.ts
+4077ea05cf013573c20016c7a6a49cbee6fe4c287e9a12d040a355d2c1888465  packages/posix-fs/src/native.ts
+9992d6ea2034ccd0fe9d0407e6322d8107bf09e12f94c52943ad1b21f96632c1  packages/posix-fs/test/index.test.ts
+85dcf4b47703041db46fa4a662ebb5fc5b2e803e2063df455cca1ff2934311e0  packages/posix-fs/test/lock-process.ts

@@ -1,0 +1,13 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ ✓ apps/server/src/adapters/herdr/index.test.ts (24 tests) 717ms
+   ✓ herdr NDJSON management adapter > validates session names and removes inherited target environment for fixed-argv CLI discovery  389ms
+ ✓ packages/posix-fs/test/index.test.ts (42 tests) 942ms
+   ✓ safe file collection > copies in bounded blocks, preserves hash, and creates a private file  504ms
+
+ Test Files  2 passed (2)
+      Tests  66 passed (66)
+   Start at  10:37:50
+   Duration  1.16s (transform 93ms, setup 0ms, collect 136ms, tests 1.66s, environment 0ms, prepare 73ms)
+

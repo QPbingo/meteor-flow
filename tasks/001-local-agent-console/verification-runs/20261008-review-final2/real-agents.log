@@ -1,0 +1,35 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+stdout | tests/integration/real-agent.test.ts > real isolated claude: startup, readiness, structured result and durable archive
+REAL_AGENT_PASSED claude: structured result and archive committed
+
+ ❯ tests/integration/real-agent.test.ts (2 tests | 1 failed) 143641ms
+   × real isolated codex: startup, readiness, structured result and durable archive 101868ms
+     → expected 'needs_confirmation' to be 'succeeded' // Object.is equality
+   ✓ real isolated claude: startup, readiness, structured result and durable archive  41772ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/integration/real-agent.test.ts > real isolated codex: startup, readiness, structured result and durable archive
+AssertionError: expected 'needs_confirmation' to be 'succeeded' // Object.is equality
+
+Expected: "succeeded"
+Received: "needs_confirmation"
+
+ ❯ tests/integration/real-agent.test.ts:159:76
+    157|         await delay(250);
+    158|       }
+    159|       expect(app.store.state.tasks.find(row => row.id === task.id)?.ph…
+       |                                                                            ^
+    160|       expect(app.store.state.attempts).toHaveLength(1);
+    161|       const attempt = app.store.state.attempts[0]!;
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 1 passed (2)
+   Start at  15:55:25
+   Duration  143.96s (transform 79ms, setup 0ms, collect 165ms, tests 143.64s, environment 0ms, prepare 45ms)
+

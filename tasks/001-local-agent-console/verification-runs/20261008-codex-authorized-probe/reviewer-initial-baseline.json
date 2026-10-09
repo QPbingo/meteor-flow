@@ -1,0 +1,25 @@
+{
+  "captured_at": "2026-10-08T08:59:58.971698+00:00",
+  "files": [
+    {
+      "path": "tests/integration/helpers/agent-test-screen.ts",
+      "sha256": "e7cd527590cd59112760c35ba3656735ccf5463d202fa524331eb123843e6e9a"
+    },
+    {
+      "path": "tests/integration/agent-test-screen.test.ts",
+      "sha256": "8351d27742ceb736ec0ef0b14f0767fd66415d371ba659736a3d851b2816162a"
+    },
+    {
+      "path": "tests/integration/real-agent.test.ts",
+      "sha256": "a0b08467bbf1deb4ab595e010a01ad067a5e9e159d87936f4f0aef62732e1add"
+    },
+    {
+      "path": "tests/integration/codex-standalone.test.ts",
+      "sha256": "009d2354b67a7580bf326ea5a624e0015b1a92abe35f3a091cfd07a482fa9d71"
+    },
+    {
+      "path": "tasks/001-local-agent-console/codex-integration-followup.md",
+      "sha256": "1975b2907e58b939451d1dd61dd3efbc81952ee467f694148b3a9c9930bea95c"
+    }
+  ]
+}

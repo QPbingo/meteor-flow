@@ -1,0 +1,32 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ × tests/integration/real-agent.test.ts > real isolated codex: startup, readiness, structured result and durable archive 845ms
+   → agent target pane w1:p1 is not an available shell
+ × tests/integration/real-agent.test.ts > real isolated claude: startup, readiness, structured result and durable archive 1308ms
+   → agent target pane w1:p1 is not an available shell
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/integration/real-agent.test.ts > real isolated codex: startup, readiness, structured result and durable archive
+ FAIL  tests/integration/real-agent.test.ts > real isolated claude: startup, readiness, structured result and durable archive
+HerdrError: agent target pane w1:p1 is not an available shell
+ ❯ HerdrClient.start apps/server/src/adapters/herdr/index.ts:301:13
+    299|     } catch (error) {
+    300|       const source = error instanceof HerdrError ? error : new HerdrEr…
+    301|       throw new HerdrError(source.message, source.code, true, target);
+       |             ^
+    302|     }
+    303|   }
+ ❯ tests/integration/real-agent.test.ts:115:17
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: 'agent_pane_busy', uncertain: true, target: 'term_65d369ecc46f21' }
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  2 failed (2)
+   Start at  10:10:33
+   Duration  2.47s (transform 78ms, setup 0ms, collect 161ms, tests 2.15s, environment 0ms, prepare 47ms)
+

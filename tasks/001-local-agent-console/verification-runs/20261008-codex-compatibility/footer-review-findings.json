@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-08",
+  "reviewer": "/root/technical_review",
+  "findings": [
+    {
+      "id": "CF01",
+      "severity": "medium",
+      "status": "fixed",
+      "path": "tests/integration/helpers/agent-test-screen.ts",
+      "title": "Claude 实际正在更新的提示仍允许任务输入",
+      "source": "本机 Claude 2.1.195 内嵌 Tgc isUpdating 分支",
+      "trigger": [
+        "Updating via homebrew…",
+        "Updating…"
+      ],
+      "evidence": "footer-review-repro-initial.json",
+      "requested_fix": "按已查证的整行 active 文案阻断，并验证实际 fake prompt 不被调用；保留精确被动通知正例。",
+      "resolution": "整行 Updating via … / Updating… 及三点省略号形式触发更新阻断；屏幕识别和实际输入边界分别新增回归，独立19/19通过。",
+      "closure_evidence": [
+        "footer-review-tests.log",
+        "footer-reviewed-files.json"
+      ]
+    }
+  ],
+  "scope": [
+    "tests/integration/helpers/agent-test-screen.ts",
+    "tests/integration/agent-test-screen.test.ts",
+    "tests/integration/real-agent.test.ts"
+  ],
+  "real_model_calls_by_reviewer": 0,
+  "open_counts": {
+    "critical": 0,
+    "high": 0,
+    "medium": 0,
+    "low": 0
+  }
+}

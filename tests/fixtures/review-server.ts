@@ -1,0 +1,30 @@
+import { mkdtemp, mkdir, realpath, writeFile, rm } from 'node:fs/promises';
+import { join } from 'node:path';
+import { randomUUID } from 'node:crypto';
+import { AgentConsole } from '../../apps/server/dist/application/console.js';
+import { createServer } from '../../apps/server/dist/http/server.js';
+import { FakeHerdr } from './fake-herdr.js';
+import type { Binding, Task } from '@meteor-flow/contracts';
+
+// Disposable UI review surface: real local service with simulated herdr only.
+const directory=await realpath(await mkdtemp('/tmp/meteor-ui-review-'));
+const work=join(directory,'work');const other=join(directory,'other');const dataDir=join(directory,'data');
+await Promise.all([mkdir(work),mkdir(other),mkdir(dataDir)]);
+const fake=new FakeHerdr({agents:[{terminalId:'review-codex',cwd:work},{terminalId:'review-claude',cwd:other,type:'claude',status:'blocked'}]});
+const service=new AgentConsole({dataDir,session:fake.session,executable:'/usr/bin/false',portFactory:()=>fake});
+await service.open();
+const p=await service.createProject({operation_id:randomUUID(),name:'本地控制台 · 评估样例',root:work});
+const b=await service.attach({operation_id:randomUUID(),projectId:p.id,terminalId:'review-codex',label:'Codex · 接口整理'}) as Binding;
+await service.bindingAction(b.id,{operation_id:randomUUID(),action:'confirm',evidence:'隔离评估数据'});
+await service.bindingAction(b.id,{operation_id:randomUUID(),action:'automatic'});
+await service.settings({operation_id:randomUUID(),paused:true,concurrency:2});
+const task=await service.saveTask({operation_id:randomUUID(),projectId:p.id,bindingId:b.id,title:'核对任务结果和文件产物',instructions:'检查接口说明与实际行为，并提交中文摘要和产物。此记录为界面评估样例。',dependencies:[],requiredArtifacts:['核对记录'],outputRoots:[]}) as Task;
+await service.saveTask({operation_id:randomUUID(),projectId:p.id,bindingId:b.id,title:'根据核对结果补充启动说明',instructions:'引用上一项的核对结论，整理用户可执行的启动步骤。',dependencies:[{taskId:task.id,artifacts:[]}],requiredArtifacts:[],outputRoots:[]});
+await service.attach({operation_id:randomUUID(),projectId:p.id,terminalId:'review-claude',label:'Claude · 人工处理'}) as Binding;
+const http=await createServer(service,{port:0,listSessions:async()=>[{name:fake.session,socketPath:join(directory,'simulated-herdr.sock')}]});
+const file=process.argv[2];if(!file)throw new Error('Pass a private metadata output file');
+await writeFile(file,JSON.stringify({address:http.address,dataDir,entry:join(dataDir,'open.json'),pid:process.pid}),{mode:0o600});
+process.stdout.write('Isolated UI review service ready; access metadata written.\n');
+let closing=false;
+const close=async()=>{if(closing)return;closing=true;await http.app.close();await service.close();await rm(directory,{recursive:true,force:true});process.exit(0);};
+process.once('SIGTERM',()=>void close());process.once('SIGINT',()=>void close());

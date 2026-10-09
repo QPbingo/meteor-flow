@@ -1,0 +1,83 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ ↓ tests/integration/performance.test.ts (1 test | 1 skipped)
+ ✓ apps/server/src/application/console.test.ts (16 tests) 3535ms
+   ✓ application orchestration against real DB and collectors > persists first-session identification with the active attempt and never restores authorization after reopening  339ms
+   ✓ application orchestration against real DB and collectors > keeps a conflicting result pending across idle observations and restart until an explicit manual conclusion  656ms
+   ✓ application orchestration against real DB and collectors > runs an independent task behind an unmet dependency on another binding (V14)  321ms
+ ✓ apps/server/src/http/server.test.ts (12 tests) 2712ms
+   ✓ keeps observers read-only, gives every page a redraw, and arbitrates two controllers with revocation  436ms
+   ✓ holds all four download slots until slow responses finish and aborts them on service close  809ms
+ ✓ apps/server/src/results/collector.test.ts (18 tests) 7054ms
+   ✓ real process result collection and immutable archives > quarantines a candidate if cancel changes while atomic rename is pending  498ms
+   ✓ real process result collection and immutable archives > quarantines a candidate if close changes while atomic rename is pending  446ms
+   ✓ real process result collection and immutable archives > quarantines a candidate if storage changes while atomic rename is pending  409ms
+   ✓ real process result collection and immutable archives > does not publish if cancel changes at the post-verification boundary  433ms
+   ✓ real process result collection and immutable archives > does not publish if close changes at the post-verification boundary  404ms
+   ✓ real process result collection and immutable archives > does not publish if storage changes at the post-verification boundary  419ms
+   ✓ real process result collection and immutable archives > archives complete artifacts, preserves source ownership and freezes independent downstream copies (V09/V17)  551ms
+   ✓ real process result collection and immutable archives > rejects traversal without publishing a partial archive (V09/V13/V22)  310ms
+   ✓ real process result collection and immutable archives > rejects fifo without publishing a partial archive (V09/V13/V22)  302ms
+   ✓ real process result collection and immutable archives > rejects oversized without publishing a partial archive (V09/V13/V22)  310ms
+   ✓ real process result collection and immutable archives > kills and reaps a timed-out writer even after it sent a success candidate  1588ms
+ ✓ tests/integration/cli.test.ts (2 tests) 1376ms
+   ✓ CLI rejects duplicate data/session owners and releases locks on shutdown (V26)  1015ms
+   ✓ exits after the HTTP listener opens but authentication bootstrap persistence fails  361ms
+ ✓ apps/server/src/storage/store.test.ts (6 tests) 1113ms
+   ✓ dedicated real database writer > recovers a committed-but-unacknowledged transaction without creating a second writer or replaying work (V04/V24)  647ms
+ ✓ packages/posix-fs/test/index.test.ts (42 tests) 945ms
+   ✓ safe file collection > copies in bounded blocks, preserves hash, and creates a private file  518ms
+ ✓ tests/integration/agent-test-screen.test.ts (14 tests) 531ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts (30 tests) 1568ms
+   ✓ herdr NDJSON management adapter > validates session names and removes inherited target environment for fixed-argv CLI discovery  1204ms
+ ✓ apps/server/src/storage/database.test.ts (5 tests) 32ms
+ ✓ apps/server/src/terminal/bridge.test.ts (22 tests) 21ms
+ ✓ apps/server/src/domain/model.test.ts (37 tests) 9ms
+ ✓ apps/server/src/results/protocol.test.ts (19 tests) 6ms
+ ↓ tests/integration/real-agent.test.ts (2 tests | 2 skipped)
+ ↓ apps/server/src/adapters/herdr/real-herdr.test.ts (2 tests | 2 skipped)
+ ❯ tests/integration/dev.test.ts (5 tests | 1 failed) 17450ms
+   × development proxy serves the browser with authenticated API/WS while rejecting foreign boundaries 283ms
+     → browserType.launch: Executable doesn't exist at /Users/heybox/Library/Caches/ms-playwright/chromium_headless_shell-1243/chrome-headless-shell-mac-arm64/chrome-headless-shell
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     pnpm exec playwright install                           ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+   ✓ dev requires an explicit session and never starts services after a failed initial build  428ms
+   ✓ reaps a resistant build descendant after the build is failed  5418ms
+   ✓ reaps a resistant build descendant after the build is interrupted  5443ms
+   ✓ dev builds first, forwards CLI options, restarts on child-code changes and reaps its process groups  5877ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/integration/dev.test.ts > development proxy serves the browser with authenticated API/WS while rejecting foreign boundaries
+Error: browserType.launch: Executable doesn't exist at /Users/heybox/Library/Caches/ms-playwright/chromium_headless_shell-1243/chrome-headless-shell-mac-arm64/chrome-headless-shell
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     pnpm exec playwright install                           ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+ ❯ tests/integration/dev.test.ts:70:30
+     68|     vite = await createViteServer({ configFile: resolve('apps/web/vite…
+     69|     const entry = JSON.parse(await readFile(join(dataDir, 'open.json')…
+     70|     browser = await chromium.launch({ headless: true }); const page = …
+       |                              ^
+     71|     await page.goto(entry.url);
+     72|     await page.getByRole('heading', { name: '建立你的第一个项目' }).waitFor();
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed | 12 passed | 3 skipped (16)
+      Tests  1 failed | 227 passed | 5 skipped (233)
+   Start at  17:24:18
+   Duration  18.12s (transform 291ms, setup 0ms, collect 1.54s, tests 36.35s, environment 1ms, prepare 578ms)
+

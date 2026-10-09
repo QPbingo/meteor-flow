@@ -1,0 +1,122 @@
+{
+  "source_path": "tests/integration/real-agent.test.ts",
+  "source_sha256": "3a18fb937eb675217380b7f39676958f6a5c8a1594dee2f78029f07e090a703c",
+  "extraction": "exact startup readiness loop between let ready and processInfo, TypeScript transpiled with local typescript; no rewritten decision logic",
+  "runner": "v24.21.0",
+  "scenarios": [
+    {
+      "name": "stable 250ms samples",
+      "kind": "stable",
+      "minElapsed": 3000,
+      "calls": 13,
+      "elapsed": 3000,
+      "blocked": false,
+      "result": {
+        "fingerprint": "identity-1"
+      },
+      "error": null,
+      "passed": true
+    },
+    {
+      "name": "2000ms observation gap resets window",
+      "kind": "gap",
+      "minElapsed": 5500,
+      "calls": 15,
+      "elapsed": 5500,
+      "blocked": false,
+      "result": {
+        "fingerprint": "identity-1"
+      },
+      "error": null,
+      "passed": true
+    },
+    {
+      "name": "screen read makes observation 1100ms old",
+      "kind": "stale",
+      "minElapsed": 4850,
+      "calls": 16,
+      "elapsed": 4850,
+      "blocked": false,
+      "result": {
+        "fingerprint": "identity-1"
+      },
+      "error": null,
+      "passed": true
+    },
+    {
+      "name": "future timestamp resets window",
+      "kind": "future",
+      "minElapsed": 3750,
+      "calls": 16,
+      "elapsed": 3750,
+      "blocked": false,
+      "result": {
+        "fingerprint": "identity-1"
+      },
+      "error": null,
+      "passed": true
+    },
+    {
+      "name": "unknown resets window",
+      "kind": "unknown",
+      "minElapsed": 3750,
+      "calls": 16,
+      "elapsed": 3750,
+      "blocked": false,
+      "result": {
+        "fingerprint": "identity-1"
+      },
+      "error": null,
+      "passed": true
+    },
+    {
+      "name": "missing resets window",
+      "kind": "missing",
+      "minElapsed": 3750,
+      "calls": 16,
+      "elapsed": 3750,
+      "blocked": false,
+      "result": {
+        "fingerprint": "identity-1"
+      },
+      "error": null,
+      "passed": true
+    },
+    {
+      "name": "full fingerprint change resets window",
+      "kind": "identity",
+      "minElapsed": 4500,
+      "calls": 19,
+      "elapsed": 4500,
+      "blocked": false,
+      "result": {
+        "fingerprint": "identity-2"
+      },
+      "error": null,
+      "passed": true
+    },
+    {
+      "name": "guard blocker stops before acceptance",
+      "kind": "block",
+      "stop": true,
+      "calls": 4,
+      "elapsed": 750,
+      "blocked": true,
+      "result": null,
+      "error": "BLOCK:blocked",
+      "passed": true
+    },
+    {
+      "name": "never ready ends within overall window",
+      "kind": "never",
+      "stop": true,
+      "calls": 140,
+      "elapsed": 35000,
+      "blocked": true,
+      "result": null,
+      "error": "BLOCK:startup did not establish interactive readiness within 35 seconds",
+      "passed": true
+    }
+  ],
+  "models_executed": 0
+}

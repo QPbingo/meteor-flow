@@ -1,0 +1,16 @@
+{
+  "viewport": "390×844",
+  "selectedHeading": {
+    "x": 37,
+    "y": 28.875,
+    "width": 179.59375,
+    "height": 23.90625
+  },
+  "focusedHeading": true,
+  "modalReturnPaths": [
+    "Escape",
+    "取消",
+    "关闭对话框",
+    "成功提交"
+  ]
+}

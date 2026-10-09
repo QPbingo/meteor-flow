@@ -1,0 +1,9 @@
+{
+  "lateBrowser": {
+    "body": "",
+    "apiRequests": 0,
+    "error": "Failed to load module script: Expected a JavaScript-or-Wasm module script but the server responded with a MIME type of text/html. Strict MIME type checking is enforced for module scripts per HTML spec.",
+    "status": "blocked; root notified for rebuild/restart"
+  },
+  "supplementaryProbe": "not executed due to empty page; ui-b-edges*.json are empty failures, not passes"
+}

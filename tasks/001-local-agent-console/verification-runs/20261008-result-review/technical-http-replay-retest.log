@@ -1,0 +1,21 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ ↓ apps/server/src/http/server.test.ts > requires a cookie for reads, rejects external Origin/Host, and enforces JSON/CSRF for writes
+ ↓ apps/server/src/http/server.test.ts > rotates the single-use entry, protects the cookie, and persists an operation exactly once
+ ↓ apps/server/src/http/server.test.ts > rejects cross-site and unauthenticated WebSocket upgrades before starting a CLI
+ ↓ apps/server/src/http/server.test.ts > keeps observers read-only, gives every page a redraw, and arbitrates two controllers with revocation
+ ↓ apps/server/src/http/server.test.ts > closes a controller on disconnect without resuming dispatch, while observer closure has no scheduling side effect
+ ↓ apps/server/src/http/server.test.ts > rejects authenticated terminal upgrades with missing or null Origin
+ ↓ apps/server/src/http/server.test.ts > provides versioned resources, an operation receipt and an actionable directory error
+ ↓ apps/server/src/http/server.test.ts > replays an accepted session receipt despite discovery failure or disappearance and rejects changed payloads
+ ↓ apps/server/src/http/server.test.ts > replays a created project after its directory moves without duplicating records or revalidating an accepted operation
+ ↓ apps/server/src/http/server.test.ts > announces snapshot calibration and replays durable SSE IDs after reconnect
+ ✓ apps/server/src/http/server.test.ts > requires explicit confirmation to resolve an unknown start over HTTP and replays the recorded manual evidence 323ms
+ ↓ apps/server/src/http/server.test.ts > holds all four download slots until slow responses finish and aborts them on service close
+
+ Test Files  1 passed (1)
+      Tests  1 passed | 11 skipped (12)
+   Start at  15:52:50
+   Duration  750ms (transform 88ms, setup 0ms, collect 274ms, tests 324ms, environment 0ms, prepare 47ms)
+

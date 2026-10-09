@@ -1,0 +1,81 @@
+{
+  "scope": "Real browser + HTTP + SQLite + filesystem, isolated FakeHerdr and terminal CLI fixture; no user agents",
+  "checks": [
+    {
+      "name": "edit_roundtrip",
+      "persisted": true,
+      "revision": 2
+    },
+    {
+      "name": "settings_roundtrip",
+      "paused": true,
+      "concurrency": 3
+    },
+    {
+      "name": "retry_binding_prerequisite",
+      "binding": "任务需要人工核对",
+      "paused": true
+    },
+    {
+      "name": "retry_detail",
+      "actualCurrentAttempt": "7c00246a-97ef-4289-80cc-154ed106d204",
+      "selectedAttempt": "159734b2-9db6-457e-b1bd-0cf4d275c7c9",
+      "oldAttempt": "159734b2-9db6-457e-b1bd-0cf4d275c7c9",
+      "overview": "指定 Agent\n复核 Agent 1\n任务标识\nf02b17db-3170-4f83-9387-6fd464eff6ef\n执行标识\n159734b2-9db6-457e-b1bd-0cf4d275c7c9\n执行占用\n无当前占用\n执行阶段\n已失败\n执行说明\n第一次执行明确失败\n创建 / 结束\n10/08 15:33:21 / 10/08 15:33:21\n任务说明\n\n隔离复核，请提交明确失败\n\n前置任务\n\n无前置任务"
+    },
+    {
+      "name": "archived_dependency_editor",
+      "persistedDependencies": [
+        {
+          "taskId": "f02b17db-3170-4f83-9387-6fd464eff6ef",
+          "artifacts": []
+        }
+      ],
+      "dialogText": "编辑待派发任务\n\n任务属于「独立流程复核」。执行开始后，输入与依赖版本冻结；关闭网页不取消任务。\n\n任务名称\n指定 Agent\n选择当前项目的 Agent\n复核 Agent 1 · 自动调度\n复核 Agent 2 · 观察模式\n任务说明\n前置任务与必要输入产物\n\n只使用同一项目的归档结果。勾选任务后，可选择必须具备的产物；未选产物仍等待任务成功。\n\n修改后的任务\n待派发\n结果要求与额外输出范围\n取消\n保存修改",
+      "selectedDependencyVisible": 0
+    },
+    {
+      "name": "archived_retry",
+      "task": {
+        "projectId": "1019ed2f-a28a-406c-9966-271f918e6053",
+        "bindingId": "a11519f3-ed21-423d-94db-a213cf0aac9e",
+        "title": "上游失败任务",
+        "instructions": "隔离复核，请提交明确失败",
+        "dependencies": [],
+        "requiredArtifacts": [],
+        "outputRoots": [],
+        "id": "f02b17db-3170-4f83-9387-6fd464eff6ef",
+        "revision": 15,
+        "createdAt": 1791444801120,
+        "order": 2,
+        "archived": true,
+        "currentAttemptId": "7c00246a-97ef-4289-80cc-154ed106d204",
+        "phase": "queued",
+        "reason": "在当前文件状态上重试"
+      },
+      "displayed": "上游失败任务\n待派发\n任务详情 · 修订 15\n\n任务不在等待队列\n\n取消任务\n执行尝试\n第 2 次 · 已取消 · 10/08 15:33:22\n第 1 次 · 已失败 · 10/08 15:33:21\n概览\n冻结输入\n终端\n结果与产物\n时间线\n指定 Agent\n复核 Agent 1\n任务标识\nf02b17db-3170-4f83-9387-6fd464eff6ef\n执行标识\n7c00246a-97ef-4289-80cc-154ed106d204\n执行占用\n无当前占用\n执行阶段\n已取消\n执行说明\n取消后已观察到执行停止\n创建 / 结束\n10/08 15:33:22 / 10/08 15:33:22\n任务说明\n\n隔离复核，请提交明确失败\n\n前置任务\n\n无前置任务"
+    },
+    {
+      "name": "start_roundtrip",
+      "starts": 1,
+      "fakeStarts": 1,
+      "status": "started"
+    },
+    {
+      "name": "attach_started",
+      "bindingCount": 3,
+      "managed": true,
+      "confirmed": false
+    },
+    {
+      "name": "terminal_fixture",
+      "released": true,
+      "bindingPaused": true
+    },
+    {
+      "name": "mobile_overflow",
+      "viewport": 390,
+      "width": 390
+    }
+  ]
+}

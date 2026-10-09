@@ -1,0 +1,4 @@
+Scope: documentation and preparation only; no product tests executed.
+Local link check: PASS
+V01-V29 mapping: PASS
+git diff --check exit_code=0

@@ -1,0 +1,333 @@
+{
+  "scope": "Node technical design 0.2 final independent review; not product acceptance",
+  "summary": {
+    "total_files": 46,
+    "reviewable_files": 6,
+    "reviewed_files": 5,
+    "skipped_files": 1,
+    "coverage_rate": 83.33,
+    "author_candidate_coverage_rate": 100,
+    "excluded_files": 40,
+    "all_preview_entries_accounted_for": true
+  },
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "status": "modified",
+      "outcome": "reviewed",
+      "reason": "Current Node 0.2 candidate read in full or tracked HEAD diff, checked against requirements and final N01/N02 revisions"
+    },
+    {
+      "path": "README.md",
+      "status": "modified",
+      "outcome": "reviewed",
+      "reason": "Current Node 0.2 candidate read in full or tracked HEAD diff, checked against requirements and final N01/N02 revisions"
+    },
+    {
+      "path": "tasks/001-local-agent-console/herdr-compatibility.md",
+      "status": "added",
+      "outcome": "reviewed",
+      "reason": "Current Node 0.2 candidate read in full or tracked HEAD diff, checked against requirements and final N01/N02 revisions"
+    },
+    {
+      "path": "tasks/001-local-agent-console/implementation-plan.md",
+      "status": "added",
+      "outcome": "reviewed",
+      "reason": "Current Node 0.2 candidate read in full or tracked HEAD diff, checked against requirements and final N01/N02 revisions"
+    },
+    {
+      "path": "tasks/001-local-agent-console/technical-design.md",
+      "status": "added",
+      "outcome": "reviewed",
+      "reason": "Current Node 0.2 candidate read in full or tracked HEAD diff, checked against requirements and final N01/N02 revisions"
+    },
+    {
+      "path": "tasks/001-local-agent-console/technical-review.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "Independent reviewer current/history report; not author candidate; self-review not claimed"
+    }
+  ],
+  "exclusions": [
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/doctor.log",
+      "status": "added",
+      "reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "Historical 0.1 preparation/review evidence, explicitly not a Node 0.2 author candidate or validation claim"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/document-checks-final.log",
+      "status": "added",
+      "reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "Historical 0.1 preparation/review evidence, explicitly not a Node 0.2 author candidate or validation claim"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/document-checks.log",
+      "status": "added",
+      "reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "Historical 0.1 preparation/review evidence, explicitly not a Node 0.2 author candidate or validation claim"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/environment-probes.log",
+      "status": "added",
+      "reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "Historical 0.1 preparation/review evidence, explicitly not a Node 0.2 author candidate or validation claim"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/herdr-0.9.3-schema.json",
+      "status": "added",
+      "reason": "user_exclude",
+      "outcome": "reviewed-manually",
+      "rationale": "Unchanged versioned herdr static source; not Node integration evidence"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/ocr-version.log",
+      "status": "added",
+      "reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "Historical 0.1 preparation/review evidence, explicitly not a Node 0.2 author candidate or validation claim"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-baseline-round1.json",
+      "status": "added",
+      "reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "Historical 0.1 preparation/review evidence, explicitly not a Node 0.2 author candidate or validation claim"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-baseline-round2.json",
+      "status": "added",
+      "reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "Historical 0.1 preparation/review evidence, explicitly not a Node 0.2 author candidate or validation claim"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-baseline.json",
+      "status": "added",
+      "reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "Historical 0.1 preparation/review evidence, explicitly not a Node 0.2 author candidate or validation claim"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-doctor.log",
+      "status": "added",
+      "reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "Historical 0.1 preparation/review evidence, explicitly not a Node 0.2 author candidate or validation claim"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-file-open-probe.json",
+      "status": "added",
+      "reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "Historical 0.1 preparation/review evidence, explicitly not a Node 0.2 author candidate or validation claim"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-ocr-version.log",
+      "status": "added",
+      "reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "Historical 0.1 preparation/review evidence, explicitly not a Node 0.2 author candidate or validation claim"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-preview-initial.json",
+      "status": "added",
+      "reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "Historical 0.1 preparation/review evidence, explicitly not a Node 0.2 author candidate or validation claim"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-preview-round1.json",
+      "status": "added",
+      "reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "Historical 0.1 preparation/review evidence, explicitly not a Node 0.2 author candidate or validation claim"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-preview-round2.json",
+      "status": "added",
+      "reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "Historical 0.1 preparation/review evidence, explicitly not a Node 0.2 author candidate or validation claim"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-preview.json",
+      "status": "added",
+      "reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "Historical 0.1 preparation/review evidence, explicitly not a Node 0.2 author candidate or validation claim"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-rules-round1.json",
+      "status": "added",
+      "reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "Historical 0.1 preparation/review evidence, explicitly not a Node 0.2 author candidate or validation claim"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-rules-round2.json",
+      "status": "added",
+      "reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "Historical 0.1 preparation/review evidence, explicitly not a Node 0.2 author candidate or validation claim"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-rules.json",
+      "status": "added",
+      "reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "Historical 0.1 preparation/review evidence, explicitly not a Node 0.2 author candidate or validation claim"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-source-evidence.json",
+      "status": "added",
+      "reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "Historical 0.1 preparation/review evidence, explicitly not a Node 0.2 author candidate or validation claim"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/skill-readiness.md",
+      "status": "added",
+      "reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "Historical 0.1 preparation/review evidence, explicitly not a Node 0.2 author candidate or validation claim"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/README.md.diff",
+      "status": "added",
+      "reason": "user_exclude",
+      "outcome": "reviewed-manually",
+      "rationale": "Current author preparation/source diff evidence; used only within documented probe/doc scope, never as product acceptance"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/doctor.log",
+      "status": "added",
+      "reason": "user_exclude",
+      "outcome": "reviewed-manually",
+      "rationale": "Current author preparation/source diff evidence; used only within documented probe/doc scope, never as product acceptance"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/document-check.json",
+      "status": "added",
+      "reason": "user_exclude",
+      "outcome": "reviewed-manually",
+      "rationale": "Current author preparation/source diff evidence; used only within documented probe/doc scope, never as product acceptance"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/implementation-plan.md.diff",
+      "status": "added",
+      "reason": "user_exclude",
+      "outcome": "reviewed-manually",
+      "rationale": "Current author preparation/source diff evidence; used only within documented probe/doc scope, never as product acceptance"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/node-capability-probe.json",
+      "status": "added",
+      "reason": "user_exclude",
+      "outcome": "reviewed-manually",
+      "rationale": "Current author preparation/source diff evidence; used only within documented probe/doc scope, never as product acceptance"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/ocr-version.log",
+      "status": "added",
+      "reason": "user_exclude",
+      "outcome": "reviewed-manually",
+      "rationale": "Current author preparation/source diff evidence; used only within documented probe/doc scope, never as product acceptance"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/reviewer-baseline-round1.json",
+      "status": "added",
+      "reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "Reviewer generated raw evidence, scope or hash; not author candidate. Related observations are explained in the Node 0.2 review."
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/reviewer-baseline.json",
+      "status": "added",
+      "reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "Reviewer generated raw evidence, scope or hash; not author candidate. Related observations are explained in the Node 0.2 review."
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/reviewer-doctor.log",
+      "status": "added",
+      "reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "Reviewer generated raw evidence, scope or hash; not author candidate. Related observations are explained in the Node 0.2 review."
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/reviewer-node-capability-probe.json",
+      "status": "added",
+      "reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "Reviewer generated raw evidence, scope or hash; not author candidate. Related observations are explained in the Node 0.2 review."
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/reviewer-ocr-version.log",
+      "status": "added",
+      "reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "Reviewer generated raw evidence, scope or hash; not author candidate. Related observations are explained in the Node 0.2 review."
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/reviewer-preview-round1.json",
+      "status": "added",
+      "reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "Reviewer generated raw evidence, scope or hash; not author candidate. Related observations are explained in the Node 0.2 review."
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/reviewer-preview.json",
+      "status": "added",
+      "reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "Reviewer generated raw evidence, scope or hash; not author candidate. Related observations are explained in the Node 0.2 review."
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/reviewer-rules-round1.json",
+      "status": "added",
+      "reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "Reviewer generated raw evidence, scope or hash; not author candidate. Related observations are explained in the Node 0.2 review."
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/reviewer-rules.json",
+      "status": "added",
+      "reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "Reviewer generated raw evidence, scope or hash; not author candidate. Related observations are explained in the Node 0.2 review."
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/reviewer-scope.json",
+      "status": "added",
+      "reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "Reviewer generated raw evidence, scope or hash; not author candidate. Related observations are explained in the Node 0.2 review."
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/reviewer-source-notes.json",
+      "status": "added",
+      "reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "Reviewer generated raw evidence, scope or hash; not author candidate. Related observations are explained in the Node 0.2 review."
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/skill-readiness.md",
+      "status": "added",
+      "reason": "user_exclude",
+      "outcome": "reviewed-manually",
+      "rationale": "Current author preparation/source diff evidence; used only within documented probe/doc scope, never as product acceptance"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/technical-design.md.diff",
+      "status": "added",
+      "reason": "user_exclude",
+      "outcome": "reviewed-manually",
+      "rationale": "Current author preparation/source diff evidence; used only within documented probe/doc scope, never as product acceptance"
+    }
+  ]
+}

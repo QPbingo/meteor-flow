@@ -1,0 +1,53 @@
+$ vitest run
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ ↓ tests/integration/performance.test.ts (1 test | 1 skipped)
+ ↓ tests/integration/real-agent.test.ts (2 tests | 2 skipped)
+ ✓ apps/server/src/application/console.test.ts (15 tests) 3537ms
+   ✓ application orchestration against real DB and collectors > keeps a conflicting result pending across idle observations and restart until an explicit manual conclusion  699ms
+   ✓ application orchestration against real DB and collectors > never retries a prompt with a lost acknowledgement, including after service restart (V04/V05/V24)  306ms
+   ✓ application orchestration against real DB and collectors > runs an independent task behind an unmet dependency on another binding (V14)  326ms
+ ↓ apps/server/src/adapters/herdr/real-herdr.test.ts (2 tests | 2 skipped)
+ ✓ tests/integration/cli.test.ts (2 tests) 1790ms
+   ✓ CLI rejects duplicate data/session owners and releases locks on shutdown (V26)  1379ms
+   ✓ exits after the HTTP listener opens but authentication bootstrap persistence fails  411ms
+ ✓ apps/server/src/storage/store.test.ts (5 tests) 971ms
+   ✓ dedicated real database writer > recovers a committed-but-unacknowledged transaction without creating a second writer or replaying work (V04/V24)  671ms
+ ✓ apps/server/src/results/collector.test.ts (18 tests) 7924ms
+   ✓ real process result collection and immutable archives > quarantines a candidate if cancel changes while atomic rename is pending  533ms
+   ✓ real process result collection and immutable archives > quarantines a candidate if close changes while atomic rename is pending  452ms
+   ✓ real process result collection and immutable archives > quarantines a candidate if storage changes while atomic rename is pending  454ms
+   ✓ real process result collection and immutable archives > does not publish if cancel changes at the post-verification boundary  487ms
+   ✓ real process result collection and immutable archives > does not publish if close changes at the post-verification boundary  458ms
+   ✓ real process result collection and immutable archives > does not publish if storage changes at the post-verification boundary  473ms
+   ✓ real process result collection and immutable archives > archives complete artifacts, preserves source ownership and freezes independent downstream copies (V09/V17)  634ms
+   ✓ real process result collection and immutable archives > rejects traversal without publishing a partial archive (V09/V13/V22)  395ms
+   ✓ real process result collection and immutable archives > rejects symlink without publishing a partial archive (V09/V13/V22)  340ms
+   ✓ real process result collection and immutable archives > rejects fifo without publishing a partial archive (V09/V13/V22)  499ms
+   ✓ real process result collection and immutable archives > rejects oversized without publishing a partial archive (V09/V13/V22)  399ms
+   ✓ real process result collection and immutable archives > rejects missing-required without publishing a partial archive (V09/V13/V22)  319ms
+   ✓ real process result collection and immutable archives > kills and reaps a timed-out writer even after it sent a success candidate  1586ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts (24 tests) 821ms
+   ✓ herdr NDJSON management adapter > validates session names and removes inherited target environment for fixed-argv CLI discovery  488ms
+ ✓ packages/posix-fs/test/index.test.ts (42 tests) 993ms
+   ✓ safe file collection > copies in bounded blocks, preserves hash, and creates a private file  533ms
+ ✓ apps/server/src/storage/database.test.ts (5 tests) 36ms
+ ✓ apps/server/src/terminal/bridge.test.ts (22 tests) 24ms
+ ✓ apps/server/src/results/protocol.test.ts (19 tests) 6ms
+ ✓ apps/server/src/domain/model.test.ts (17 tests) 7ms
+ ✓ apps/server/src/http/server.test.ts (12 tests) 2865ms
+   ✓ keeps observers read-only, gives every page a redraw, and arbitrates two controllers with revocation  438ms
+   ✓ holds all four download slots until slow responses finish and aborts them on service close  804ms
+ ✓ tests/integration/dev.test.ts (5 tests) 18933ms
+   ✓ development proxy serves the browser with authenticated API/WS while rejecting foreign boundaries  1590ms
+   ✓ dev requires an explicit session and never starts services after a failed initial build  428ms
+   ✓ reaps a resistant build descendant after the build is failed  5477ms
+   ✓ reaps a resistant build descendant after the build is interrupted  5473ms
+   ✓ dev builds first, forwards CLI options, restarts on child-code changes and reaps its process groups  5963ms
+
+ Test Files  12 passed | 3 skipped (15)
+      Tests  186 passed | 5 skipped (191)
+   Start at  15:53:23
+   Duration  19.62s (transform 314ms, setup 0ms, collect 1.57s, tests 37.91s, environment 1ms, prepare 729ms)
+

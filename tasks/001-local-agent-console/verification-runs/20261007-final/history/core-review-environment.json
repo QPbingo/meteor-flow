@@ -1,0 +1,9 @@
+{
+  "node": "v24.21.0",
+  "platform": "darwin",
+  "arch": "arm64",
+  "sqlite": {
+    "version": "3.53.4"
+  },
+  "betterSqlite3": "13.0.3"
+}

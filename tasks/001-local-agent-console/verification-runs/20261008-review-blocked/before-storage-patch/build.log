@@ -1,0 +1,21 @@
+$ pnpm -r build
+Scope: 4 of 5 workspace projects
+packages/contracts build$ tsc -p tsconfig.build.json
+packages/posix-fs build$ tsc -p tsconfig.build.json
+packages/posix-fs build: Done
+packages/contracts build: Done
+apps/server build$ tsc -p tsconfig.build.json
+apps/web build$ vite build
+apps/web build: vite v7.3.7 building client environment for production...
+apps/web build: transforming...
+apps/server build: Done
+apps/web build: ✓ 1870 modules transformed.
+apps/web build: rendering chunks...
+apps/web build: computing gzip size...
+apps/web build: dist/index.html                           0.52 kB │ gzip:   0.34 kB
+apps/web build: dist/assets/TerminalPanel-DDGTF8rc.css    3.62 kB │ gzip:   0.99 kB
+apps/web build: dist/assets/index-D9rJBP-M.css           14.71 kB │ gzip:   4.00 kB
+apps/web build: dist/assets/TerminalPanel-BnQvm56W.js   337.03 kB │ gzip:  86.33 kB │ map:   711.65 kB
+apps/web build: dist/assets/index-BGGAzW85.js           473.00 kB │ gzip: 153.90 kB │ map: 2,306.30 kB
+apps/web build: ✓ built in 2.56s
+apps/web build: Done

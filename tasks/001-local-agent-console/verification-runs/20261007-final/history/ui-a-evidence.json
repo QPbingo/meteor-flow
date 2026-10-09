@@ -1,0 +1,118 @@
+{
+  "assessment": "A",
+  "reviewer": "/root/ui_design_review",
+  "date": "2026-10-07",
+  "target": "apps/web/src/App.tsx",
+  "source_hashes_at_1011": {
+    "apps/web/src/App.tsx": "68ff8bdfb840b528f5403a06042cf96de6a658d48a433aef84b015d0155510a0",
+    "apps/web/src/ui.tsx": "9671be05e185fe1034de09fd9ec86afffa05bb5c7c4825863f18507d89211add",
+    "apps/web/src/Tasks.tsx": "903d09337764a2d2f912330bdd56b7d39ae5efb5f362981d279a6013903d7dc9",
+    "apps/web/src/Agents.tsx": "353344faeeddef2c20a0bc77ba3c0bc628b2d5648b902929f95d86c3e66e39e5",
+    "apps/web/src/styles.css": "a1d0ba68d2f29402026b663b45ed4f7d5b0b977e53469b6d6b5ef81389c9e572",
+    "apps/web/src/api.ts": "c03ae04a1bf466a3251e8758a711c66454a8dd0054d09a9649f2b68be8f2bc90",
+    "apps/web/src/TerminalPanel.tsx": "884111db5b9bba2f09ffcea3324aed370f9121d9a96d97a0e7e972e8c0c642fd"
+  },
+  "rendered_assets": [
+    {
+      "path": "/assets/index-D0Q6bECi.js",
+      "sha256": "12ee86d7b4068585341de9d11a2d60d42627429fa9f62313461bcca5467282e2"
+    },
+    {
+      "path": "/assets/index-CNoaKRtv.css",
+      "sha256": "3e09a425b2830b64ead8a4a8e25034fbd75d6767ad82c2588434b37210406bf7"
+    },
+    {
+      "path": "/assets/TerminalPanel-DDGTF8rc.css",
+      "sha256": "98e9ef834903856257639ba3cc8cfe64401a8f6af89f9a6335280654fdfa22cb"
+    }
+  ],
+  "baseline_note": "Tasks.tsx 在审查中由作者补充预览功能；源码指纹为通知后的工作区值，已渲染资源仍为此前构建。新增预览未查看。",
+  "environment": {
+    "node": "24.21.0",
+    "playwright_cli": "0.1.22",
+    "playwright_test": "1.63.0",
+    "browser": "Chrome/153.0.8010.12",
+    "context": "ui-assessment-a isolated",
+    "backend": "real Console HTTP DB; simulated herdr",
+    "desktop": [
+      1440,
+      1000
+    ],
+    "narrow": [
+      390,
+      844
+    ],
+    "text_200": "root font-size 14px to 28px; restored",
+    "page_200_equivalent": "720 x 500 CSS viewport representing 1440 x 1000 at 200%; not native browser zoom"
+  },
+  "observations": {
+    "narrow_selected_task": {
+      "scroll_y": 0,
+      "detail_top": 951.625,
+      "viewport_height": 844,
+      "active_text": "核对任务结果和文件产物",
+      "document_width": 390,
+      "table_client_width": 352,
+      "table_scroll_width": 640
+    },
+    "modal_keyboard": {
+      "open_with": "focus 新建任务; Enter",
+      "initial_focus": {
+        "tag": "INPUT",
+        "name": "title"
+      },
+      "close_with": "Escape",
+      "after_close": "BODY",
+      "after_tab": "跳到主要内容"
+    },
+    "project_invalid_directory": {
+      "input": "/private/tmp/meteor-ui-assessment-a-does-not-exist",
+      "message": "操作失败，请查看连接与存储状态",
+      "retained_name": "A 审查无效路径"
+    },
+    "text_200": {
+      "root_font": "28px",
+      "body_width": 1440,
+      "submit_after_scroll": {
+        "x": 882,
+        "y": 890,
+        "width": 138,
+        "height": 60.796875
+      }
+    },
+    "backend_after_review": {
+      "project_names": [
+        "本地控制台 · 评估样例"
+      ],
+      "task_count": 2,
+      "binding_count": 2,
+      "paused": true
+    }
+  },
+  "screenshots": {
+    "ui-a-200-reflow.png": "dc000609b998f816dfd2832343b72beee0eb1d1db7837c8c8b162fcd85155bf0",
+    "ui-a-agents.png": "96aa06d50152cb9f0757f966787553508dbfc9b585be45498d7cf5afaf3dd06d",
+    "ui-a-desktop.png": "1a532d1457e141b43bf92aec2836ed8d38f2b5e04d3348df59ccc83c2476024d",
+    "ui-a-detail.png": "869b0888270bdd29fa12b8db3c0d4d7e5a34ac5c517b11dd052f744e25b84684",
+    "ui-a-error.png": "c0cbd6bcdf3de103fbd6345c529fe45047e583dc99f93756247ea45bed14d158",
+    "ui-a-keyboard-return.png": "d0766eaea56416f18a54e05d1261e4eea108e1d6372ff22f69bc6783bddae466",
+    "ui-a-narrow-form.png": "8f75c5570e5d02ebbf9f495c73034ed19cc76205580b67d80537aaa0675b8b5a",
+    "ui-a-narrow-selected.png": "e004e8fb8a68e4e627abae78f71b588a0edf474b51b68d49f66d0255970e5aac",
+    "ui-a-narrow.png": "d3eb15ab42ce0df74c53727e405abf32bbab277856b56797a87fff35839f286c",
+    "ui-a-task-form.png": "04c3bc38066b1f5e7384f19080635a3e758ccf45ed1ee07ff2fa978bc57fedb2",
+    "ui-a-terminal.png": "d4809a333fdfa53e55a127dd757d207b8cdbcdadc1860062106d8919801a75b6",
+    "ui-a-text-200-form-bottom.png": "3e4acb212f94cc623ebfc7c451e4e763b69faaa4a100691610b638e9171eaea5",
+    "ui-a-text-200-form.png": "4fa45eec6f09bac70d294946ef612ce3c1c8f0b8af62e883ced295e89b062e4e",
+    "ui-a-text-200.png": "095e10083cd2040f8457b2b2d2dad42e928f137bdfc844012decb95b0dadd9ee"
+  },
+  "tool_notes": [
+    "doctor exit 0",
+    "context once exit 0",
+    "slug apps-web-src-app-tsx",
+    "default playwright-cli launch failed missing chromium-1247; explicit installed chromium-1243 then succeeded",
+    "one read after click ran before React detail render and failed; subsequent locator wait resolved evidence collection; no product failure attributed",
+    "terminal disconnected under simulated-herdr harness; no take-control input sent",
+    "own browser closed successfully; service owned by parent left running"
+  ],
+  "detector": "not run; no Assessment B output read"
+}

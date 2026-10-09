@@ -1,0 +1,330 @@
+{
+  "schema_version": "1",
+  "mode": "workspace",
+  "repository": "/Users/heybox/Documents/herdrflow/meteor-flow",
+  "total_files": 46,
+  "reviewable_count": 6,
+  "excluded_count": 40,
+  "total_insertions": 12888,
+  "total_deletions": 2,
+  "reviewable_files": [
+    {
+      "path": "AGENTS.md",
+      "status": "modified",
+      "insertions": 1,
+      "deletions": 1
+    },
+    {
+      "path": "README.md",
+      "status": "modified",
+      "insertions": 7,
+      "deletions": 1
+    },
+    {
+      "path": "tasks/001-local-agent-console/herdr-compatibility.md",
+      "status": "added",
+      "insertions": 41,
+      "deletions": 0
+    },
+    {
+      "path": "tasks/001-local-agent-console/implementation-plan.md",
+      "status": "added",
+      "insertions": 91,
+      "deletions": 0
+    },
+    {
+      "path": "tasks/001-local-agent-console/technical-design.md",
+      "status": "added",
+      "insertions": 261,
+      "deletions": 0
+    },
+    {
+      "path": "tasks/001-local-agent-console/technical-review.md",
+      "status": "added",
+      "insertions": 202,
+      "deletions": 0
+    }
+  ],
+  "excluded_files": [
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/doctor.log",
+      "status": "added",
+      "insertions": 1,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/document-checks-final.log",
+      "status": "added",
+      "insertions": 5,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/document-checks.log",
+      "status": "added",
+      "insertions": 4,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/environment-probes.log",
+      "status": "added",
+      "insertions": 57,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/herdr-0.9.3-schema.json",
+      "status": "added",
+      "insertions": 10759,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/ocr-version.log",
+      "status": "added",
+      "insertions": 3,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-baseline-round1.json",
+      "status": "added",
+      "insertions": 12,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-baseline-round2.json",
+      "status": "added",
+      "insertions": 13,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-baseline.json",
+      "status": "added",
+      "insertions": 14,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-doctor.log",
+      "status": "added",
+      "insertions": 1,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-file-open-probe.json",
+      "status": "added",
+      "insertions": 12,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-ocr-version.log",
+      "status": "added",
+      "insertions": 3,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-preview-initial.json",
+      "status": "added",
+      "insertions": 79,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-preview-round1.json",
+      "status": "added",
+      "insertions": 135,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-preview-round2.json",
+      "status": "added",
+      "insertions": 162,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-preview.json",
+      "status": "added",
+      "insertions": 190,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-rules-round1.json",
+      "status": "added",
+      "insertions": 18,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-rules-round2.json",
+      "status": "added",
+      "insertions": 19,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-rules.json",
+      "status": "added",
+      "insertions": 19,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-source-evidence.json",
+      "status": "added",
+      "insertions": 37,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/skill-readiness.md",
+      "status": "added",
+      "insertions": 40,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/README.md.diff",
+      "status": "added",
+      "insertions": 23,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/doctor.log",
+      "status": "added",
+      "insertions": 1,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/document-check.json",
+      "status": "added",
+      "insertions": 12,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/implementation-plan.md.diff",
+      "status": "added",
+      "insertions": 44,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/node-capability-probe.json",
+      "status": "added",
+      "insertions": 30,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/ocr-version.log",
+      "status": "added",
+      "insertions": 3,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/reviewer-baseline-round1.json",
+      "status": "added",
+      "insertions": 15,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/reviewer-baseline.json",
+      "status": "added",
+      "insertions": 14,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/reviewer-doctor.log",
+      "status": "added",
+      "insertions": 1,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/reviewer-node-capability-probe.json",
+      "status": "added",
+      "insertions": 30,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/reviewer-ocr-version.log",
+      "status": "added",
+      "insertions": 3,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/reviewer-preview-round1.json",
+      "status": "added",
+      "insertions": 246,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/reviewer-preview.json",
+      "status": "added",
+      "insertions": 0,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/reviewer-rules-round1.json",
+      "status": "added",
+      "insertions": 19,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/reviewer-rules.json",
+      "status": "added",
+      "insertions": 19,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/reviewer-scope.json",
+      "status": "added",
+      "insertions": 1,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/reviewer-source-notes.json",
+      "status": "added",
+      "insertions": 26,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/skill-readiness.md",
+      "status": "added",
+      "insertions": 61,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/technical-design.md.diff",
+      "status": "added",
+      "insertions": 154,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    }
+  ]
+}

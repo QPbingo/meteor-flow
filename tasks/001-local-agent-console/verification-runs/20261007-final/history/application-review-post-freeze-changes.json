@@ -1,0 +1,29 @@
+{
+  "baseline": "application-review-baseline-final.json",
+  "changes": [
+    {
+      "path": "tests/fixtures/performance-server.ts",
+      "reviewed_sha256": "6a70f8cb613be28076bf7d093a5d25f7541bb3c1818d962a3063b8e225fac08a",
+      "current_sha256": "09bea1ee1c32cc4c6f0e791a43f17d9e88f85af43d2bd13513685bd86a53c3e1",
+      "group": "files",
+      "status": "pending-next-increment",
+      "reason": "作者在本批测试完成后的性能诊断/修订；保存旧证据，不套用本批通过。"
+    },
+    {
+      "path": "tests/integration/performance.test.ts",
+      "reviewed_sha256": "b59d94baa0b51e694c8865f522914e67943095f293130ab422de1adc89af7418",
+      "current_sha256": "32655eba45ba703bb81119cb1179b53b0cd450e6540e2c07024aa89e4d123aea",
+      "group": "files",
+      "status": "pending-next-increment",
+      "reason": "作者在本批测试完成后的性能诊断/修订；保存旧证据，不套用本批通过。"
+    },
+    {
+      "path": "apps/server/src/storage/database.ts",
+      "reviewed_sha256": "50df4caaa5301803a896b268b2386aac2485bebf25d24d7314a16a95b988896b",
+      "current_sha256": "6ee4fa3f10b9c6c82e2568a8aa2932a63c0c342592fe8ba754177343f555ec15",
+      "group": "test_dependency_context",
+      "status": "pending-next-increment",
+      "reason": "作者在本批测试完成后的性能诊断/修订；保存旧证据，不套用本批通过。"
+    }
+  ]
+}

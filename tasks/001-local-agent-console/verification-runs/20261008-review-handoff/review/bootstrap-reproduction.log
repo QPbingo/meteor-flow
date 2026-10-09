@@ -1,0 +1,35 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ ↓ tests/integration/cli.test.ts > CLI rejects duplicate data/session owners and releases locks on shutdown (V26)
+ × tests/integration/cli.test.ts > exits after the HTTP listener opens but authentication bootstrap persistence fails 3496ms
+   → Matcher did not succeed in time.
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/integration/cli.test.ts > exits after the HTTP listener opens but authentication bootstrap persistence fails
+Error: Matcher did not succeed in time.
+ ❯ tests/integration/cli.test.ts:43:58
+     41|   try{
+     42|     await expect.poll(()=>stderr,{timeout:5000}).toContain('EISDIR');
+     43|     await expect.poll(()=>child.exitCode,{timeout:3000}).toBe(1);
+       |                                                          ^
+     44|     expect((await closed)[0]).toBe(1);
+     45|     expect(stdout).not.toContain('Meteor Flow 已启动');
+
+Caused by: AssertionError: expected null to be 1 // Object.is equality
+
+- Expected: 
+1
+
++ Received: 
+null
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 1 skipped (2)
+   Start at  15:29:46
+   Duration  3.70s (transform 25ms, setup 0ms, collect 20ms, tests 3.50s, environment 0ms, prepare 48ms)
+

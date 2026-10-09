@@ -1,0 +1,159 @@
+{
+  "status": "pass",
+  "local_links_checked": 38,
+  "links": [
+    {
+      "source": "README.md",
+      "target": "tasks/001-local-agent-console/verification-status.md"
+    },
+    {
+      "source": "README.md",
+      "target": "tasks/001-local-agent-console/usage.md"
+    },
+    {
+      "source": "README.md",
+      "target": "tasks/001-local-agent-console/requirements.md"
+    },
+    {
+      "source": "README.md",
+      "target": "tasks/001-local-agent-console/review.md"
+    },
+    {
+      "source": "README.md",
+      "target": "tasks/001-local-agent-console/technical-design.md"
+    },
+    {
+      "source": "README.md",
+      "target": "tasks/001-local-agent-console/technical-review.md"
+    },
+    {
+      "source": "README.md",
+      "target": "tasks/001-local-agent-console/implementation-plan.md"
+    },
+    {
+      "source": "README.md",
+      "target": "tasks/001-local-agent-console/implementation-progress.md"
+    },
+    {
+      "source": "README.md",
+      "target": "tasks/001-local-agent-console/herdr-compatibility.md"
+    },
+    {
+      "source": "README.md",
+      "target": "tasks/001-local-agent-console/DESIGN.md"
+    },
+    {
+      "source": "README.md",
+      "target": "tasks/002-development-workflow/workflow.md"
+    },
+    {
+      "source": "README.md",
+      "target": "tasks/002-development-workflow/skill-prerequisites.md"
+    },
+    {
+      "source": "README.md",
+      "target": "tasks/002-development-workflow/mandatory-scenarios.md"
+    },
+    {
+      "source": "README.md",
+      "target": "AGENTS.md"
+    },
+    {
+      "source": "tasks/001-local-agent-console/implementation-progress.md",
+      "target": "verification-status.md"
+    },
+    {
+      "source": "tasks/001-local-agent-console/technical-review.md",
+      "target": "technical-design.md"
+    },
+    {
+      "source": "tasks/001-local-agent-console/technical-review.md",
+      "target": "implementation-progress.md"
+    },
+    {
+      "source": "tasks/001-local-agent-console/technical-review.md",
+      "target": "verification-runs/20261006-node-design/reviewer-baseline.json"
+    },
+    {
+      "source": "tasks/001-local-agent-console/technical-review.md",
+      "target": "verification-runs/20261006-node-design/reviewer-source-notes.json"
+    },
+    {
+      "source": "tasks/001-local-agent-console/technical-review.md",
+      "target": "verification-runs/20261006-node-design/reviewer-node-capability-probe.json"
+    },
+    {
+      "source": "tasks/001-local-agent-console/technical-review.md",
+      "target": "verification-runs/20261006-node-design/reviewer-scope.json"
+    },
+    {
+      "source": "tasks/001-local-agent-console/technical-review.md",
+      "target": "verification-runs/20261006-implementation-preparation/reviewer-baseline.json"
+    },
+    {
+      "source": "tasks/001-local-agent-console/technical-review.md",
+      "target": "verification-runs/20261006-implementation-preparation/reviewer-source-evidence.json"
+    },
+    {
+      "source": "tasks/001-local-agent-console/technical-review.md",
+      "target": "verification-runs/20261006-implementation-preparation/reviewer-file-open-probe.json"
+    },
+    {
+      "source": "tasks/001-local-agent-console/technical-review.md",
+      "target": "verification-runs/20261006-implementation-preparation/reviewer-preview.json"
+    },
+    {
+      "source": "tasks/001-local-agent-console/technical-review.md",
+      "target": "verification-runs/20261006-implementation-preparation/reviewer-rules.json"
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-status.md",
+      "target": "verification-runs/20261007-final/report.json"
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-status.md",
+      "target": "verification-runs/20261007-final/summary.md"
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-status.md",
+      "target": "verification-runs/20261007-review-delivery/summary.md"
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-status.md",
+      "target": "verification-runs/20261007-implementation-preflight/"
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-status.md",
+      "target": "verification-runs/20261007-performance-worker-young16/report.md"
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261007-review-delivery/summary.md",
+      "target": "report.json"
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261007-review-delivery/summary.md",
+      "target": "../20261007-final/history/final-review.md"
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261007-review-delivery/summary.md",
+      "target": "l01-independent-review.md"
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261007-review-delivery/summary.md",
+      "target": "../20261007-final/summary.md"
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261007-review-delivery/summary.md",
+      "target": "baseline-and-evidence-audit.json"
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261007-review-delivery/summary.md",
+      "target": "../../usage.md"
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261007-review-delivery/summary.md",
+      "target": "../../verification-status.md"
+    }
+  ],
+  "scope": "local target existence only; external historical source URLs not re-requested"
+}

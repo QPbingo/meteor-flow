@@ -1,0 +1,12 @@
+{
+  "apps/web/dist/assets/TerminalPanel-CgsruG8R.js": "b33866071e1729ac980146ad447506766f169a8f9b961c68d4c76527cdd7b89b",
+  "apps/web/dist/assets/TerminalPanel-DDGTF8rc.css": "98e9ef834903856257639ba3cc8cfe64401a8f6af89f9a6335280654fdfa22cb",
+  "apps/web/dist/assets/index-D9rJBP-M.css": "c90caeb199701212ec6b8a55b3250b2466ec497682f8cc17b77c6f9d88258f9d",
+  "apps/web/dist/assets/index-VXk26kR3.js": "977e3f5665a2e2b3c6750de0d6dc6accce77526cc9ea5fe240b1d4017f7ae350",
+  "apps/web/dist/index.html": "29f1d00cda34d7bb8dc5ec37d1ca1363229bfdc7ca590ceca130c144763003eb",
+  "apps/web/src/Markdown.tsx": "c4471ff47e1fef4e7ccc21af2686608795d42d7279289373ebbd7d175d859aac",
+  "apps/web/src/Tasks.tsx": "48e53c5c7a56ba79cf51791c5a1ed749476c78979d57cfa0c6c9c5a6f0e94838",
+  "apps/web/src/styles.css": "69ba408ac40512ac5b80a2f6de7d438d269dca376154938b05806356b9e9e7e2",
+  "tests/e2e/web-console.spec.ts": "6a713745fd440ccf3af8554b88e2269ce5df1e72be66159238a4cd8baf6ad2ce",
+  "tests/e2e/web-server.spec.ts": "fdcf8971d9d428a01431c568e06b2c00f48bf21a695d38bd908446ca1759d362"
+}

@@ -1,0 +1,6 @@
+{
+  "exit_code": 1,
+  "error": "Unexpected change beyond four documentation files",
+  "cause": "The first ad-hoc audit incorrectly encoded SHA-256 as hexadecimal ASCII; the project fingerprint uses raw digest bytes. The audit was corrected to match the existing checker algorithm. No product or test change was made.",
+  "resolution": "baseline-and-evidence-audit.json records the corrected comparison and all evidence hashes."
+}

@@ -1,0 +1,29 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ ↓ tests/integration/real-agent.test.ts > real isolated codex: startup, readiness, structured result and durable archive
+ × tests/integration/real-agent.test.ts > real isolated claude: startup, readiness, structured result and durable archive 7039ms
+   → Agent 尚未完成接入或当前不可安全恢复
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/integration/real-agent.test.ts > real isolated claude: startup, readiness, structured result and durable archive
+Error: Agent 尚未完成接入或当前不可安全恢复
+ ❯ Worker.<anonymous> apps/server/dist/storage/store.js:76:40
+     74|                     }
+     75|                     else
+     76|                         pending.reject(new DomainError(reply.error?.co…
+       |                                        ^
+     77|                 });
+     78|                 worker.on('error', error => { clearTimeout(timer); thi…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: 'NOT_READY', status: 409 }
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 1 skipped (2)
+   Start at  17:45:06
+   Duration  7.37s (transform 88ms, setup 0ms, collect 174ms, tests 7.04s, environment 0ms, prepare 46ms)
+

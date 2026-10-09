@@ -1,0 +1,19 @@
+Scope: 4 of 5 workspace projects
+packages/contracts build$ tsc -p tsconfig.build.json
+packages/posix-fs build$ tsc -p tsconfig.build.json
+packages/posix-fs build: Done
+packages/contracts build: Done
+apps/server build$ tsc -p tsconfig.build.json
+apps/web build$ vite build
+apps/web build: vite v7.3.7 building client environment for production...
+apps/web build: transforming...
+apps/server build: src/http/events.ts(12,29): error TS2769: No overload matches this call.
+apps/server build:   Overload 1 of 2, '(statusCode: number, statusMessage?: string | undefined, headers?: OutgoingHttpHeaders | OutgoingHttpHeader[] | undefined): ServerResponse<IncomingMessage>', gave the following error.
+apps/server build:     Argument of type '{ 'content-type': string; 'cache-control': string; connection: string; 'x-accel-buffering': string; warning: string | number | string[] | undefined; link: string | number | string[] | undefined; ... 74 more ...; "x-xss-protection": string | ... 2 more ... | undefined; }' is not assignable to parameter of type 'string'.
+apps/server build:   Overload 2 of 2, '(statusCode: number, headers?: OutgoingHttpHeaders | OutgoingHttpHeader[] | undefined): ServerResponse<IncomingMessage>', gave the following error.
+apps/server build:     Argument of type '{ 'content-type': string; 'cache-control': string; connection: string; 'x-accel-buffering': string; warning: string | number | string[] | undefined; link: string | number | string[] | undefined; ... 74 more ...; "x-xss-protection": string | ... 2 more ... | undefined; }' is not assignable to parameter of type 'OutgoingHttpHeaders | OutgoingHttpHeader[] | undefined'.
+apps/server build:       Type '{ 'content-type': string; 'cache-control': string; connection: string; 'x-accel-buffering': string; warning: string | number | string[] | undefined; link: string | number | string[] | undefined; ... 74 more ...; "x-xss-protection": string | ... 2 more ... | undefined; }' is not assignable to type 'undefined'.
+apps/server build: Failed
+/Users/heybox/Documents/herdrflow/meteor-flow/apps/server:
+[ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL] @meteor-flow/server@0.1.0 build: `tsc -p tsconfig.build.json`
+Exit status 2

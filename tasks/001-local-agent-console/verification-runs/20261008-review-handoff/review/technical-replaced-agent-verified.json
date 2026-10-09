@@ -1,0 +1,19 @@
+{
+  "oldGone": true,
+  "oldPid": 57354,
+  "replacementPid": 57351,
+  "before": {
+    "phase": "needs_confirmation",
+    "occupies": true
+  },
+  "after": {
+    "phase": "needs_confirmation",
+    "occupies": true,
+    "source": "manual",
+    "reason": "已记录人工声明；停止证据不足，继续保留占用"
+  },
+  "confirmError": {
+    "code": "NOT_READY",
+    "message": "仍有占用或绑定不属于当前会话"
+  }
+}

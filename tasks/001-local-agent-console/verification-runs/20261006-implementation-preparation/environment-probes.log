@@ -1,0 +1,57 @@
+$ herdr --version
+herdr 0.9.3
+exit_code=0
+
+$ herdr terminal session observe --help
+Observe a terminal stream
+
+Usage: herdr terminal session observe [OPTIONS] <TARGET>
+
+Arguments:
+  <TARGET>
+          
+
+Options:
+      --cols <N>
+          
+
+      --rows <N>
+
+exit_code=0
+
+$ herdr terminal session control --help
+Control a terminal stream
+
+Usage: herdr terminal session control [OPTIONS] <TARGET>
+
+Arguments:
+  <TARGET>
+          
+
+Options:
+      --takeover
+          
+
+      --cols <N>
+          
+
+      --rows <N>
+
+exit_code=0
+
+$ node --version
+v25.8.1
+exit_code=0
+
+$ python3 --version
+Python 3.9.6
+exit_code=0
+
+$ uv --version
+uv 0.12.23 (46b84fd0b 2026-10-03 aarch64-apple-darwin)
+exit_code=0
+
+$ pnpm --version
+11.9.0
+exit_code=0
+

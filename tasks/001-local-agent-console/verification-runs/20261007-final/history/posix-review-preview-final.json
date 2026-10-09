@@ -1,0 +1,1454 @@
+{
+  "schema_version": "1",
+  "mode": "workspace",
+  "repository": "/Users/heybox/Documents/herdrflow/meteor-flow",
+  "total_files": 226,
+  "reviewable_count": 142,
+  "excluded_count": 84,
+  "total_insertions": 50051,
+  "total_deletions": 3,
+  "reviewable_files": [
+    {
+      "path": ".gitignore",
+      "status": "modified",
+      "insertions": 7,
+      "deletions": 0
+    },
+    {
+      "path": "AGENTS.md",
+      "status": "modified",
+      "insertions": 1,
+      "deletions": 1
+    },
+    {
+      "path": "README.md",
+      "status": "modified",
+      "insertions": 7,
+      "deletions": 1
+    },
+    {
+      "path": "scripts/workflow/check.py",
+      "status": "modified",
+      "insertions": 1,
+      "deletions": 1
+    },
+    {
+      "path": "scripts/workflow/sources.lock.json",
+      "status": "modified",
+      "insertions": 397,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/LICENSE",
+      "status": "added",
+      "insertions": 191,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/SKILL.md",
+      "status": "added",
+      "insertions": 94,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/agents/impeccable_asset_producer.toml",
+      "status": "added",
+      "insertions": 47,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/agents/impeccable_documenter.toml",
+      "status": "added",
+      "insertions": 27,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/agents/impeccable_finish_reviewer.toml",
+      "status": "added",
+      "insertions": 41,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/agents/impeccable_manual_edit_applier.toml",
+      "status": "added",
+      "insertions": 95,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/agents/openai.yaml",
+      "status": "added",
+      "insertions": 4,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/adapt.md",
+      "status": "added",
+      "insertions": 318,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/adapt.native.md",
+      "status": "added",
+      "insertions": 58,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/android.md",
+      "status": "added",
+      "insertions": 46,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/animate.md",
+      "status": "added",
+      "insertions": 89,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/audit.md",
+      "status": "added",
+      "insertions": 137,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/audit.native.md",
+      "status": "added",
+      "insertions": 139,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/bolder.md",
+      "status": "added",
+      "insertions": 33,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/clarify.md",
+      "status": "added",
+      "insertions": 94,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/colorize.md",
+      "status": "added",
+      "insertions": 86,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/component-review.md",
+      "status": "added",
+      "insertions": 63,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/craft-floor.md",
+      "status": "added",
+      "insertions": 50,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/craft.md",
+      "status": "added",
+      "insertions": 5,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/critique.md",
+      "status": "added",
+      "insertions": 828,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/degraded/asset-producer.md",
+      "status": "added",
+      "insertions": 44,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/degraded/documenter.md",
+      "status": "added",
+      "insertions": 24,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/degraded/finish-reviewer.md",
+      "status": "added",
+      "insertions": 38,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/degraded/manual-edit-applier.md",
+      "status": "added",
+      "insertions": 92,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/delight.md",
+      "status": "added",
+      "insertions": 70,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/distill.md",
+      "status": "added",
+      "insertions": 111,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/doctor.md",
+      "status": "added",
+      "insertions": 54,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/document.md",
+      "status": "added",
+      "insertions": 416,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/extract.md",
+      "status": "added",
+      "insertions": 69,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/generate.md",
+      "status": "added",
+      "insertions": 101,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/harden.md",
+      "status": "added",
+      "insertions": 345,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/hooks.md",
+      "status": "added",
+      "insertions": 113,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/init.md",
+      "status": "added",
+      "insertions": 131,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/ios.md",
+      "status": "added",
+      "insertions": 51,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/layout.md",
+      "status": "added",
+      "insertions": 84,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/live-setup.md",
+      "status": "added",
+      "insertions": 104,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/live.md",
+      "status": "added",
+      "insertions": 327,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/mode-operate.md",
+      "status": "added",
+      "insertions": 21,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/mode-persuade.md",
+      "status": "added",
+      "insertions": 19,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/mode-read.md",
+      "status": "added",
+      "insertions": 21,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/new-work.md",
+      "status": "added",
+      "insertions": 152,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/onboard.md",
+      "status": "added",
+      "insertions": 234,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/operate.md",
+      "status": "added",
+      "insertions": 61,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/optimize.md",
+      "status": "added",
+      "insertions": 258,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/overdrive.md",
+      "status": "added",
+      "insertions": 127,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/polish.md",
+      "status": "added",
+      "insertions": 105,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/quieter.md",
+      "status": "added",
+      "insertions": 99,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/region-map.md",
+      "status": "added",
+      "insertions": 26,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/routing.md",
+      "status": "added",
+      "insertions": 24,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/shape.md",
+      "status": "added",
+      "insertions": 59,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/typeset.md",
+      "status": "added",
+      "insertions": 80,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/visualize.md",
+      "status": "added",
+      "insertions": 46,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/scripts/VERSION",
+      "status": "added",
+      "insertions": 1,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/scripts/command-metadata.json",
+      "status": "added",
+      "insertions": 98,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/scripts/data/font-index-failures.json",
+      "status": "added",
+      "insertions": 121,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/scripts/data/font-index.json",
+      "status": "added",
+      "insertions": 1,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/scripts/impeccable",
+      "status": "added",
+      "insertions": 10,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/scripts/live-browser-dom.js",
+      "status": "added",
+      "insertions": 281,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/scripts/live-browser-ignores.js",
+      "status": "added",
+      "insertions": 242,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/scripts/live-browser-session.js",
+      "status": "added",
+      "insertions": 148,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/scripts/live-browser.js",
+      "status": "added",
+      "insertions": 13532,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/impeccable/scripts/modern-screenshot.umd.js",
+      "status": "added",
+      "insertions": 14,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/playwright-cli/LICENSE",
+      "status": "added",
+      "insertions": 201,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/playwright-cli/SKILL.md",
+      "status": "added",
+      "insertions": 497,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/playwright-cli/references/element-attributes.md",
+      "status": "added",
+      "insertions": 23,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/playwright-cli/references/playwright-tests.md",
+      "status": "added",
+      "insertions": 39,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/playwright-cli/references/pr-attachments.md",
+      "status": "added",
+      "insertions": 60,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/playwright-cli/references/request-mocking.md",
+      "status": "added",
+      "insertions": 87,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/playwright-cli/references/running-code.md",
+      "status": "added",
+      "insertions": 245,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/playwright-cli/references/session-management.md",
+      "status": "added",
+      "insertions": 227,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/playwright-cli/references/storage-state.md",
+      "status": "added",
+      "insertions": 275,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/playwright-cli/references/test-generation.md",
+      "status": "added",
+      "insertions": 433,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/playwright-cli/references/tracing.md",
+      "status": "added",
+      "insertions": 139,
+      "deletions": 0
+    },
+    {
+      "path": ".agents/skills/playwright-cli/references/video-recording.md",
+      "status": "added",
+      "insertions": 216,
+      "deletions": 0
+    },
+    {
+      "path": ".claude/skills/impeccable",
+      "status": "added",
+      "insertions": 1,
+      "deletions": 0
+    },
+    {
+      "path": ".claude/skills/playwright-cli",
+      "status": "added",
+      "insertions": 1,
+      "deletions": 0
+    },
+    {
+      "path": ".node-version",
+      "status": "added",
+      "insertions": 1,
+      "deletions": 0
+    },
+    {
+      "path": "apps/server/package.json",
+      "status": "added",
+      "insertions": 27,
+      "deletions": 0
+    },
+    {
+      "path": "apps/server/src/adapters/herdr/index.test.ts",
+      "status": "added",
+      "insertions": 243,
+      "deletions": 0
+    },
+    {
+      "path": "apps/server/src/adapters/herdr/index.ts",
+      "status": "added",
+      "insertions": 404,
+      "deletions": 0
+    },
+    {
+      "path": "apps/server/src/adapters/herdr/real-herdr.test.ts",
+      "status": "added",
+      "insertions": 50,
+      "deletions": 0
+    },
+    {
+      "path": "apps/server/src/application/console.ts",
+      "status": "added",
+      "insertions": 300,
+      "deletions": 0
+    },
+    {
+      "path": "apps/server/src/application/process.ts",
+      "status": "added",
+      "insertions": 5,
+      "deletions": 0
+    },
+    {
+      "path": "apps/server/src/cli/main.ts",
+      "status": "added",
+      "insertions": 56,
+      "deletions": 0
+    },
+    {
+      "path": "apps/server/src/domain/model.test.ts",
+      "status": "added",
+      "insertions": 149,
+      "deletions": 0
+    },
+    {
+      "path": "apps/server/src/domain/model.ts",
+      "status": "added",
+      "insertions": 115,
+      "deletions": 0
+    },
+    {
+      "path": "apps/server/src/http/auth.ts",
+      "status": "added",
+      "insertions": 55,
+      "deletions": 0
+    },
+    {
+      "path": "apps/server/src/http/server.ts",
+      "status": "added",
+      "insertions": 86,
+      "deletions": 0
+    },
+    {
+      "path": "apps/server/src/results/child.ts",
+      "status": "added",
+      "insertions": 55,
+      "deletions": 0
+    },
+    {
+      "path": "apps/server/src/results/collector.test.ts",
+      "status": "added",
+      "insertions": 137,
+      "deletions": 0
+    },
+    {
+      "path": "apps/server/src/results/collector.ts",
+      "status": "added",
+      "insertions": 124,
+      "deletions": 0
+    },
+    {
+      "path": "apps/server/src/results/protocol.test.ts",
+      "status": "added",
+      "insertions": 54,
+      "deletions": 0
+    },
+    {
+      "path": "apps/server/src/results/protocol.ts",
+      "status": "added",
+      "insertions": 23,
+      "deletions": 0
+    },
+    {
+      "path": "apps/server/src/storage/database.test.ts",
+      "status": "added",
+      "insertions": 91,
+      "deletions": 0
+    },
+    {
+      "path": "apps/server/src/storage/database.ts",
+      "status": "added",
+      "insertions": 100,
+      "deletions": 0
+    },
+    {
+      "path": "apps/server/src/storage/store.test.ts",
+      "status": "added",
+      "insertions": 57,
+      "deletions": 0
+    },
+    {
+      "path": "apps/server/src/storage/store.ts",
+      "status": "added",
+      "insertions": 80,
+      "deletions": 0
+    },
+    {
+      "path": "apps/server/src/storage/worker.ts",
+      "status": "added",
+      "insertions": 24,
+      "deletions": 0
+    },
+    {
+      "path": "apps/server/src/terminal/bridge.ts",
+      "status": "added",
+      "insertions": 141,
+      "deletions": 0
+    },
+    {
+      "path": "apps/server/tsconfig.build.json",
+      "status": "added",
+      "insertions": 19,
+      "deletions": 0
+    },
+    {
+      "path": "apps/web/index.html",
+      "status": "added",
+      "insertions": 11,
+      "deletions": 0
+    },
+    {
+      "path": "apps/web/package.json",
+      "status": "added",
+      "insertions": 31,
+      "deletions": 0
+    },
+    {
+      "path": "apps/web/src/Agents.tsx",
+      "status": "added",
+      "insertions": 31,
+      "deletions": 0
+    },
+    {
+      "path": "apps/web/src/App.tsx",
+      "status": "added",
+      "insertions": 50,
+      "deletions": 0
+    },
+    {
+      "path": "apps/web/src/Tasks.tsx",
+      "status": "added",
+      "insertions": 102,
+      "deletions": 0
+    },
+    {
+      "path": "apps/web/src/TerminalPanel.tsx",
+      "status": "added",
+      "insertions": 85,
+      "deletions": 0
+    },
+    {
+      "path": "apps/web/src/api.ts",
+      "status": "added",
+      "insertions": 67,
+      "deletions": 0
+    },
+    {
+      "path": "apps/web/src/main.tsx",
+      "status": "added",
+      "insertions": 8,
+      "deletions": 0
+    },
+    {
+      "path": "apps/web/src/styles.css",
+      "status": "added",
+      "insertions": 5,
+      "deletions": 0
+    },
+    {
+      "path": "apps/web/src/ui.tsx",
+      "status": "added",
+      "insertions": 24,
+      "deletions": 0
+    },
+    {
+      "path": "apps/web/vite.config.ts",
+      "status": "added",
+      "insertions": 8,
+      "deletions": 0
+    },
+    {
+      "path": "package.json",
+      "status": "added",
+      "insertions": 26,
+      "deletions": 0
+    },
+    {
+      "path": "packages/contracts/package.json",
+      "status": "added",
+      "insertions": 16,
+      "deletions": 0
+    },
+    {
+      "path": "packages/contracts/src/index.ts",
+      "status": "added",
+      "insertions": 68,
+      "deletions": 0
+    },
+    {
+      "path": "packages/contracts/tsconfig.build.json",
+      "status": "added",
+      "insertions": 19,
+      "deletions": 0
+    },
+    {
+      "path": "packages/posix-fs/package.json",
+      "status": "added",
+      "insertions": 16,
+      "deletions": 0
+    },
+    {
+      "path": "packages/posix-fs/src/index.ts",
+      "status": "added",
+      "insertions": 333,
+      "deletions": 0
+    },
+    {
+      "path": "packages/posix-fs/src/native.ts",
+      "status": "added",
+      "insertions": 124,
+      "deletions": 0
+    },
+    {
+      "path": "packages/posix-fs/test/index.test.ts",
+      "status": "added",
+      "insertions": 416,
+      "deletions": 0
+    },
+    {
+      "path": "packages/posix-fs/test/lock-process.ts",
+      "status": "added",
+      "insertions": 23,
+      "deletions": 0
+    },
+    {
+      "path": "packages/posix-fs/tsconfig.build.json",
+      "status": "added",
+      "insertions": 19,
+      "deletions": 0
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "status": "added",
+      "insertions": 10,
+      "deletions": 0
+    },
+    {
+      "path": "tasks/001-local-agent-console/DESIGN.md",
+      "status": "added",
+      "insertions": 13,
+      "deletions": 0
+    },
+    {
+      "path": "tasks/001-local-agent-console/herdr-compatibility.md",
+      "status": "added",
+      "insertions": 41,
+      "deletions": 0
+    },
+    {
+      "path": "tasks/001-local-agent-console/herdr-implementation-brief.md",
+      "status": "added",
+      "insertions": 18,
+      "deletions": 0
+    },
+    {
+      "path": "tasks/001-local-agent-console/implementation-plan.md",
+      "status": "added",
+      "insertions": 91,
+      "deletions": 0
+    },
+    {
+      "path": "tasks/001-local-agent-console/implementation-progress.md",
+      "status": "added",
+      "insertions": 17,
+      "deletions": 0
+    },
+    {
+      "path": "tasks/001-local-agent-console/posix-implementation-brief.md",
+      "status": "added",
+      "insertions": 21,
+      "deletions": 0
+    },
+    {
+      "path": "tasks/001-local-agent-console/technical-design.md",
+      "status": "added",
+      "insertions": 261,
+      "deletions": 0
+    },
+    {
+      "path": "tasks/001-local-agent-console/technical-review.md",
+      "status": "added",
+      "insertions": 202,
+      "deletions": 0
+    },
+    {
+      "path": "tasks/001-local-agent-console/web-implementation-brief.md",
+      "status": "added",
+      "insertions": 23,
+      "deletions": 0
+    },
+    {
+      "path": "tests/e2e/web-console.spec.ts",
+      "status": "added",
+      "insertions": 186,
+      "deletions": 0
+    },
+    {
+      "path": "tests/fixtures/collector-exit-gate.mjs",
+      "status": "added",
+      "insertions": 15,
+      "deletions": 0
+    },
+    {
+      "path": "tests/fixtures/storage-drop-reply.mjs",
+      "status": "added",
+      "insertions": 18,
+      "deletions": 0
+    },
+    {
+      "path": "tests/fixtures/storage-support.ts",
+      "status": "added",
+      "insertions": 25,
+      "deletions": 0
+    },
+    {
+      "path": "tsconfig.json",
+      "status": "added",
+      "insertions": 15,
+      "deletions": 0
+    },
+    {
+      "path": "vitest.config.ts",
+      "status": "added",
+      "insertions": 8,
+      "deletions": 0
+    }
+  ],
+  "excluded_files": [
+    {
+      "path": ".agents/skills/impeccable/scripts/impeccable.cmd",
+      "status": "added",
+      "insertions": 3,
+      "deletions": 0,
+      "exclude_reason": "unsupported_ext"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "status": "added",
+      "insertions": 3298,
+      "deletions": 0,
+      "exclude_reason": "default_path"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/doctor.log",
+      "status": "added",
+      "insertions": 1,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/document-checks-final.log",
+      "status": "added",
+      "insertions": 5,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/document-checks.log",
+      "status": "added",
+      "insertions": 4,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/environment-probes.log",
+      "status": "added",
+      "insertions": 57,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/herdr-0.9.3-schema.json",
+      "status": "added",
+      "insertions": 10759,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/ocr-version.log",
+      "status": "added",
+      "insertions": 3,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-baseline-round1.json",
+      "status": "added",
+      "insertions": 12,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-baseline-round2.json",
+      "status": "added",
+      "insertions": 13,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-baseline.json",
+      "status": "added",
+      "insertions": 14,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-doctor.log",
+      "status": "added",
+      "insertions": 1,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-file-open-probe.json",
+      "status": "added",
+      "insertions": 12,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-ocr-version.log",
+      "status": "added",
+      "insertions": 3,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-preview-initial.json",
+      "status": "added",
+      "insertions": 79,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-preview-round1.json",
+      "status": "added",
+      "insertions": 135,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-preview-round2.json",
+      "status": "added",
+      "insertions": 162,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-preview.json",
+      "status": "added",
+      "insertions": 190,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-rules-round1.json",
+      "status": "added",
+      "insertions": 18,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-rules-round2.json",
+      "status": "added",
+      "insertions": 19,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-rules.json",
+      "status": "added",
+      "insertions": 19,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-source-evidence.json",
+      "status": "added",
+      "insertions": 37,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/skill-readiness.md",
+      "status": "added",
+      "insertions": 40,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/README.md.diff",
+      "status": "added",
+      "insertions": 23,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/doctor.log",
+      "status": "added",
+      "insertions": 1,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/document-check.json",
+      "status": "added",
+      "insertions": 15,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/implementation-plan.md.diff",
+      "status": "added",
+      "insertions": 44,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/node-capability-probe.json",
+      "status": "added",
+      "insertions": 30,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/ocr-version.log",
+      "status": "added",
+      "insertions": 3,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/reviewer-baseline-round1.json",
+      "status": "added",
+      "insertions": 15,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/reviewer-baseline.json",
+      "status": "added",
+      "insertions": 14,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/reviewer-doctor.log",
+      "status": "added",
+      "insertions": 1,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/reviewer-node-capability-probe.json",
+      "status": "added",
+      "insertions": 30,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/reviewer-ocr-version.log",
+      "status": "added",
+      "insertions": 3,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/reviewer-preview-round1.json",
+      "status": "added",
+      "insertions": 246,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/reviewer-preview.json",
+      "status": "added",
+      "insertions": 330,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/reviewer-rules-round1.json",
+      "status": "added",
+      "insertions": 19,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/reviewer-rules.json",
+      "status": "added",
+      "insertions": 19,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/reviewer-scope.json",
+      "status": "added",
+      "insertions": 333,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/reviewer-source-notes.json",
+      "status": "added",
+      "insertions": 26,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/skill-readiness.md",
+      "status": "added",
+      "insertions": 61,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/technical-design.md.diff",
+      "status": "added",
+      "insertions": 154,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/collector-second.log",
+      "status": "added",
+      "insertions": 43,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/herdr-report.md",
+      "status": "added",
+      "insertions": 60,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/herdr-test-final.log",
+      "status": "added",
+      "insertions": 30,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/herdr-typecheck-final.log",
+      "status": "added",
+      "insertions": 0,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/posix-baseline.sha256",
+      "status": "added",
+      "insertions": 4,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/posix-report.md",
+      "status": "added",
+      "insertions": 59,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/posix-review-baseline-final.json",
+      "status": "added",
+      "insertions": 11,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/posix-review-baseline.json",
+      "status": "added",
+      "insertions": 11,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/posix-review-case-alias.json",
+      "status": "added",
+      "insertions": 7,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/posix-review-doctor.log",
+      "status": "added",
+      "insertions": 1,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/posix-review-environment.log",
+      "status": "added",
+      "insertions": 1,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/posix-review-ocr-version.log",
+      "status": "added",
+      "insertions": 3,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/posix-review-preview.json",
+      "status": "added",
+      "insertions": 1277,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/posix-review-root-reproduction.json",
+      "status": "added",
+      "insertions": 18,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/posix-review-rules.json",
+      "status": "added",
+      "insertions": 183,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/posix-review-tests-authorized.log",
+      "status": "added",
+      "insertions": 11,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/posix-review-tests-final.log",
+      "status": "added",
+      "insertions": 11,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/posix-review-tests-initial.log",
+      "status": "added",
+      "insertions": 77,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/posix-tests-review-fix.log",
+      "status": "added",
+      "insertions": 11,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/posix-tests.log",
+      "status": "added",
+      "insertions": 11,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/skill-readiness.md",
+      "status": "added",
+      "insertions": 21,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/skill-review-baseline.json",
+      "status": "added",
+      "insertions": 399,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/skill-review-context.log",
+      "status": "added",
+      "insertions": 46,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/skill-review-doctor-final.log",
+      "status": "added",
+      "insertions": 1,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/skill-review-doctor.log",
+      "status": "added",
+      "insertions": 1,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/skill-review-engine-claude.log",
+      "status": "added",
+      "insertions": 1,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/skill-review-engine-codex.log",
+      "status": "added",
+      "insertions": 1,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/skill-review-integrity.json",
+      "status": "added",
+      "insertions": 27,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/skill-review-negative-probes.json",
+      "status": "added",
+      "insertions": 42,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/skill-review-ocr-version.log",
+      "status": "added",
+      "insertions": 3,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/skill-review-preview-final.json",
+      "status": "added",
+      "insertions": 963,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/skill-review-preview.json",
+      "status": "added",
+      "insertions": 880,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/skill-review-rules-final.json",
+      "status": "added",
+      "insertions": 147,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/skill-review-rules.json",
+      "status": "added",
+      "insertions": 146,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/skill-review-scope.json",
+      "status": "added",
+      "insertions": 964,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/skill-review-source-check.json",
+      "status": "added",
+      "insertions": 16,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/skill-review-workflow-tests.log",
+      "status": "added",
+      "insertions": 31,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/skill-review.md",
+      "status": "added",
+      "insertions": 64,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/state-storage-results-initial.log",
+      "status": "added",
+      "insertions": 120,
+      "deletions": 0,
+      "exclude_reason": "user_exclude"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/web-desktop.png",
+      "status": "binary",
+      "insertions": 0,
+      "deletions": 0,
+      "exclude_reason": "binary"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/web-narrow.png",
+      "status": "binary",
+      "insertions": 0,
+      "deletions": 0,
+      "exclude_reason": "binary"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/web-text-200.png",
+      "status": "binary",
+      "insertions": 0,
+      "deletions": 0,
+      "exclude_reason": "binary"
+    }
+  ]
+}

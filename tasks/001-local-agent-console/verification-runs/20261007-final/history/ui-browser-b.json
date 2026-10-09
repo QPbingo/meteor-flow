@@ -1,0 +1,554 @@
+{
+  "environment": {
+    "node": "v24.21.0",
+    "browser": "153.0.8010.12"
+  },
+  "console": [
+    {
+      "type": "error",
+      "text": "Loading the script 'http://localhost:8400/detect.js' violates the following Content Security Policy directive: \"script-src 'self'\". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback. The action has been blocked."
+    },
+    {
+      "type": "error",
+      "text": "Loading the script 'http://localhost:8400/detect.js' violates the following Content Security Policy directive: \"script-src 'self'\". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback. The action has been blocked."
+    },
+    {
+      "type": "error",
+      "text": "Loading the script 'http://localhost:8400/detect.js' violates the following Content Security Policy directive: \"script-src 'self'\". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback. The action has been blocked."
+    }
+  ],
+  "pages": [
+    {
+      "name": "task-list",
+      "overlay": "blocked",
+      "reason": "page.addScriptTag: Loading the script 'http://localhost:8400/detect.js' violates the following Content Security Policy directive: \"script-src 'self'\". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback. The action has been blocked."
+    },
+    {
+      "name": "desktop-task-list",
+      "innerWidth": 1440,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "buttons": [
+        {
+          "text": "跳到主要内容",
+          "width": 120,
+          "height": 46
+        },
+        {
+          "text": "本地控制台 · 评估样例",
+          "width": 185,
+          "height": 41
+        },
+        {
+          "text": "创建项目",
+          "width": 185,
+          "height": 38
+        },
+        {
+          "text": "任务",
+          "width": 185,
+          "height": 44
+        },
+        {
+          "text": "Agent",
+          "width": 185,
+          "height": 44
+        },
+        {
+          "text": "选择 / 切换会话",
+          "width": 185,
+          "height": 38
+        },
+        {
+          "text": "归档当前项目",
+          "width": 185,
+          "height": 28
+        },
+        {
+          "text": "调度设置",
+          "width": 105,
+          "height": 38
+        },
+        {
+          "text": "全局已暂停",
+          "width": 119,
+          "height": 38
+        },
+        {
+          "text": "新建任务",
+          "width": 106,
+          "height": 38
+        },
+        {
+          "text": "搜索任务",
+          "width": 442,
+          "height": 41
+        },
+        {
+          "text": "筛选任务状态",
+          "width": 140,
+          "height": 41
+        },
+        {
+          "text": "",
+          "width": 17,
+          "height": 17
+        },
+        {
+          "text": "核对任务结果和文件产物",
+          "width": 151,
+          "height": 28
+        },
+        {
+          "text": "根据核对结果补充启动说明",
+          "width": 165,
+          "height": 28
+        }
+      ]
+    },
+    {
+      "name": "task-result",
+      "overlay": "blocked",
+      "reason": "page.addScriptTag: Loading the script 'http://localhost:8400/detect.js' violates the following Content Security Policy directive: \"script-src 'self'\". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback. The action has been blocked."
+    },
+    {
+      "name": "agents",
+      "overlay": "blocked",
+      "reason": "page.addScriptTag: Loading the script 'http://localhost:8400/detect.js' violates the following Content Security Policy directive: \"script-src 'self'\". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback. The action has been blocked."
+    },
+    {
+      "name": "agents",
+      "innerWidth": 1440,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "buttons": [
+        {
+          "text": "跳到主要内容",
+          "width": 120,
+          "height": 46
+        },
+        {
+          "text": "本地控制台 · 评估样例",
+          "width": 185,
+          "height": 41
+        },
+        {
+          "text": "创建项目",
+          "width": 185,
+          "height": 38
+        },
+        {
+          "text": "任务",
+          "width": 185,
+          "height": 44
+        },
+        {
+          "text": "Agent",
+          "width": 185,
+          "height": 44
+        },
+        {
+          "text": "选择 / 切换会话",
+          "width": 185,
+          "height": 38
+        },
+        {
+          "text": "归档当前项目",
+          "width": 185,
+          "height": 28
+        },
+        {
+          "text": "调度设置",
+          "width": 105,
+          "height": 38
+        },
+        {
+          "text": "全局已暂停",
+          "width": 119,
+          "height": 38
+        },
+        {
+          "text": "启动 Agent",
+          "width": 121,
+          "height": 38
+        },
+        {
+          "text": "观察终端",
+          "width": 105,
+          "height": 38
+        },
+        {
+          "text": "手动使用",
+          "width": 82,
+          "height": 38
+        },
+        {
+          "text": "暂停调度",
+          "width": 82,
+          "height": 38
+        },
+        {
+          "text": "观察终端",
+          "width": 105,
+          "height": 38
+        },
+        {
+          "text": "确认接入",
+          "width": 82,
+          "height": 38
+        },
+        {
+          "text": "自动调度",
+          "width": 82,
+          "height": 38
+        },
+        {
+          "text": "手动使用",
+          "width": 82,
+          "height": 38
+        },
+        {
+          "text": "恢复调度",
+          "width": 82,
+          "height": 38
+        }
+      ]
+    },
+    {
+      "name": "narrow-390",
+      "innerWidth": 390,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "buttons": [
+        {
+          "text": "跳到主要内容",
+          "width": 120,
+          "height": 46
+        },
+        {
+          "text": "本地控制台 · 评估样例",
+          "width": 144,
+          "height": 41
+        },
+        {
+          "text": "创建项目",
+          "width": 100,
+          "height": 42
+        },
+        {
+          "text": "任务",
+          "width": 173,
+          "height": 44
+        },
+        {
+          "text": "Agent",
+          "width": 173,
+          "height": 44
+        },
+        {
+          "text": "选择 / 切换会话",
+          "width": 168,
+          "height": 34
+        },
+        {
+          "text": "调度设置",
+          "width": 105,
+          "height": 42
+        },
+        {
+          "text": "全局已暂停",
+          "width": 119,
+          "height": 42
+        },
+        {
+          "text": "新建任务",
+          "width": 106,
+          "height": 42
+        },
+        {
+          "text": "搜索任务",
+          "width": 316,
+          "height": 41
+        },
+        {
+          "text": "筛选任务状态",
+          "width": 271,
+          "height": 41
+        },
+        {
+          "text": "",
+          "width": 17,
+          "height": 17
+        },
+        {
+          "text": "核对任务结果和文件产物",
+          "width": 151,
+          "height": 28
+        },
+        {
+          "text": "根据核对结果补充启动说明",
+          "width": 165,
+          "height": 28
+        },
+        {
+          "text": "关闭任务详情",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "text": "编辑任务",
+          "width": 82,
+          "height": 42
+        },
+        {
+          "text": "取消任务",
+          "width": 82,
+          "height": 42
+        },
+        {
+          "text": "尚未开始执行",
+          "width": 316,
+          "height": 41
+        },
+        {
+          "text": "概览",
+          "width": 52,
+          "height": 44
+        },
+        {
+          "text": "冻结输入",
+          "width": 80,
+          "height": 44
+        },
+        {
+          "text": "终端",
+          "width": 52,
+          "height": 44
+        },
+        {
+          "text": "结果与产物",
+          "width": 94,
+          "height": 44
+        },
+        {
+          "text": "时间线",
+          "width": 66,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "name": "browser-200pct-equivalent-layout",
+      "innerWidth": 720,
+      "scrollWidth": 720,
+      "clientWidth": 720,
+      "buttons": [
+        {
+          "text": "跳到主要内容",
+          "width": 120,
+          "height": 46
+        },
+        {
+          "text": "本地控制台 · 评估样例",
+          "width": 474,
+          "height": 41
+        },
+        {
+          "text": "创建项目",
+          "width": 100,
+          "height": 42
+        },
+        {
+          "text": "任务",
+          "width": 338,
+          "height": 44
+        },
+        {
+          "text": "Agent",
+          "width": 338,
+          "height": 44
+        },
+        {
+          "text": "选择 / 切换会话",
+          "width": 333,
+          "height": 34
+        },
+        {
+          "text": "调度设置",
+          "width": 105,
+          "height": 42
+        },
+        {
+          "text": "全局已暂停",
+          "width": 119,
+          "height": 42
+        },
+        {
+          "text": "新建任务",
+          "width": 106,
+          "height": 42
+        },
+        {
+          "text": "搜索任务",
+          "width": 646,
+          "height": 41
+        },
+        {
+          "text": "筛选任务状态",
+          "width": 601,
+          "height": 41
+        },
+        {
+          "text": "",
+          "width": 17,
+          "height": 17
+        },
+        {
+          "text": "核对任务结果和文件产物",
+          "width": 151,
+          "height": 28
+        },
+        {
+          "text": "根据核对结果补充启动说明",
+          "width": 165,
+          "height": 28
+        },
+        {
+          "text": "关闭任务详情",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "text": "编辑任务",
+          "width": 82,
+          "height": 42
+        },
+        {
+          "text": "取消任务",
+          "width": 82,
+          "height": 42
+        },
+        {
+          "text": "尚未开始执行",
+          "width": 540,
+          "height": 41
+        },
+        {
+          "text": "概览",
+          "width": 52,
+          "height": 44
+        },
+        {
+          "text": "冻结输入",
+          "width": 80,
+          "height": 44
+        },
+        {
+          "text": "终端",
+          "width": 52,
+          "height": 44
+        },
+        {
+          "text": "结果与产物",
+          "width": 94,
+          "height": 44
+        },
+        {
+          "text": "时间线",
+          "width": 66,
+          "height": 44
+        }
+      ]
+    }
+  ],
+  "state": {
+    "projects": [
+      {
+        "id": "f1d407d4-ddb2-4924-90d7-cd79dcc231fe",
+        "name": "本地控制台 · 评估样例"
+      }
+    ],
+    "tasks": [
+      {
+        "id": "b8ea18fa-953a-4b81-89a2-a6ec57fdba27",
+        "title": "核对任务结果和文件产物",
+        "phase": "queued",
+        "currentAttemptId": null
+      },
+      {
+        "id": "1a369818-f3fb-4c78-9f6d-6b72d9360e7a",
+        "title": "根据核对结果补充启动说明",
+        "phase": "queued",
+        "currentAttemptId": null
+      }
+    ],
+    "artifacts": [],
+    "bindings": [
+      {
+        "id": "9fec83d5-4722-49a3-a9eb-c32bf6914eae",
+        "label": "Codex · 接口整理",
+        "mode": "automatic"
+      },
+      {
+        "id": "49a927b5-909c-4524-90ae-f85cc94ec917",
+        "label": "Claude · 人工处理",
+        "mode": "observe"
+      }
+    ],
+    "headers": {
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "no-referrer",
+      "cache-control": "no-store",
+      "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; font-src 'self'; frame-ancestors 'none'; object-src 'none'; base-uri 'none'; form-action 'self'",
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "5393",
+      "date": "Wed, 07 Oct 2026 02:10:22 GMT",
+      "connection": "keep-alive",
+      "keep-alive": "timeout=72"
+    }
+  },
+  "initialSnapshot": "跳到主要内容\nMeteor Flow\n\n本地 Agent 控制台\n\n当前项目\n本地控制台 · 评估样例\n创建项目\n任务\nAgent\nHERDR SESSION\nmeteor-flow-test-state\n选择 / 切换会话\nherdr 0.9.3\n/private/tmp/meteor-ui-review-0jOvC2/work\n归档当前项目\n本地连接正常\n最后观测 10/07 10:10:21\n并行上限 2\n调度设置\n全局已暂停\n\n全局调度已暂停。已开始的执行继续运行；在调度设置中核对后恢复。\n\n任务\n\n本地控制台 · 评估样例 · 指定 Agent，按依赖与就绪状态推进。\n\n新建任务\n全部状态\n待派发\n投递中\n执行中\n收集结果\n取消中\n待确认\n已成功\n已失败\n已取消\n已归档\n任务 / 等待原因\t任务阶段\t指定 Agent\t前置任务\t创建时间\n核对任务结果和文件产物\n\n全局调度已暂停\n\n\t\n待派发\tCodex · 接口整理\t无依赖\t10/07 10:04:14\n根据核对结果补充启动说明\n\n全局调度已暂停\n\n\t\n待派发\tCodex · 接口整理\t核对任务结果和文件产物\t10/07 10:04:14\n任务由本地服务管理。关闭此页面不会取消执行。",
+  "preflight": {
+    "titleMutable": true,
+    "scriptAppended": true
+  },
+  "form": {
+    "focus": "title",
+    "snapshot": "新建任务\n\n任务属于「本地控制台 · 评估样例」。执行开始后，输入与依赖版本冻结；关闭网页不取消任务。\n\n任务名称\n指定 Agent\n选择当前项目的 Agent\nCodex · 接口整理 · 自动调度\nClaude · 人工处理 · 观察模式\n任务说明\n前置任务与必要输入产物\n\n只使用同一项目的归档结果。勾选任务后，可选择必须具备的产物；未选产物仍等待任务成功。\n\n核对任务结果和文件产物\n待派发\n根据核对结果补充启动说明\n待派发\n结果要求与额外输出范围\n取消\n创建任务",
+    "escaped": true,
+    "returnFocus": {
+      "tag": "BODY",
+      "text": null,
+      "isBody": true
+    }
+  },
+  "resultSnapshot": "核对任务结果和文件产物\n待派发\n任务详情 · 修订 1\n\n全局调度已暂停\n\n编辑任务\n取消任务\n执行尝试\n尚未开始执行\n概览\n冻结输入\n终端\n结果与产物\n时间线\n\n尚无有效结果。Agent 空闲或终端显示完成，不代表任务成功。\n\n归档产物\n\n所选执行尚无归档文件。",
+  "agentSnapshot": "全局调度已暂停。已开始的执行继续运行；在调度设置中核对后恢复。\n\n任务\n\n本地控制台 · 评估样例 · 指定 Agent，按依赖与就绪状态推进。\n\n新建任务\n全部状态\n待派发\n投递中\n执行中\n收集结果\n取消中\n待确认\n已成功\n已失败\n已取消\n已归档\n任务 / 等待原因\t任务阶段\t指定 Agent\t前置任务\t创建时间\n核对任务结果和文件产物\n\n全局调度已暂停\n\n\t\n待派发\tCodex · 接口整理\t无依赖\t10/07 10:04:14\n根据核对结果补充启动说明\n\n全局调度已暂停\n\n\t\n待派发\tCodex · 接口整理\t核对任务结果和文件产物\t10/07 10:04:14\n核对任务结果和文件产物\n待派发\n任务详情 · 修订 1\n\n全局调度已暂停\n\n编辑任务\n取消任务\n执行尝试\n尚未开始执行\n概览\n冻结输入\n终端\n结果与产物\n时间线\n\n尚无有效结果。Agent 空闲或终端显示完成，不代表任务成功。\n\n归档产物\n\n所选执行尚无归档文件。",
+  "media": {
+    "scheme": "normal",
+    "background": "rgba(0, 0, 0, 0)",
+    "transition": "0s"
+  },
+  "navigationTiming": [
+    {
+      "duration": 73.5,
+      "domContentLoadedEventEnd": 73.30000001192093,
+      "loadEventEnd": 73.5,
+      "transferSize": 817
+    }
+  ],
+  "resources": [
+    {
+      "name": "/assets/index-D0Q6bECi.js",
+      "transferSize": 464647,
+      "decodedBodySize": 464347,
+      "duration": 6.299999982118607
+    },
+    {
+      "name": "/assets/index-CNoaKRtv.css",
+      "transferSize": 14506,
+      "decodedBodySize": 14206,
+      "duration": 5.4000000059604645
+    }
+  ]
+}

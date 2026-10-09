@@ -1,0 +1,30 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > allows explicitly confirmed existing agents even without managed interactive readiness 214ms
+ ✓ apps/server/src/http/server.test.ts > requires a cookie for reads, rejects external Origin/Host, and enforces JSON/CSRF for writes 253ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > a manual switch after preparation but before final dispatch prevents all prompt input 211ms
+ ✓ apps/server/src/http/server.test.ts > rotates the single-use entry, protects the cookie, and persists an operation exactly once 133ms
+ ✓ apps/server/src/http/server.test.ts > rejects cross-site and unauthenticated WebSocket upgrades before starting a CLI 117ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > accepts cancel while prompt acknowledgement is pending, sends one interrupt and retains occupancy (V03/V11/V12) 247ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > never retries a prompt with a lost acknowledgement, including after service restart (V04/V05/V24) 253ms
+ ✓ apps/server/src/http/server.test.ts > keeps observers read-only, gives every page a redraw, and arbitrates two controllers with revocation 445ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > persists a startup intent once and preserves an unknown startup without repeating it (V03/V06) 128ms
+ ✓ apps/server/src/http/server.test.ts > closes a controller on disconnect without resuming dispatch, while observer closure has no scheduling side effect 226ms
+ ✓ apps/server/src/http/server.test.ts > rejects authenticated terminal upgrades with missing or null Origin 112ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > runs an independent task behind an unmet dependency on another binding (V14) 328ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > rejects confirming an agent whose work directory overlaps private service data (V21/V22) 85ms
+ ✓ apps/server/src/http/server.test.ts > provides versioned resources, an operation receipt and an actionable directory error 117ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > rejects extra output roots overlapping private service data (V22) 87ms
+ ✓ apps/server/src/http/server.test.ts > replays an accepted session receipt despite discovery failure or disappearance and rejects changed payloads 120ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > does not start an external agent after storage fails immediately after the durable startup intent 80ms
+ ✓ apps/server/src/http/server.test.ts > announces snapshot calibration and replays durable SSE IDs after reconnect 114ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > does not send an unrecorded emergency interrupt after storage recovers during identity observation 151ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > does not dispatch when a real work directory refuses frozen-input writes (V25) 176ms
+ ✓ apps/server/src/http/server.test.ts > holds all four download slots until slow responses finish and aborts them on service close 681ms
+
+ Test Files  2 passed (2)
+      Tests  21 passed (21)
+   Start at  11:08:45
+   Duration  2.70s (transform 107ms, setup 0ms, collect 373ms, tests 4.28s, environment 0ms, prepare 77ms)
+

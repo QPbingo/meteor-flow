@@ -1,0 +1,27 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ ✓ apps/server/src/storage/database.test.ts (5 tests) 43ms
+ ✓ apps/server/src/results/protocol.test.ts (19 tests) 6ms
+ ✓ apps/server/src/domain/model.test.ts (14 tests) 6ms
+ ✓ apps/server/src/storage/store.test.ts (4 tests) 850ms
+   ✓ dedicated real database writer > recovers a committed-but-unacknowledged transaction without creating a second writer or replaying work (V04/V24)  662ms
+ ✓ apps/server/src/results/collector.test.ts (18 tests) 7226ms
+   ✓ real process result collection and immutable archives > quarantines a candidate if cancel changes while atomic rename is pending  469ms
+   ✓ real process result collection and immutable archives > quarantines a candidate if close changes while atomic rename is pending  407ms
+   ✓ real process result collection and immutable archives > quarantines a candidate if storage changes while atomic rename is pending  385ms
+   ✓ real process result collection and immutable archives > does not publish if cancel changes at the post-verification boundary  376ms
+   ✓ real process result collection and immutable archives > does not publish if close changes at the post-verification boundary  393ms
+   ✓ real process result collection and immutable archives > does not publish if storage changes at the post-verification boundary  381ms
+   ✓ real process result collection and immutable archives > archives complete artifacts, preserves source ownership and freezes independent downstream copies (V09/V17)  552ms
+   ✓ real process result collection and immutable archives > rejects symlink without publishing a partial archive (V09/V13/V22)  312ms
+   ✓ real process result collection and immutable archives > rejects oversized without publishing a partial archive (V09/V13/V22)  439ms
+   ✓ real process result collection and immutable archives > rejects missing-required without publishing a partial archive (V09/V13/V22)  384ms
+   ✓ real process result collection and immutable archives > rejects old-attempt without publishing a partial archive (V09/V13/V22)  349ms
+   ✓ real process result collection and immutable archives > kills and reaps a timed-out writer even after it sent a success candidate  1601ms
+
+ Test Files  5 passed (5)
+      Tests  60 passed (60)
+   Start at  10:06:43
+   Duration  7.56s (transform 155ms, setup 0ms, collect 610ms, tests 8.13s, environment 0ms, prepare 235ms)
+

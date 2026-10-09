@@ -1,0 +1,121 @@
+{
+  "executed_by": "root author; reviewer read source artifacts, did not rerun load",
+  "files": [
+    {
+      "path": "../20261008-review-final2/performance/perf.json",
+      "sha256": "cf8cd5eac984f16a1e6d16af79b0a12e2d4783a824e8755f7d7e7d0a71b5610a",
+      "status": "failed",
+      "workerTelemetry": false,
+      "durationMs": 30000,
+      "historyTasks": 1000,
+      "memoryMethod": {
+        "scope": "service process including SQLite worker; excludes clients and CLI children",
+        "warmupSeconds": 10,
+        "maxPostWarmupSlopeMiBPerSecond": 1,
+        "maxRetainedGrowthMiB": 32,
+        "windows": [
+          "10–30 seconds"
+        ],
+        "acceptanceWindow": "10–30 seconds",
+        "proofLimit": "finite observation; not an infinite-duration memory-leak proof",
+        "workloadStartServerElapsedMs": 384.6044921875
+      },
+      "slopeMiBPerSecond": 1.3943491093829594,
+      "retainedGrowthMiB": 18.390625,
+      "peakRssMiB": 224.578125,
+      "listP95Ms": 1.1626249999999345,
+      "operationP95Ms": 31.843959000001632,
+      "outputBytes": [
+        31457280,
+        31457280
+      ]
+    },
+    {
+      "path": "../20261008-performance-diagnosis/perf.json",
+      "sha256": "c81a975c08151d128c864c6850fbe68d93b4453f26fc0f0057fb544001160838",
+      "status": "passed",
+      "workerTelemetry": true,
+      "durationMs": 30000,
+      "historyTasks": 1000,
+      "memoryMethod": {
+        "scope": "service process including SQLite worker; excludes clients and CLI children",
+        "warmupSeconds": 10,
+        "maxPostWarmupSlopeMiBPerSecond": 1,
+        "maxRetainedGrowthMiB": 32,
+        "windows": [
+          "10–30 seconds"
+        ],
+        "acceptanceWindow": "10–30 seconds",
+        "proofLimit": "finite observation; not an infinite-duration memory-leak proof",
+        "workloadStartServerElapsedMs": 378.2587890625
+      },
+      "slopeMiBPerSecond": 0.5602091731196028,
+      "retainedGrowthMiB": 7.21875,
+      "peakRssMiB": 224.265625,
+      "listP95Ms": 1.1542080000000396,
+      "operationP95Ms": 32.51295899999968,
+      "outputBytes": [
+        31457280,
+        31457280
+      ]
+    },
+    {
+      "path": "../20261008-performance-patch/perf.json",
+      "sha256": "39a214604c93a4fdfe9cfa90cd64ad2e675f84e825b26e3986db76575e970df4",
+      "status": "passed",
+      "workerTelemetry": true,
+      "durationMs": 30000,
+      "historyTasks": 1000,
+      "memoryMethod": {
+        "scope": "service process including SQLite worker; excludes clients and CLI children",
+        "warmupSeconds": 10,
+        "maxPostWarmupSlopeMiBPerSecond": 1,
+        "maxRetainedGrowthMiB": 32,
+        "windows": [
+          "10–30 seconds"
+        ],
+        "acceptanceWindow": "10–30 seconds",
+        "proofLimit": "finite observation; not an infinite-duration memory-leak proof",
+        "workloadStartServerElapsedMs": 384.3896484375
+      },
+      "slopeMiBPerSecond": 0.09005715797125989,
+      "retainedGrowthMiB": 1.40625,
+      "peakRssMiB": 194.921875,
+      "listP95Ms": 1.22950000000003,
+      "operationP95Ms": 27.149916999998823,
+      "outputBytes": [
+        31457280,
+        31457280
+      ]
+    },
+    {
+      "path": "../20261008-review-current/performance/perf.json",
+      "sha256": "e138242eaf22f8b0ba2a179e85587456183b0e572de4c31719830a70f6e36f4f",
+      "status": "passed",
+      "workerTelemetry": false,
+      "durationMs": 30000,
+      "historyTasks": 1000,
+      "memoryMethod": {
+        "scope": "service process including SQLite worker; excludes clients and CLI children",
+        "warmupSeconds": 10,
+        "maxPostWarmupSlopeMiBPerSecond": 1,
+        "maxRetainedGrowthMiB": 32,
+        "windows": [
+          "10–30 seconds"
+        ],
+        "acceptanceWindow": "10–30 seconds",
+        "proofLimit": "finite observation; not an infinite-duration memory-leak proof",
+        "workloadStartServerElapsedMs": 363.8291015625
+      },
+      "slopeMiBPerSecond": 0.07390115706472614,
+      "retainedGrowthMiB": 1.15625,
+      "peakRssMiB": 187.59375,
+      "listP95Ms": 1.04787500000009,
+      "operationP95Ms": 30.392917000000125,
+      "outputBytes": [
+        31457280,
+        31457280
+      ]
+    }
+  ]
+}

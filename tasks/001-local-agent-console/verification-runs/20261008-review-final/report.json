@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "task": "tasks/001-local-agent-console",
+  "run_id": "20261008-review-final",
+  "baseline": {
+    "head": "618607de5d6b3b22d44258950236273c37bd8079",
+    "content_sha256": "6edd8e79c46ca1cfa9a7008a49b0b02f4ab4108a13bddc9382857e6fbe8ebe0f"
+  },
+  "scope": {
+    "kind": "behavioral",
+    "requirements": [],
+    "summary": ""
+  },
+  "scenarios": {
+    "state-transition": {
+      "applicability": "applicable",
+      "reason": "",
+      "cases": []
+    },
+    "idempotency": {
+      "applicability": "applicable",
+      "reason": "",
+      "cases": []
+    },
+    "ordering": {
+      "applicability": "applicable",
+      "reason": "",
+      "cases": []
+    },
+    "recovery": {
+      "applicability": "applicable",
+      "reason": "",
+      "cases": []
+    },
+    "association": {
+      "applicability": "applicable",
+      "reason": "",
+      "cases": []
+    },
+    "isolation": {
+      "applicability": "applicable",
+      "reason": "",
+      "cases": []
+    }
+  },
+  "checks": {
+    "backend": {
+      "status": "not-run",
+      "reason": "",
+      "evidence": []
+    },
+    "e2e": {
+      "status": "not-run",
+      "reason": "",
+      "evidence": []
+    },
+    "ui": {
+      "status": "not-run",
+      "reason": "",
+      "evidence": []
+    },
+    "architecture": {
+      "status": "not-run",
+      "reason": "",
+      "evidence": []
+    }
+  },
+  "commands": [],
+  "evidence": {},
+  "review": {
+    "status": "not-run",
+    "author_context": "",
+    "reviewer_context": "",
+    "preview": "",
+    "files": [],
+    "exclusions": [],
+    "findings": [],
+    "evidence": []
+  },
+  "human_acceptance": {
+    "status": "pending",
+    "evidence": []
+  }
+}

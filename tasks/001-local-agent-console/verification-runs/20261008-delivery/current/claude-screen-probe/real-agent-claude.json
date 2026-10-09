@@ -1,0 +1,85 @@
+{
+  "type": "claude",
+  "date": "2026-10-08T09:43:11.827Z",
+  "session": "meteor-flow-test-claude-75130bbb",
+  "cwd": "/private/tmp/mf-agent-NIKpUF/project",
+  "isolation": "dedicated herdr XDG/session/cwd; existing model configuration read-only; user config writes denied",
+  "status": "blocked",
+  "timeline": [
+    {
+      "terminalId": "term_65d510f695b4c1",
+      "paneId": "w1:p1",
+      "type": "unknown",
+      "status": "unknown",
+      "cwd": "/private/tmp/mf-agent-NIKpUF/project",
+      "pid": null,
+      "processStart": null,
+      "agentSessionPresent": false,
+      "sequence": 0,
+      "launchPending": true,
+      "interactiveReady": false
+    },
+    {
+      "terminalId": "term_65d510f695b4c1",
+      "paneId": "w1:p1",
+      "type": "claude",
+      "status": "unknown",
+      "cwd": "/private/tmp/mf-agent-NIKpUF/project",
+      "pid": null,
+      "processStart": null,
+      "agentSessionPresent": false,
+      "sequence": 0,
+      "launchPending": true,
+      "interactiveReady": false
+    },
+    {
+      "terminalId": "term_65d510f695b4c1",
+      "paneId": "w1:p1",
+      "type": "claude",
+      "status": "unknown",
+      "cwd": "/private/tmp/mf-agent-NIKpUF/project",
+      "pid": 84653,
+      "processStart": "84653:1791452592:880545",
+      "agentSessionPresent": true,
+      "sequence": 0,
+      "launchPending": true,
+      "interactiveReady": false
+    },
+    {
+      "terminalId": "term_65d510f695b4c1",
+      "paneId": "w1:p1",
+      "type": "claude",
+      "status": "idle",
+      "cwd": "/private/tmp/mf-agent-NIKpUF/project",
+      "pid": 84653,
+      "processStart": "84653:1791452592:880545",
+      "agentSessionPresent": true,
+      "sequence": 1,
+      "launchPending": false,
+      "interactiveReady": true
+    }
+  ],
+  "versions": {
+    "herdr": "herdr 0.9.3",
+    "agent": "2.1.195 (Claude Code)",
+    "node": "v24.21.0"
+  },
+  "target": "term_65d510f695b4c1",
+  "screenSha256": "907742980e1942cf5fb06f15e3fa85f581ea7d0029b780943b5c163ff22ff8bd",
+  "screenReason": "software update requires human interaction",
+  "updateLines": [
+    "                                                                       Update available! Run: brew upgrade claude-code"
+  ],
+  "blocked": "software update requires human interaction",
+  "foregroundProcesses": [
+    {
+      "pid": 84676,
+      "name": "mcp-server-darw"
+    },
+    {
+      "pid": 84653,
+      "name": "claude"
+    }
+  ],
+  "protectedConfigurationUnchanged": true
+}

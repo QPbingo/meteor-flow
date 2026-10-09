@@ -1,0 +1,54 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ ✓ apps/server/src/storage/store.test.ts > dedicated real database writer > does not create a writer when close wins the asynchronous opening boundary 2ms
+ ✓ apps/server/src/storage/store.test.ts > dedicated real database writer > serializes concurrent identical operations to one persisted project (V03) 96ms
+ ✓ apps/server/src/storage/store.test.ts > dedicated real database writer > keeps the writer healthy after a domain conflict 90ms
+ ✓ apps/server/src/http/server.test.ts > requires a cookie for reads, rejects external Origin/Host, and enforces JSON/CSRF for writes 289ms
+ ✓ apps/server/src/http/server.test.ts > rotates the single-use entry, protects the cookie, and persists an operation exactly once 147ms
+ ✓ apps/server/src/http/server.test.ts > rejects cross-site and unauthenticated WebSocket upgrades before starting a CLI 124ms
+ ✓ apps/server/src/storage/store.test.ts > dedicated real database writer > recovers a committed-but-unacknowledged transaction without creating a second writer or replaying work (V04/V24) 665ms
+ × apps/server/src/storage/store.test.ts > fails closed on a real SQLITE_FULL commit failure without publishing or recording the operation (V25) 95ms
+   → Cannot find module '/Users/heybox/Documents/herdrflow/meteor-flow/apps/server/src/storage/worker.js'
+ × tests/integration/cli.test.ts > CLI rejects duplicate data/session owners and releases locks on shutdown (V26) 1173ms
+   → expected null to be +0 // Object.is equality
+ ✓ apps/server/src/http/server.test.ts > keeps observers read-only, gives every page a redraw, and arbitrates two controllers with revocation 449ms
+ ✓ apps/server/src/http/server.test.ts > closes a controller on disconnect without resuming dispatch, while observer closure has no scheduling side effect 223ms
+ ✓ apps/server/src/http/server.test.ts > rejects authenticated terminal upgrades with missing or null Origin 114ms
+ ✓ apps/server/src/http/server.test.ts > provides versioned resources, an operation receipt and an actionable directory error 115ms
+ ✓ apps/server/src/http/server.test.ts > announces snapshot calibration and replays durable SSE IDs after reconnect 117ms
+ ✓ apps/server/src/http/server.test.ts > holds all four download slots until slow responses finish and aborts them on service close 777ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/integration/cli.test.ts > CLI rejects duplicate data/session owners and releases locks on shutdown (V26)
+AssertionError: expected null to be +0 // Object.is equality
+
+- Expected: 
+0
+
++ Received: 
+null
+
+ ❯ tests/integration/cli.test.ts:26:140
+     24|     const sameSession=start(join(directory,'other'),session);expect((a…
+     25|     owner.child.kill('SIGTERM');expect((await owner.closed)[0]).toBe(0…
+     26|     const replacement=start(first,session);await replacement.ready;rep…
+       |                                                                                                                                            ^
+     27|   }finally{
+     28|     for(const child of children)if(child.exitCode===null&&child.signal…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+ FAIL  apps/server/src/storage/store.test.ts > fails closed on a real SQLITE_FULL commit failure without publishing or recording the operation (V25)
+Error: Cannot find module '/Users/heybox/Documents/herdrflow/meteor-flow/apps/server/src/storage/worker.js'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: 'MODULE_NOT_FOUND', requireStack: [] }
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/2]⎯
+
+
+ Test Files  2 failed | 1 passed (3)
+      Tests  2 failed | 13 passed (15)
+   Start at  10:37:06
+   Duration  2.80s (transform 147ms, setup 0ms, collect 441ms, tests 4.48s, environment 0ms, prepare 151ms)
+

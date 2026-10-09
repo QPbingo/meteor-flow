@@ -1,0 +1,18 @@
+{
+  "kind": "isolated-local-safety-reproduction",
+  "findings": [
+    {
+      "case": "frozen-root-replaced-before-read",
+      "result": "outside"
+    },
+    {
+      "case": "frozen-root-replaced-before-createRun",
+      "result": "/private/var/folders/zz/x9yvm9fs0wjbmxrh_2hw470w0000gn/T/meteor-posix-review-luFMK5/outside/.meteor-flow/runs/40ce2c54-ed89-4105-bb46-16a3a48d2ae5",
+      "outsideChanged": true
+    },
+    {
+      "case": "destination-parent-symlink",
+      "outsideChanged": true
+    }
+  ]
+}

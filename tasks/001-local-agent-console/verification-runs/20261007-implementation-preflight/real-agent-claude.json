@@ -1,0 +1,31 @@
+{
+  "type": "claude",
+  "date": "2026-10-07T02:13:04.977Z",
+  "session": "meteor-flow-test-claude-fd3fd435",
+  "cwd": "/private/tmp/mf-agent-ZK0mZ8/project",
+  "isolation": "dedicated herdr XDG/session/cwd; Claude config isolated; user config writes denied",
+  "status": "failed",
+  "timeline": [
+    {
+      "terminalId": "term_65d36a7d30c451",
+      "paneId": "w1:p1",
+      "type": "unknown",
+      "status": "unknown",
+      "cwd": "/private/tmp/mf-agent-ZK0mZ8/project",
+      "pid": null,
+      "processStart": null,
+      "agentSessionPresent": false,
+      "sequence": 0,
+      "launchPending": true,
+      "interactiveReady": false
+    }
+  ],
+  "versions": {
+    "herdr": "herdr 0.9.3",
+    "agent": "2.1.195 (Claude Code)",
+    "node": "v24.21.0"
+  },
+  "target": "term_65d36a7d30c451",
+  "error": "agent.read: invalid/error response",
+  "protectedConfigurationUnchanged": true
+}

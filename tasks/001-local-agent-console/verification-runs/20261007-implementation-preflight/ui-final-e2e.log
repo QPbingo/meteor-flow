@@ -1,0 +1,20 @@
+
+Running 12 tests using 1 worker
+
+(node:66929) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/12] tests/e2e/web-console.spec.ts:64:1 › bootstrap fragment is removed and project filters remain URL-restorable
+[2/12] tests/e2e/web-console.spec.ts:77:1 › ambiguous task submit preserves fields and reuses operation ID with one accepted task
+[3/12] tests/e2e/web-console.spec.ts:105:1 › pending writes cannot duplicate and state failure preserves snapshot while disabling writes
+[4/12] tests/e2e/web-console.spec.ts:127:1 › details keep attempt ownership and strip active Markdown and remote resources
+[5/12] tests/e2e/web-console.spec.ts:142:1 › terminal observes without resize, takes a token lease and never replays input after disconnect
+[6/12] tests/e2e/web-console.spec.ts:186:1 › storage outage exposes explicit emergency interrupt without changing task ownership
+[7/12] tests/e2e/web-console.spec.ts:207:1 › forms have keyboard focus and layout survives narrow viewport and 200 percent text
+[8/12] tests/e2e/web-console.spec.ts:251:1 › terminal rejects unknown protocol and malformed control without granting input
+[9/12] tests/e2e/web-console.spec.ts:289:1 › unknown event protocol closes stream while snapshot calibration remains usable
+[10/12] tests/e2e/web-console.spec.ts:299:1 › narrow touch controls have 44px targets and the task table responds to a swipe
+[11/12] tests/e2e/web-console.spec.ts:325:1 › definitive rejection removes pending operation so a corrected operation can proceed
+[12/12] tests/e2e/web-server.spec.ts:13:1 › browser creates project, confirms agent, completes a file task and reads durable evidence
+  12 passed (11.5s)

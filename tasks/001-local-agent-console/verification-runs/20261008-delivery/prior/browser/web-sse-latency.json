@@ -1,0 +1,158 @@
+{
+  "scope": "real Console/SQLite/HTTP SSE + browser, fake herdr boundary; unloaded local service",
+  "p95Ms": 34.26649999999972,
+  "samples": [
+    {
+      "latencyMs": 36.609833999998955,
+      "sequence": 2,
+      "paused": true
+    },
+    {
+      "latencyMs": 33.190332999998645,
+      "sequence": 3,
+      "paused": false
+    },
+    {
+      "latencyMs": 33.12870800000019,
+      "sequence": 4,
+      "paused": true
+    },
+    {
+      "latencyMs": 32.93274999999994,
+      "sequence": 5,
+      "paused": false
+    },
+    {
+      "latencyMs": 33.806791999999405,
+      "sequence": 6,
+      "paused": true
+    },
+    {
+      "latencyMs": 33.22545799999898,
+      "sequence": 7,
+      "paused": false
+    },
+    {
+      "latencyMs": 33.82099999999991,
+      "sequence": 8,
+      "paused": true
+    },
+    {
+      "latencyMs": 33.06408300000112,
+      "sequence": 9,
+      "paused": false
+    },
+    {
+      "latencyMs": 33.32170799999949,
+      "sequence": 10,
+      "paused": true
+    },
+    {
+      "latencyMs": 32.62687499999993,
+      "sequence": 11,
+      "paused": false
+    },
+    {
+      "latencyMs": 33.96504199999981,
+      "sequence": 12,
+      "paused": true
+    },
+    {
+      "latencyMs": 33.42608300000029,
+      "sequence": 13,
+      "paused": false
+    },
+    {
+      "latencyMs": 32.67579099999966,
+      "sequence": 14,
+      "paused": true
+    },
+    {
+      "latencyMs": 33.453709000001254,
+      "sequence": 15,
+      "paused": false
+    },
+    {
+      "latencyMs": 33.63520799999969,
+      "sequence": 16,
+      "paused": true
+    },
+    {
+      "latencyMs": 33.51420800000051,
+      "sequence": 17,
+      "paused": false
+    },
+    {
+      "latencyMs": 32.73749999999927,
+      "sequence": 18,
+      "paused": true
+    },
+    {
+      "latencyMs": 32.83808300000055,
+      "sequence": 19,
+      "paused": false
+    },
+    {
+      "latencyMs": 34.26649999999972,
+      "sequence": 20,
+      "paused": true
+    },
+    {
+      "latencyMs": 33.195708999999624,
+      "sequence": 21,
+      "paused": false
+    },
+    {
+      "latencyMs": 33.68224999999984,
+      "sequence": 22,
+      "paused": true
+    },
+    {
+      "latencyMs": 32.1544159999994,
+      "sequence": 23,
+      "paused": false
+    },
+    {
+      "latencyMs": 34.17012500000055,
+      "sequence": 24,
+      "paused": true
+    },
+    {
+      "latencyMs": 33.39020800000071,
+      "sequence": 25,
+      "paused": false
+    },
+    {
+      "latencyMs": 33.38887500000055,
+      "sequence": 26,
+      "paused": true
+    },
+    {
+      "latencyMs": 33.5346669999999,
+      "sequence": 27,
+      "paused": false
+    },
+    {
+      "latencyMs": 33.28850000000057,
+      "sequence": 28,
+      "paused": true
+    },
+    {
+      "latencyMs": 33.226291999999376,
+      "sequence": 29,
+      "paused": false
+    },
+    {
+      "latencyMs": 33.26887499999975,
+      "sequence": 30,
+      "paused": true
+    },
+    {
+      "latencyMs": 32.782750000000306,
+      "sequence": 31,
+      "paused": false
+    }
+  ],
+  "pollingIntervalOverriddenToMs": 60000,
+  "note": "30次交替状态：命令调用前到匹配UI可见并经过绘制帧，包含持久化耗时，是落库到可见耗时的保守上界；非双终端负载下的UI性能结论"
+}

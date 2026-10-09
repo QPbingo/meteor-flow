@@ -1,0 +1,42 @@
+{
+  "head": "618607de5d6b3b22d44258950236273c37bd8079",
+  "files": {
+    "apps/server/src/adapters/herdr/index.test.ts": "71ff82480a68e228a10066968a679a02c6d86abaf199a70960283000d26ce888",
+    "apps/server/src/adapters/herdr/index.ts": "27ce0f826950d52f6d68a84d14e548a9a5be6aa2bf52860802f364af5d3c48f7",
+    "apps/server/src/application/console.test.ts": "16c3fede21e83c01304508524e2cda9706eae29a37bce4a9b219817618a8d0e4",
+    "apps/server/src/application/console.ts": "5a6dc99180db42a6c9fd6cf415bd913960f4cc4642e24037ab8e3e92bdacf617",
+    "apps/server/src/application/process.ts": "cd4f3fecff8a7a0c92cab6eb5740fa8561374981b62ede738594cbb4dabc358a",
+    "apps/server/src/cli/main.ts": "7b412481f525fdd1e74da8e90beacfc36430c9dcd21f406effd6e1a635658201",
+    "apps/server/src/http/auth.ts": "eed39b984bf792199ab8b43b97215d9a2832bda4ec3b7f3597139980e5898cc3",
+    "apps/server/src/http/events.ts": "aecf85e4a956787025eea578bf9396bc3af5710a7f3f7cf7695e4a74a57515d6",
+    "apps/server/src/http/file-child.ts": "e2b94aeb6ab4796f6d4e4533f1afb9213b0bf1995656108fcf8cfaba474cc3d2",
+    "apps/server/src/http/files.ts": "6a1175021afa93f97b58797ed75426717150819ec35afa69c042d3000aa0cc91",
+    "apps/server/src/http/server.test.ts": "9f5553685a2d6db71138cf06f6b552c892183906390682e6dcbba5f038c736bf",
+    "apps/server/src/http/server.ts": "f1c29a5edb959400cb5b1d48337d947255f9f32dfc6993cc84dadc15aa54fb5b",
+    "apps/server/src/storage/store.test.ts": "620c1c64a81002f6f49c7f172fb213dfb7ff010609a48f569d69a8e465793199",
+    "apps/server/src/terminal/bridge.test.ts": "be36d641efe83014df1f922e9bf56bab7c079f2a42160efb8e8c56701933777b",
+    "apps/server/src/terminal/bridge.ts": "80b648baf7bf28b3f61238c212ec27162ab4499958aed3b12bf57f1a65769fcf",
+    "packages/posix-fs/src/index.ts": "e21d6df5573aaaa646b7d88a5486a7cc780a22a750c1569913bbd81b97532542",
+    "packages/posix-fs/src/native.ts": "185af71dc4babfa010a48cf3c0f2a4b666ef7928f8b94dc4d7ec8161e429946a",
+    "packages/posix-fs/test/index.test.ts": "948421836e5f75853eae703aab20ca4ce0691e25facdd7f0bad777554688663c",
+    "tests/fixtures/fake-herdr.ts": "8da39a7ba407b36edbb87a98282de20d7335b301b38b7f807d3a3092309d4143",
+    "tests/fixtures/performance-server.ts": "6a70f8cb613be28076bf7d093a5d25f7541bb3c1818d962a3063b8e225fac08a",
+    "tests/fixtures/review-server.ts": "b21036263a20d06bb36d615b7b208e6f490db6ab406a43622c2411aaab8a5cc8",
+    "tests/fixtures/storage-full.mjs": "fb5b025432231ce70094802ea2d907efbebe41fd6952536e3afe00000cc98841",
+    "tests/fixtures/terminal-cli.mjs": "84f4ea62d2ae59e9da5c31f3aa526c055d48e44d6766fd6084f4def641ff5f9b",
+    "tests/fixtures/terminal-flood.mjs": "b08fe328e6d4d7564b928620b26c157380f3d7c16a0c4088c0237f9b7cda3729",
+    "tests/integration/cli.test.ts": "fbe4ad75a49a074ede8a8bff2c8f95e8c920c8cbbe133b0b7ac3cdb655abcc8d",
+    "tests/integration/performance.test.ts": "b59d94baa0b51e694c8865f522914e67943095f293130ab422de1adc89af7418",
+    "tests/integration/real-agent.test.ts": "653bfb4e1daaec0d91d94879058f04750077c4b94f5bf938d64101caa02c31e9"
+  },
+  "test_dependency_context": {
+    "apps/server/src/storage/database.ts": "50df4caaa5301803a896b268b2386aac2485bebf25d24d7314a16a95b988896b",
+    "apps/server/src/storage/store.ts": "f04ee7f1c24617ea56cb42dbf2dd7c2c7ac0a770cfc81a1c1c6c54c3253f8842",
+    "apps/server/src/storage/worker.ts": "43a5458ee679affa4e6a151b1ac69ed946d2979e844176688c9f03a6bbdb2a9a",
+    "packages/contracts/src/index.ts": "1d172c97dfba9e1f06d6dc53ea5bc4873e4e705b9941c6f954dd63d0c8984de4",
+    "apps/server/src/domain/model.ts": "70a736f3b468f91afb14e5f2bc3011321508d15da047dd8d8d2f5d8d94725c8a",
+    "apps/server/src/results/collector.ts": "a9769ef0a756ad169708c4bfc73cbcad616ec3e1e6c36a601cd0a096e920513c",
+    "apps/server/src/results/child.ts": "d8e04300641312c8a2be2c464a274ca874d6fa30c75b6922e8e6216c61d184a8",
+    "apps/server/src/results/validate.ts": "1b5b6f09493e17d557f8d41c9c8e10caf72f6a2e224005897ad3615143e9bf91"
+  }
+}

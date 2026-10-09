@@ -1,0 +1,15 @@
+
+Running 8 tests using 1 worker
+
+(node:48149) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/e2e/web-console.spec.ts:63:1 › bootstrap fragment is removed and project filters remain URL-restorable (294ms)
+  ✓  2 tests/e2e/web-console.spec.ts:76:1 › ambiguous task submit preserves fields and reuses operation ID with one accepted task (357ms)
+  ✓  3 tests/e2e/web-console.spec.ts:96:1 › pending writes cannot duplicate and state failure preserves snapshot while disabling writes (1.6s)
+  ✓  4 tests/e2e/web-console.spec.ts:118:1 › details keep attempt ownership and strip active Markdown and remote resources (227ms)
+  ✓  5 tests/e2e/web-console.spec.ts:133:1 › terminal observes without resize, takes a token lease and never replays input after disconnect (980ms)
+  ✓  6 tests/e2e/web-console.spec.ts:175:1 › storage outage exposes explicit emergency interrupt without changing task ownership (262ms)
+  ✓  7 tests/e2e/web-console.spec.ts:196:1 › forms have keyboard focus and layout survives narrow viewport and 200 percent text (373ms)
+  ✓  8 tests/e2e/web-server.spec.ts:12:1 › browser creates project, confirms agent, completes a file task and reads durable evidence (2.4s)
+
+  8 passed (7.4s)

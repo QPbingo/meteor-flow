@@ -1,0 +1,11 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ ✓ tests/integration/cli.test.ts > CLI rejects duplicate data/session owners and releases locks on shutdown (V26) 981ms
+ ✓ tests/integration/cli.test.ts > exits after the HTTP listener opens but authentication bootstrap persistence fails 360ms
+
+ Test Files  1 passed (1)
+      Tests  2 passed (2)
+   Start at  15:30:24
+   Duration  1.51s (transform 20ms, setup 0ms, collect 19ms, tests 1.34s, environment 0ms, prepare 46ms)
+

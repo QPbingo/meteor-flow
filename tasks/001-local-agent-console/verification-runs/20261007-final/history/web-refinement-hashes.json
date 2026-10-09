@@ -1,0 +1,19 @@
+{
+  "apps/web/dist/assets/TerminalPanel-DDGTF8rc.css": "98e9ef834903856257639ba3cc8cfe64401a8f6af89f9a6335280654fdfa22cb",
+  "apps/web/dist/assets/TerminalPanel-DHr4zC5s.js": "96ce35fbd27122ac09afe2950de5700ebf19af4cea244de36e195ba4bfb0981d",
+  "apps/web/dist/assets/index-BgaYm1Rr.js": "13fe2e8ed122a1acb1b62e3162def126b88ea09a5d926ec27bd84680e668cc93",
+  "apps/web/dist/assets/index-CaGdyP3D.css": "b99f809f442389ad1029f61f851017f692677c8f4129557f66288f186267b6ab",
+  "apps/web/dist/index.html": "ec8ca21877b6839e1951ff23ea244d206e7cf3ef908c735a88d590a125cc702a",
+  "apps/web/index.html": "de0ad3d2713ae6a3e926415993690d1639471c730311e75e1d7df851aa78e342",
+  "apps/web/src/Agents.tsx": "42d2f6b6996d5c66fcae2bee80dcfffd3dbaaf1a4228b18b901098247aa9e1c9",
+  "apps/web/src/App.tsx": "78f8f73f4805f30ad24b00ccccd585c823553f7c83e85c0373398fb206e2877d",
+  "apps/web/src/Tasks.tsx": "7ded933a8f58f5a44f142998245f0569642790d2c21e0f1cc7da7be08887e96e",
+  "apps/web/src/TerminalPanel.tsx": "74cccabf1a35e12ef4c287dac68c37083bdc0fea86d2c1e9798a3f65944a1528",
+  "apps/web/src/api.ts": "22aec2e4fa0a6e1fe3a27d2a95a8547b2ecf1339ba2e90e1f705d437dc46280c",
+  "apps/web/src/main.tsx": "88ddcfdd251281f3e1688a79617355b60593e78a120ca6be1b168075ad272204",
+  "apps/web/src/styles.css": "450a9a2d99b523a9c9c3c717ce9c786f5cb874123184e80a8c69531fba1ae950",
+  "apps/web/src/ui.tsx": "fd303e0d5b6a8b0aa1c56145bc0e1ce3727d6c64bbb483640f2b6b37be5ea65d",
+  "apps/web/vite.config.ts": "0cb6ec6de771d9a2afd9937c3e72a27f115e84763fa7214b8b01f9e3a9f32be7",
+  "tests/e2e/web-console.spec.ts": "ec31329f2c64d7ee5841b4cb0a82a2f3185759ef92dc45aef9697582ee862ab9",
+  "tests/e2e/web-server.spec.ts": "278b6cfdc2f3cf909afc397e26dd83c99f65228f2949e46f190ade4a9f456ac2"
+}

@@ -1,0 +1,14 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+stdout | tests/integration/real-agent.test.ts > real isolated claude: startup, readiness, structured result and durable archive
+REAL_AGENT_BLOCKED claude: adapter cannot establish a unique live foreground agent identity
+
+ ↓ tests/integration/real-agent.test.ts > real isolated codex: startup, readiness, structured result and durable archive
+ ↓ tests/integration/real-agent.test.ts > real isolated claude: startup, readiness, structured result and durable archive 5900ms [adapter cannot establish a unique live foreground agent identity]
+
+ Test Files  1 passed (1)
+      Tests  2 skipped (2)
+   Start at  10:29:48
+   Duration  6.22s (transform 76ms, setup 0ms, collect 144ms, tests 5.90s, environment 0ms, prepare 47ms)
+

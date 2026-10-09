@@ -1,0 +1,46 @@
+TARGET_SELECTION_REQUIRED:
+{
+  "targetPath": null,
+  "projectRoot": "/Users/heybox/Documents/herdrflow/meteor-flow",
+  "repoRoot": "/Users/heybox/Documents/herdrflow/meteor-flow",
+  "targetCandidates": [
+    {
+      "name": "server",
+      "path": "apps/server",
+      "targetExample": "apps/server",
+      "productStatus": "missing",
+      "productPath": null,
+      "designStatus": "missing",
+      "designPath": null
+    },
+    {
+      "name": "web",
+      "path": "apps/web",
+      "targetExample": "apps/web",
+      "productStatus": "missing",
+      "productPath": null,
+      "designStatus": "missing",
+      "designPath": null
+    },
+    {
+      "name": "contracts",
+      "path": "packages/contracts",
+      "targetExample": "packages/contracts",
+      "productStatus": "missing",
+      "productPath": null,
+      "designStatus": "missing",
+      "designPath": null
+    },
+    {
+      "name": "posix-fs",
+      "path": "packages/posix-fs",
+      "targetExample": "packages/posix-fs",
+      "productStatus": "missing",
+      "productPath": null,
+      "designStatus": "missing",
+      "designPath": null
+    }
+  ]
+}
+
+Show each app with its productStatus/productPath and designStatus/designPath so the user can see child overrides, inherited root files, fallback files, or missing files before choosing. Ask the user which app Impeccable should use, then rerun Impeccable helper commands from that child app cwd using this same scripts directory. Use `--target <path>` only as a fallback when changing cwd is not possible, or when the user explicitly named a file/path.

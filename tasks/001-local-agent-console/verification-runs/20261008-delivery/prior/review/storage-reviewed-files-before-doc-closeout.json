@@ -1,0 +1,114 @@
+{
+  "captured_at": "2026-10-08T08:36:44.540640+00:00",
+  "review_source": "storage-review.md",
+  "files": [
+    {
+      "path": "apps/server/src/storage/database.ts",
+      "status": "added",
+      "insertions": 113,
+      "deletions": 0,
+      "sha256": "e3916cd86d93dae8142f9d8f4cef7250862dd1b9a82ec2c3d801bc635b6313df",
+      "current_sha256": "e3916cd86d93dae8142f9d8f4cef7250862dd1b9a82ec2c3d801bc635b6313df",
+      "outcome": "reviewed",
+      "review_mode": "fresh-independent",
+      "review_source": "storage-review.md",
+      "rationale": "本轮存储提交增量或当前状态文档，独立静态审查；storage 实现另有 44 项定向回归。"
+    },
+    {
+      "path": "apps/server/src/storage/state-patch.ts",
+      "status": "added",
+      "insertions": 22,
+      "deletions": 0,
+      "sha256": "30635e6124b8f9b584dd1ccd90905054e4bfe890c92b22799a8fd78bfe962db6",
+      "current_sha256": "30635e6124b8f9b584dd1ccd90905054e4bfe890c92b22799a8fd78bfe962db6",
+      "outcome": "reviewed",
+      "review_mode": "fresh-independent",
+      "review_source": "storage-review.md",
+      "rationale": "本轮存储提交增量或当前状态文档，独立静态审查；storage 实现另有 44 项定向回归。"
+    },
+    {
+      "path": "apps/server/src/storage/store.test.ts",
+      "status": "added",
+      "insertions": 103,
+      "deletions": 0,
+      "sha256": "1b8acc66e2d101d8e6dda360d9982d3b7623d755f023d8bb6f17480bdfd7912f",
+      "current_sha256": "1b8acc66e2d101d8e6dda360d9982d3b7623d755f023d8bb6f17480bdfd7912f",
+      "outcome": "reviewed",
+      "review_mode": "fresh-independent",
+      "review_source": "storage-review.md",
+      "rationale": "本轮存储提交增量或当前状态文档，独立静态审查；storage 实现另有 44 项定向回归。"
+    },
+    {
+      "path": "apps/server/src/storage/store.ts",
+      "status": "added",
+      "insertions": 83,
+      "deletions": 0,
+      "sha256": "80a4e3a6577f7a379cfcbd5601cf3efb9695d509e3fb5cd28407a71b4870109b",
+      "current_sha256": "80a4e3a6577f7a379cfcbd5601cf3efb9695d509e3fb5cd28407a71b4870109b",
+      "outcome": "reviewed",
+      "review_mode": "fresh-independent",
+      "review_source": "storage-review.md",
+      "rationale": "本轮存储提交增量或当前状态文档，独立静态审查；storage 实现另有 44 项定向回归。"
+    },
+    {
+      "path": "apps/server/src/storage/worker.ts",
+      "status": "added",
+      "insertions": 26,
+      "deletions": 0,
+      "sha256": "cde27bfdf67417c6c64b604fb72922b3d8bdfa320972811dfe9275a5a0f4cf01",
+      "current_sha256": "cde27bfdf67417c6c64b604fb72922b3d8bdfa320972811dfe9275a5a0f4cf01",
+      "outcome": "reviewed",
+      "review_mode": "fresh-independent",
+      "review_source": "storage-review.md",
+      "rationale": "本轮存储提交增量或当前状态文档，独立静态审查；storage 实现另有 44 项定向回归。"
+    },
+    {
+      "path": "tasks/001-local-agent-console/codex-integration-followup.md",
+      "status": "added",
+      "insertions": 30,
+      "deletions": 0,
+      "sha256": "493319325958782330f983ebd7cf599a9f66f5df29095fa925f9784d4e98efb1",
+      "current_sha256": "493319325958782330f983ebd7cf599a9f66f5df29095fa925f9784d4e98efb1",
+      "outcome": "reviewed",
+      "review_mode": "fresh-independent",
+      "review_source": "storage-review.md",
+      "rationale": "本轮存储提交增量或当前状态文档，独立静态审查；storage 实现另有 44 项定向回归。"
+    },
+    {
+      "path": "tasks/001-local-agent-console/implementation-progress.md",
+      "status": "added",
+      "insertions": 29,
+      "deletions": 0,
+      "sha256": "3a77df5265c76132eb3f8e4b2586dc2d553e212f2275c6f1556366cf75c0d756",
+      "current_sha256": "3a77df5265c76132eb3f8e4b2586dc2d553e212f2275c6f1556366cf75c0d756",
+      "outcome": "reviewed",
+      "review_mode": "fresh-independent",
+      "review_source": "storage-review.md",
+      "rationale": "本轮存储提交增量或当前状态文档，独立静态审查；storage 实现另有 44 项定向回归。"
+    },
+    {
+      "path": "tasks/001-local-agent-console/technical-design.md",
+      "status": "added",
+      "insertions": 271,
+      "deletions": 0,
+      "sha256": "367f0048cfe380bf438c49cb09b84eab6c113cec1219930d50031e59f9257e14",
+      "current_sha256": "367f0048cfe380bf438c49cb09b84eab6c113cec1219930d50031e59f9257e14",
+      "outcome": "reviewed",
+      "review_mode": "fresh-independent",
+      "review_source": "storage-review.md",
+      "rationale": "本轮存储提交增量或当前状态文档，独立静态审查；storage 实现另有 44 项定向回归。"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-status.md",
+      "status": "added",
+      "insertions": 57,
+      "deletions": 0,
+      "sha256": "4a436976a15116ece1788ed0105c807233f39f3bf9b6bf9732e02119b46614e5",
+      "current_sha256": "4a436976a15116ece1788ed0105c807233f39f3bf9b6bf9732e02119b46614e5",
+      "outcome": "reviewed",
+      "review_mode": "fresh-independent",
+      "review_source": "storage-review.md",
+      "rationale": "本轮存储提交增量或当前状态文档，独立静态审查；storage 实现另有 44 项定向回归。"
+    }
+  ]
+}

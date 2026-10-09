@@ -1,7 +1,7 @@
 # 开发工作流
 
 状态：选型与本次接入范围已由用户确认，2026-10-06。适用：本仓库 Codex、Claude Code。
-产品代码仍未授权；本次仅实施工作流基础设施。运行验证结果见 [validation.md](validation.md)。
+此处 2026-10-06 的原接入仅授权工作流基础设施；用户随后确认 Node 技术方案并明确要求开始实现产品。2026-10-07 的产品范围、授权和证据见 [实施进度](../001-local-agent-console/implementation-progress.md) 与 [验证状态](../001-local-agent-console/verification-status.md)。原工作流运行结果保留于 [validation.md](validation.md)。
 
 本次接入验收要求：W01 双端共享与实际加载；W02 固定来源、完整引用与 OCR 仅委托；W03 六类场景及实际测试证据；W04 独立审查、完整范围与严重问题关卡；W05 基线/证据/目录隔离；W06 如实区分安装、验证与产品能力，最终人工验收。
 
@@ -11,9 +11,9 @@
 | --- | --- | --- |
 | 发出想法 → 想法确认 | brainstorming 澄清目标/约束，再 forge-idea 深化 | 选型已确认；项目内待接入 |
 | 想法确认 → 需求方案 | Spec Kit specify → clarify → checklist；输出可验收产品需求，不预定技术栈 | 选型已确认；项目内待接入 |
-| 代码编写 → 测试验证走查：后端 | test-master | 已随仓库接入；产品测试待产品实现 |
-| 代码编写 → 测试验证走查：浏览器 | Playwright 实际交互与可重复 E2E | 选型已确认；项目内待接入；不能因个人已安装就声称全项目可用 |
-| 代码编写 → 测试验证走查：前端体验 | Impeccable audit / critique | 选型已确认；项目内待接入 |
+| 代码编写 → 测试验证走查：后端 | test-master | 已接入，产品测试已执行；当前会话仍需加载核验 |
+| 代码编写 → 测试验证走查：浏览器 | Playwright 实际交互与可重复 E2E | 2026-10-07 项目级接入及真实 Chromium 交互已验证；不能据此替后续会话声明已加载 |
+| 代码编写 → 测试验证走查：前端体验 | Impeccable audit / critique | 2026-10-07 项目级接入，双独立上下文审查和增量复验已执行 |
 | 代码编写 → 测试验证走查：独立代码审查 | Alibaba OCR 委托模式 | 已随仓库接入，CLI 本地显式安装 |
 | 验收汇总 | meteor-flow-verification + 六类场景 + 本地检查 | 已随仓库接入 |
 
@@ -103,6 +103,6 @@ python3 -m unittest discover -s scripts/workflow/tests -v
 
 - test-master 上游的 CI/CD 默认要求改为本地实际执行；示例框架不成为产品选型；TDD 引用不授权删除既有代码。
 - OCR 项目入口固定仓库和规则、只允许委托命令；不使用上游的自动修复、静默丢弃误报、版本不匹配时文本降级行为。
-- 未安装环节登记选型状态；一旦本次任务触发其使用条件，必须先按已确认方案接入并验证，才能开展相关开发。当前没有产品后端或页面，不宣称产品测试或 E2E 已通过。
+- 未安装环节登记选型状态；一旦本次任务触发其使用条件，必须先按已确认方案接入并验证，才能开展相关开发。产品测试、浏览器与真实 Agent 集成证据分别记录，不用技能安装成功代替产品验收。
 
 来源：[test-master](https://github.com/Jeffallan/claude-skills/tree/1be15d8064f88fc25216442406d40add8fd23b53/skills/test-master)、[OCR 委托技能](https://github.com/alibaba/open-code-review/blob/182898cf522da3d04157b422752d028417974e19/skills/open-code-review-delegate/SKILL.md)。

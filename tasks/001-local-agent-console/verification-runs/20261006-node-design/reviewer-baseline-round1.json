@@ -1,0 +1,15 @@
+{
+  "scope": "First hash capture; N01/N02 author revisions had already landed before capture",
+  "author": "/root",
+  "reviewer": "/root/technical_review",
+  "head": "618607de5d6b3b22d44258950236273c37bd8079",
+  "candidate_files": {
+    "AGENTS.md": "a6ad749f5c985c6f7e5f1cb52ef0dabb802ee39ea03757c06f384b7092aa2840",
+    "README.md": "b930fe988588084fbcc003284b6ddadfcb9c2a7abb0bc9cd2f8c85a15c1f7fce",
+    "tasks/001-local-agent-console/herdr-compatibility.md": "be9a0d873513fb8baf4619c31dfcf2bab4bf3a14d4bf79c73af373c79d0b01c8",
+    "tasks/001-local-agent-console/implementation-plan.md": "d69bf0b5248d6aee4432cac2e14ac6bfc0bca23fdb8ed340a035f963493440af",
+    "tasks/001-local-agent-console/technical-design.md": "94a4764e375153c10e00f330d81b24bcadd1b18d12951c3a3a4faa8ae19174e4"
+  },
+  "probe_sha256": "9e0f2fe43c902ba60f37c4eddebc0dcdd40248b06b0efbffcf46c821de78a4a3",
+  "capture_note": "The hashes equal the revised candidate, not the original 257-line design. Original findings are supported by the initial preview, full-text reads and reviewer-source-notes.json excerpts; no pre-revision content hash is claimed."
+}

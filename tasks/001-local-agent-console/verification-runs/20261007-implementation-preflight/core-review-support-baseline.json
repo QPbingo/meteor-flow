@@ -1,0 +1,10 @@
+{
+  "scope": "测试依赖完整审查；application 两文件仅调用关系/definitelyGone 跨批核对",
+  "files": {
+    "tests/fixtures/storage-support.ts": "377c84449562bb2937f6ef7fb355018ace5039500a4d9f0f32b694050a644bf7",
+    "tests/fixtures/storage-drop-reply.mjs": "c831438739c62cc3d144212addd78b8bc1cd811386a8a4d1ffb49587b36ebc35",
+    "tests/fixtures/collector-exit-gate.mjs": "43ebdc5167a5948c0f5f624dc8079a57c3434fee87bbe406481046216133c97d",
+    "apps/server/src/application/process.ts": "cd4f3fecff8a7a0c92cab6eb5740fa8561374981b62ede738594cbb4dabc358a",
+    "apps/server/src/application/console.ts": "ee263dadf06a313ea114c5409a9bff7408be24e5207ba1254d19e62a3d3fc1c7"
+  }
+}

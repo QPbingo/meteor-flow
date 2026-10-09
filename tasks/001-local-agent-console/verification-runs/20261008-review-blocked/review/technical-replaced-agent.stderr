@@ -1,0 +1,9 @@
+/private/tmp/meteor-flow-replaced-agent-review-20261008.mts:11
+const oldPid=child.pid!;const oldStart=processIdentity(oldPid);if(!oldStart)throw Error('owned child identity unavailable');
+                                                                                  ^
+
+Error: owned child identity unavailable
+    at <anonymous> (/private/tmp/meteor-flow-replaced-agent-review-20261008.mts:11:83)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+
+Node.js v24.21.0

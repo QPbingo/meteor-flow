@@ -1,0 +1,23 @@
+--- /tmp/meteor-flow-node-design-before-20261006/README.md	2026-10-06 20:24:17
++++ README.md	2026-10-06 20:32:03
+@@ -6,11 +6,12 @@
+ 
+ - [本地 Agent 控制台需求（已确认）](tasks/001-local-agent-console/requirements.md)
+ - [需求方案 review 与验收追踪](tasks/001-local-agent-console/review.md)
+-- [产品技术方案（待确认）](tasks/001-local-agent-console/technical-design.md)
++- [Node.js/TypeScript 产品技术方案（具体选型待确认）](tasks/001-local-agent-console/technical-design.md)
+ - [技术方案独立审查与修订复查](tasks/001-local-agent-console/technical-review.md)
+ - [实现计划与 V01—V29 验收映射（待方案确认）](tasks/001-local-agent-console/implementation-plan.md)
+ - [herdr 接口事实与兼容边界](tasks/001-local-agent-console/herdr-compatibility.md)
+-- [Task 001 当前实现准备记录](tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/skill-readiness.md)
++- [Task 001 Node 方案准备记录](tasks/001-local-agent-console/verification-runs/20261006-node-design/skill-readiness.md)
++- [Task 001 初次实现准备记录](tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/skill-readiness.md)
+ - [开发工作流、安装状态与使用方式](tasks/002-development-workflow/workflow.md)
+ - [Skills 使用条件与开发前置要求](tasks/002-development-workflow/skill-prerequisites.md)
+ - [六类强制场景与需求映射](tasks/002-development-workflow/mandatory-scenarios.md)
+@@ -18,4 +19,4 @@
+ 
+ 所有后续需求与方案统一放在 `tasks/` 下，协作约定见 [AGENTS.md](AGENTS.md)。
+ 
+-产品需求已确认；用户于 2026-10-06 明确要求实现，具体技术方案已提出、待人工确认。产品编码在方案确认且必需技能就绪后开始，目前尚无产品代码。仓库同时提供可由 Codex 与 Claude Code 使用的测试和审查工作流。
++产品需求已确认；用户于 2026-10-06 明确要求实现，并指定尽量使用 Node 生态。方案已统一为 Node.js/TypeScript，具体选型及实现逻辑待人工确认。产品编码在方案确认且必需技能就绪后开始，目前尚无产品代码。仓库同时提供可由 Codex 与 Claude Code 使用的测试和审查工作流。

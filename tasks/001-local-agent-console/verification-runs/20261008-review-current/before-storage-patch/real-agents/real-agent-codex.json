@@ -1,0 +1,175 @@
+{
+  "type": "codex",
+  "date": "2026-10-08T07:55:25.310Z",
+  "session": "meteor-flow-test-codex-3a486d33",
+  "cwd": "/private/tmp/mf-agent-7DADrs/project",
+  "isolation": "dedicated herdr XDG/session/cwd; existing model configuration read-only; user config writes denied",
+  "status": "failed",
+  "timeline": [
+    {
+      "terminalId": "term_65d4f8df400961",
+      "paneId": "w1:p1",
+      "type": "unknown",
+      "status": "unknown",
+      "cwd": "/private/tmp/mf-agent-7DADrs/project",
+      "pid": null,
+      "processStart": null,
+      "agentSessionPresent": false,
+      "sequence": 0,
+      "launchPending": true,
+      "interactiveReady": false
+    },
+    {
+      "terminalId": "term_65d4f8df400961",
+      "paneId": "w1:p1",
+      "type": "codex",
+      "status": "unknown",
+      "cwd": "/private/tmp/mf-agent-7DADrs/project",
+      "pid": 61513,
+      "processStart": "61513:1791446125:962410",
+      "agentSessionPresent": false,
+      "sequence": 0,
+      "launchPending": true,
+      "interactiveReady": false
+    },
+    {
+      "terminalId": "term_65d4f8df400961",
+      "paneId": "w1:p1",
+      "type": "codex",
+      "status": "idle",
+      "cwd": "/private/tmp/mf-agent-7DADrs/project",
+      "pid": 61513,
+      "processStart": "61513:1791446125:962410",
+      "agentSessionPresent": false,
+      "sequence": 1,
+      "launchPending": false,
+      "interactiveReady": true
+    }
+  ],
+  "versions": {
+    "herdr": "herdr 0.9.3",
+    "agent": "codex-cli 0.160.1",
+    "node": "v24.21.0"
+  },
+  "target": "term_65d4f8df400961",
+  "screenSha256": "267c4124a33c12e7679bd859dd270a014cecb4782b6169c2aada207d1bb229c3",
+  "screenReason": null,
+  "foregroundProcesses": [
+    {
+      "pid": 61513,
+      "name": "codex"
+    }
+  ],
+  "taskId": "79c254e9-cb2b-4234-9f3e-873bbdc709f8",
+  "error": "expected 'needs_confirmation' to be 'succeeded' // Object.is equality",
+  "tasks": [
+    {
+      "id": "79c254e9-cb2b-4234-9f3e-873bbdc709f8",
+      "phase": "needs_confirmation",
+      "reason": "缺少执行身份与停止证据"
+    }
+  ],
+  "attempts": [
+    {
+      "id": "165eca43-f258-444d-aa9d-0e06eae036db",
+      "phase": "needs_confirmation",
+      "reason": "缺少执行身份与停止证据",
+      "dispatch": "submitted",
+      "seenActivity": false,
+      "archived": false
+    }
+  ],
+  "events": [
+    {
+      "seq": 1,
+      "time": 1791446135962,
+      "type": "recover",
+      "message": "启动恢复：观测缺口与旧控制权已失效",
+      "taskId": null,
+      "attemptId": null
+    },
+    {
+      "seq": 2,
+      "time": 1791446136519,
+      "type": "project.create",
+      "message": "创建项目 Real codex",
+      "taskId": null,
+      "attemptId": null
+    },
+    {
+      "seq": 3,
+      "time": 1791446136633,
+      "type": "binding.create",
+      "message": "接入 Real codex，当前只观察",
+      "taskId": null,
+      "attemptId": null
+    },
+    {
+      "seq": 4,
+      "time": 1791446136752,
+      "type": "binding.action",
+      "message": "Real codex：已确认接入，请启用自动调度",
+      "taskId": null,
+      "attemptId": null
+    },
+    {
+      "seq": 5,
+      "time": 1791446136870,
+      "type": "binding.action",
+      "message": "Real codex：自动调度",
+      "taskId": null,
+      "attemptId": null
+    },
+    {
+      "seq": 6,
+      "time": 1791446136871,
+      "type": "task.create",
+      "message": "创建任务 Write one integration-test artifact",
+      "taskId": "79c254e9-cb2b-4234-9f3e-873bbdc709f8",
+      "attemptId": null
+    },
+    {
+      "seq": 7,
+      "time": 1791446137215,
+      "type": "dispatch",
+      "message": "投递意图已持久化",
+      "taskId": "79c254e9-cb2b-4234-9f3e-873bbdc709f8",
+      "attemptId": "165eca43-f258-444d-aa9d-0e06eae036db"
+    },
+    {
+      "seq": 8,
+      "time": 1791446137848,
+      "type": "dispatch.result",
+      "message": "herdr 已确认接收",
+      "taskId": "79c254e9-cb2b-4234-9f3e-873bbdc709f8",
+      "attemptId": "165eca43-f258-444d-aa9d-0e06eae036db"
+    },
+    {
+      "seq": 9,
+      "time": 1791446137935,
+      "type": "agent.paused",
+      "message": "未知生命周期事件",
+      "taskId": null,
+      "attemptId": null
+    },
+    {
+      "seq": 10,
+      "time": 1791446138725,
+      "type": "agent.paused",
+      "message": "终端不可见，请核对实例",
+      "taskId": null,
+      "attemptId": null
+    }
+  ],
+  "sourceFiles": [
+    {
+      "path": "hello.txt",
+      "size": null
+    },
+    {
+      "path": ".meteor-flow/runs/165eca43-f258-444d-aa9d-0e06eae036db/result.json",
+      "size": null
+    }
+  ],
+  "protectedConfigurationUnchanged": true
+}

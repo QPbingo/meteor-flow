@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-07",
+  "reason": "Independent L01 review completed in the intermediate closeout directory; byte-identical copies retained with original source paths. No review is retimed or claimed as a new execution.",
+  "files": [
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261007-review-closeout/l01-independent-review.md",
+      "destination": "l01-independent-review.md",
+      "sha256": "182ca0702f3429d6f5376fd9f144447cfbe53b3a6002eb0038a62b9355488e17"
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261007-review-closeout/l01-reviewer-doctor.log",
+      "destination": "l01-reviewer-doctor.log",
+      "sha256": "e82ae58b4255c051a0e740263a8c241b071b5374292d4df82f4fe0788ea940e4"
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261007-review-closeout/l01-reviewer-exact-diff.patch",
+      "destination": "l01-reviewer-exact-diff.patch",
+      "sha256": "ba26883c5e59027e43bce318b1a980b705f39dce491ed5021941c0dcb8418360"
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261007-review-closeout/l01-reviewer-ocr-version.log",
+      "destination": "l01-reviewer-ocr-version.log",
+      "sha256": "44a4426426d28e422b92ea9642887c7f8e352ba6b68c77adcd334f4efdb34063"
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261007-review-closeout/l01-reviewer-preview.json",
+      "destination": "l01-reviewer-preview.json",
+      "sha256": "8e2adab07d343f037e09f2debda7d20d1b139c9c23b7e0c9e687a3a3f9265276"
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261007-review-closeout/l01-reviewer-rule.json",
+      "destination": "l01-reviewer-rule.json",
+      "sha256": "6941d7fa5f5243677580669c0c0a2d966b0b49a753765d6516399ccdb1cfe10a"
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261007-review-closeout/l01-reviewer-scope.json",
+      "destination": "l01-reviewer-scope.json",
+      "sha256": "2d53dce3b428d8d34abe00935b93eef8c526a122e2c0c67b3c5f8130bb95201f"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+#!/bin/sh
+set -eu
+skill_dir=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+repo_dir=$(CDPATH= cd -- "$skill_dir/../../.." && pwd)
+bin="$repo_dir/.tools/impeccable/0.1.11/impeccable"
+[ -x "$bin" ] || { echo '缺少固定 Impeccable 引擎；按项目准备记录安装。' >&2; exit 127; }
+actual=$(shasum -a 256 "$bin")
+[ "${actual%% *}" = '7427918d6e75507401a1b7b691eefe58a7c01a2fc63b712016ffc5a0ac1c05e6' ] || { echo 'Impeccable 校验失败' >&2; exit 127; }
+export IMPECCABLE_SKILL_DIR="$skill_dir" IMPECCABLE_SELF="$0"
+exec "$bin" "$@"

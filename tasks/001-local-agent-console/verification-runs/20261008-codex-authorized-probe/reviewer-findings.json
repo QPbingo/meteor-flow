@@ -1,0 +1,29 @@
+{
+  "findings": [
+    {
+      "id": "CP01",
+      "severity": "high",
+      "category": "test",
+      "status": "fixed",
+      "path": "tests/integration/real-agent.test.ts",
+      "start_line": 141,
+      "content": "beforeSubmit 只在 saveTask 前读屏，实际 agent.prompt 在后台 tick 和文件/DB准备之后；迟到更新/审批提示仍可能收到任务输入。临时 codex-standalone 同样路径。block 先等待 process_info 也不能立即阻断并发派发。",
+      "requested_fix": "在测试专用实际 prompt 入口最后核对目标屏幕，并在 blocker 时先锁闭发送；用 gate 覆盖入队后/发送前出现 Update 或 approval 的 0 prompt。不修改产品身份规则。",
+      "closure": "实际HerdrClient.prompt已包guardAgentInput：同目标最后读屏、block先同步封闭、读失败拒发、待定读结束后再核对blocked；两个真实App/DB gate用例在持久intent后出现update/approval时外部prompt/interrupt均为0。",
+      "evidence": [
+        "reviewer-guard-tests-host.log",
+        "reviewer-fixed-baseline.json",
+        "reviewer-tested-baseline-check.json"
+      ]
+    }
+  ],
+  "model_calls_by_reviewer": 0,
+  "open_counts": {
+    "critical": 0,
+    "high": 0,
+    "medium": 0,
+    "low": 0
+  },
+  "diagnostic_allowed": true,
+  "product_e2e_passed": false
+}

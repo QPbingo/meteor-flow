@@ -1,0 +1,12 @@
+{
+  "captured_at": "2026-10-08T08:37:51.302497+00:00",
+  "document_closeout_changed_paths": [],
+  "product_source_matches_test_baseline": true,
+  "reviewable_pairs_unchanged": true,
+  "new_evidence_exclusions": 10,
+  "reviewed": 168,
+  "fresh_reviewed": 9,
+  "inherited_reviewed": 159,
+  "skipped": 3,
+  "total_reviewable": 171
+}

@@ -1,0 +1,13 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+stdout | tests/integration/claude-screen-diagnostic.test.ts > diagnostic claude: startup screen only; no task input
+REAL_AGENT_BLOCKED claude: software update requires human interaction
+
+ ↓ tests/integration/claude-screen-diagnostic.test.ts > diagnostic claude: startup screen only; no task input 12763ms [software update requires human interaction]
+
+ Test Files  1 passed (1)
+      Tests  1 skipped (1)
+   Start at  17:43:11
+   Duration  12.98s (transform 60ms, setup 0ms, collect 71ms, tests 12.76s, environment 0ms, prepare 44ms)
+

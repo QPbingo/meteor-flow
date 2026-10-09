@@ -1,0 +1,4 @@
+- main [ref=e3]:
+  - heading "Meteor Flow" [level=1] [ref=e4]
+  - status [ref=e5]: 正在读取任务与 Agent…
+  - button "重新读取状态" [ref=e6] [cursor=pointer]

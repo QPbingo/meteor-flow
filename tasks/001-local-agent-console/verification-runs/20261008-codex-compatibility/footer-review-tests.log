@@ -1,0 +1,35 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ ✓ tests/integration/agent-test-screen.test.ts > allows the observed passive Claude Homebrew notice without hiding adjacent blockers 2ms
+ ✓ tests/integration/agent-test-screen.test.ts > blocks a non-task screen before any prompt is sent: Update available! 0.160.1 → 0.161.0
+1. Update now
+2. Skip 0ms
+ ✓ tests/integration/agent-test-screen.test.ts > blocks a non-task screen before any prompt is sent: Updating Codex via brew upgrade --cask codex...
+Auto-updating Homebrew... 0ms
+ ✓ tests/integration/agent-test-screen.test.ts > blocks a non-task screen before any prompt is sent: Updating via homebrew… 0ms
+ ✓ tests/integration/agent-test-screen.test.ts > blocks a non-task screen before any prompt is sent: Updating… 0ms
+ ✓ tests/integration/agent-test-screen.test.ts > blocks a non-task screen before any prompt is sent: 沙箱阻止了执行（sandbox_apply: Operation not permitted），尚未创建 hello.txt。 0ms
+ ✓ tests/integration/agent-test-screen.test.ts > blocks a non-task screen before any prompt is sent: Error: Cannot use the shared background server: This session requires api_key_model_discovery to be disabled. 0ms
+ ✓ tests/integration/agent-test-screen.test.ts > blocks a non-task screen before any prompt is sent: Do you trust the contents of this folder?
+1. Yes
+2. No 0ms
+ ✓ tests/integration/agent-test-screen.test.ts > blocks a non-task screen before any prompt is sent: Would you like to run the following command?
+1. Yes, proceed
+2. No 0ms
+ ✓ tests/integration/agent-test-screen.test.ts > blocks a non-task screen before any prompt is sent: Sign in with ChatGPT to continue 0ms
+ ✓ tests/integration/agent-test-screen.test.ts > does not treat an echoed task permission instruction or ordinary ready prompt as an approval request 0ms
+ ✓ tests/integration/agent-test-screen.test.ts > sends no task when a non-task screen appears at the actual input boundary: Update available! Update now 1ms
+ ✓ tests/integration/agent-test-screen.test.ts > sends no task when a non-task screen appears at the actual input boundary: Updating via homebrew… 0ms
+ ✓ tests/integration/agent-test-screen.test.ts > sends no task when a non-task screen appears at the actual input boundary: Updating… 0ms
+ ✓ tests/integration/agent-test-screen.test.ts > sends no task when a non-task screen appears at the actual input boundary: Would you like to run the following command? 0ms
+ ✓ tests/integration/agent-test-screen.test.ts > keeps the input gate closed when monitoring stops a pending screen read 0ms
+ ✓ tests/integration/agent-test-screen.test.ts > fails closed on a screen read failure and sends exactly once on a ready screen 0ms
+ ✓ tests/integration/agent-test-screen.test.ts > blocks an already queued real application task before external input: Update available! Update now 291ms
+ ✓ tests/integration/agent-test-screen.test.ts > blocks an already queued real application task before external input: Would you like to run the following command? 271ms
+
+ Test Files  1 passed (1)
+      Tests  19 passed (19)
+   Start at  17:49:55
+   Duration  882ms (transform 81ms, setup 0ms, collect 167ms, tests 567ms, environment 0ms, prepare 46ms)
+

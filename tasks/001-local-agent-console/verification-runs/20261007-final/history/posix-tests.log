@@ -1,0 +1,11 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ ✓ packages/posix-fs/test/index.test.ts (38 tests) 938ms
+   ✓ safe file collection > copies in bounded blocks, preserves hash, and creates a private file  495ms
+
+ Test Files  1 passed (1)
+      Tests  38 passed (38)
+   Start at  09:34:40
+   Duration  1.16s (transform 43ms, setup 0ms, collect 52ms, tests 938ms, environment 0ms, prepare 46ms)
+

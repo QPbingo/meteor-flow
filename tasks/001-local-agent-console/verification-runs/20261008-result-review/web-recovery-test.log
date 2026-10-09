@@ -1,0 +1,39 @@
+
+Running 1 test using 1 worker
+
+(node:58266) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/1] tests/e2e/web-recovery.spec.ts:12:1 › recovery UI preserves dependency edits, follows retries and records explicit manual recovery
+  1) tests/e2e/web-recovery.spec.ts:12:1 › recovery UI preserves dependency edits, follows retries and records explicit manual recovery 
+
+    Error: locator.check: Clicking the checkbox did not change its state
+    Call log:
+      - waiting for getByLabel('已归档', { exact: true })
+        - locator resolved to <input type="checkbox"/>
+      - attempting click action
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - performing click action
+        - click action done
+        - waiting for scheduled navigations to finish
+        - navigations have finished
+
+
+      37 |     await dialog.getByRole('button',{name:'保存修改'}).click();await expect(dialog).toHaveCount(0);
+      38 |     expect(service.store.state.tasks.find(task=>task.id===dependent.id)!.dependencies).toEqual([]);
+    > 39 |     await page.getByLabel('已归档',{exact:true}).check();
+         |                                               ^
+      40 |     await page.getByRole('button',{name:'归档前置任务',exact:true}).click();
+      41 |     await expect(page.getByRole('region',{name:'任务详情'}).getByRole('button',{name:'重试',exact:true})).toHaveCount(0);
+      42 |     await expect(page.getByRole('button',{name:'复制任务',exact:true})).toBeVisible();
+        at /Users/heybox/Documents/herdrflow/meteor-flow/tests/e2e/web-recovery.spec.ts:39:47
+
+    Error Context: test-results/tests-e2e-web-recovery-rec-05916-ds-explicit-manual-recovery/error-context.md
+
+
+  1 failed
+    tests/e2e/web-recovery.spec.ts:12:1 › recovery UI preserves dependency edits, follows retries and records explicit manual recovery 

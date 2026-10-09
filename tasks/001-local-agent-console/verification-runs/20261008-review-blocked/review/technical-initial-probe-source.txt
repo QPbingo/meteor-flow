@@ -1,0 +1,35 @@
+import { mkdtemp,mkdir,realpath,rm,readFile,writeFile } from 'node:fs/promises';
+import { join } from 'node:path';
+import { randomUUID } from 'node:crypto';
+import { AgentConsole } from '/Users/heybox/Documents/herdrflow/meteor-flow/apps/server/dist/application/console.js';
+import { FakeHerdr,gate } from '/Users/heybox/Documents/herdrflow/meteor-flow/tests/fixtures/fake-herdr.ts';
+import { reduce } from '/Users/heybox/Documents/herdrflow/meteor-flow/apps/server/src/domain/model.ts';
+import { stateWithTask,frozen,observation,result } from '/Users/heybox/Documents/herdrflow/meteor-flow/tests/fixtures/storage-support.ts';
+const output:any={};
+{
+ const {state,task}=stateWithTask();
+ reduce(state,{type:'dispatch',taskId:task.id,id:'attempt-conflict',input:frozen()});
+ reduce(state,{type:'dispatch.result',id:'attempt-conflict',status:'submitted',reason:'submitted'});
+ reduce(state,{type:'observe',observations:[observation({status:'working',sequence:11})]});
+ reduce(state,{type:'result',id:'attempt-conflict',result:result(task.id,'attempt-conflict'),hash:'original-hash',archiveId:'archive-original',artifacts:[]});
+ reduce(state,{type:'collection.error',id:'attempt-conflict',reason:'结果声明发生冲突，已发布终态不会翻转'});
+ output.conflict={afterError:{phase:task.phase,occupies:state.attempts[0].occupies,paused:state.bindings[0].paused}};
+ reduce(state,{type:'observe',observations:[observation({status:'idle',sequence:12})]});
+ output.conflict.afterIdle={phase:task.phase,occupies:state.attempts[0].occupies,paused:state.bindings[0].paused,resultHash:state.attempts[0].resultHash};
+}
+{
+ const root=await realpath(await mkdtemp('/tmp/mf-start-review-'));const data=join(root,'data');const projectRoot=join(root,'project');await mkdir(data);await mkdir(projectRoot);
+ const ports:FakeHerdr[]=[];
+ const service=new AgentConsole({dataDir:data,session:'old',executable:'/unused',portFactory:session=>{const p=new FakeHerdr({session});ports.push(p);return p;},pollMs:1000000,minFreeBytes:0});
+ try{
+  await service.open();const project=await service.createProject({operation_id:'project',root:projectRoot,name:'review'});
+  const blocked=gate();const entered=gate();
+  const switching=service.switchSession('new','switch',async()=>{entered.release();await blocked.promise;});await entered.promise;
+  const starting=service.start({operation_id:'start',projectId:project.id,type:'codex',cwd:join(projectRoot,'agent'),label:'review'});
+  blocked.release();await switching;const receipt=await starting;await service.tick();
+  output.startRace={session:service.store.state.settings.session,receipt,status:service.store.state.starts[0].status,startCalls:ports.map(p=>({session:p.session,calls:p.starts.length}))};
+  try{await service.switchSession('next','next');}catch(error:any){output.startRace.switchError={code:error.code,message:error.message};}
+  try{await service.start({operation_id:'start-2',projectId:project.id,type:'codex',cwd:join(projectRoot,'agent'),label:'review'});}catch(error:any){output.startRace.restartError={code:error.code,message:error.message};}
+ }finally{await service.close();await rm(root,{recursive:true,force:true});}
+}
+console.log(JSON.stringify(output,null,2));

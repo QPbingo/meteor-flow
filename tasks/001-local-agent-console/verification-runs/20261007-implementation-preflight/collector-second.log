@@ -1,0 +1,43 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > archives complete artifacts, preserves source ownership and freezes independent downstream copies (V09/V17) 448ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > rejects traversal without publishing a partial archive (V09/V13/V22) 266ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > rejects symlink without publishing a partial archive (V09/V13/V22) 269ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > rejects fifo without publishing a partial archive (V09/V13/V22) 269ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > rejects oversized without publishing a partial archive (V09/V13/V22) 269ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > rejects missing-required without publishing a partial archive (V09/V13/V22) 281ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > rejects old-attempt without publishing a partial archive (V09/V13/V22) 280ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > waits for process exit and channel closure after a successful candidate message 179ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > kills and reaps a timed-out writer even after it sent a success candidate 1612ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > reserves capacity for an unidentified orphan instead of spawning another writer 100ms
+ × apps/server/src/results/collector.test.ts > real process result collection and immutable archives > reserves capacity atomically when two preparations arrive together 132ms
+   → expected [ { …(10) }, { …(10) } ] to have a length of 1 but got 2
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  apps/server/src/results/collector.test.ts > real process result collection and immutable archives > reserves capacity atomically when two preparations arrive together
+AssertionError: expected [ { …(10) }, { …(10) } ] to have a length of 1 but got 2
+
+- Expected
++ Received
+
+- 1
++ 2
+
+ ❯ apps/server/src/results/collector.test.ts:130:110
+    128|     try {
+    129|       await expect.poll(() => rejections > 0 || context.store.state.jo…
+    130|       expect(context.store.state.jobs.filter(job => ['intent', 'runnin…
+       |                                                                                                              ^
+    131|       expect(rejections).toBe(1);
+    132|     } finally {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 10 passed (11)
+   Start at  09:44:14
+   Duration  4.41s (transform 71ms, setup 0ms, collect 152ms, tests 4.11s, environment 0ms, prepare 45ms)
+

@@ -1,0 +1,78 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ ✓ tests/integration/dev.test.ts > development proxy serves the browser with authenticated API/WS while rejecting foreign boundaries 1055ms
+ × tests/integration/dev.test.ts > dev requires an explicit session and never starts services after a failed initial build 642ms
+   → expected [] to have a length of 1 but got +0
+ × tests/integration/dev.test.ts > dev builds first, forwards CLI options, restarts on child-code changes and reaps its process groups 15019ms
+   → Matcher did not succeed in time.
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/integration/dev.test.ts > dev requires an explicit session and never starts services after a failed initial build
+AssertionError: expected [] to have a length of 1 but got +0
+
+- Expected
++ Received
+
+- 1
++ 0
+
+ ❯ tests/integration/dev.test.ts:139:56
+    137|       const [code] = await once(child, 'close'); expect(code).toBe(1);
+    138|       const rows = await fixture.rows(); expect(rows.filter(row => row…
+    139|       expect(rows.filter(row => row.kind === 'build')).toHaveLength(ar…
+       |                                                        ^
+    140|     }
+    141|   } finally { await rm(fixture.directory, { recursive: true, force: tr…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+ FAIL  tests/integration/dev.test.ts > dev builds first, forwards CLI options, restarts on child-code changes and reaps its process groups
+Error: Matcher did not succeed in time.
+ ❯ tests/integration/dev.test.ts:154:28
+    152|       if (child.exitCode !== null) throw new Error(output);
+    153|       return (await fixture.rows()).some(row => row.kind === 'server');
+    154|     }, { timeout: 15000 }).toBe(true);
+       |                            ^
+    155|     await expect.poll(async () => { try { return (await http(`http://1…
+    156|     expect((await fixture.rows())[0]!.kind).toBe('build');
+
+Caused by: Error: [ERR_PNPM_ABORTED_REMOVE_MODULES_DIR_NO_TTY] Aborted removal of modules directory due to no TTY
+
+If you are running pnpm in CI, set the CI environment variable to "true", or set "confirmModulesPurge" to "false".
+[ERROR] Command failed with exit code 1: pnpm install
+
+pnpm: Command failed with exit code 1: pnpm install
+    at getFinalError (file:///opt/homebrew/lib/node_modules/pnpm/dist/pnpm.mjs:34291:14)
+    at makeError (file:///opt/homebrew/lib/node_modules/pnpm/dist/pnpm.mjs:36598:21)
+    at getSyncResult (file:///opt/homebrew/lib/node_modules/pnpm/dist/pnpm.mjs:38442:10)
+    at spawnSubprocessSync (file:///opt/homebrew/lib/node_modules/pnpm/dist/pnpm.mjs:38402:14)
+    at execaCoreSync (file:///opt/homebrew/lib/node_modules/pnpm/dist/pnpm.mjs:38332:23)
+    at callBoundExeca (file:///opt/homebrew/lib/node_modules/pnpm/dist/pnpm.mjs:40860:23)
+    at boundExeca (file:///opt/homebrew/lib/node_modules/pnpm/dist/pnpm.mjs:40837:49)
+    at sync (file:///opt/homebrew/lib/node_modules/pnpm/dist/pnpm.mjs:40992:14)
+    at runPnpmCli (file:///opt/homebrew/lib/node_modules/pnpm/dist/pnpm.mjs:247128:5)
+    at runDepsStatusCheck (file:///opt/homebrew/lib/node_modules/pnpm/dist/pnpm.mjs:248869:7)
+初始构建失败，开发服务未启动
+
+ ❯ getFinalError ../../../../../opt/homebrew/lib/node_modules/pnpm/dist/pnpm.mjs:34291:14
+ ❯ makeError ../../../../../opt/homebrew/lib/node_modules/pnpm/dist/pnpm.mjs:36598:21
+ ❯ getSyncResult ../../../../../opt/homebrew/lib/node_modules/pnpm/dist/pnpm.mjs:38442:10
+ ❯ spawnSubprocessSync ../../../../../opt/homebrew/lib/node_modules/pnpm/dist/pnpm.mjs:38402:14
+ ❯ execaCoreSync ../../../../../opt/homebrew/lib/node_modules/pnpm/dist/pnpm.mjs:38332:23
+ ❯ callBoundExeca ../../../../../opt/homebrew/lib/node_modules/pnpm/dist/pnpm.mjs:40860:23
+ ❯ boundExeca ../../../../../opt/homebrew/lib/node_modules/pnpm/dist/pnpm.mjs:40837:49
+ ❯ sync ../../../../../opt/homebrew/lib/node_modules/pnpm/dist/pnpm.mjs:40992:14
+ ❯ runPnpmCli ../../../../../opt/homebrew/lib/node_modules/pnpm/dist/pnpm.mjs:247128:5
+ ❯ runDepsStatusCheck ../../../../../opt/homebrew/lib/node_modules/pnpm/dist/pnpm.mjs:248869:7
+ ❯ Proxy.expect.poll.timeout tests/integration/dev.test.ts:152:42
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/2]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  2 failed | 1 passed (3)
+   Start at  10:58:55
+   Duration  17.30s (transform 85ms, setup 0ms, collect 430ms, tests 16.72s, environment 0ms, prepare 35ms)
+

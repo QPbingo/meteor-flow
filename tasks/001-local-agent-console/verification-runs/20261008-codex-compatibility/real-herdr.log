@@ -1,0 +1,11 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ ✓ apps/server/src/adapters/herdr/real-herdr.test.ts > connects, snapshots and subscribes to an isolated real herdr 0.9.3 server 788ms
+ ✓ apps/server/src/adapters/herdr/real-herdr.test.ts > uses real official terminal observe/control streams in a dedicated shell without model calls 1273ms
+
+ Test Files  1 passed (1)
+      Tests  2 passed (2)
+   Start at  17:37:48
+   Duration  2.27s (transform 49ms, setup 0ms, collect 60ms, tests 2.06s, environment 0ms, prepare 41ms)
+

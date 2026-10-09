@@ -1,0 +1,29 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > reads split UTF-8 frames and supports the 0.9.0 contract without completion_seq 10ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > rejects unsupported server metadata {"version":"0.9.3","protocol":23} 1ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > rejects unsupported server metadata {"version":"0.10.0","protocol":22} 1ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > invalidates a wrong-id reply 1ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > invalidates a oversized reply 15ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > invalidates a invalid-json reply 1ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > invalidates a wrong-type reply 1ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > does not replay prompt after timeout and closes the observation generation 53ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > does not replay prompt after disconnect and closes the observation generation 1ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > sends one explicit Ctrl-C and does not claim the agent has stopped 1ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > rejects a successful-looking prompt acknowledgement associated with another terminal 1ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > invalidates incomplete observations instead of accepting guessed fields 1ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > returns the new terminal only after one successful start acknowledgement 1ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > preserves known target after a single failed start, following creation of a separate shell 1ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > keeps identity across pane movement but changes it for replacement, session and reconnect 12ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > leaves missing process evidence observation-only 1ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > rejects an older concurrent snapshot after a newer snapshot was requested 4ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > subscribes before calibration, follows moved panes and reports disconnect once 7ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > rejects in-flight responses when a caller closes the client 1ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > validates session names and removes inherited target environment for fixed-argv CLI discovery 409ms
+
+ Test Files  1 passed (1)
+      Tests  20 passed (20)
+   Start at  10:09:56
+   Duration  749ms (transform 58ms, setup 0ms, collect 67ms, tests 523ms, environment 0ms, prepare 51ms)
+

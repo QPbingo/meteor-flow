@@ -1,0 +1,275 @@
+{
+  "status": "pass",
+  "method": "safe YAML parse; all manifest dependency names/specifiers agree with importer resolution, internal workspace links explicit, all registry packages sha512 integrity present; no dependency install/network or vulnerability-scan claim",
+  "importers": 5,
+  "dependencies": [
+    {
+      "importer": ".",
+      "kind": "devDependencies",
+      "name": "typescript",
+      "specifier": "5.9.3",
+      "resolved": "5.9.3"
+    },
+    {
+      "importer": ".",
+      "kind": "devDependencies",
+      "name": "vitest",
+      "specifier": "3.2.7",
+      "resolved": "3.2.7(@types/node@24.19.1)(tsx@4.23.15)(yaml@2.9.1)"
+    },
+    {
+      "importer": ".",
+      "kind": "devDependencies",
+      "name": "@playwright/test",
+      "specifier": "1.63.0",
+      "resolved": "1.63.0"
+    },
+    {
+      "importer": ".",
+      "kind": "devDependencies",
+      "name": "@playwright/cli",
+      "specifier": "0.1.22",
+      "resolved": "0.1.22"
+    },
+    {
+      "importer": ".",
+      "kind": "devDependencies",
+      "name": "@types/node",
+      "specifier": "24.19.1",
+      "resolved": "24.19.1"
+    },
+    {
+      "importer": ".",
+      "kind": "devDependencies",
+      "name": "tsx",
+      "specifier": "4.23.15",
+      "resolved": "4.23.15"
+    },
+    {
+      "importer": "apps/server",
+      "kind": "dependencies",
+      "name": "fastify",
+      "specifier": "5.12.5",
+      "resolved": "5.12.5"
+    },
+    {
+      "importer": "apps/server",
+      "kind": "dependencies",
+      "name": "@fastify/cookie",
+      "specifier": "11.1.2",
+      "resolved": "11.1.2"
+    },
+    {
+      "importer": "apps/server",
+      "kind": "dependencies",
+      "name": "@fastify/static",
+      "specifier": "8.3.0",
+      "resolved": "8.3.0"
+    },
+    {
+      "importer": "apps/server",
+      "kind": "dependencies",
+      "name": "@fastify/websocket",
+      "specifier": "11.3.3",
+      "resolved": "11.3.3"
+    },
+    {
+      "importer": "apps/server",
+      "kind": "dependencies",
+      "name": "@fastify/swagger",
+      "specifier": "9.9.1",
+      "resolved": "9.9.1"
+    },
+    {
+      "importer": "apps/server",
+      "kind": "dependencies",
+      "name": "@fastify/type-provider-typebox",
+      "specifier": "5.2.0",
+      "resolved": "5.2.0(@sinclair/typebox@0.34.52)(fastify@5.12.5)"
+    },
+    {
+      "importer": "apps/server",
+      "kind": "dependencies",
+      "name": "better-sqlite3",
+      "specifier": "13.0.3",
+      "resolved": "13.0.3"
+    },
+    {
+      "importer": "apps/server",
+      "kind": "dependencies",
+      "name": "jsonc-parser",
+      "specifier": "3.3.1",
+      "resolved": "3.3.1"
+    },
+    {
+      "importer": "apps/server",
+      "kind": "dependencies",
+      "name": "ws",
+      "specifier": "8.22.0",
+      "resolved": "8.22.0"
+    },
+    {
+      "importer": "apps/server",
+      "kind": "dependencies",
+      "name": "@meteor-flow/contracts",
+      "specifier": "workspace:*",
+      "resolved": "link:../../packages/contracts"
+    },
+    {
+      "importer": "apps/server",
+      "kind": "dependencies",
+      "name": "@meteor-flow/posix-fs",
+      "specifier": "workspace:*",
+      "resolved": "link:../../packages/posix-fs"
+    },
+    {
+      "importer": "apps/server",
+      "kind": "devDependencies",
+      "name": "@types/better-sqlite3",
+      "specifier": "7.6.13",
+      "resolved": "7.6.13"
+    },
+    {
+      "importer": "apps/server",
+      "kind": "devDependencies",
+      "name": "@types/ws",
+      "specifier": "8.18.2",
+      "resolved": "8.18.2"
+    },
+    {
+      "importer": "apps/web",
+      "kind": "dependencies",
+      "name": "react",
+      "specifier": "19.3.0",
+      "resolved": "19.3.0"
+    },
+    {
+      "importer": "apps/web",
+      "kind": "dependencies",
+      "name": "react-dom",
+      "specifier": "19.3.0",
+      "resolved": "19.3.0(react@19.3.0)"
+    },
+    {
+      "importer": "apps/web",
+      "kind": "dependencies",
+      "name": "react-router-dom",
+      "specifier": "7.18.4",
+      "resolved": "7.18.4(react-dom@19.3.0(react@19.3.0))(react@19.3.0)"
+    },
+    {
+      "importer": "apps/web",
+      "kind": "dependencies",
+      "name": "@tanstack/react-query",
+      "specifier": "5.104.1",
+      "resolved": "5.104.1(react@19.3.0)"
+    },
+    {
+      "importer": "apps/web",
+      "kind": "dependencies",
+      "name": "@radix-ui/react-dialog",
+      "specifier": "1.2.0",
+      "resolved": "1.2.0(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)"
+    },
+    {
+      "importer": "apps/web",
+      "kind": "dependencies",
+      "name": "@radix-ui/react-alert-dialog",
+      "specifier": "1.1.24",
+      "resolved": "1.1.24(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)"
+    },
+    {
+      "importer": "apps/web",
+      "kind": "dependencies",
+      "name": "@radix-ui/react-tabs",
+      "specifier": "1.1.22",
+      "resolved": "1.1.22(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)"
+    },
+    {
+      "importer": "apps/web",
+      "kind": "dependencies",
+      "name": "lucide-react",
+      "specifier": "0.577.0",
+      "resolved": "0.577.0(react@19.3.0)"
+    },
+    {
+      "importer": "apps/web",
+      "kind": "dependencies",
+      "name": "@xterm/xterm",
+      "specifier": "6.0.0",
+      "resolved": "6.0.0"
+    },
+    {
+      "importer": "apps/web",
+      "kind": "dependencies",
+      "name": "@xterm/addon-fit",
+      "specifier": "0.11.0",
+      "resolved": "0.11.0"
+    },
+    {
+      "importer": "apps/web",
+      "kind": "dependencies",
+      "name": "marked",
+      "specifier": "17.0.6",
+      "resolved": "17.0.6"
+    },
+    {
+      "importer": "apps/web",
+      "kind": "dependencies",
+      "name": "dompurify",
+      "specifier": "3.4.16",
+      "resolved": "3.4.16"
+    },
+    {
+      "importer": "apps/web",
+      "kind": "dependencies",
+      "name": "@meteor-flow/contracts",
+      "specifier": "workspace:*",
+      "resolved": "link:../../packages/contracts"
+    },
+    {
+      "importer": "apps/web",
+      "kind": "devDependencies",
+      "name": "vite",
+      "specifier": "7.3.7",
+      "resolved": "7.3.7(@types/node@24.19.1)(tsx@4.23.15)(yaml@2.9.1)"
+    },
+    {
+      "importer": "apps/web",
+      "kind": "devDependencies",
+      "name": "@vitejs/plugin-react",
+      "specifier": "5.2.0",
+      "resolved": "5.2.0(vite@7.3.7(@types/node@24.19.1)(tsx@4.23.15)(yaml@2.9.1))"
+    },
+    {
+      "importer": "apps/web",
+      "kind": "devDependencies",
+      "name": "@types/react",
+      "specifier": "19.3.0",
+      "resolved": "19.3.0"
+    },
+    {
+      "importer": "apps/web",
+      "kind": "devDependencies",
+      "name": "@types/react-dom",
+      "specifier": "19.3.0",
+      "resolved": "19.3.0(@types/react@19.3.0)"
+    },
+    {
+      "importer": "packages/contracts",
+      "kind": "dependencies",
+      "name": "@sinclair/typebox",
+      "specifier": "0.34.52",
+      "resolved": "0.34.52"
+    },
+    {
+      "importer": "packages/posix-fs",
+      "kind": "dependencies",
+      "name": "koffi",
+      "specifier": "3.3.2",
+      "resolved": "3.3.2"
+    }
+  ],
+  "registry_packages": 330,
+  "sha256": "1056bbdaf7c4b711a364abe5805f6ab22ef698912f56a879b2137e5a5db825a1"
+}

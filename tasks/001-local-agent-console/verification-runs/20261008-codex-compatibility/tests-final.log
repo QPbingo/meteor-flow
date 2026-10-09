@@ -1,0 +1,50 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ ↓ tests/integration/performance.test.ts (1 test | 1 skipped)
+ ↓ tests/integration/real-agent.test.ts (2 tests | 2 skipped)
+ ✓ apps/server/src/application/console.test.ts (16 tests) 4116ms
+   ✓ application orchestration against real DB and collectors > persists first-session identification with the active attempt and never restores authorization after reopening  377ms
+   ✓ application orchestration against real DB and collectors > keeps a conflicting result pending across idle observations and restart until an explicit manual conclusion  927ms
+   ✓ application orchestration against real DB and collectors > never retries a prompt with a lost acknowledgement, including after service restart (V04/V05/V24)  331ms
+   ✓ application orchestration against real DB and collectors > runs an independent task behind an unmet dependency on another binding (V14)  365ms
+ ✓ apps/server/src/http/server.test.ts (12 tests) 2572ms
+   ✓ keeps observers read-only, gives every page a redraw, and arbitrates two controllers with revocation  445ms
+   ✓ holds all four download slots until slow responses finish and aborts them on service close  666ms
+ ↓ apps/server/src/adapters/herdr/real-herdr.test.ts (2 tests | 2 skipped)
+ ✓ apps/server/src/results/collector.test.ts (18 tests) 7639ms
+   ✓ real process result collection and immutable archives > quarantines a candidate if cancel changes while atomic rename is pending  512ms
+   ✓ real process result collection and immutable archives > quarantines a candidate if close changes while atomic rename is pending  574ms
+   ✓ real process result collection and immutable archives > quarantines a candidate if storage changes while atomic rename is pending  581ms
+   ✓ real process result collection and immutable archives > does not publish if cancel changes at the post-verification boundary  565ms
+   ✓ real process result collection and immutable archives > does not publish if close changes at the post-verification boundary  469ms
+   ✓ real process result collection and immutable archives > does not publish if storage changes at the post-verification boundary  452ms
+   ✓ real process result collection and immutable archives > archives complete artifacts, preserves source ownership and freezes independent downstream copies (V09/V17)  572ms
+   ✓ real process result collection and immutable archives > rejects fifo without publishing a partial archive (V09/V13/V22)  300ms
+   ✓ real process result collection and immutable archives > kills and reaps a timed-out writer even after it sent a success candidate  1581ms
+ ✓ tests/integration/cli.test.ts (2 tests) 1388ms
+   ✓ CLI rejects duplicate data/session owners and releases locks on shutdown (V26)  1023ms
+   ✓ exits after the HTTP listener opens but authentication bootstrap persistence fails  364ms
+ ✓ apps/server/src/storage/store.test.ts (6 tests) 1108ms
+   ✓ dedicated real database writer > recovers a committed-but-unacknowledged transaction without creating a second writer or replaying work (V04/V24)  646ms
+ ✓ packages/posix-fs/test/index.test.ts (42 tests) 920ms
+   ✓ safe file collection > copies in bounded blocks, preserves hash, and creates a private file  510ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts (32 tests) 822ms
+   ✓ herdr NDJSON management adapter > validates session names and removes inherited target environment for fixed-argv CLI discovery  462ms
+ ✓ apps/server/src/storage/database.test.ts (5 tests) 31ms
+ ✓ apps/server/src/terminal/bridge.test.ts (22 tests) 21ms
+ ✓ apps/server/src/domain/model.test.ts (37 tests) 8ms
+ ✓ tests/integration/agent-test-screen.test.ts (19 tests) 571ms
+ ✓ apps/server/src/results/protocol.test.ts (19 tests) 5ms
+ ✓ tests/integration/dev.test.ts (5 tests) 19195ms
+   ✓ development proxy serves the browser with authenticated API/WS while rejecting foreign boundaries  1927ms
+   ✓ dev requires an explicit session and never starts services after a failed initial build  459ms
+   ✓ reaps a resistant build descendant after the build is failed  5467ms
+   ✓ reaps a resistant build descendant after the build is interrupted  5422ms
+   ✓ dev builds first, forwards CLI options, restarts on child-code changes and reaps its process groups  5920ms
+
+ Test Files  13 passed | 3 skipped (16)
+      Tests  235 passed | 5 skipped (240)
+   Start at  18:01:22
+   Duration  19.84s (transform 282ms, setup 0ms, collect 1.53s, tests 38.40s, environment 1ms, prepare 577ms)
+

@@ -1,0 +1,7 @@
+{
+  "packages/posix-fs/src/native.ts": "185af71dc4babfa010a48cf3c0f2a4b666ef7928f8b94dc4d7ec8161e429946a",
+  "packages/posix-fs/src/index.ts": "e21d6df5573aaaa646b7d88a5486a7cc780a22a750c1569913bbd81b97532542",
+  "packages/posix-fs/test/index.test.ts": "948421836e5f75853eae703aab20ca4ce0691e25facdd7f0bad777554688663c",
+  "apps/server/src/adapters/herdr/index.ts": "27ce0f826950d52f6d68a84d14e548a9a5be6aa2bf52860802f364af5d3c48f7",
+  "apps/server/src/adapters/herdr/index.test.ts": "71ff82480a68e228a10066968a679a02c6d86abaf199a70960283000d26ce888"
+}

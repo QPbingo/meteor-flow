@@ -1,0 +1,1927 @@
+{
+  "preview": "core-review-preview-final.json",
+  "total_files": 150,
+  "reviewed_files": 30,
+  "skipped_files": 120,
+  "coverage_rate": 0.2,
+  "accounted_rate": 1,
+  "files": [
+    {
+      "path": ".gitignore",
+      "status": "modified",
+      "outcome": "reviewed",
+      "reason": "本批后端核心、contracts、清单/配置或测试依赖；完整读取并核对修订/实际测试"
+    },
+    {
+      "path": "AGENTS.md",
+      "status": "modified",
+      "outcome": "skipped",
+      "reason": "已确认需求/方案或实施文档作为上下文；本次为核心实现审查，不重签历史方案与其他报告"
+    },
+    {
+      "path": "README.md",
+      "status": "modified",
+      "outcome": "skipped",
+      "reason": "已确认需求/方案或实施文档作为上下文；本次为核心实现审查，不重签历史方案与其他报告"
+    },
+    {
+      "path": "scripts/workflow/check.py",
+      "status": "modified",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": "scripts/workflow/sources.lock.json",
+      "status": "modified",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/LICENSE",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/SKILL.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/agents/impeccable_asset_producer.toml",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/agents/impeccable_documenter.toml",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/agents/impeccable_finish_reviewer.toml",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/agents/impeccable_manual_edit_applier.toml",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/agents/openai.yaml",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/adapt.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/adapt.native.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/android.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/animate.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/audit.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/audit.native.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/bolder.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/clarify.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/colorize.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/component-review.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/craft-floor.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/craft.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/critique.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/degraded/asset-producer.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/degraded/documenter.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/degraded/finish-reviewer.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/degraded/manual-edit-applier.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/delight.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/distill.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/doctor.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/document.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/extract.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/generate.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/harden.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/hooks.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/init.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/ios.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/layout.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/live-setup.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/live.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/mode-operate.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/mode-persuade.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/mode-read.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/new-work.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/onboard.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/operate.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/optimize.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/overdrive.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/polish.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/quieter.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/region-map.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/routing.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/shape.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/typeset.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/visualize.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/scripts/VERSION",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/scripts/command-metadata.json",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/scripts/data/font-index-failures.json",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/scripts/data/font-index.json",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/scripts/impeccable",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/scripts/live-browser-dom.js",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/scripts/live-browser-ignores.js",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/scripts/live-browser-session.js",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/scripts/live-browser.js",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/impeccable/scripts/modern-screenshot.umd.js",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/playwright-cli/LICENSE",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/playwright-cli/SKILL.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/playwright-cli/references/element-attributes.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/playwright-cli/references/playwright-tests.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/playwright-cli/references/pr-attachments.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/playwright-cli/references/request-mocking.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/playwright-cli/references/running-code.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/playwright-cli/references/session-management.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/playwright-cli/references/storage-state.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/playwright-cli/references/test-generation.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/playwright-cli/references/tracing.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".agents/skills/playwright-cli/references/video-recording.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".claude/skills/impeccable",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".claude/skills/playwright-cli",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "技能/工作流独立批次；本批仅加载规定的 reviewer 能力，不重复认领技能实现审查"
+    },
+    {
+      "path": ".node-version",
+      "status": "added",
+      "outcome": "reviewed",
+      "reason": "本批后端核心、contracts、清单/配置或测试依赖；完整读取并核对修订/实际测试"
+    },
+    {
+      "path": "apps/server/package.json",
+      "status": "added",
+      "outcome": "reviewed",
+      "reason": "本批后端核心、contracts、清单/配置或测试依赖；完整读取并核对修订/实际测试"
+    },
+    {
+      "path": "apps/server/src/adapters/herdr/index.test.ts",
+      "status": "added",
+      "outcome": "reviewed",
+      "reason": "本批后端核心、contracts、清单/配置或测试依赖；完整读取并核对修订/实际测试"
+    },
+    {
+      "path": "apps/server/src/adapters/herdr/index.ts",
+      "status": "added",
+      "outcome": "reviewed",
+      "reason": "本批后端核心、contracts、清单/配置或测试依赖；完整读取并核对修订/实际测试"
+    },
+    {
+      "path": "apps/server/src/adapters/herdr/real-herdr.test.ts",
+      "status": "added",
+      "outcome": "reviewed",
+      "reason": "本批后端核心、contracts、清单/配置或测试依赖；完整读取并核对修订/实际测试"
+    },
+    {
+      "path": "apps/server/src/application/console.test.ts",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "本批冻结范围之外；新增应用/HTTP/terminal/真实Agent或前端测试留其专项审查，不认领完整覆盖"
+    },
+    {
+      "path": "apps/server/src/application/console.ts",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "另批应用审查；本批仅只读核对采集/状态/停止证据调用关系，不认领完整覆盖"
+    },
+    {
+      "path": "apps/server/src/application/process.ts",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "另批应用审查；本批仅只读核对采集/状态/停止证据调用关系，不认领完整覆盖"
+    },
+    {
+      "path": "apps/server/src/cli/main.ts",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "不在本批冻结的后端核心范围；留给应用/HTTP/terminal/web/CLI 等后续批次"
+    },
+    {
+      "path": "apps/server/src/domain/model.test.ts",
+      "status": "added",
+      "outcome": "reviewed",
+      "reason": "本批后端核心、contracts、清单/配置或测试依赖；完整读取并核对修订/实际测试"
+    },
+    {
+      "path": "apps/server/src/domain/model.ts",
+      "status": "added",
+      "outcome": "reviewed",
+      "reason": "本批后端核心、contracts、清单/配置或测试依赖；完整读取并核对修订/实际测试"
+    },
+    {
+      "path": "apps/server/src/http/auth.ts",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "不在本批冻结的后端核心范围；留给应用/HTTP/terminal/web/CLI 等后续批次"
+    },
+    {
+      "path": "apps/server/src/http/server.test.ts",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "本批冻结范围之外；新增应用/HTTP/terminal/真实Agent或前端测试留其专项审查，不认领完整覆盖"
+    },
+    {
+      "path": "apps/server/src/http/server.ts",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "不在本批冻结的后端核心范围；留给应用/HTTP/terminal/web/CLI 等后续批次"
+    },
+    {
+      "path": "apps/server/src/results/child.ts",
+      "status": "added",
+      "outcome": "reviewed",
+      "reason": "本批后端核心、contracts、清单/配置或测试依赖；完整读取并核对修订/实际测试"
+    },
+    {
+      "path": "apps/server/src/results/collector.test.ts",
+      "status": "added",
+      "outcome": "reviewed",
+      "reason": "本批后端核心、contracts、清单/配置或测试依赖；完整读取并核对修订/实际测试"
+    },
+    {
+      "path": "apps/server/src/results/collector.ts",
+      "status": "added",
+      "outcome": "reviewed",
+      "reason": "本批后端核心、contracts、清单/配置或测试依赖；完整读取并核对修订/实际测试"
+    },
+    {
+      "path": "apps/server/src/results/protocol.test.ts",
+      "status": "added",
+      "outcome": "reviewed",
+      "reason": "本批后端核心、contracts、清单/配置或测试依赖；完整读取并核对修订/实际测试"
+    },
+    {
+      "path": "apps/server/src/results/protocol.ts",
+      "status": "added",
+      "outcome": "reviewed",
+      "reason": "本批后端核心、contracts、清单/配置或测试依赖；完整读取并核对修订/实际测试"
+    },
+    {
+      "path": "apps/server/src/results/validate.ts",
+      "status": "added",
+      "outcome": "reviewed",
+      "reason": "本批后端核心、contracts、清单/配置或测试依赖；完整读取并核对修订/实际测试"
+    },
+    {
+      "path": "apps/server/src/storage/database.test.ts",
+      "status": "added",
+      "outcome": "reviewed",
+      "reason": "本批后端核心、contracts、清单/配置或测试依赖；完整读取并核对修订/实际测试"
+    },
+    {
+      "path": "apps/server/src/storage/database.ts",
+      "status": "added",
+      "outcome": "reviewed",
+      "reason": "本批后端核心、contracts、清单/配置或测试依赖；完整读取并核对修订/实际测试"
+    },
+    {
+      "path": "apps/server/src/storage/store.test.ts",
+      "status": "added",
+      "outcome": "reviewed",
+      "reason": "本批后端核心、contracts、清单/配置或测试依赖；完整读取并核对修订/实际测试"
+    },
+    {
+      "path": "apps/server/src/storage/store.ts",
+      "status": "added",
+      "outcome": "reviewed",
+      "reason": "本批后端核心、contracts、清单/配置或测试依赖；完整读取并核对修订/实际测试"
+    },
+    {
+      "path": "apps/server/src/storage/worker.ts",
+      "status": "added",
+      "outcome": "reviewed",
+      "reason": "本批后端核心、contracts、清单/配置或测试依赖；完整读取并核对修订/实际测试"
+    },
+    {
+      "path": "apps/server/src/terminal/bridge.ts",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "不在本批冻结的后端核心范围；留给应用/HTTP/terminal/web/CLI 等后续批次"
+    },
+    {
+      "path": "apps/server/tsconfig.build.json",
+      "status": "added",
+      "outcome": "reviewed",
+      "reason": "本批后端核心、contracts、清单/配置或测试依赖；完整读取并核对修订/实际测试"
+    },
+    {
+      "path": "apps/web/index.html",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "不在本批冻结的后端核心范围；留给应用/HTTP/terminal/web/CLI 等后续批次"
+    },
+    {
+      "path": "apps/web/package.json",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "不在本批冻结的后端核心范围；留给应用/HTTP/terminal/web/CLI 等后续批次"
+    },
+    {
+      "path": "apps/web/src/Agents.tsx",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "不在本批冻结的后端核心范围；留给应用/HTTP/terminal/web/CLI 等后续批次"
+    },
+    {
+      "path": "apps/web/src/App.tsx",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "不在本批冻结的后端核心范围；留给应用/HTTP/terminal/web/CLI 等后续批次"
+    },
+    {
+      "path": "apps/web/src/Tasks.tsx",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "不在本批冻结的后端核心范围；留给应用/HTTP/terminal/web/CLI 等后续批次"
+    },
+    {
+      "path": "apps/web/src/TerminalPanel.tsx",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "不在本批冻结的后端核心范围；留给应用/HTTP/terminal/web/CLI 等后续批次"
+    },
+    {
+      "path": "apps/web/src/api.ts",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "不在本批冻结的后端核心范围；留给应用/HTTP/terminal/web/CLI 等后续批次"
+    },
+    {
+      "path": "apps/web/src/main.tsx",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "不在本批冻结的后端核心范围；留给应用/HTTP/terminal/web/CLI 等后续批次"
+    },
+    {
+      "path": "apps/web/src/styles.css",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "不在本批冻结的后端核心范围；留给应用/HTTP/terminal/web/CLI 等后续批次"
+    },
+    {
+      "path": "apps/web/src/ui.tsx",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "不在本批冻结的后端核心范围；留给应用/HTTP/terminal/web/CLI 等后续批次"
+    },
+    {
+      "path": "apps/web/vite.config.ts",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "不在本批冻结的后端核心范围；留给应用/HTTP/terminal/web/CLI 等后续批次"
+    },
+    {
+      "path": "package.json",
+      "status": "added",
+      "outcome": "reviewed",
+      "reason": "本批后端核心、contracts、清单/配置或测试依赖；完整读取并核对修订/实际测试"
+    },
+    {
+      "path": "packages/contracts/package.json",
+      "status": "added",
+      "outcome": "reviewed",
+      "reason": "本批后端核心、contracts、清单/配置或测试依赖；完整读取并核对修订/实际测试"
+    },
+    {
+      "path": "packages/contracts/src/index.ts",
+      "status": "added",
+      "outcome": "reviewed",
+      "reason": "本批后端核心、contracts、清单/配置或测试依赖；完整读取并核对修订/实际测试"
+    },
+    {
+      "path": "packages/contracts/tsconfig.build.json",
+      "status": "added",
+      "outcome": "reviewed",
+      "reason": "本批后端核心、contracts、清单/配置或测试依赖；完整读取并核对修订/实际测试"
+    },
+    {
+      "path": "packages/posix-fs/package.json",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "POSIX 独立批次已有 posix-review.md；本批仅使用其已复核原语，不重复认领"
+    },
+    {
+      "path": "packages/posix-fs/src/index.ts",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "POSIX 独立批次已有 posix-review.md；本批仅使用其已复核原语，不重复认领"
+    },
+    {
+      "path": "packages/posix-fs/src/native.ts",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "POSIX 独立批次已有 posix-review.md；本批仅使用其已复核原语，不重复认领"
+    },
+    {
+      "path": "packages/posix-fs/test/index.test.ts",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "POSIX 独立批次已有 posix-review.md；本批仅使用其已复核原语，不重复认领"
+    },
+    {
+      "path": "packages/posix-fs/test/lock-process.ts",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "POSIX 独立批次已有 posix-review.md；本批仅使用其已复核原语，不重复认领"
+    },
+    {
+      "path": "packages/posix-fs/tsconfig.build.json",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "POSIX 独立批次已有 posix-review.md；本批仅使用其已复核原语，不重复认领"
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "status": "added",
+      "outcome": "reviewed",
+      "reason": "本批后端核心、contracts、清单/配置或测试依赖；完整读取并核对修订/实际测试"
+    },
+    {
+      "path": "tasks/001-local-agent-console/DESIGN.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "已确认需求/方案或实施文档作为上下文；本次为核心实现审查，不重签历史方案与其他报告"
+    },
+    {
+      "path": "tasks/001-local-agent-console/herdr-compatibility.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "已确认需求/方案或实施文档作为上下文；本次为核心实现审查，不重签历史方案与其他报告"
+    },
+    {
+      "path": "tasks/001-local-agent-console/herdr-implementation-brief.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "已确认需求/方案或实施文档作为上下文；本次为核心实现审查，不重签历史方案与其他报告"
+    },
+    {
+      "path": "tasks/001-local-agent-console/implementation-plan.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "已确认需求/方案或实施文档作为上下文；本次为核心实现审查，不重签历史方案与其他报告"
+    },
+    {
+      "path": "tasks/001-local-agent-console/implementation-progress.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "已确认需求/方案或实施文档作为上下文；本次为核心实现审查，不重签历史方案与其他报告"
+    },
+    {
+      "path": "tasks/001-local-agent-console/posix-implementation-brief.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "已确认需求/方案或实施文档作为上下文；本次为核心实现审查，不重签历史方案与其他报告"
+    },
+    {
+      "path": "tasks/001-local-agent-console/technical-design.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "已确认需求/方案或实施文档作为上下文；本次为核心实现审查，不重签历史方案与其他报告"
+    },
+    {
+      "path": "tasks/001-local-agent-console/technical-review.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "已确认需求/方案或实施文档作为上下文；本次为核心实现审查，不重签历史方案与其他报告"
+    },
+    {
+      "path": "tasks/001-local-agent-console/web-implementation-brief.md",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "已确认需求/方案或实施文档作为上下文；本次为核心实现审查，不重签历史方案与其他报告"
+    },
+    {
+      "path": "tests/e2e/web-console.spec.ts",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "不在本批冻结的后端核心范围；留给应用/HTTP/terminal/web/CLI 等后续批次"
+    },
+    {
+      "path": "tests/e2e/web-server.spec.ts",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "本批冻结范围之外；新增应用/HTTP/terminal/真实Agent或前端测试留其专项审查，不认领完整覆盖"
+    },
+    {
+      "path": "tests/fixtures/collector-exit-gate.mjs",
+      "status": "added",
+      "outcome": "reviewed",
+      "reason": "本批后端核心、contracts、清单/配置或测试依赖；完整读取并核对修订/实际测试"
+    },
+    {
+      "path": "tests/fixtures/fake-herdr.ts",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "不在本批冻结的后端核心范围；留给应用/HTTP/terminal/web/CLI 等后续批次"
+    },
+    {
+      "path": "tests/fixtures/review-server.ts",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "本批冻结范围之外；新增应用/HTTP/terminal/真实Agent或前端测试留其专项审查，不认领完整覆盖"
+    },
+    {
+      "path": "tests/fixtures/storage-drop-reply.mjs",
+      "status": "added",
+      "outcome": "reviewed",
+      "reason": "本批后端核心、contracts、清单/配置或测试依赖；完整读取并核对修订/实际测试"
+    },
+    {
+      "path": "tests/fixtures/storage-support.ts",
+      "status": "added",
+      "outcome": "reviewed",
+      "reason": "本批后端核心、contracts、清单/配置或测试依赖；完整读取并核对修订/实际测试"
+    },
+    {
+      "path": "tests/fixtures/terminal-cli.mjs",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "本批冻结范围之外；新增应用/HTTP/terminal/真实Agent或前端测试留其专项审查，不认领完整覆盖"
+    },
+    {
+      "path": "tests/integration/real-agent.test.ts",
+      "status": "added",
+      "outcome": "skipped",
+      "reason": "本批冻结范围之外；新增应用/HTTP/terminal/真实Agent或前端测试留其专项审查，不认领完整覆盖"
+    },
+    {
+      "path": "tsconfig.json",
+      "status": "added",
+      "outcome": "reviewed",
+      "reason": "本批后端核心、contracts、清单/配置或测试依赖；完整读取并核对修订/实际测试"
+    },
+    {
+      "path": "vitest.config.ts",
+      "status": "added",
+      "outcome": "reviewed",
+      "reason": "本批后端核心、contracts、清单/配置或测试依赖；完整读取并核对修订/实际测试"
+    }
+  ],
+  "exclusions": [
+    {
+      "path": ".agents/skills/impeccable/scripts/impeccable.cmd",
+      "status": "added",
+      "exclude_reason": "unsupported_ext",
+      "outcome": "not-applicable",
+      "rationale": "技能适配另批，本批不认领"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "status": "added",
+      "exclude_reason": "default_path",
+      "outcome": "reviewed-manually",
+      "rationale": "手工核对 root/server/contracts importer、固定解析版本与本地 workspace 链接；未逐行审第三方依赖源码"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/doctor.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/document-checks-final.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/document-checks.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/environment-probes.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/herdr-0.9.3-schema.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/ocr-version.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-baseline-round1.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-baseline-round2.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-baseline.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-doctor.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-file-open-probe.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-ocr-version.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-preview-initial.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-preview-round1.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-preview-round2.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-preview.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-rules-round1.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-rules-round2.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-rules.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/reviewer-source-evidence.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-implementation-preparation/skill-readiness.md",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/README.md.diff",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/doctor.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/document-check.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/implementation-plan.md.diff",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/node-capability-probe.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/ocr-version.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/reviewer-baseline-round1.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/reviewer-baseline.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/reviewer-doctor.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/reviewer-node-capability-probe.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/reviewer-ocr-version.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/reviewer-preview-round1.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/reviewer-preview.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/reviewer-rules-round1.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/reviewer-rules.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/reviewer-scope.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/reviewer-source-notes.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/skill-readiness.md",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261006-node-design/technical-design.md.diff",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/application-initial.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/application-retest.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/collector-second.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/core-final.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/core-review-baseline-final.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/core-review-baseline-round1.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/core-review-baseline.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/core-review-build-round1.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/core-review-close-race.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/core-review-doctor.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/core-review-environment.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/core-review-fixes-final.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/core-review-fixes.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/core-review-migration-mode.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/core-review-ocr-version.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/core-review-preview-round1.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/core-review-preview.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/core-review-real-herdr.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/core-review-round1-baseline-check.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/core-review-rules-round1.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/core-review-rules.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/core-review-scope-initial.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/core-review-support-baseline.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/core-review-tests-initial.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/core-review-tests-round1.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/core-review.md",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/core-test-report.md",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/herdr-report.md",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/herdr-test-final.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/herdr-typecheck-final.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/http-initial.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/page-2026-10-07T02-07-29-058Z.yml",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/page-2026-10-07T02-07-45-211Z.yml",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/posix-baseline.sha256",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/posix-report.md",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/posix-review-baseline-final.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/posix-review-baseline.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/posix-review-case-alias.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/posix-review-doctor.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/posix-review-environment.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/posix-review-ocr-version.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/posix-review-preview-final.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/posix-review-preview.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/posix-review-root-reproduction.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/posix-review-rules-final.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/posix-review-rules.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/posix-review-scope.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/posix-review-tests-authorized.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/posix-review-tests-final.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/posix-review-tests-initial.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/posix-review.md",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/posix-tests-review-fix.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/posix-tests.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/real-agent-claude.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/real-agent-codex.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/real-agent-opt-in-disabled.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/real-agent-report.md",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/real-agent-typecheck.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/real-agents-approval.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/real-agents-authorized.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/real-agents-name-fix.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/skill-readiness.md",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/skill-review-baseline.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/skill-review-context.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/skill-review-doctor-final.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/skill-review-doctor.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/skill-review-engine-claude.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/skill-review-engine-codex.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/skill-review-integrity.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/skill-review-negative-probes.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/skill-review-ocr-version.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/skill-review-preview-final.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/skill-review-preview.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/skill-review-rules-final.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/skill-review-rules.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/skill-review-scope.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/skill-review-source-check.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/skill-review-workflow-tests.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/skill-review.md",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/state-storage-results-initial.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/state-storage-results-retest.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/ui-a-agents.png",
+      "status": "binary",
+      "exclude_reason": "binary",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/ui-a-desktop.png",
+      "status": "binary",
+      "exclude_reason": "binary",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/ui-a-desktop.yaml",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/ui-a-detail.png",
+      "status": "binary",
+      "exclude_reason": "binary",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/ui-a-task-form.png",
+      "status": "binary",
+      "exclude_reason": "binary",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/ui-a-terminal.png",
+      "status": "binary",
+      "exclude_reason": "binary",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/ui-b-desktop.png",
+      "status": "binary",
+      "exclude_reason": "binary",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/ui-b-form.png",
+      "status": "binary",
+      "exclude_reason": "binary",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/ui-detector-b.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/ui-ocr-preview-b.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/ui-ocr-rules-b.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/web-build.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/web-desktop.png",
+      "status": "binary",
+      "exclude_reason": "binary",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/web-detect.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/web-narrow.png",
+      "status": "binary",
+      "exclude_reason": "binary",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/web-playwright.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/web-real-service.png",
+      "status": "binary",
+      "exclude_reason": "binary",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/web-report.md",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/web-source-hashes.json",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/web-text-200.png",
+      "status": "binary",
+      "exclude_reason": "binary",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/web-typecheck-contract-drift.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    },
+    {
+      "path": "tasks/001-local-agent-console/verification-runs/20261007-implementation-preflight/web-typecheck.log",
+      "status": "added",
+      "exclude_reason": "user_exclude",
+      "outcome": "not-applicable",
+      "rationale": "历史/当前证据或其他批次截图，依据项目约定排除；不把自身报告纳入实现覆盖"
+    }
+  ]
+}

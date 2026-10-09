@@ -1,0 +1,131 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ ↓ tests/integration/dev.test.ts > development proxy serves the browser with authenticated API/WS while rejecting foreign boundaries
+ ↓ tests/integration/dev.test.ts > dev requires an explicit session and never starts services after a failed initial build
+ ↓ tests/integration/dev.test.ts > reaps a resistant build descendant after the build is failed
+ ↓ tests/integration/dev.test.ts > reaps a resistant build descendant after the build is interrupted
+ × tests/integration/dev.test.ts > dev builds first, forwards CLI options, restarts on child-code changes and reaps its process groups 846ms
+   → [WARN] Your node_modules are out of sync with your lockfile. The value of the allowBuilds setting has changed
+$ node fixture-build.mjs
+开发页面：http://127.0.0.1:63388/
+请先打开服务打印的 http://127.0.0.1:63389/#token=… 入口完成认证。后端重启后重新认证。
+
+11:08:25 AM - Starting compilation in watch mode...
+
+
+11:08:25 AM - Starting compilation in watch mode...
+
+
+11:08:25 AM - Starting compilation in watch mode...
+
+11:08:25 AM [vite] (client) Re-optimizing dependencies because vite config has changed
+
+  VITE v7.3.7  ready in 148 ms
+
+  ➜  Local:   http://127.0.0.1:63388/
+Change detected in '/private/tmp/mf-dev-supervisor-0hJFqI/apps/server/dist/worker.txt'
+Restarting '/private/tmp/mf-dev-supervisor-0hJFqI/apps/server/dist/cli/main.js serve --session isolated-0d8467d9-451f-48ff-9521-a7c980cdface --port 63389 --data-dir /private/tmp/mf-dev-supervisor-0hJFqI/data dir --herdr /unused-test-herdr'
+
+11:08:25 AM - Found 0 errors. Watching for file changes.
+
+11:08:25 AM - Found 0 errors. Watching for file changes.
+
+11:08:25 AM - Found 0 errors. Watching for file changes.
+node:internal/process/per_thread:277
+      throw new ErrnoException(err, 'kill');
+            ^
+
+Error: kill EPERM
+    at process.kill (node:internal/process/per_thread:277:13)
+    at groupAlive (file:///private/tmp/mf-dev-supervisor-0hJFqI/scripts/dev.mjs:20:17)
+    at Array.filter (<anonymous>)
+    at remaining (file:///private/tmp/mf-dev-supervisor-0hJFqI/scripts/dev.mjs:27:48)
+    at stop (file:///private/tmp/mf-dev-supervisor-0hJFqI/scripts/dev.mjs:30:10)
+    at process.<anonymous> (file:///private/tmp/mf-dev-supervisor-0hJFqI/scripts/dev.mjs:74:40)
+    at process.wrapper (node:events:639:12)
+    at process.emit (node:events:514:28) {
+  errno: -1,
+  code: 'EPERM',
+  syscall: 'kill'
+}
+
+Node.js v24.21.0
+: expected 1 to be +0 // Object.is equality
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/integration/dev.test.ts > dev builds first, forwards CLI options, restarts on child-code changes and reaps its process groups
+AssertionError: [WARN] Your node_modules are out of sync with your lockfile. The value of the allowBuilds setting has changed
+$ node fixture-build.mjs
+开发页面：http://127.0.0.1:63388/
+请先打开服务打印的 http://127.0.0.1:63389/#token=… 入口完成认证。后端重启后重新认证。
+
+11:08:25 AM - Starting compilation in watch mode...
+
+
+11:08:25 AM - Starting compilation in watch mode...
+
+
+11:08:25 AM - Starting compilation in watch mode...
+
+11:08:25 AM [vite] (client) Re-optimizing dependencies because vite config has changed
+
+  VITE v7.3.7  ready in 148 ms
+
+  ➜  Local:   http://127.0.0.1:63388/
+Change detected in '/private/tmp/mf-dev-supervisor-0hJFqI/apps/server/dist/worker.txt'
+Restarting '/private/tmp/mf-dev-supervisor-0hJFqI/apps/server/dist/cli/main.js serve --session isolated-0d8467d9-451f-48ff-9521-a7c980cdface --port 63389 --data-dir /private/tmp/mf-dev-supervisor-0hJFqI/data dir --herdr /unused-test-herdr'
+
+11:08:25 AM - Found 0 errors. Watching for file changes.
+
+11:08:25 AM - Found 0 errors. Watching for file changes.
+
+11:08:25 AM - Found 0 errors. Watching for file changes.
+node:internal/process/per_thread:277
+      throw new ErrnoException(err, 'kill');
+            ^
+
+Error: kill EPERM
+    at process.kill (node:internal/process/per_thread:277:13)
+    at groupAlive (file:///private/tmp/mf-dev-supervisor-0hJFqI/scripts/dev.mjs:20:17)
+    at Array.filter (<anonymous>)
+    at remaining (file:///private/tmp/mf-dev-supervisor-0hJFqI/scripts/dev.mjs:27:48)
+    at stop (file:///private/tmp/mf-dev-supervisor-0hJFqI/scripts/dev.mjs:30:10)
+    at process.<anonymous> (file:///private/tmp/mf-dev-supervisor-0hJFqI/scripts/dev.mjs:74:40)
+    at process.wrapper (node:events:639:12)
+    at process.emit (node:events:514:28) {
+  errno: -1,
+  code: 'EPERM',
+  syscall: 'kill'
+}
+
+Node.js v24.21.0
+: expected 1 to be +0 // Object.is equality
+
+- Expected
++ Received
+
+- 0
++ 1
+
+ ❯ groupAlive ../../../../../private/tmp/mf-dev-supervisor-0hJFqI/scripts/dev.mjs:20:17
+ ❯ remaining ../../../../../private/tmp/mf-dev-supervisor-0hJFqI/scripts/dev.mjs:27:48
+ ❯ stop ../../../../../private/tmp/mf-dev-supervisor-0hJFqI/scripts/dev.mjs:30:10
+ ❯ process.<anonymous> ../../../../../private/tmp/mf-dev-supervisor-0hJFqI/scripts/dev.mjs:74:40
+ ❯ tests/integration/dev.test.ts:195:62
+    193|     await expect.poll(async () => (await fixture.rows()).filter(row =>…
+    194|     const pids = await descendants(child.pid!); expect(pids.length).to…
+    195|     child.kill('SIGTERM'); expect((await closed)[0], output).toBe(0);
+       |                                                              ^
+    196|     for (const pid of pids) await expect.poll(() => live(pid)).toBe(fa…
+    197|     for (const row of (await fixture.rows()).filter(row => row.kind ==…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 4 skipped (5)
+   Start at  11:08:24
+   Duration  1.41s (transform 79ms, setup 0ms, collect 418ms, tests 847ms, environment 0ms, prepare 42ms)
+

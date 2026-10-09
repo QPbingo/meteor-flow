@@ -1,0 +1,41 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ ✓ apps/server/src/http/server.test.ts > requires a cookie for reads, rejects external Origin/Host, and enforces JSON/CSRF for writes 225ms
+ ✓ apps/server/src/http/server.test.ts > rotates the single-use entry, protects the cookie, and persists an operation exactly once 133ms
+ ✓ apps/server/src/http/server.test.ts > rejects cross-site and unauthenticated WebSocket upgrades before starting a CLI 115ms
+ ✓ apps/server/src/http/server.test.ts > keeps observers read-only, gives every page a redraw, and arbitrates two controllers with revocation 437ms
+ ✓ apps/server/src/http/server.test.ts > closes a controller on disconnect without resuming dispatch, while observer closure has no scheduling side effect 220ms
+ ✓ apps/server/src/http/server.test.ts > rejects authenticated terminal upgrades with missing or null Origin 113ms
+ ✓ apps/server/src/http/server.test.ts > provides versioned resources, an operation receipt and an actionable directory error 108ms
+ ✓ apps/server/src/http/server.test.ts > announces snapshot calibration and replays durable SSE IDs after reconnect 111ms
+ × apps/server/src/http/server.test.ts > holds all four download slots until slow responses finish and aborts them on service close 645ms
+   → expected false to be true // Object.is equality
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  apps/server/src/http/server.test.ts > holds all four download slots until slow responses finish and aborts them on service close
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ apps/server/src/http/server.test.ts:163:77
+    161|     responses[0]!.destroy();
+    162|     await expect.poll(async()=>{const response=await fetch(`${http.add…
+    163|     await http.app.close();expect(opened.every(r=>r.destroyed||r.compl…
+       |                                                                             ^
+    164|   }finally{for(const response of opened)response.destroy();}
+    165| },15000);
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 8 passed (9)
+   Start at  10:30:56
+   Duration  2.49s (transform 84ms, setup 0ms, collect 215ms, tests 2.11s, environment 0ms, prepare 38ms)
+

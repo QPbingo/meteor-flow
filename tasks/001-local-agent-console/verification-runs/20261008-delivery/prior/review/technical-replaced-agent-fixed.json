@@ -1,0 +1,15 @@
+{
+  "oldGone": true,
+  "oldPid": 59705,
+  "replacementPid": 59697,
+  "before": {
+    "phase": "needs_confirmation",
+    "occupies": true
+  },
+  "after": {
+    "phase": "cancelled",
+    "occupies": false,
+    "source": "manual",
+    "reason": "人工结论：Original owned child has exited"
+  }
+}

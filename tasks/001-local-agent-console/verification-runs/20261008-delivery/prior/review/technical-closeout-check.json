@@ -1,0 +1,92 @@
+{
+  "checked_at": "2026-10-08T07:58:57.200967+00:00",
+  "reviewed_file_count": 24,
+  "changed_since_review": [],
+  "report_links": [
+    {
+      "href": "technical-doctor.log",
+      "exists": true
+    },
+    {
+      "href": "technical-ocr-version.log",
+      "exists": true
+    },
+    {
+      "href": "technical-preview.json",
+      "exists": true
+    },
+    {
+      "href": "technical-rules.json",
+      "exists": true
+    },
+    {
+      "href": "technical-initial-baseline.json",
+      "exists": true
+    },
+    {
+      "href": "technical-midreview-baseline.json",
+      "exists": true
+    },
+    {
+      "href": "technical-probe-results.json",
+      "exists": true
+    },
+    {
+      "href": "technical-initial-probe-source.txt",
+      "exists": true
+    },
+    {
+      "href": "technical-replaced-agent-verified.json",
+      "exists": true
+    },
+    {
+      "href": "technical-replaced-agent-probe-source.txt",
+      "exists": true
+    },
+    {
+      "href": "technical-retest.log",
+      "exists": true
+    },
+    {
+      "href": "technical-http-replay-retest.log",
+      "exists": true
+    },
+    {
+      "href": "technical-retest-before.json",
+      "exists": true
+    },
+    {
+      "href": "technical-retest-after.json",
+      "exists": true
+    },
+    {
+      "href": "technical-probe-fixed.json",
+      "exists": true
+    },
+    {
+      "href": "technical-fixed-probe-source.txt",
+      "exists": true
+    },
+    {
+      "href": "technical-replaced-agent-fixed.json",
+      "exists": true
+    },
+    {
+      "href": "technical-reviewed-files.json",
+      "exists": true
+    },
+    {
+      "href": "technical-preview-final.json",
+      "exists": true
+    },
+    {
+      "href": "technical-rules-final.json",
+      "exists": true
+    },
+    {
+      "href": "technical-coverage.json",
+      "exists": true
+    }
+  ],
+  "missing_report_links": []
+}

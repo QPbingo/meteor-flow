@@ -1,0 +1,60 @@
+{
+  "files": [
+    {
+      "path": "apps/server/src/storage/store.test.ts",
+      "sha256": "1b8acc66e2d101d8e6dda360d9982d3b7623d755f023d8bb6f17480bdfd7912f"
+    },
+    {
+      "path": "apps/server/src/storage/state-patch.ts",
+      "sha256": "30635e6124b8f9b584dd1ccd90905054e4bfe890c92b22799a8fd78bfe962db6"
+    },
+    {
+      "path": "apps/server/src/storage/database.test.ts",
+      "sha256": "8b450c63c10888879b8a5dc7dd4145d6642a74528e4a469f0c2a6430086ffc64"
+    },
+    {
+      "path": "apps/server/src/storage/database.ts",
+      "sha256": "e3916cd86d93dae8142f9d8f4cef7250862dd1b9a82ec2c3d801bc635b6313df"
+    },
+    {
+      "path": "apps/server/src/storage/worker.ts",
+      "sha256": "cde27bfdf67417c6c64b604fb72922b3d8bdfa320972811dfe9275a5a0f4cf01"
+    },
+    {
+      "path": "apps/server/src/storage/store.ts",
+      "sha256": "80a4e3a6577f7a379cfcbd5601cf3efb9695d509e3fb5cd28407a71b4870109b"
+    },
+    {
+      "path": "apps/server/dist/storage/database.js",
+      "sha256": "d56500054fd76e7a9c3bea7e53ed6540a290825ca905fdc3c3b0b3a8bc613160"
+    },
+    {
+      "path": "apps/server/dist/storage/state-patch.d.ts",
+      "sha256": "0462ea636052eaef01de9caa3a813b187658b2a0c80049f361eea819df89594c"
+    },
+    {
+      "path": "apps/server/dist/storage/store.d.ts",
+      "sha256": "990025e2dd4ac7d40343327c1c9d462297139df15609411061b722548231ff69"
+    },
+    {
+      "path": "apps/server/dist/storage/worker.js",
+      "sha256": "088a377995782ecf2dd601f631a42b5152cac0298f02c7845304b674fb24b8ce"
+    },
+    {
+      "path": "apps/server/dist/storage/store.js",
+      "sha256": "26b7b8e008b0908a595f58c3c0343800ac2a6c92170d2f10271c6fe88b1daf6c"
+    },
+    {
+      "path": "apps/server/dist/storage/worker.d.ts",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+    },
+    {
+      "path": "apps/server/dist/storage/database.d.ts",
+      "sha256": "ca51e5c0fe82f31d991d78e752001aad64891187c170a76ad601cadebc691269"
+    },
+    {
+      "path": "apps/server/dist/storage/state-patch.js",
+      "sha256": "7fcde804d3ce0e92c20bdd424b35c5d6dbfbf2749e07a9311a3d8e7904bf362a"
+    }
+  ]
+}

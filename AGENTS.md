@@ -20,8 +20,8 @@
 ## 当前基线
 
 - [本地 Agent 控制台需求](tasks/001-local-agent-console/requirements.md)：2026-10-06 已由用户确认。
-- [需求方案 review](tasks/001-local-agent-console/review.md)：修订规则已纳入需求，运行时行为尚待实现验证。
-- 产品技术选型、组件和实现逻辑尚未确认，产品代码尚未获准实现。
+- [需求方案 review](tasks/001-local-agent-console/review.md)：修订规则已纳入需求；实现与运行时验证分层记录于 [验证状态](tasks/001-local-agent-console/verification-status.md)，人工验收仍 pending。
+- 用户于 2026-10-06 确认 [Node 技术方案 0.2](tasks/001-local-agent-console/technical-design.md)，并明确“请开始实现”；必需技能就绪后推进产品编码，无需重复请求技术确认或开始授权。实际进度见 [实施记录](tasks/001-local-agent-console/implementation-progress.md)。
 - 开发工作流接入已于 2026-10-06 获准实施；这不等于授权实现本地 Agent 控制台。
 
 ## Skills 使用与开发前置条件

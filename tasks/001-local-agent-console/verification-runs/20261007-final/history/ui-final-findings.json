@@ -1,0 +1,102 @@
+{
+  "reviewer_context": "/root/ui_technical_review",
+  "scope": "apps/web and tests/e2e",
+  "status": "pass-with-stated-scope",
+  "findings": [
+    {
+      "id": "A-01",
+      "severity": "medium",
+      "disposition": "fixed",
+      "rationale": "独立复查见ui-final-review.md；B-01仅同页签刷新边界",
+      "evidence": [
+        "ui-final-e2e.log",
+        "ui-final-browser.json"
+      ]
+    },
+    {
+      "id": "A-02",
+      "severity": "medium",
+      "disposition": "fixed",
+      "rationale": "独立复查见ui-final-review.md；B-01仅同页签刷新边界",
+      "evidence": [
+        "ui-final-e2e.log",
+        "ui-final-browser.json"
+      ]
+    },
+    {
+      "id": "A-03",
+      "severity": "medium",
+      "disposition": "fixed",
+      "rationale": "独立复查见ui-final-review.md；B-01仅同页签刷新边界",
+      "evidence": [
+        "ui-final-e2e.log",
+        "ui-final-browser.json"
+      ]
+    },
+    {
+      "id": "B-01",
+      "severity": "high",
+      "disposition": "fixed",
+      "rationale": "独立复查见ui-final-review.md；B-01仅同页签刷新边界",
+      "evidence": [
+        "ui-final-e2e.log",
+        "ui-final-browser.json"
+      ]
+    },
+    {
+      "id": "B-02",
+      "severity": "high",
+      "disposition": "fixed",
+      "rationale": "独立复查见ui-final-review.md；B-01仅同页签刷新边界",
+      "evidence": [
+        "ui-final-e2e.log",
+        "ui-final-browser.json"
+      ]
+    },
+    {
+      "id": "B-03",
+      "severity": "high",
+      "disposition": "fixed",
+      "rationale": "独立复查见ui-final-review.md；B-01仅同页签刷新边界",
+      "evidence": [
+        "ui-final-e2e.log",
+        "ui-final-browser.json"
+      ]
+    },
+    {
+      "id": "B-04",
+      "severity": "medium",
+      "disposition": "fixed",
+      "rationale": "独立复查见ui-final-review.md；B-01仅同页签刷新边界",
+      "evidence": [
+        "ui-final-e2e.log",
+        "ui-final-browser.json"
+      ]
+    },
+    {
+      "id": "B-05",
+      "severity": "medium",
+      "disposition": "fixed",
+      "rationale": "独立复查见ui-final-review.md；B-01仅同页签刷新边界",
+      "evidence": [
+        "ui-final-e2e.log",
+        "ui-final-browser.json"
+      ]
+    },
+    {
+      "id": "F-01",
+      "path": "apps/web/src/Tasks.tsx",
+      "category": "other",
+      "severity": "medium",
+      "disposition": "fixed",
+      "content": "Summary去除全部img/a；技术方案§8要求的Markdown归档图片映射及主动外链未实现。",
+      "rationale": "ui-f01-review独立增量复查：归档图片范围映射/冻结id+sha/主动安全外链/rawHTML转义已补齐，3/3增量E2E通过",
+      "evidence": [
+        "ui-f01-review.md",
+        "ui-f01-e2e.log",
+        "ui-f01-hashes.json"
+      ]
+    }
+  ],
+  "human_acceptance": "pending"
+}

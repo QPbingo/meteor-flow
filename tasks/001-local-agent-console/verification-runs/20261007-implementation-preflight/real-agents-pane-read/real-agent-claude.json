@@ -1,0 +1,52 @@
+{
+  "type": "claude",
+  "date": "2026-10-07T02:18:57.527Z",
+  "session": "meteor-flow-test-claude-6145c80e",
+  "cwd": "/private/tmp/mf-agent-xtuArm/project",
+  "isolation": "dedicated herdr XDG/session/cwd; Claude config isolated; user config writes denied",
+  "status": "blocked",
+  "timeline": [
+    {
+      "terminalId": "term_65d36bcd93c8b1",
+      "paneId": "w1:p1",
+      "type": "unknown",
+      "status": "unknown",
+      "cwd": "/private/tmp/mf-agent-xtuArm/project",
+      "pid": null,
+      "processStart": null,
+      "agentSessionPresent": false,
+      "sequence": 0,
+      "launchPending": true,
+      "interactiveReady": false
+    },
+    {
+      "terminalId": "term_65d36bcd93c8b1",
+      "paneId": "w1:p1",
+      "type": "claude",
+      "status": "unknown",
+      "cwd": "/private/tmp/mf-agent-xtuArm/project",
+      "pid": 56868,
+      "processStart": "56868:1791339538:568564",
+      "agentSessionPresent": false,
+      "sequence": 0,
+      "launchPending": true,
+      "interactiveReady": false
+    }
+  ],
+  "versions": {
+    "herdr": "herdr 0.9.3",
+    "agent": "2.1.195 (Claude Code)",
+    "node": "v24.21.0"
+  },
+  "target": "term_65d36bcd93c8b1",
+  "screenSha256": "f20ed9dd0424388b93fb1368cf50710b2922b74fda6b93e9188491d8029a1548",
+  "screenReason": "first-run onboarding requires human interaction",
+  "foregroundProcesses": [
+    {
+      "pid": 56868,
+      "name": "claude"
+    }
+  ],
+  "blocked": "first-run onboarding requires human interaction",
+  "protectedConfigurationUnchanged": true
+}

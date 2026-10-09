@@ -1,0 +1,397 @@
+{
+  "files": [
+    {
+      "path": "apps/server/dist/adapters/herdr/index.d.ts",
+      "before": "6e196d62c17cdd280fe376cad9873c09afac47076ffd1bc17588cb154f6635bc",
+      "after": "6e196d62c17cdd280fe376cad9873c09afac47076ffd1bc17588cb154f6635bc",
+      "same": true
+    },
+    {
+      "path": "apps/server/dist/adapters/herdr/index.js",
+      "before": "630e39bf2b442734552d2a4e516741714ffcde4656fca68e10f6b327600c8f6a",
+      "after": "630e39bf2b442734552d2a4e516741714ffcde4656fca68e10f6b327600c8f6a",
+      "same": true
+    },
+    {
+      "path": "apps/server/dist/application/console.d.ts",
+      "before": "5d680b2573252c1080b36ca8ddbc8c623fa1adaa6bca6d7d6abf6a8623db2906",
+      "after": "5d680b2573252c1080b36ca8ddbc8c623fa1adaa6bca6d7d6abf6a8623db2906",
+      "same": true
+    },
+    {
+      "path": "apps/server/dist/application/console.js",
+      "before": "6d370c7058798d72ff6bcdfc35b49abd868fdd425ea503c593dfe1a9b983a4ca",
+      "after": "6d370c7058798d72ff6bcdfc35b49abd868fdd425ea503c593dfe1a9b983a4ca",
+      "same": true
+    },
+    {
+      "path": "apps/server/dist/application/process.d.ts",
+      "before": "cf025e95e973f022840dc030ed9d2ccb28cad5efa51c0abb48f2cc604c30dbdf",
+      "after": "cf025e95e973f022840dc030ed9d2ccb28cad5efa51c0abb48f2cc604c30dbdf",
+      "same": true
+    },
+    {
+      "path": "apps/server/dist/application/process.js",
+      "before": "ce978b9f4475d3ee16226c53bffd1d9faec88950bd61dee579d7fe973f692d84",
+      "after": "ce978b9f4475d3ee16226c53bffd1d9faec88950bd61dee579d7fe973f692d84",
+      "same": true
+    },
+    {
+      "path": "apps/server/dist/cli/main.d.ts",
+      "before": "43e818adf60173644896298637f47b01d5819b17eda46eaa32d0c7d64724d012",
+      "after": "43e818adf60173644896298637f47b01d5819b17eda46eaa32d0c7d64724d012",
+      "same": true
+    },
+    {
+      "path": "apps/server/dist/cli/main.js",
+      "before": "c1455dfe0a74a86c57b3af970bdf55008ebf00d01f32daac3553d57f6d6eb6c8",
+      "after": "c1455dfe0a74a86c57b3af970bdf55008ebf00d01f32daac3553d57f6d6eb6c8",
+      "same": true
+    },
+    {
+      "path": "apps/server/dist/domain/model.d.ts",
+      "before": "88cc96cdec4c4775979767a119382645370edd00b073ec029ba82208cf4d85e2",
+      "after": "88cc96cdec4c4775979767a119382645370edd00b073ec029ba82208cf4d85e2",
+      "same": true
+    },
+    {
+      "path": "apps/server/dist/domain/model.js",
+      "before": "1cace1654e13ec8f7af4ea868fec5bbb223c0a0a8e4a4c4329f8fa789a683747",
+      "after": "1cace1654e13ec8f7af4ea868fec5bbb223c0a0a8e4a4c4329f8fa789a683747",
+      "same": true
+    },
+    {
+      "path": "apps/server/dist/http/auth.d.ts",
+      "before": "5980b5185c7ef2c6d9f4f7952a4b54d7f5510b231572765ba4a2fce81d803ac9",
+      "after": "5980b5185c7ef2c6d9f4f7952a4b54d7f5510b231572765ba4a2fce81d803ac9",
+      "same": true
+    },
+    {
+      "path": "apps/server/dist/http/auth.js",
+      "before": "92de0afef56ce2b433700e242f29cde893cdc099208cd3f72f124c512e5c4a50",
+      "after": "92de0afef56ce2b433700e242f29cde893cdc099208cd3f72f124c512e5c4a50",
+      "same": true
+    },
+    {
+      "path": "apps/server/dist/http/events.d.ts",
+      "before": "fcea125b725b651082d722794fc00ed4b93c44400f991b582bc3833e9d6167db",
+      "after": "fcea125b725b651082d722794fc00ed4b93c44400f991b582bc3833e9d6167db",
+      "same": true
+    },
+    {
+      "path": "apps/server/dist/http/events.js",
+      "before": "539b61d8fbab96da385ee3fa253b87fcd2afb78202b715b633e1cb26cb69f19c",
+      "after": "539b61d8fbab96da385ee3fa253b87fcd2afb78202b715b633e1cb26cb69f19c",
+      "same": true
+    },
+    {
+      "path": "apps/server/dist/http/file-child.d.ts",
+      "before": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "after": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "same": true
+    },
+    {
+      "path": "apps/server/dist/http/file-child.js",
+      "before": "302e625d31eb755a6a50557af230e7741885a7055543f7caf1a5232e9f81b9ff",
+      "after": "302e625d31eb755a6a50557af230e7741885a7055543f7caf1a5232e9f81b9ff",
+      "same": true
+    },
+    {
+      "path": "apps/server/dist/http/files.d.ts",
+      "before": "a46d77f0d7ea2bddcb4bb414433a1dd6cbb68c26be4ad7f801ed6ad899125d2d",
+      "after": "a46d77f0d7ea2bddcb4bb414433a1dd6cbb68c26be4ad7f801ed6ad899125d2d",
+      "same": true
+    },
+    {
+      "path": "apps/server/dist/http/files.js",
+      "before": "b104bd824a75a49c3c8b176ad92b7bd91663ffd448296e0bc79d162c463d2121",
+      "after": "b104bd824a75a49c3c8b176ad92b7bd91663ffd448296e0bc79d162c463d2121",
+      "same": true
+    },
+    {
+      "path": "apps/server/dist/http/server.d.ts",
+      "before": "b07ba0cb437e1ce7346380ab249fd7ccd6d2fe9dc40e70a236b85becbd0230c1",
+      "after": "b07ba0cb437e1ce7346380ab249fd7ccd6d2fe9dc40e70a236b85becbd0230c1",
+      "same": true
+    },
+    {
+      "path": "apps/server/dist/http/server.js",
+      "before": "02bc713263d5c71c524688afe19d9a745282dcbdf1b340c5e60bf72b3817076a",
+      "after": "02bc713263d5c71c524688afe19d9a745282dcbdf1b340c5e60bf72b3817076a",
+      "same": true
+    },
+    {
+      "path": "apps/server/dist/results/child.d.ts",
+      "before": "e13486fad3a2a6f3bfd2ca30d377fa78e82e837c95afb5abcd133d1579660925",
+      "after": "e13486fad3a2a6f3bfd2ca30d377fa78e82e837c95afb5abcd133d1579660925",
+      "same": true
+    },
+    {
+      "path": "apps/server/dist/results/child.js",
+      "before": "4847d4f8a61f7bf35bc94fb0fce27e03b4b8b24a4f876c97d2c1e4f41104b6aa",
+      "after": "4847d4f8a61f7bf35bc94fb0fce27e03b4b8b24a4f876c97d2c1e4f41104b6aa",
+      "same": true
+    },
+    {
+      "path": "apps/server/dist/results/collector.d.ts",
+      "before": "d12901b9489ed62c93e5beae723ef524e719053e54bbba565ebda1eb13fec904",
+      "after": "d12901b9489ed62c93e5beae723ef524e719053e54bbba565ebda1eb13fec904",
+      "same": true
+    },
+    {
+      "path": "apps/server/dist/results/collector.js",
+      "before": "95a87e05e2718a146d857b42fe1b07d8108bc049c0412dfc8a0b55ff16470b87",
+      "after": "95a87e05e2718a146d857b42fe1b07d8108bc049c0412dfc8a0b55ff16470b87",
+      "same": true
+    },
+    {
+      "path": "apps/server/dist/results/protocol.d.ts",
+      "before": "984fbf6f14d5b102799b7c00517461eceeb5c292f7de9fe7d707c7693336c5b5",
+      "after": "984fbf6f14d5b102799b7c00517461eceeb5c292f7de9fe7d707c7693336c5b5",
+      "same": true
+    },
+    {
+      "path": "apps/server/dist/results/protocol.js",
+      "before": "5b28c35057ee31e60cef1d25ab96592332fa8d8bb4dedce423a41db77d1c1cc0",
+      "after": "5b28c35057ee31e60cef1d25ab96592332fa8d8bb4dedce423a41db77d1c1cc0",
+      "same": true
+    },
+    {
+      "path": "apps/server/dist/results/validate.d.ts",
+      "before": "fafe78576dc03f390ba880a82cab8848a19eb408ed8f5be93eef9f90376e565e",
+      "after": "fafe78576dc03f390ba880a82cab8848a19eb408ed8f5be93eef9f90376e565e",
+      "same": true
+    },
+    {
+      "path": "apps/server/dist/results/validate.js",
+      "before": "4dd49ae7968ac7240d411a77d8792fcc6c976ed471033e4808a6645fee53b0e5",
+      "after": "4dd49ae7968ac7240d411a77d8792fcc6c976ed471033e4808a6645fee53b0e5",
+      "same": true
+    },
+    {
+      "path": "apps/server/dist/storage/database.d.ts",
+      "before": "a7ddf07325f9e613136d37dd568adee2d7d965e729b5cbf5d3a81cf3b1780da0",
+      "after": "a7ddf07325f9e613136d37dd568adee2d7d965e729b5cbf5d3a81cf3b1780da0",
+      "same": true
+    },
+    {
+      "path": "apps/server/dist/storage/database.js",
+      "before": "e399a3cbfe309c6af9b1621b72cd7a82b77e39e30a53157209437fba796a790f",
+      "after": "e399a3cbfe309c6af9b1621b72cd7a82b77e39e30a53157209437fba796a790f",
+      "same": true
+    },
+    {
+      "path": "apps/server/dist/storage/store.d.ts",
+      "before": "990025e2dd4ac7d40343327c1c9d462297139df15609411061b722548231ff69",
+      "after": "990025e2dd4ac7d40343327c1c9d462297139df15609411061b722548231ff69",
+      "same": true
+    },
+    {
+      "path": "apps/server/dist/storage/store.js",
+      "before": "ca4da48d05db96c80b3bc9bfc307970c70a4fd5f3c32ed2419b14bf591a953f0",
+      "after": "ca4da48d05db96c80b3bc9bfc307970c70a4fd5f3c32ed2419b14bf591a953f0",
+      "same": true
+    },
+    {
+      "path": "apps/server/dist/storage/worker.d.ts",
+      "before": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "after": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "same": true
+    },
+    {
+      "path": "apps/server/dist/storage/worker.js",
+      "before": "67385e107fe6abade0c0881ee1ef73327658e49de7a7fb6a49775e46985a0422",
+      "after": "67385e107fe6abade0c0881ee1ef73327658e49de7a7fb6a49775e46985a0422",
+      "same": true
+    },
+    {
+      "path": "apps/server/dist/terminal/bridge.d.ts",
+      "before": "5e4c39478ccfdeb29f79f7274b35dd13ff8ce3b1ed5dc14cfe91397755843642",
+      "after": "5e4c39478ccfdeb29f79f7274b35dd13ff8ce3b1ed5dc14cfe91397755843642",
+      "same": true
+    },
+    {
+      "path": "apps/server/dist/terminal/bridge.js",
+      "before": "ed944a29e519a185bda67d81b92cfe89b5b9fd1a7baf73f39b58dc061d946b74",
+      "after": "ed944a29e519a185bda67d81b92cfe89b5b9fd1a7baf73f39b58dc061d946b74",
+      "same": true
+    },
+    {
+      "path": "apps/server/src/application/console.test.ts",
+      "before": "9b4a298dfb18fa686f52d89f100b96690201352c87c95fc496fa520edb8ac795",
+      "after": "9b4a298dfb18fa686f52d89f100b96690201352c87c95fc496fa520edb8ac795",
+      "same": true
+    },
+    {
+      "path": "apps/server/src/application/console.ts",
+      "before": "954357d4bd40ff05ea5442c3f36a8fced8f4b6cfcad85ee82eb7dd82db09be8c",
+      "after": "954357d4bd40ff05ea5442c3f36a8fced8f4b6cfcad85ee82eb7dd82db09be8c",
+      "same": true
+    },
+    {
+      "path": "apps/server/src/application/process.ts",
+      "before": "cd4f3fecff8a7a0c92cab6eb5740fa8561374981b62ede738594cbb4dabc358a",
+      "after": "cd4f3fecff8a7a0c92cab6eb5740fa8561374981b62ede738594cbb4dabc358a",
+      "same": true
+    },
+    {
+      "path": "apps/server/src/cli/main.ts",
+      "before": "7b412481f525fdd1e74da8e90beacfc36430c9dcd21f406effd6e1a635658201",
+      "after": "7b412481f525fdd1e74da8e90beacfc36430c9dcd21f406effd6e1a635658201",
+      "same": true
+    },
+    {
+      "path": "apps/server/src/domain/model.test.ts",
+      "before": "40ee64370774208911bdb25b97cefa7669cb899c9d6eef1733ace2f8f8318db8",
+      "after": "40ee64370774208911bdb25b97cefa7669cb899c9d6eef1733ace2f8f8318db8",
+      "same": true
+    },
+    {
+      "path": "apps/server/src/domain/model.ts",
+      "before": "f6767eb3017e7cbdb6db51d826ef5a65feda0226745d48f85efff23f7ac9806e",
+      "after": "f6767eb3017e7cbdb6db51d826ef5a65feda0226745d48f85efff23f7ac9806e",
+      "same": true
+    },
+    {
+      "path": "apps/server/src/http/auth.ts",
+      "before": "eed39b984bf792199ab8b43b97215d9a2832bda4ec3b7f3597139980e5898cc3",
+      "after": "eed39b984bf792199ab8b43b97215d9a2832bda4ec3b7f3597139980e5898cc3",
+      "same": true
+    },
+    {
+      "path": "apps/server/src/http/events.ts",
+      "before": "aecf85e4a956787025eea578bf9396bc3af5710a7f3f7cf7695e4a74a57515d6",
+      "after": "aecf85e4a956787025eea578bf9396bc3af5710a7f3f7cf7695e4a74a57515d6",
+      "same": true
+    },
+    {
+      "path": "apps/server/src/http/file-child.ts",
+      "before": "e2b94aeb6ab4796f6d4e4533f1afb9213b0bf1995656108fcf8cfaba474cc3d2",
+      "after": "e2b94aeb6ab4796f6d4e4533f1afb9213b0bf1995656108fcf8cfaba474cc3d2",
+      "same": true
+    },
+    {
+      "path": "apps/server/src/http/files.ts",
+      "before": "6a1175021afa93f97b58797ed75426717150819ec35afa69c042d3000aa0cc91",
+      "after": "6a1175021afa93f97b58797ed75426717150819ec35afa69c042d3000aa0cc91",
+      "same": true
+    },
+    {
+      "path": "apps/server/src/http/server.test.ts",
+      "before": "c5da9cee243bf3bddf54dd9999a0a74bbbaeb7dc6c9d6539713e26c9ed787021",
+      "after": "050fccf5dfc9dbed0d0cded9d08c2042fea8260f3b297493151c7432888c5ad1",
+      "same": false
+    },
+    {
+      "path": "apps/server/src/http/server.ts",
+      "before": "f33ad9b7a3e3a8f9ed94cf22e4a25e319f3a94fe9f6b9ba9d9276d2d5259ae5c",
+      "after": "f33ad9b7a3e3a8f9ed94cf22e4a25e319f3a94fe9f6b9ba9d9276d2d5259ae5c",
+      "same": true
+    },
+    {
+      "path": "apps/server/src/results/child.ts",
+      "before": "d8e04300641312c8a2be2c464a274ca874d6fa30c75b6922e8e6216c61d184a8",
+      "after": "d8e04300641312c8a2be2c464a274ca874d6fa30c75b6922e8e6216c61d184a8",
+      "same": true
+    },
+    {
+      "path": "apps/server/src/results/collector.test.ts",
+      "before": "9183d32b9a38c305b679568680f5c4a4f5273c5bbbdcea5cbccb491916ee0e0c",
+      "after": "9183d32b9a38c305b679568680f5c4a4f5273c5bbbdcea5cbccb491916ee0e0c",
+      "same": true
+    },
+    {
+      "path": "apps/server/src/results/collector.ts",
+      "before": "a9769ef0a756ad169708c4bfc73cbcad616ec3e1e6c36a601cd0a096e920513c",
+      "after": "a9769ef0a756ad169708c4bfc73cbcad616ec3e1e6c36a601cd0a096e920513c",
+      "same": true
+    },
+    {
+      "path": "apps/server/src/results/protocol.test.ts",
+      "before": "318fc11bc8ba5b68c7e682527d5cf1ddb3eb3d4c60a901c625a2eb3453d790a0",
+      "after": "318fc11bc8ba5b68c7e682527d5cf1ddb3eb3d4c60a901c625a2eb3453d790a0",
+      "same": true
+    },
+    {
+      "path": "apps/server/src/results/protocol.ts",
+      "before": "e1c6da00a461a74bd9ec3a829407fdd4bea8c0583128cd4f17811466821bf634",
+      "after": "e1c6da00a461a74bd9ec3a829407fdd4bea8c0583128cd4f17811466821bf634",
+      "same": true
+    },
+    {
+      "path": "apps/server/src/results/validate.ts",
+      "before": "1b5b6f09493e17d557f8d41c9c8e10caf72f6a2e224005897ad3615143e9bf91",
+      "after": "1b5b6f09493e17d557f8d41c9c8e10caf72f6a2e224005897ad3615143e9bf91",
+      "same": true
+    },
+    {
+      "path": "packages/contracts/dist/index.d.ts",
+      "before": "9dbebef6271f4b45c4be04260a978492724a674a3415ca2c54825bb10737a4c6",
+      "after": "9dbebef6271f4b45c4be04260a978492724a674a3415ca2c54825bb10737a4c6",
+      "same": true
+    },
+    {
+      "path": "packages/contracts/dist/index.js",
+      "before": "23369f5e65a5fb6050b55296a75832c016e464fd6e6067a6da8668760c9cc5c4",
+      "after": "23369f5e65a5fb6050b55296a75832c016e464fd6e6067a6da8668760c9cc5c4",
+      "same": true
+    },
+    {
+      "path": "packages/contracts/src/index.ts",
+      "before": "fffe725866c37556fcb50015f262aeef8e53916f5152eb89f489a817319dfd22",
+      "after": "fffe725866c37556fcb50015f262aeef8e53916f5152eb89f489a817319dfd22",
+      "same": true
+    },
+    {
+      "path": "packages/posix-fs/dist/index.d.ts",
+      "before": "7c729e7ecba292b5ada449fba613677310e046277629d35ac87be7168da32438",
+      "after": "7c729e7ecba292b5ada449fba613677310e046277629d35ac87be7168da32438",
+      "same": true
+    },
+    {
+      "path": "packages/posix-fs/dist/index.js",
+      "before": "842c84ffb21c72d2b8fd32670ac73fb2a85a456c55c45e0d49e6cbcf2bca9397",
+      "after": "842c84ffb21c72d2b8fd32670ac73fb2a85a456c55c45e0d49e6cbcf2bca9397",
+      "same": true
+    },
+    {
+      "path": "packages/posix-fs/dist/native.d.ts",
+      "before": "4213b12dd6cdbdb361c59cd5290bee17928b65908827b0213c39dd139f0bf9a2",
+      "after": "4213b12dd6cdbdb361c59cd5290bee17928b65908827b0213c39dd139f0bf9a2",
+      "same": true
+    },
+    {
+      "path": "packages/posix-fs/dist/native.js",
+      "before": "c18dfd7f7d2c6b4104087f2662e2d33aa019789ba6bd080c6524ec565dd023de",
+      "after": "c18dfd7f7d2c6b4104087f2662e2d33aa019789ba6bd080c6524ec565dd023de",
+      "same": true
+    },
+    {
+      "path": "tests/fixtures/fake-herdr.ts",
+      "before": "8da39a7ba407b36edbb87a98282de20d7335b301b38b7f807d3a3092309d4143",
+      "after": "8da39a7ba407b36edbb87a98282de20d7335b301b38b7f807d3a3092309d4143",
+      "same": true
+    },
+    {
+      "path": "tests/fixtures/terminal-cli.mjs",
+      "before": "84f4ea62d2ae59e9da5c31f3aa526c055d48e44d6766fd6084f4def641ff5f9b",
+      "after": "84f4ea62d2ae59e9da5c31f3aa526c055d48e44d6766fd6084f4def641ff5f9b",
+      "same": true
+    },
+    {
+      "path": "tests/integration/cli.test.ts",
+      "before": "ecc567ae09633f4ffacc7e6de0933a63cc924abff9427c77016f6ac1e892928f",
+      "after": "ecc567ae09633f4ffacc7e6de0933a63cc924abff9427c77016f6ac1e892928f",
+      "same": true
+    }
+  ],
+  "changed": [
+    {
+      "path": "apps/server/src/http/server.test.ts",
+      "before": "c5da9cee243bf3bddf54dd9999a0a74bbbaeb7dc6c9d6539713e26c9ed787021",
+      "after": "050fccf5dfc9dbed0d0cded9d08c2042fea8260f3b297493151c7432888c5ad1",
+      "same": false
+    }
+  ],
+  "note": "HTTP test onList注入修正后单独重跑1项成功；其他本轮待测源码及编译产物未变。"
+}

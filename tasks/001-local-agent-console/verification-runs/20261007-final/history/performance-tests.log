@@ -1,0 +1,27 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ ❯ tests/integration/performance.test.ts (1 test | 1 failed) 31843ms
+   × 1000 history tasks and two 1 MiB/s terminals for 30 seconds keep local operations responsive 31843ms
+     → expected 1.4927955717832655 to be less than or equal to 1
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/integration/performance.test.ts > 1000 history tasks and two 1 MiB/s terminals for 30 seconds keep local operations responsive
+AssertionError: expected 1.4927955717832655 to be less than or equal to 1
+ ❯ tests/integration/performance.test.ts:155:25
+    153|     }
+    154|     expect(loadedSamples.length).toBeGreaterThanOrEqual(18);
+    155|     expect(growthSlope).toBeLessThanOrEqual(1);
+       |                         ^
+    156|     expect(retainedMiB).toBeLessThanOrEqual(32);
+    157|     report.status = 'passed';
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed (1)
+   Start at  10:34:57
+   Duration  32.11s (transform 69ms, setup 0ms, collect 71ms, tests 31.84s, environment 0ms, prepare 56ms)
+

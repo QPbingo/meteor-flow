@@ -1,0 +1,11 @@
+{
+  "head": "618607de5d6b3b22d44258950236273c37bd8079",
+  "files": {
+    "packages/posix-fs/package.json": "1c1c18a2254ec39148ef04111ca520685b185a0631a64142aec9fbdf02a0b716",
+    "packages/posix-fs/src/index.ts": "2266d2f3c6352055e4df8455d2e5d6b25af6147adc26f39f2085b9242ca27361",
+    "packages/posix-fs/src/native.ts": "4077ea05cf013573c20016c7a6a49cbee6fe4c287e9a12d040a355d2c1888465",
+    "packages/posix-fs/test/index.test.ts": "f32f6908ea9ad858f04a83ffae354d50c78729d56f0530180bcd4fb1ae3f6942",
+    "packages/posix-fs/test/lock-process.ts": "85dcf4b47703041db46fa4a662ebb5fc5b2e803e2063df455cca1ff2934311e0",
+    "packages/posix-fs/tsconfig.build.json": "32452e469439dca92cff5931c5d913c3192e6a61562263b2ff4d29e0e9f6368b"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-08",
+  "command": "node --input-type=module -e import processIdentity from local built posix-fs; check processIdentity(process.pid) !== null",
+  "sandboxed": {
+    "exit_code": 0,
+    "selfIdentityAvailable": false
+  },
+  "normal_host_permissions": {
+    "exit_code": 0,
+    "selfIdentityAvailable": true
+  },
+  "scope": "only own probe process; no identities or other process data emitted"
+}

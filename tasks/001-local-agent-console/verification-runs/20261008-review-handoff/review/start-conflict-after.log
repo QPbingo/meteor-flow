@@ -1,0 +1,39 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > keeps published terminal results immutable while persisting and pausing on a later conflicting declaration 3ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > does not let collection retry clear a conflict but still allows cancellation to complete after proven activity and stop 1ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > rejects retrying an archived task and allows copying it into a new active task 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > keeps cancelled work occupied after the 15 second deadline and only reminds after 30 minutes 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > accepts existing agents without managed readiness but rejects future/stale observations 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > does not infer success from activity followed by idle without a result (V08) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > holds occupancy for a submitted result until this execution ends (V09/V10) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > requires activity from after the final dispatch baseline 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > a committed success remains successful when cancel arrives later (V11) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > an accepted cancel keeps later success as late information and waits for stop (V11/V12) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > keeps manual declarations separate from unproven stop evidence 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > recovery invalidates dispatch intent, startup intent, workers and authorization without releasing occupancy (V04/V06/V24) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > revokes authorization when another occupant replaces a running agent (V07) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > late old-attempt results do not overwrite a newly dispatched retry (V13) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > allows independent tasks behind dependency blockers, but freezes started task descriptions (V14/V16) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > rejects dependency cycles and cross-project task associations (V16) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > business failure releases occupancy while uncertain delivery pauses the binding (V15) 0ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > starts on the session accepted by the command queue when a session switch finishes first 172ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > keeps a conflicting result pending across idle observations and restart until an explicit manual conclusion 639ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > allows explicitly confirmed existing agents even without managed interactive readiness 190ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > a manual switch after preparation but before final dispatch prevents all prompt input 192ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > accepts cancel while prompt acknowledgement is pending, sends one interrupt and retains occupancy (V03/V11/V12) 254ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > never retries a prompt with a lost acknowledgement, including after service restart (V04/V05/V24) 261ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > persists a startup intent once and preserves an unknown startup without repeating it (V03/V06) 133ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > runs an independent task behind an unmet dependency on another binding (V14) 313ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > rejects confirming an agent whose work directory overlaps private service data (V21/V22) 76ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > rejects extra output roots overlapping private service data (V22) 76ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > does not start an external agent after storage fails immediately after the durable startup intent 74ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > does not send an unrecorded emergency interrupt after storage recovers during identity observation 143ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > does not dispatch when a real work directory refuses frozen-input writes (V25) 178ms
+
+ Test Files  2 passed (2)
+      Tests  30 passed (30)
+   Start at  15:35:55
+   Duration  3.04s (transform 126ms, setup 0ms, collect 327ms, tests 2.71s, environment 0ms, prepare 98ms)
+

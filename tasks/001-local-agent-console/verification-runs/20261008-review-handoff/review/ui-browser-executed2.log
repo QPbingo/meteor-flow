@@ -1,0 +1,35 @@
+edit_roundtrip {"persisted":true,"revision":2}
+settings_roundtrip {"paused":true,"concurrency":3}
+retry_binding_prerequisite {"binding":"任务需要人工核对","paused":true}
+retry_detail {"actualCurrentAttempt":"76261645-631e-4b98-8d1d-96c8957dc08b","selectedAttempt":"1a304f09-b882-459a-98f9-3613599243c2","oldAttempt":"1a304f09-b882-459a-98f9-3613599243c2","overview":"指定 Agent\n复核 Agent 1\n任务标识\n94162e6d-b985-4f40-9c31-46b84594f1f3\n执行标识\n1a304f09-b882-459a-98f9-3613599243c2\n执行占用\n无当前占用\n执行阶段\n已失败\n执行说明\n第一次执行明确失败\n创建 / 结束\n10/08 15:32:06 / 10/08 15:32:07\n任务说明\n\n隔离复核，请提交明确失败\n\n前置任务\n\n无前置任务"}
+archived_dependency_editor {"persistedDependencies":[{"taskId":"94162e6d-b985-4f40-9c31-46b84594f1f3","artifacts":[]}],"dialogText":"编辑待派发任务\n\n任务属于「独立流程复核」。执行开始后，输入与依赖版本冻结；关闭网页不取消任务。\n\n任务名称\n指定 Agent\n选择当前项目的 Agent\n复核 Agent 1 · 自动调度\n复核 Agent 2 · 观察模式\n任务说明\n前置任务与必要输入产物\n\n只使用同一项目的归档结果。勾选任务后，可选择必须具备的产物；未选产物仍等待任务成功。\n\n修改后的任务\n待派发\n结果要求与额外输出范围\n取消\n保存修改","selectedDependencyVisible":0}
+locator.check: Clicking the checkbox did not change its state
+Call log:
+[2m  - waiting for getByLabel('已归档', { exact: true })[22m
+[2m    - locator resolved to <input type="checkbox"/>[22m
+[2m  - attempting click action[22m
+[2m    - waiting for element to be visible, enabled and stable[22m
+[2m    - element is visible, enabled and stable[22m
+[2m    - scrolling into view if needed[22m
+[2m    - done scrolling[22m
+[2m    - performing click action[22m
+[2m    - click action done[22m
+[2m    - waiting for scheduled navigations to finish[22m
+[2m    - navigations have finished[22m
+
+    at <anonymous> (/private/tmp/meteor-flow-ui-review-20261008.mts:49:43) {
+  log: [
+    "  - waiting for getByLabel('已归档', { exact: true })",
+    '    - locator resolved to <input type="checkbox"/>',
+    '  - attempting click action',
+    '    - waiting for element to be visible, enabled and stable',
+    '    - element is visible, enabled and stable',
+    '    - scrolling into view if needed',
+    '    - done scrolling',
+    '    - performing click action',
+    '    - click action done',
+    '    - waiting for scheduled navigations to finish',
+    '    - navigations have finished'
+  ],
+  name: 'Error'
+}

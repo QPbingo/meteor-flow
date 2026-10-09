@@ -1,0 +1,79 @@
+{
+  "type": "codex",
+  "date": "2026-10-07T02:18:40.458Z",
+  "session": "meteor-flow-test-codex-36597af9",
+  "cwd": "/private/tmp/mf-agent-LL2EG3/project",
+  "isolation": "dedicated herdr XDG/session/cwd; Claude config isolated; user config writes denied",
+  "status": "failed",
+  "timeline": [
+    {
+      "terminalId": "term_65d36bbcf40001",
+      "paneId": "w1:p1",
+      "type": "unknown",
+      "status": "unknown",
+      "cwd": "/private/tmp/mf-agent-LL2EG3/project",
+      "pid": null,
+      "processStart": null,
+      "agentSessionPresent": false,
+      "sequence": 0,
+      "launchPending": true,
+      "interactiveReady": false
+    },
+    {
+      "terminalId": "term_65d36bbcf40001",
+      "paneId": "w1:p1",
+      "type": "codex",
+      "status": "unknown",
+      "cwd": "/private/tmp/mf-agent-LL2EG3/project",
+      "pid": 56344,
+      "processStart": "56344:1791339521:127124",
+      "agentSessionPresent": false,
+      "sequence": 0,
+      "launchPending": true,
+      "interactiveReady": false
+    },
+    {
+      "terminalId": "term_65d36bbcf40001",
+      "paneId": "w1:p1",
+      "type": "codex",
+      "status": "unknown",
+      "cwd": "/private/tmp/mf-agent-LL2EG3/project",
+      "pid": 56344,
+      "processStart": "56344:1791339521:127124",
+      "agentSessionPresent": false,
+      "sequence": 0,
+      "launchPending": false,
+      "interactiveReady": true
+    },
+    {
+      "terminalId": "term_65d36bbcf40001",
+      "paneId": "w1:p1",
+      "type": "codex",
+      "status": "idle",
+      "cwd": "/private/tmp/mf-agent-LL2EG3/project",
+      "pid": 56344,
+      "processStart": "56344:1791339521:127124",
+      "agentSessionPresent": false,
+      "sequence": 1,
+      "launchPending": false,
+      "interactiveReady": true
+    }
+  ],
+  "versions": {
+    "herdr": "herdr 0.9.3",
+    "agent": "codex-cli 0.160.1",
+    "node": "v24.21.0"
+  },
+  "target": "term_65d36bbcf40001",
+  "screenSha256": "6eb4d2aa9395d26f71fcd1a53f2190914555d3ece5e4ff64c55505306a7d8359",
+  "screenReason": null,
+  "foregroundProcesses": [
+    {
+      "pid": 56344,
+      "name": "codex"
+    }
+  ],
+  "taskId": "f62d3323-41a9-4418-a247-1e80a6a0e861",
+  "error": "real task ended in needs_confirmation: 投递结果未知，不重发：HerdrError: agent target term_65d36bbcf40001 not found",
+  "protectedConfigurationUnchanged": true
+}

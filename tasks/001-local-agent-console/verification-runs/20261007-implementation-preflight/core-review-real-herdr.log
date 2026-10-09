@@ -1,0 +1,10 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ ✓ apps/server/src/adapters/herdr/real-herdr.test.ts > connects, snapshots and subscribes to an isolated real herdr 0.9.3 server 1050ms
+
+ Test Files  1 passed (1)
+      Tests  1 passed (1)
+   Start at  09:55:14
+   Duration  1.27s (transform 45ms, setup 0ms, collect 53ms, tests 1.05s, environment 0ms, prepare 46ms)
+

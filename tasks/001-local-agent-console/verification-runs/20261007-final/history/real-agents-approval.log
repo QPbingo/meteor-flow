@@ -1,0 +1,5 @@
+2026-10-07 automatic approval review: REJECTED before process creation.
+Action: run tests/integration/real-agent.test.ts with METEOR_FLOW_REAL_AGENTS=1, using target Node 24 and dedicated XDG/session/cwd.
+Reason: This runs real authenticated Codex/Claude agents and may send prompts/metadata to external model services and incur side effects or cost; the user authorized implementation generally but did not explicitly authorize this exact external model invocation and payload destinations.
+Instruction: Do not bypass this rejection through a workaround or indirect execution. Continue with a safer alternative, or carry out checks to prove that the action is authorized or low risk before trying again. Complete unaffected work without asking for confirmation. Report anything that remains blocked, clarify why it was blocked by auto-review, inform the user of the risk and ask for approval.
+Result: no real agent launched and no model prompt sent by this attempted command. No alternate execution path used. Parent agent notified. Typecheck and opt-in-disabled discovery remain independently executable.

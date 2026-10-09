@@ -1,3 +1,10 @@
 .tools/
 __pycache__/
 *.pyc
+node_modules/
+dist/
+.pnpm-store/
+.playwright-cli/
+test-results/
+playwright-report/
+.DS_Store

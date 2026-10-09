@@ -1,0 +1,5 @@
+BLOCKED:
+- recovery/RE-CODEX: blocked
+- e2e: blocked
+- env PATH=/tmp/meteor-flow-node-design-probe-20261006/node_modules/node/bin:$PATH METEOR_FLOW_REAL_AGENTS=1 METEOR_FLOW_REAL_AGENT_EVIDENCE=$PWD/tasks/001-local-agent-console/verification-runs/20261008-review-final2/real-agents pnpm exec vitest run tests/integration/real-agent.test.ts --maxWorkers=1: fail
+- 未关闭严重问题: 当前Codex真实固定任务未通过：默认共享daemon配置冲突，隔离no-daemon对照又遇执行沙箱权限失败。

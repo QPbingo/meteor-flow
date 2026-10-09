@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-08",
+  "reviewer": "/root/ui_technical_review",
+  "status": "open pending author fixes",
+  "findings": [
+    {
+      "id": "UIR01",
+      "severity": "medium",
+      "priority": "P1",
+      "category": "bug",
+      "path": "apps/web/src/Tasks.tsx",
+      "start_line": 76,
+      "content": "重试后详情默认停留旧执行并显示无当前占用",
+      "requirements": [
+        "R01",
+        "R05",
+        "R06"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "UIR02",
+      "severity": "medium",
+      "priority": "P1",
+      "category": "bug",
+      "path": "apps/web/src/Tasks.tsx",
+      "start_line": 18,
+      "content": "已选上游归档后从编辑表单消失，无法取消依赖",
+      "requirements": [
+        "R08",
+        "R11"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "UIR03",
+      "severity": "medium",
+      "priority": "P1",
+      "category": "bug",
+      "path": "apps/web/src/Tasks.tsx",
+      "start_line": 85,
+      "content": "已归档任务可重试但永久留在队列之外",
+      "requirements": [
+        "R06",
+        "R07",
+        "R08"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "UIR04",
+      "severity": "medium",
+      "priority": "P1",
+      "category": "bug",
+      "path": "apps/web/src/Tasks.tsx",
+      "start_line": 110,
+      "content": "人工声明被强制绑定已停止确认，安全API无网页入口",
+      "requirements": [
+        "R05",
+        "R06"
+      ],
+      "status": "open"
+    }
+  ],
+  "report": "ui-independent-review.md"
+}

@@ -1,0 +1,32 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ × tests/integration/real-agent.test.ts > real isolated codex: startup, readiness, structured result and durable archive 882ms
+   → agent name must start with a lowercase letter and contain only lowercase letters, digits, '-' or '_' (1-32 characters)
+ × tests/integration/real-agent.test.ts > real isolated claude: startup, readiness, structured result and durable archive 1253ms
+   → agent name must start with a lowercase letter and contain only lowercase letters, digits, '-' or '_' (1-32 characters)
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/integration/real-agent.test.ts > real isolated codex: startup, readiness, structured result and durable archive
+ FAIL  tests/integration/real-agent.test.ts > real isolated claude: startup, readiness, structured result and durable archive
+HerdrError: agent name must start with a lowercase letter and contain only lowercase letters, digits, '-' or '_' (1-32 characters)
+ ❯ HerdrClient.start apps/server/src/adapters/herdr/index.ts:301:13
+    299|     } catch (error) {
+    300|       const source = error instanceof HerdrError ? error : new HerdrEr…
+    301|       throw new HerdrError(source.message, source.code, true, target);
+       |             ^
+    302|     }
+    303|   }
+ ❯ tests/integration/real-agent.test.ts:115:17
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: 'invalid_agent_name', uncertain: true, target: 'term_65d368e56b9721' }
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  2 failed (2)
+   Start at  10:05:57
+   Duration  2.48s (transform 83ms, setup 0ms, collect 170ms, tests 2.14s, environment 0ms, prepare 50ms)
+

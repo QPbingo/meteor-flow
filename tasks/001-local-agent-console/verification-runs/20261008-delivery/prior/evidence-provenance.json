@@ -1,0 +1,1104 @@
+{
+  "date": "2026-10-08",
+  "note": "汇总复制原始材料，非重新执行。原始报告中的相对链接以原始 source 路径为准。",
+  "files": [
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/performance.log",
+      "copy": "performance.log",
+      "sha256": "7ae9de75b2cb08bc20db77c7e5014b7be1f743e82a83f5ab6e505e30329e04f0",
+      "bytes": 768
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/e2e.log",
+      "copy": "e2e.log",
+      "sha256": "436b477e70d162dba227da46ec8566e9cf30386977c59cdc644e7b96bdde23fd",
+      "bytes": 2199
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/playwright-output/.last-run.json",
+      "copy": "playwright-output/.last-run.json",
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903",
+      "bytes": 45
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/prior-review/reviewer-report.md",
+      "copy": "prior-review/reviewer-report.md",
+      "sha256": "857b5eb9bd9791fbc444a7dd0127f6e75b3d82faa35bf033704cdedbd71a2a1a",
+      "bytes": 5656
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/prior-review/reviewer-coverage.json",
+      "copy": "prior-review/reviewer-coverage.json",
+      "sha256": "20691552bf1be8229dc2abc6c8984bf99a71f45c062741dcd41534adff98e81e",
+      "bytes": 327417
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/prior-review/reviewer-baseline-comparison.json",
+      "copy": "prior-review/reviewer-baseline-comparison.json",
+      "sha256": "0f61a7c5b94e019566d839e0085fd81466b933665e98fc8703a8faac17e235a2",
+      "bytes": 53508
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/prior-review/baseline-and-evidence-audit.json",
+      "copy": "prior-review/baseline-and-evidence-audit.json",
+      "sha256": "c208af5843616445fd63c1270619730a5182990c26d37f2cdf067852e154a338",
+      "bytes": 45008
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/performance-patch/perf.json",
+      "copy": "performance-patch/perf.json",
+      "sha256": "39a214604c93a4fdfe9cfa90cd64ad2e675f84e825b26e3986db76575e970df4",
+      "bytes": 131878
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/performance-patch/tests.log",
+      "copy": "performance-patch/tests.log",
+      "sha256": "d93c9fcb3745153858ae07c02804d18f2044559d334de829108a2a7f0a6fa186",
+      "bytes": 769
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/browser/web-refinement-narrow-detail.png",
+      "copy": "browser/web-refinement-narrow-detail.png",
+      "sha256": "ccb815b958f1887c1e7b6534238f6ebd048e7b82d1526fafb234b235c67dc148",
+      "bytes": 56750
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/browser/web-sse-latency.json",
+      "copy": "browser/web-sse-latency.json",
+      "sha256": "fabc3db68e67a811b45a357ca11c100d650d40ff8c9fff1217226f95e86d61b2",
+      "bytes": 3214
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/browser/web-narrow.png",
+      "copy": "browser/web-narrow.png",
+      "sha256": "1efcc0a3a5c6d7774e46bc4b973ce6fdc97beaa503575376e5fe5c2c0ced5a17",
+      "bytes": 85958
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/browser/web-text-200.png",
+      "copy": "browser/web-text-200.png",
+      "sha256": "8f889b8c20fe40e10c517973c980eeb6cf9fc8776348d15e4520f780cb626a93",
+      "bytes": 227756
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/browser/web-refinement-focus.json",
+      "copy": "browser/web-refinement-focus.json",
+      "sha256": "57f3be2f2a4b1e7b6e7f1a7e004da8d767df73ee09e67a430e854be6fba73c49",
+      "bytes": 258
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/browser/web-desktop.png",
+      "copy": "browser/web-desktop.png",
+      "sha256": "f00a658a0c2254bbd489668655b2e02327b60b4c454ac25d64b52cc0bf8c895b",
+      "bytes": 101852
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/browser/web-f01-markdown.png",
+      "copy": "browser/web-f01-markdown.png",
+      "sha256": "6d100601d5fedbbe7aacdbe77b7dcb567790aca2a7df7932726c701f2b1d338e",
+      "bytes": 135688
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/browser/web-real-service.png",
+      "copy": "browser/web-real-service.png",
+      "sha256": "c030de147bed8e90063b18b2994c3f4f3c1dc08cfaed564de197e5f3e83ace4d",
+      "bytes": 171949
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/browser/web-refinement-image-preview.png",
+      "copy": "browser/web-refinement-image-preview.png",
+      "sha256": "0c09b9e0775163482b108d5be354d9d1a67c106e24011b5dd8ff164dfe4aef77",
+      "bytes": 115421
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/browser/web-recovery-mobile.png",
+      "copy": "browser/web-recovery-mobile.png",
+      "sha256": "46460a5d59010621fa49745c2f67bd6af761a2504721a80d4bffd1264ad5acc0",
+      "bytes": 117141
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/storage-patch/typecheck.log",
+      "copy": "storage-patch/typecheck.log",
+      "sha256": "8366207267355d3e3d5bf3bf6e8c94c5f93f6078c34f08973fa2b38cdda6cc92",
+      "bytes": 15
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/storage-patch/plan.md",
+      "copy": "storage-patch/plan.md",
+      "sha256": "8da7697c89513b763360db78b9c9d8239e6083e8f2067d737a4ff290622355dc",
+      "bytes": 1178
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/storage-patch/tests.log",
+      "copy": "storage-patch/tests.log",
+      "sha256": "9b5dc5c478d84d1151a1bf1eaf952f20dd8c3b406fc2819539692e76299939f4",
+      "bytes": 4980
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/storage-patch/build.log",
+      "copy": "storage-patch/build.log",
+      "sha256": "55d5484f240f2e68f53bb0ea548402620ee393c26474b3528db547dc91d3748d",
+      "bytes": 1067
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/before-storage-patch/real-agents.log",
+      "copy": "before-storage-patch/real-agents.log",
+      "sha256": "5300ab8ac208a2c14a3aaec98fafa14443a1d6d8da2d3dd6ff240ca201632939",
+      "bytes": 1600
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/before-storage-patch/performance.log",
+      "copy": "before-storage-patch/performance.log",
+      "sha256": "9cb17d3f44b0c0ad91bce347713ba6b061c2de5b40d3908109c20303f683cc18",
+      "bytes": 1268
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/before-storage-patch/runtime.json",
+      "copy": "before-storage-patch/runtime.json",
+      "sha256": "9392802f712f394f78bbc2722e7906dd3caccfb5167f249f59c9c3ea8f9cc912",
+      "bytes": 73
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/before-storage-patch/workflow.log",
+      "copy": "before-storage-patch/workflow.log",
+      "sha256": "5b3fe0afa6b62c4c493eecc26d2169774b29daf8182e06f31a58590879e5a4cd",
+      "bytes": 2847
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/before-storage-patch/typecheck.log",
+      "copy": "before-storage-patch/typecheck.log",
+      "sha256": "8366207267355d3e3d5bf3bf6e8c94c5f93f6078c34f08973fa2b38cdda6cc92",
+      "bytes": 15
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/before-storage-patch/real-herdr.log",
+      "copy": "before-storage-patch/real-herdr.log",
+      "sha256": "844843f3c7475ab8e4e1a1376fac5a73b273241f5ac45f36a41ffb7be68bdfc1",
+      "bytes": 511
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/before-storage-patch/doctor.log",
+      "copy": "before-storage-patch/doctor.log",
+      "sha256": "e82ae58b4255c051a0e740263a8c241b071b5374292d4df82f4fe0788ea940e4",
+      "bytes": 100
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/before-storage-patch/tests.log",
+      "copy": "before-storage-patch/tests.log",
+      "sha256": "4c1b971f0d6af6a33e7a478453a8abbe5f481ca1fd84b8d6bf2904d2e20c88af",
+      "bytes": 4888
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/before-storage-patch/skill-readiness.md",
+      "copy": "before-storage-patch/skill-readiness.md",
+      "sha256": "3db10ed7ed8a5b928317eaf511504fa5170989fea4fdae30d0e15f1b37481a72",
+      "bytes": 2515
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/before-storage-patch/e2e.log",
+      "copy": "before-storage-patch/e2e.log",
+      "sha256": "7d5189af6f0d0b66e9a83652379f4d3b67d9df6add04a6d7f716362b74ec9927",
+      "bytes": 2199
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/before-storage-patch/build.log",
+      "copy": "before-storage-patch/build.log",
+      "sha256": "5c9bcbbf4a14ab20659efc04fade99beda4d5dd3ff193750ba230d122327c42d",
+      "bytes": 1067
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/before-storage-patch/real-agents/real-agent-claude.json",
+      "copy": "before-storage-patch/real-agents/real-agent-claude.json",
+      "sha256": "0d4786d83c6c521cb5dda14eb3828da182ed78c35cf279176776457e02aefe3d",
+      "bytes": 6275
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/before-storage-patch/real-agents/real-agent-codex.json",
+      "copy": "before-storage-patch/real-agents/real-agent-codex.json",
+      "sha256": "165068141ec11270b3bfb81db2e9ce1c446f02a38639b5fb9dcdcd7d98c2939e",
+      "bytes": 4626
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/before-storage-patch/playwright-output/.last-run.json",
+      "copy": "before-storage-patch/playwright-output/.last-run.json",
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903",
+      "bytes": 45
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/before-storage-patch/browser/web-refinement-narrow-detail.png",
+      "copy": "before-storage-patch/browser/web-refinement-narrow-detail.png",
+      "sha256": "ccb815b958f1887c1e7b6534238f6ebd048e7b82d1526fafb234b235c67dc148",
+      "bytes": 56750
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/before-storage-patch/browser/web-sse-latency.json",
+      "copy": "before-storage-patch/browser/web-sse-latency.json",
+      "sha256": "a757843e61281897757727c22ec58c67ebe105bf1bca1006548d56378ba12b94",
+      "bytes": 3214
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/before-storage-patch/browser/web-narrow.png",
+      "copy": "before-storage-patch/browser/web-narrow.png",
+      "sha256": "31112ad554c85d31ad582190150d8b824977e1e45b45a48a1268c0629598bc5d",
+      "bytes": 85956
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/before-storage-patch/browser/web-text-200.png",
+      "copy": "before-storage-patch/browser/web-text-200.png",
+      "sha256": "4a2933bbbe9bf517e989c0b934dcd53539a6fa903d7aedf97eb904b2e6f7c5ff",
+      "bytes": 227454
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/before-storage-patch/browser/web-refinement-focus.json",
+      "copy": "before-storage-patch/browser/web-refinement-focus.json",
+      "sha256": "57f3be2f2a4b1e7b6e7f1a7e004da8d767df73ee09e67a430e854be6fba73c49",
+      "bytes": 258
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/before-storage-patch/browser/web-desktop.png",
+      "copy": "before-storage-patch/browser/web-desktop.png",
+      "sha256": "a77ef4ea34f3dfe3100e69a607f65e2c3d4bdcb647b0eadb86deadab449dd456",
+      "bytes": 101951
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/before-storage-patch/browser/web-f01-markdown.png",
+      "copy": "before-storage-patch/browser/web-f01-markdown.png",
+      "sha256": "dc52a7ea5a39acefb987b35a2050b2aeabf9b25204a10a70d1cf73ba3e1e566e",
+      "bytes": 135611
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/before-storage-patch/browser/web-real-service.png",
+      "copy": "before-storage-patch/browser/web-real-service.png",
+      "sha256": "3c1e73a25be4093ff960f45f44bca2eef617fcebc8d7e95529b447f81d00ed73",
+      "bytes": 171551
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/before-storage-patch/browser/web-refinement-image-preview.png",
+      "copy": "before-storage-patch/browser/web-refinement-image-preview.png",
+      "sha256": "5c355466520c1f6223acba5621fe6351e815ee421cee76613971348a5582522a",
+      "bytes": 115244
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/before-storage-patch/browser/web-recovery-mobile.png",
+      "copy": "before-storage-patch/browser/web-recovery-mobile.png",
+      "sha256": "55da0a2e2c1d3e496e1f97de16ad09aa8078ac8bb6f78c087eb9ad8fca993f6f",
+      "bytes": 116868
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/before-storage-patch/performance/perf.json",
+      "copy": "before-storage-patch/performance/perf.json",
+      "sha256": "cf8cd5eac984f16a1e6d16af79b0a12e2d4783a824e8755f7d7e7d0a71b5610a",
+      "bytes": 53062
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/performance-diagnosis/perf.json",
+      "copy": "performance-diagnosis/perf.json",
+      "sha256": "c81a975c08151d128c864c6850fbe68d93b4453f26fc0f0057fb544001160838",
+      "bytes": 131179
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/performance-diagnosis/tests.log",
+      "copy": "performance-diagnosis/tests.log",
+      "sha256": "2680a25c454002d6df0870cc1ac4147ed8de7bbe671c83247097abb7627bfa16",
+      "bytes": 769
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/performance/perf.json",
+      "copy": "performance/perf.json",
+      "sha256": "e138242eaf22f8b0ba2a179e85587456183b0e572de4c31719830a70f6e36f4f",
+      "bytes": 53197
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/typecheck-increment.log",
+      "copy": "review/typecheck-increment.log",
+      "sha256": "758d51543cbd908bb0ad693efe570d77dd64b244149e76d8714245b2640d4373",
+      "bytes": 964
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/storage-review-coverage-before-doc-closeout.json",
+      "copy": "review/storage-review-coverage-before-doc-closeout.json",
+      "sha256": "b7180e3beb699a38aaa9d3a4bc2feba83bbd23afeeaf9458d5ec0ef92d506250",
+      "bytes": 469611
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/technical-doctor.log",
+      "copy": "review/technical-doctor.log",
+      "sha256": "e82ae58b4255c051a0e740263a8c241b071b5374292d4df82f4fe0788ea940e4",
+      "bytes": 100
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/ui-retest-narrow-viewport.png",
+      "copy": "review/ui-retest-narrow-viewport.png",
+      "sha256": "4d5ab8b8e84c66db7eee7265458cbdb360596201b78f406fdb3d4c1577c4c226",
+      "bytes": 69158
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/ui-retest-review.md",
+      "copy": "review/ui-retest-review.md",
+      "sha256": "e800d76a8436365fa8132eafe069faad8c08df96b1d65ce58d697c003cfc86db",
+      "bytes": 9064
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/storage-review-tests.log",
+      "copy": "review/storage-review-tests.log",
+      "sha256": "c4fff0d20481bc459c4c476a42adb301740096a8e137b0ea9c7ff9a6d0e226d1",
+      "bytes": 8542
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/storage-review-preview-final-before-doc-closeout.json",
+      "copy": "review/storage-review-preview-final-before-doc-closeout.json",
+      "sha256": "c9cc0f2e82e083d524adb19a651e75202c0cd6ffccd44b62e40acae9bf8c2152",
+      "bytes": 240769
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/codex-diagnostic.log",
+      "copy": "review/codex-diagnostic.log",
+      "sha256": "40a2c04a058e8885126478a9c8bf24306d66e3f208c7aa2d30c6f6a7b3804e70",
+      "bytes": 1315
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/technical-preview.json",
+      "copy": "review/technical-preview.json",
+      "sha256": "39007b189e51280cf69d6f4699764b6d800a79582a525ade3a3d3d6b2cab71c1",
+      "bytes": 189987
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/technical-preview-final.json",
+      "copy": "review/technical-preview-final.json",
+      "sha256": "46313d074b65f4e9628280f2a2965587adb9538721771c72a3bfe46816809b9c",
+      "bytes": 209900
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/codex-compatibility-advice.md",
+      "copy": "review/codex-compatibility-advice.md",
+      "sha256": "2e167b79b2ef546fa3ab2d260d05ba3b13863bd206c24c746aacdb6d2f7f001f",
+      "bytes": 4334
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/technical-initial-probe-source.txt",
+      "copy": "review/technical-initial-probe-source.txt",
+      "sha256": "851864940f2ad95caaa847968671372bef506daec9ae6142d867df1bb8f47402",
+      "bytes": 3218
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/storage-review-preview-final.json",
+      "copy": "review/storage-review-preview-final.json",
+      "sha256": "80e47797a350d9ac268b17e3b4e0ce2ca6212bfa7bfb50259e5b3f762c9d2964",
+      "bytes": 243247
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/backend-review.md",
+      "copy": "review/backend-review.md",
+      "sha256": "855615ced8f906a5ae1cf9aeb1ecd89133652f1b370e30c773b755c901f86b59",
+      "bytes": 12472
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/ui-retest-preview.json",
+      "copy": "review/ui-retest-preview.json",
+      "sha256": "627b7ee06fc653e6ef3e649823d335e4e27b94579803e036cd430f198a1241d4",
+      "bytes": 204738
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/ui-independent-review.md",
+      "copy": "review/ui-independent-review.md",
+      "sha256": "ce9de5e6daf30e6d17996df41dc3b0dfcebee97b8c414f98081ea43f9c2f2201",
+      "bytes": 10727
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/build-recovery.log",
+      "copy": "review/build-recovery.log",
+      "sha256": "a38bc39db543d5543f0aec77d2e0e9979f595ed96d0bb8911caff656f53a0393",
+      "bytes": 1067
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/technical-ocr-version.log",
+      "copy": "review/technical-ocr-version.log",
+      "sha256": "44a4426426d28e422b92ea9642887c7f8e352ba6b68c77adcd334f4efdb34063",
+      "bytes": 124
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/ui-build.log",
+      "copy": "review/ui-build.log",
+      "sha256": "c2a7cae9c3154cc074d0c2939c9f28edd766f7c8cfe02b1496a48cffd9f4f39d",
+      "bytes": 1051
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/technical-http-replay-retest.log",
+      "copy": "review/technical-http-replay-retest.log",
+      "sha256": "125814415bf42a61ed3b0128e628bd55162fdcde13e7765d3a334fa71b7218ad",
+      "bytes": 1912
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/web-recovery-transition.log",
+      "copy": "review/web-recovery-transition.log",
+      "sha256": "4f1335d4b48e5730fee1917e252179b395d834587487510ecb2b6b8b910618c7",
+      "bytes": 364
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/storage-review-rules-final-before-doc-closeout.json",
+      "copy": "review/storage-review-rules-final-before-doc-closeout.json",
+      "sha256": "2131594df093eecb6359da63403f92ac921e09c4a719e87e6789c5b03f2bc206",
+      "bytes": 27326
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/ui-review-mobile.png",
+      "copy": "review/ui-review-mobile.png",
+      "sha256": "3cdbebe2aedab4cc126dd61906975ba7703dcf67a74271a5a52c05ad60016189",
+      "bytes": 298408
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/technical-probe-results.stderr",
+      "copy": "review/technical-probe-results.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/project-replay-reproduction.log",
+      "copy": "review/project-replay-reproduction.log",
+      "sha256": "4dd8a8351955bccc41a51825cd0494e5948a3a6949eb30a41dc2d6bc1f3e214b",
+      "bytes": 2753
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/ui-screenshot-sha256.json",
+      "copy": "review/ui-screenshot-sha256.json",
+      "sha256": "24dcb09a7128f31bcfcc9d4e07636bbe67e05e010a8e17d4f4f33e4a17613121",
+      "bytes": 710
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/codex-no-daemon.log",
+      "copy": "review/codex-no-daemon.log",
+      "sha256": "4734de6f2d66ae83627418f474beb5b8252c5cd3701a08ab53d1dc1bd8957cf5",
+      "bytes": 1315
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/technical-rules.json",
+      "copy": "review/technical-rules.json",
+      "sha256": "a93af98b9b88d9fd29b6ba304abf54d4fa76d13bb142b36328ff101870cb73a4",
+      "bytes": 27163
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/technical-closeout-check.json",
+      "copy": "review/technical-closeout-check.json",
+      "sha256": "42baf8330230513bf08c6dd4cd7ed7a20e28a815efcb3a64d89e9f33eb9b8a5b",
+      "bytes": 1858
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/technical-retest.log",
+      "copy": "review/technical-retest.log",
+      "sha256": "aae58e927056fc88ad736e6299b04e3ca4acb9d40221e82097a8ce2845f9a2c3",
+      "bytes": 8301
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/bootstrap-after.log",
+      "copy": "review/bootstrap-after.log",
+      "sha256": "7fd229854af7c21f7f77f412ef2dcdb72ac7f9cd20402e282ad713c6ae84bd7d",
+      "bytes": 490
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/technical-probe-results.json",
+      "copy": "review/technical-probe-results.json",
+      "sha256": "afdcc01aec35338e4cb740979902da874916cd1a8ce7bd42a284f1b9dd726b61",
+      "bytes": 1098
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/storage-performance-evidence.json",
+      "copy": "review/storage-performance-evidence.json",
+      "sha256": "ed8cb2c8791c0d89b333015905c762d492db8f1d545cf097a595be37f950e2b9",
+      "bytes": 4197
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/ui-browser-executed2.log",
+      "copy": "review/ui-browser-executed2.log",
+      "sha256": "b560e02927b359d25390af97a3a48a78ebd9cece27b52911bba37e5bf73d1f6f",
+      "bytes": 2673
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/ui-retest-extra.log",
+      "copy": "review/ui-retest-extra.log",
+      "sha256": "16eef09e792b75833600ad3eed9027613b0e467b45feed97f5e662428f94eeae",
+      "bytes": 1345
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/technical-fixed-probe-source.txt",
+      "copy": "review/technical-fixed-probe-source.txt",
+      "sha256": "f5a2c1b0b5c91e722bf37c64bf26f3c4a80668eecb556859136fd693862695fd",
+      "bytes": 3177
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/start-conflict-reproduction.log",
+      "copy": "review/start-conflict-reproduction.log",
+      "sha256": "aa4b9a7e09b28ab7fb2f320d1d609b18ea23e55da5de335136ef54636206ef7b",
+      "bytes": 5294
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/ui-retest-rules.json",
+      "copy": "review/ui-retest-rules.json",
+      "sha256": "f46029a60a4acf4e9efabb94d70fccb23d2566fdceb3b5ee8225857473d3d793",
+      "bytes": 4630
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/start-conflict-after.log",
+      "copy": "review/start-conflict-after.log",
+      "sha256": "4d254f5e1c31fdd0ba4db21d64323cb132142d63b49b5233521682f0c9cd8ad6",
+      "bytes": 5873
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/ui-browser-executed3.log",
+      "copy": "review/ui-browser-executed3.log",
+      "sha256": "100bd8ba4609de276ef4d90d7bfbb941410463255efd185bf9aec6dcb82db61f",
+      "bytes": 2824
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/technical-retest-before.json",
+      "copy": "review/technical-retest-before.json",
+      "sha256": "46182e6c20374d4f140bad144c6d78c98bc69d4579600a7af50daed74dc0975f",
+      "bytes": 9566
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/storage-review-rules.json",
+      "copy": "review/storage-review-rules.json",
+      "sha256": "2131594df093eecb6359da63403f92ac921e09c4a719e87e6789c5b03f2bc206",
+      "bytes": 27326
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/storage-review-test-baseline.json",
+      "copy": "review/storage-review-test-baseline.json",
+      "sha256": "151b1f27d9ea618028b3e12ffa837b8a7aad71a86f75595b1ffd7a933bb8652e",
+      "bytes": 2123
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/ui-doctor.log",
+      "copy": "review/ui-doctor.log",
+      "sha256": "e82ae58b4255c051a0e740263a8c241b071b5374292d4df82f4fe0788ea940e4",
+      "bytes": 100
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/typecheck-http-fixture.log",
+      "copy": "review/typecheck-http-fixture.log",
+      "sha256": "8366207267355d3e3d5bf3bf6e8c94c5f93f6078c34f08973fa2b38cdda6cc92",
+      "bytes": 15
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/ui-retry-stale-detail.png",
+      "copy": "review/ui-retry-stale-detail.png",
+      "sha256": "a6b90f6011d848d661ba418d4e9a0e9fcf26a779ba2d213421fdbc5f3e122216",
+      "bytes": 185181
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/storage-review-final-check.json",
+      "copy": "review/storage-review-final-check.json",
+      "sha256": "0d83c554fb5fba002776375589306487553a9d442a43b8bc99fe80c6c6f1bf2d",
+      "bytes": 2777
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/bootstrap-reproduction.log",
+      "copy": "review/bootstrap-reproduction.log",
+      "sha256": "9b1bed62ff9790fbaa986bc323edbaf60314d95230edd0d715d8d2270e77248a",
+      "bytes": 1344
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/storage-review-doctor.log",
+      "copy": "review/storage-review-doctor.log",
+      "sha256": "e82ae58b4255c051a0e740263a8c241b071b5374292d4df82f4fe0788ea940e4",
+      "bytes": 100
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/build-bootstrap.log",
+      "copy": "review/build-bootstrap.log",
+      "sha256": "7676241f93c09923194d2ca24b345ab9bac800a7283fee3ddbc43709a1253535",
+      "bytes": 1067
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/ui-rules.json",
+      "copy": "review/ui-rules.json",
+      "sha256": "726b9c123c35dc13b9e0d1e962a6277a028b957bae13b6b0c147bc5413edd589",
+      "bytes": 8033
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/build-start-conflict.log",
+      "copy": "review/build-start-conflict.log",
+      "sha256": "dd86432663096ceb1fefdeb57c8d16929467f16f20366b3ab05fa56a21145347",
+      "bytes": 1067
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/web-recovery-initial-error.md",
+      "copy": "review/web-recovery-initial-error.md",
+      "sha256": "6273a2cf90878e9942704cea513162f4ca274a01d68d201fe64a42397568cefe",
+      "bytes": 15069
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/herdr-current-schema.json",
+      "copy": "review/herdr-current-schema.json",
+      "sha256": "9e2af207e9aa8183d4aeca5fde9cc48e7909bb40cdbd7cf21608a6d3ea78075b",
+      "bytes": 272578
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/typecheck-after-build.log",
+      "copy": "review/typecheck-after-build.log",
+      "sha256": "8366207267355d3e3d5bf3bf6e8c94c5f93f6078c34f08973fa2b38cdda6cc92",
+      "bytes": 15
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/storage-review-rules-final.json",
+      "copy": "review/storage-review-rules-final.json",
+      "sha256": "2131594df093eecb6359da63403f92ac921e09c4a719e87e6789c5b03f2bc206",
+      "bytes": 27326
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/ui-archived-dependency-missing.png",
+      "copy": "review/ui-archived-dependency-missing.png",
+      "sha256": "7af11685ba7404e28111ac1f04be4bae25d534cacd46ecc29a303d8dc7209783",
+      "bytes": 231653
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/web-recovery-test.log",
+      "copy": "review/web-recovery-test.log",
+      "sha256": "c02af1835323e422c52bbd7d5b9936736e90ad09debf65a4b30712f1f61c9cc9",
+      "bytes": 2092
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/technical-replaced-agent.json",
+      "copy": "review/technical-replaced-agent.json",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/build-project-replay.log",
+      "copy": "review/build-project-replay.log",
+      "sha256": "61ebd557cb12244f28eaf83e24a5377677f4b252b4b669c5ba7f6bcb1248c94f",
+      "bytes": 1067
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/technical-rules-final.json",
+      "copy": "review/technical-rules-final.json",
+      "sha256": "28a8c309559560c6082f31b445772e1415e31af38a80c594fd16fac655c6c742",
+      "bytes": 27205
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/ui-browser-executed.log",
+      "copy": "review/ui-browser-executed.log",
+      "sha256": "fc8185e9b4317b912c2b31019cb64fda45d9d17992cbb52a8e24ee96acb625fc",
+      "bytes": 1177
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/storage-review-version.log",
+      "copy": "review/storage-review-version.log",
+      "sha256": "44a4426426d28e422b92ea9642887c7f8e352ba6b68c77adcd334f4efdb34063",
+      "bytes": 124
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/technical-replaced-agent-verified.stderr",
+      "copy": "review/technical-replaced-agent-verified.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/ui-scope.json",
+      "copy": "review/ui-scope.json",
+      "sha256": "cb245d020e579c9458a775b8dee68c8d26c0016b5c4fffdff779476afc76ca79",
+      "bytes": 324943
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/technical-replaced-agent-fixed.stderr",
+      "copy": "review/technical-replaced-agent-fixed.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/ui-browser.log",
+      "copy": "review/ui-browser.log",
+      "sha256": "5514ef9edd42901f2ddcaf427b6631a24c81c1d49ce32700623a3474d80600be",
+      "bytes": 1861
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/ui-manual-declaration-blocked.png",
+      "copy": "review/ui-manual-declaration-blocked.png",
+      "sha256": "dc641940e6232bf6af02df5e44b21d995fd37a7fe499ec85c149e634d25242cf",
+      "bytes": 196100
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/ui-preview.json",
+      "copy": "review/ui-preview.json",
+      "sha256": "17bcd4504165ac4b610688410cb7d5ceef2e0849e7ffb4a9495a367f753de6b8",
+      "bytes": 191155
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/ui-retest-extra-observations.json",
+      "copy": "review/ui-retest-extra-observations.json",
+      "sha256": "1221fc7b3d683b12818d0269e7d85b83ca2e6148675fbff073e356727371dd24",
+      "bytes": 1433
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/recovery-tests.log",
+      "copy": "review/recovery-tests.log",
+      "sha256": "556542795cd82ca464f762a0116e66b12b8ad3ca55d325aff0af4a2810a5f16b",
+      "bytes": 3390
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/storage-review-preview.json",
+      "copy": "review/storage-review-preview.json",
+      "sha256": "d9af1514fc1e99c0a8fd236652915d7fc406b457ec8ff07ed8bd24d95cbc4b40",
+      "bytes": 223740
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/storage-review.md",
+      "copy": "review/storage-review.md",
+      "sha256": "ca52dda3500132fb79818fd24ebd397079f33c530345f70e4a9fc61b18dbb60d",
+      "bytes": 8858
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/technical-replaced-agent-verified.json",
+      "copy": "review/technical-replaced-agent-verified.json",
+      "sha256": "819ac78652af210cc1076999ee0fb7e55af97a269022eb8c342d548a47327679",
+      "bytes": 432
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/ui-findings.json",
+      "copy": "review/ui-findings.json",
+      "sha256": "67721b10c47237cb5021270646087cc88c064c85d3b214d5985c802097372407",
+      "bytes": 1569
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/technical-findings.json",
+      "copy": "review/technical-findings.json",
+      "sha256": "f58a5dfa3f7b9cf9cc8fff52d1ffcb3f8eddbd63de54b71c9fc5bc7859678455",
+      "bytes": 2420
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/ui-browser-observations.json",
+      "copy": "review/ui-browser-observations.json",
+      "sha256": "8e7dec995aff155a6290c9268b68ca2d863a6f7e7f53f4e662893a3ca8d50119",
+      "bytes": 3637
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/storage-review-test-check.json",
+      "copy": "review/storage-review-test-check.json",
+      "sha256": "5af54c0bb86cda24186dc9617ef46bf8bffd2050be45230c0f986308a65d5b09",
+      "bytes": 3806
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/codex-diagnostic-source.txt",
+      "copy": "review/codex-diagnostic-source.txt",
+      "sha256": "85befa506655e964e112b6d34ffa572169d4958411918858b7e5db09113ff985",
+      "bytes": 15476
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/ui-recovery.log",
+      "copy": "review/ui-recovery.log",
+      "sha256": "3ffd057b5147089eb51fdcda10778680d1a50d29789be22bbd829b8bdb3f6251",
+      "bytes": 788
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/ui-retest-findings.json",
+      "copy": "review/ui-retest-findings.json",
+      "sha256": "281462f1622806f11b07124475b56eef78a98e424b69de1298fcf738b12b1d5e",
+      "bytes": 986
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/technical-replaced-agent-fixed.json",
+      "copy": "review/technical-replaced-agent-fixed.json",
+      "sha256": "7196b62a2d9964e6103cafd54384f239237400940b8202fa16283ee57dc3f6ed",
+      "bytes": 297
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/technical-probe-fixed.json",
+      "copy": "review/technical-probe-fixed.json",
+      "sha256": "adc54bb77f0886d67975727e0e07a50ea3622fa1cb452da63be48615c22cc88f",
+      "bytes": 866
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/ui-retest-start-visible-rejected.png",
+      "copy": "review/ui-retest-start-visible-rejected.png",
+      "sha256": "91d4cadd1b5d1db216944359c755866ae6370d9130c830341de9e814c9b103c4",
+      "bytes": 277027
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/project-replay-before.log",
+      "copy": "review/project-replay-before.log",
+      "sha256": "5d3a5ed22b1beae44e061843a848aff2356bb03230287b49846098d1328b75a8",
+      "bytes": 2354
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/ui-retest-baseline.json",
+      "copy": "review/ui-retest-baseline.json",
+      "sha256": "c01ee0e2e4a50832fb118d429c244d4f646a50bc45f51e34ca6761bf3b5918f8",
+      "bytes": 1891
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/codex-diagnosis-plan.md",
+      "copy": "review/codex-diagnosis-plan.md",
+      "sha256": "d78530ed3e46a9efdb8cd723b6752141a69d6c69e03a00cd01771fcd14611ab1",
+      "bytes": 955
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/ui-retest-scope.json",
+      "copy": "review/ui-retest-scope.json",
+      "sha256": "0c89cca4c8c55fe4ed3257b48eb92765e0d5a3be72e51f4e59e637a00ceec55b",
+      "bytes": 253122
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/technical-replaced-agent.stderr",
+      "copy": "review/technical-replaced-agent.stderr",
+      "sha256": "b110163353c5b68c8a03cbdaf9233852392fd8b1ecd5ba19e6131eed2f313891",
+      "bytes": 501
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/storage-review-closeout.json",
+      "copy": "review/storage-review-closeout.json",
+      "sha256": "98e0f83dee77cc55133542d28c96806186d34c625589a99b71f605805652e7b0",
+      "bytes": 330
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/ui-browser-observations-round2.json",
+      "copy": "review/ui-browser-observations-round2.json",
+      "sha256": "180741efb9d590e17eb464674a14d0f19bf20af024d6b38d67f465c0a0dd4ba2",
+      "bytes": 2625
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/technical-probe-fixed.stderr",
+      "copy": "review/technical-probe-fixed.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/technical-coverage.json",
+      "copy": "review/technical-coverage.json",
+      "sha256": "01f04e108ab1c6cfc2753b6389ab382e711e09d8fda726732cc052a8baa26798",
+      "bytes": 397637
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/start-conflict-before.log",
+      "copy": "review/start-conflict-before.log",
+      "sha256": "cde84dfa333bd3c799586ee96bcf5b44bd593d93b15fc7750272e850e44e5f98",
+      "bytes": 4952
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/ui-retest-final-sha256.json",
+      "copy": "review/ui-retest-final-sha256.json",
+      "sha256": "98d7dddd57e299e70f9e61fe4186c0fe7b0f240bd711cb967fa35446052fd84f",
+      "bytes": 3203
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/technical-probe-initial.json",
+      "copy": "review/technical-probe-initial.json",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/ui-retest-detector.json",
+      "copy": "review/ui-retest-detector.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/ui-retest-extra-observations-first.json",
+      "copy": "review/ui-retest-extra-observations-first.json",
+      "sha256": "a023808791581458de0a78e29c97acd5bfd97af6d4384b40b08041dcfcd4801b",
+      "bytes": 940
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/ui-recovery-observations.json",
+      "copy": "review/ui-recovery-observations.json",
+      "sha256": "3b2c3151dbdb1e70579f521103e0505b662801e5e892bf280552eb1a6f7b2f46",
+      "bytes": 1156
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/ui-reviewed-baseline.json",
+      "copy": "review/ui-reviewed-baseline.json",
+      "sha256": "9a3da6f81e78651f89769f46f405afa77a7dfdd1841bd21b845ac554c506163e",
+      "bytes": 1361
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/ui-review-mobile-viewport.png",
+      "copy": "review/ui-review-mobile-viewport.png",
+      "sha256": "10724cba44a0d1a510e8479ceda546faa5dacca6eff50b8f0543fdf0940fbe85",
+      "bytes": 57838
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/storage-review-coverage.json",
+      "copy": "review/storage-review-coverage.json",
+      "sha256": "db050d488836ba3eaf00b00f30b2e024e2f5f9efe69f376e2828e8ac39eda185",
+      "bytes": 473328
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/ui-retest-extra-run2.log",
+      "copy": "review/ui-retest-extra-run2.log",
+      "sha256": "5f29e6e83c5e825cb59d6c22fadb6f3fcf38764de054ed87719bb42ff3965af9",
+      "bytes": 840
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/ui-review-desktop.png",
+      "copy": "review/ui-review-desktop.png",
+      "sha256": "e98d278cb750362b31764b638cec0858720db34078b3a760317e0860222a4249",
+      "bytes": 307048
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/storage-reviewed-files-before-doc-closeout.json",
+      "copy": "review/storage-reviewed-files-before-doc-closeout.json",
+      "sha256": "c2e5a26801aca7f256a8425c0b0017640ed8252602da8dc71d5fcb08f9995848",
+      "bytes": 5241
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/technical-replaced-agent-probe-source.txt",
+      "copy": "review/technical-replaced-agent-probe-source.txt",
+      "sha256": "e0be8ba9aa11f7b066db3b1c68ef3fed1a682f6ef7e2109ad85f2c581a86374d",
+      "bytes": 3351
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/ui-independent-retest.log",
+      "copy": "review/ui-independent-retest.log",
+      "sha256": "e46a26fe49645619684d22dee68ce39c726a135a29e54069e38602103853ab7b",
+      "bytes": 364
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/codex-no-daemon-long.log",
+      "copy": "review/codex-no-daemon-long.log",
+      "sha256": "d90b6c8ae5978dcd3e346f184e6226a8ab3956b6066beab9925aa81c881eabb9",
+      "bytes": 1194
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/technical-retest-after.json",
+      "copy": "review/technical-retest-after.json",
+      "sha256": "27f5fc71e7e0ae6d4609b60eace3d6292f5e7dd9689466b1c96e0b6ba67a1245",
+      "bytes": 16496
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/ui-cleanup.json",
+      "copy": "review/ui-cleanup.json",
+      "sha256": "58805c8773c9ee5271c76c3a6d46a482f6e48337d9d154822b792e51173a0c38",
+      "bytes": 400
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/technical-probe-initial.stderr",
+      "copy": "review/technical-probe-initial.stderr",
+      "sha256": "54779bd9020f3f1e6afa26361aca5e715c938d3b1b0f1743ca0f3bdb2bac5ba9",
+      "bytes": 1878
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/ui-archived-retry-stuck.png",
+      "copy": "review/ui-archived-retry-stuck.png",
+      "sha256": "96b707cd52844c9546ce118361218967c19429e84a1648770f4cdb8387017fad",
+      "bytes": 181986
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/codex-no-daemon-no-update.log",
+      "copy": "review/codex-no-daemon-no-update.log",
+      "sha256": "28744070177e9072ba93e7aca812f8bb0a2cc73f48c03c604fd97fdd6eb5c809",
+      "bytes": 1315
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/project-replay-after.log",
+      "copy": "review/project-replay-after.log",
+      "sha256": "510a762a2c9fcb63d01f0f580c6defa3399ff81036dec7546aae154b36e57cb7",
+      "bytes": 1759
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/technical-midreview-baseline.json",
+      "copy": "review/technical-midreview-baseline.json",
+      "sha256": "f1f2b24be477840c4fa6416a4e72070fcbd8f08c1f18f513243c2e4eb179afe8",
+      "bytes": 1678
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/storage-reviewed-files.json",
+      "copy": "review/storage-reviewed-files.json",
+      "sha256": "cf48753c54b1f8fb3d6f1394e790ae0dce0c25568cfce088080fee786edaa06a",
+      "bytes": 5241
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/technical-initial-baseline.json",
+      "copy": "review/technical-initial-baseline.json",
+      "sha256": "8b1c9ccec2c4cfb44590ce33b7365e31bb1de069bb4c73d8ec620b1f4a227307",
+      "bytes": 43843
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/storage-review-baseline.json",
+      "copy": "review/storage-review-baseline.json",
+      "sha256": "146282344512448ec081942f143b8f0e9ee5cbb8d20845632b3be521b2ffbb13",
+      "bytes": 818
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/ui-browser-run.log",
+      "copy": "review/ui-browser-run.log",
+      "sha256": "3d8ba3beecb78361b32b4d9e69c3c6863bd0d02151b1de9acc9ad23619868d6e",
+      "bytes": 8809
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/storage-review-findings.json",
+      "copy": "review/storage-review-findings.json",
+      "sha256": "0ce4e99bb874cb59dc50c98cfb121744ff8fb1cf8fb460c00787714e99ab280d",
+      "bytes": 1052
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/ui-detector.json",
+      "copy": "review/ui-detector.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/technical-reviewed-files.json",
+      "copy": "review/technical-reviewed-files.json",
+      "sha256": "9130a7b3d9227f85bbdbd7e05aedc1f9140beb0b6ad951f7acf879081d8568cc",
+      "bytes": 13970
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/codex-no-daemon-long/live.json",
+      "copy": "review/codex-no-daemon-long/live.json",
+      "sha256": "c7e8f3f079d09674ac3362abe0208b6aa0fd39e6ff3da14e471bce8ca4f8a7d9",
+      "bytes": 4729
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/codex-no-daemon-long/real-agent-codex.json",
+      "copy": "review/codex-no-daemon-long/real-agent-codex.json",
+      "sha256": "d181edfc283c86092d893205a4936cfbd789c4817613b2ee48f2f834001761d6",
+      "bytes": 9899
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/ui-independent-retest-output/.last-run.json",
+      "copy": "review/ui-independent-retest-output/.last-run.json",
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903",
+      "bytes": 45
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/codex-no-daemon/real-agent-codex.json",
+      "copy": "review/codex-no-daemon/real-agent-codex.json",
+      "sha256": "c037703b38308212d865730adc649102bff8cf5bfe565844e33131bc02612cfd",
+      "bytes": 5713
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/codex-diagnostic/real-agent-codex.json",
+      "copy": "review/codex-diagnostic/real-agent-codex.json",
+      "sha256": "5deeaa9b439effacf4fa795544c4b0bb4274363f98d402703c61c889439aba6f",
+      "bytes": 4993
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/ui-independent-retest-evidence/web-recovery-mobile.png",
+      "copy": "review/ui-independent-retest-evidence/web-recovery-mobile.png",
+      "sha256": "d4cd73a831af75c302ba4fb469b16bbddbb325b38b0d7dd3fac6fa16f87bcef7",
+      "bytes": 116096
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/codex-no-daemon-no-update/live.json",
+      "copy": "review/codex-no-daemon-no-update/live.json",
+      "sha256": "164cee4ca756f8470cd21dfe3182149a95ce006d98fbd85640676455baf7d19f",
+      "bytes": 2385
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-result-review/codex-no-daemon-no-update/real-agent-codex.json",
+      "copy": "review/codex-no-daemon-no-update/real-agent-codex.json",
+      "sha256": "45862e1fd1e6ba521cebfb1d9617b4a67b5f1d9eff9d3500c99a82f822b73dff",
+      "bytes": 7784
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-runs/20261008-review-current/report.json",
+      "copy": "source-run-report.json",
+      "sha256": "197fb7a09fb308d6e88722d50f5037dc75f29c313ee07aaa03cc36ff4b9114d7",
+      "bytes": 1682
+    },
+    {
+      "source": "tasks/001-local-agent-console/codex-integration-followup.md",
+      "copy": "codex-integration-followup.md",
+      "sha256": "493319325958782330f983ebd7cf599a9f66f5df29095fa925f9784d4e98efb1",
+      "bytes": 3505
+    }
+  ]
+}

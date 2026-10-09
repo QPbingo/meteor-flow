@@ -1,0 +1,132 @@
+{
+  "type": "claude",
+  "date": "2026-10-08T09:45:06.718Z",
+  "session": "meteor-flow-test-claude-cb59d187",
+  "cwd": "/private/tmp/mf-agent-4V33Fn/project",
+  "isolation": "dedicated herdr XDG/session/cwd; existing model configuration read-only; user config writes denied",
+  "status": "failed",
+  "timeline": [
+    {
+      "terminalId": "term_65d511641a9221",
+      "paneId": "w1:p1",
+      "type": "unknown",
+      "status": "unknown",
+      "cwd": "/private/tmp/mf-agent-4V33Fn/project",
+      "pid": null,
+      "processStart": null,
+      "agentSessionPresent": false,
+      "sequence": 0,
+      "launchPending": true,
+      "interactiveReady": false
+    },
+    {
+      "terminalId": "term_65d511641a9221",
+      "paneId": "w1:p1",
+      "type": "claude",
+      "status": "unknown",
+      "cwd": "/private/tmp/mf-agent-4V33Fn/project",
+      "pid": 85654,
+      "processStart": "85654:1791452707:732789",
+      "agentSessionPresent": false,
+      "sequence": 0,
+      "launchPending": true,
+      "interactiveReady": false
+    },
+    {
+      "terminalId": "term_65d511641a9221",
+      "paneId": "w1:p1",
+      "type": "claude",
+      "status": "unknown",
+      "cwd": "/private/tmp/mf-agent-4V33Fn/project",
+      "pid": 85654,
+      "processStart": "85654:1791452707:732789",
+      "agentSessionPresent": true,
+      "sequence": 0,
+      "launchPending": true,
+      "interactiveReady": false
+    },
+    {
+      "terminalId": "term_65d511641a9221",
+      "paneId": "w1:p1",
+      "type": "claude",
+      "status": "idle",
+      "cwd": "/private/tmp/mf-agent-4V33Fn/project",
+      "pid": 85654,
+      "processStart": "85654:1791452707:732789",
+      "agentSessionPresent": true,
+      "sequence": 1,
+      "launchPending": false,
+      "interactiveReady": true
+    }
+  ],
+  "versions": {
+    "herdr": "herdr 0.9.3",
+    "agent": "2.1.195 (Claude Code)",
+    "node": "v24.21.0"
+  },
+  "target": "term_65d511641a9221",
+  "screenSha256": "a8ab79d9c1abb949c3763b41552fe293ebdf8c5d1438b768f93aeceb153c31c3",
+  "screenReason": null,
+  "foregroundProcesses": [
+    {
+      "pid": 85691,
+      "name": "mcp-server-darw"
+    },
+    {
+      "pid": 85654,
+      "name": "claude"
+    }
+  ],
+  "error": "Agent 尚未完成接入或当前不可安全恢复",
+  "tasks": [],
+  "attempts": [],
+  "events": [
+    {
+      "seq": 1,
+      "time": 1791452711966,
+      "type": "recover",
+      "message": "启动恢复：观测缺口与旧控制权已失效",
+      "taskId": null,
+      "attemptId": null
+    },
+    {
+      "seq": 2,
+      "time": 1791452712337,
+      "type": "project.create",
+      "message": "创建项目 Real claude",
+      "taskId": null,
+      "attemptId": null
+    },
+    {
+      "seq": 3,
+      "time": 1791452712453,
+      "type": "binding.create",
+      "message": "接入 Real claude，当前只观察",
+      "taskId": null,
+      "attemptId": null
+    },
+    {
+      "seq": 4,
+      "time": 1791452712577,
+      "type": "binding.action",
+      "message": "Real claude：已确认接入，请启用自动调度",
+      "taskId": null,
+      "attemptId": null
+    },
+    {
+      "seq": 5,
+      "time": 1791452712802,
+      "type": "agent.observed",
+      "message": "Real claude：unknown",
+      "taskId": null,
+      "attemptId": null
+    }
+  ],
+  "sourceFiles": [
+    {
+      "path": "hello.txt",
+      "size": null
+    }
+  ],
+  "protectedConfigurationUnchanged": true
+}

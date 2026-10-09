@@ -1,0 +1,23 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ ✓ apps/server/src/storage/database.test.ts (5 tests) 48ms
+ ✓ apps/server/src/results/protocol.test.ts (19 tests) 6ms
+ ✓ apps/server/src/domain/model.test.ts (14 tests) 6ms
+ ✓ apps/server/src/storage/store.test.ts (3 tests) 858ms
+   ✓ dedicated real database writer > recovers a committed-but-unacknowledged transaction without creating a second writer or replaying work (V04/V24)  661ms
+ ✓ apps/server/src/results/collector.test.ts (15 tests) 5887ms
+   ✓ real process result collection and immutable archives > does not publish if cancel changes at the post-verification boundary  510ms
+   ✓ real process result collection and immutable archives > does not publish if close changes at the post-verification boundary  412ms
+   ✓ real process result collection and immutable archives > does not publish if storage changes at the post-verification boundary  396ms
+   ✓ real process result collection and immutable archives > archives complete artifacts, preserves source ownership and freezes independent downstream copies (V09/V17)  613ms
+   ✓ real process result collection and immutable archives > rejects traversal without publishing a partial archive (V09/V13/V22)  319ms
+   ✓ real process result collection and immutable archives > rejects fifo without publishing a partial archive (V09/V13/V22)  318ms
+   ✓ real process result collection and immutable archives > rejects oversized without publishing a partial archive (V09/V13/V22)  304ms
+   ✓ real process result collection and immutable archives > kills and reaps a timed-out writer even after it sent a success candidate  1589ms
+
+ Test Files  5 passed (5)
+      Tests  56 passed (56)
+   Start at  09:58:14
+   Duration  6.25s (transform 140ms, setup 0ms, collect 708ms, tests 6.81s, environment 0ms, prepare 221ms)
+

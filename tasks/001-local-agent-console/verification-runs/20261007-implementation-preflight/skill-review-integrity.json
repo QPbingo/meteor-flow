@@ -1,0 +1,27 @@
+[
+  {
+    "name": "playwright-cli",
+    "registered_files": 12,
+    "actual_files": 12,
+    "unregistered": [],
+    "missing": [],
+    "unresolved_markdown_links": [
+      {
+        "file": ".agents/skills/playwright-cli/SKILL.md",
+        "target": ".playwright-cli/page-2026-02-14T19-22-42-679Z.yml"
+      },
+      {
+        "file": ".agents/skills/playwright-cli/references/pr-attachments.md",
+        "target": "./settings-after.png"
+      }
+    ]
+  },
+  {
+    "name": "impeccable",
+    "registered_files": 63,
+    "actual_files": 63,
+    "unregistered": [],
+    "missing": [],
+    "unresolved_markdown_links": []
+  }
+]

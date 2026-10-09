@@ -1,0 +1,17 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ ✓ apps/server/src/storage/store.test.ts (5 tests) 961ms
+   ✓ dedicated real database writer > recovers a committed-but-unacknowledged transaction without creating a second writer or replaying work (V04/V24)  655ms
+ ✓ apps/server/src/terminal/bridge.test.ts (22 tests) 20ms
+ ✓ apps/server/src/application/console.test.ts (10 tests) 1882ms
+   ✓ application orchestration against real DB and collectors > runs an independent task behind an unmet dependency on another binding (V14)  341ms
+ ✓ apps/server/src/http/server.test.ts (9 tests) 2403ms
+   ✓ keeps observers read-only, gives every page a redraw, and arbitrates two controllers with revocation  580ms
+   ✓ holds all four download slots until slow responses finish and aborts them on service close  664ms
+
+ Test Files  4 passed (4)
+      Tests  46 passed (46)
+   Start at  10:42:26
+   Duration  2.80s (transform 176ms, setup 0ms, collect 583ms, tests 5.27s, environment 0ms, prepare 150ms)
+

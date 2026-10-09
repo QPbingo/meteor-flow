@@ -1,0 +1,11 @@
+
+Running 3 tests using 1 worker
+
+(node:72700) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/3] tests/e2e/web-console.spec.ts:127:1 › details keep attempt ownership and strip active Markdown and remote resources
+[2/3] tests/e2e/web-console.spec.ts:142:1 › Markdown image mapping respects attempt, root, frozen IDs, MIME and size boundaries
+[3/3] tests/e2e/web-server.spec.ts:13:1 › browser creates project, confirms agent, completes a file task and reads durable evidence
+  3 passed (6.3s)

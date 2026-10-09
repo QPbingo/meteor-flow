@@ -1,0 +1,32 @@
+{
+  "scope": "Real browser + HTTP + SQLite + filesystem, isolated FakeHerdr and terminal CLI fixture; no user agents",
+  "checks": [
+    {
+      "name": "manual_unverified_ui",
+      "stoppedRequired": true,
+      "formValid": false,
+      "liveIdentityFacts": "人工补录结论\n\n停止证据不足的执行：仅在确认执行已停止后补录。人工记录与 Agent 结果分别标记，必须说明原因与证据。\n\n人工结论\n失败\n取消\n成功\n补录原因\n证据与核对过程\n我已核实本次执行已停止，后续不会继续写入结果\n返回\n确认人工补录结论"
+    },
+    {
+      "name": "manual_ui_no_write",
+      "manualEvidence": null,
+      "occupies": true
+    },
+    {
+      "name": "manual_unverified_api",
+      "status": 200,
+      "phase": "needs_confirmation",
+      "occupies": true,
+      "manualEvidence": "failed\n已有失败迹象，但尚不能证明停止\n隔离测试：未知停止，仅记录声明"
+    },
+    {
+      "name": "snapshot_outage",
+      "keptTask": true,
+      "writesDisabled": true
+    },
+    {
+      "name": "snapshot_recovery",
+      "writesEnabled": true
+    }
+  ]
+}

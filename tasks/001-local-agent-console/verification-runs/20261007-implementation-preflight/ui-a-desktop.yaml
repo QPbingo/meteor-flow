@@ -1,0 +1,81 @@
+- generic [ref=e7]:
+  - link "跳到主要内容" [ref=e8] [cursor=pointer]:
+    - /url: "#main"
+  - complementary [ref=e9]:
+    - strong [ref=e15]: Meteor Flow
+    - paragraph [ref=e16]: 本地 Agent 控制台
+    - generic [ref=e17]:
+      - generic [ref=e18]: 当前项目
+      - combobox "当前项目" [ref=e19]:
+        - option "本地控制台 · 评估样例" [selected]
+      - button "创建项目" [ref=e20] [cursor=pointer]
+    - navigation "主导航" [ref=e22]:
+      - button "任务" [ref=e23] [cursor=pointer]
+      - button "Agent" [ref=e27] [cursor=pointer]
+    - generic [ref=e30]:
+      - generic [ref=e31]: HERDR SESSION
+      - strong [ref=e32]: meteor-flow-test-state
+      - button "选择 / 切换会话" [ref=e33] [cursor=pointer]
+      - generic [ref=e34]: herdr 0.9.3
+    - generic [ref=e35]:
+      - code [ref=e38]: /private/tmp/meteor-ui-review-0jOvC2/work
+      - button "归档当前项目" [ref=e39] [cursor=pointer]
+  - generic [ref=e40]:
+    - banner [ref=e41]:
+      - generic [ref=e42]:
+        - strong [ref=e44]: 本地连接正常
+        - generic [ref=e45]: 最后观测 10/07 10:07:47
+      - generic [ref=e46]:
+        - generic [ref=e47]: 并行上限 2
+        - button "调度设置" [ref=e48] [cursor=pointer]
+        - button "全局已暂停" [ref=e52] [cursor=pointer]
+    - main [ref=e55]:
+      - paragraph [ref=e56]: 全局调度已暂停。已开始的执行继续运行；在调度设置中核对后恢复。
+      - generic [ref=e57]:
+        - generic [ref=e58]:
+          - heading "任务" [level=1] [ref=e59]
+          - paragraph [ref=e60]: 本地控制台 · 评估样例 · 指定 Agent，按依赖与就绪状态推进。
+        - button "新建任务" [ref=e61] [cursor=pointer]
+      - generic [ref=e63]:
+        - textbox "搜索任务" [ref=e68]:
+          - /placeholder: 搜索任务、说明或等待原因
+        - combobox "筛选任务状态" [ref=e69]:
+          - option "全部状态" [selected]
+          - option "待派发"
+          - option "投递中"
+          - option "执行中"
+          - option "收集结果"
+          - option "取消中"
+          - option "待确认"
+          - option "已成功"
+          - option "已失败"
+          - option "已取消"
+        - generic [ref=e70] [cursor=pointer]:
+          - checkbox "已归档" [ref=e71]
+          - text: 已归档
+      - table [ref=e73]:
+        - rowgroup [ref=e74]:
+          - row [ref=e75]:
+            - columnheader "任务 / 等待原因" [ref=e76]
+            - columnheader "任务阶段" [ref=e77]
+            - columnheader "指定 Agent" [ref=e78]
+            - columnheader "前置任务" [ref=e79]
+            - columnheader "创建时间" [ref=e80]
+        - rowgroup [ref=e81]:
+          - row [ref=e82]:
+            - cell [ref=e83]:
+              - button "核对任务结果和文件产物" [ref=e84] [cursor=pointer]
+              - paragraph [ref=e85]: 全局调度已暂停
+            - cell "待派发" [ref=e86]
+            - cell "Codex · 接口整理" [ref=e90]
+            - cell "无依赖" [ref=e91]
+            - cell "10/07 10:04:14" [ref=e92]
+          - row [ref=e93]:
+            - cell [ref=e94]:
+              - button "根据核对结果补充启动说明" [ref=e95] [cursor=pointer]
+              - paragraph [ref=e96]: 全局调度已暂停
+            - cell "待派发" [ref=e97]
+            - cell "Codex · 接口整理" [ref=e101]
+            - cell "核对任务结果和文件产物" [ref=e102]
+            - cell "10/07 10:04:14" [ref=e103]
+    - contentinfo [ref=e104]: 任务由本地服务管理。关闭此页面不会取消执行。

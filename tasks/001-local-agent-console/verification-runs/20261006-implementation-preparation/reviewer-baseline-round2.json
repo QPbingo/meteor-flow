@@ -1,0 +1,13 @@
+{
+  "reviewer_context": "/root/technical_review",
+  "author_context": "/root",
+  "round": 2,
+  "git_head": "618607de5d6b3b22d44258950236273c37bd8079",
+  "files": {
+    "AGENTS.md": "a6ad749f5c985c6f7e5f1cb52ef0dabb802ee39ea03757c06f384b7092aa2840",
+    "README.md": "230e1661575a30e1f679d07e6230605846d4c2cfbe6c3580688e325d49a348d0",
+    "tasks/001-local-agent-console/herdr-compatibility.md": "51e55add23b0cd3753f1b0f15f9dc7afe36b54b5d30ba1abc7719c13a01761f0",
+    "tasks/001-local-agent-console/implementation-plan.md": "498921d967618bfd058e7694b72ae972245fab9a6af5bd546a45afdc944948e2",
+    "tasks/001-local-agent-console/technical-design.md": "6d72ad2783408e8e44769c6180d697fb8e0b1531d02c89e080f8c20a19d5d56b"
+  }
+}

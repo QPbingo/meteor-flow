@@ -1,0 +1,15 @@
+{
+  "apps/web/index.html": "de0ad3d2713ae6a3e926415993690d1639471c730311e75e1d7df851aa78e342",
+  "apps/web/package.json": "776579d429ff62b6346df6c7c964c65761527ee5126cfccdf66a116234b24ee9",
+  "apps/web/src/Agents.tsx": "353344faeeddef2c20a0bc77ba3c0bc628b2d5648b902929f95d86c3e66e39e5",
+  "apps/web/src/App.tsx": "68ff8bdfb840b528f5403a06042cf96de6a658d48a433aef84b015d0155510a0",
+  "apps/web/src/Tasks.tsx": "903d09337764a2d2f912330bdd56b7d39ae5efb5f362981d279a6013903d7dc9",
+  "apps/web/src/TerminalPanel.tsx": "884111db5b9bba2f09ffcea3324aed370f9121d9a96d97a0e7e972e8c0c642fd",
+  "apps/web/src/api.ts": "c03ae04a1bf466a3251e8758a711c66454a8dd0054d09a9649f2b68be8f2bc90",
+  "apps/web/src/main.tsx": "88ddcfdd251281f3e1688a79617355b60593e78a120ca6be1b168075ad272204",
+  "apps/web/src/styles.css": "a1d0ba68d2f29402026b663b45ed4f7d5b0b977e53469b6d6b5ef81389c9e572",
+  "apps/web/src/ui.tsx": "9671be05e185fe1034de09fd9ec86afffa05bb5c7c4825863f18507d89211add",
+  "apps/web/vite.config.ts": "0cb6ec6de771d9a2afd9937c3e72a27f115e84763fa7214b8b01f9e3a9f32be7",
+  "tests/e2e/web-console.spec.ts": "4af400cbb9fdf31afa7105f767a35befc25a532fc9a785415c80ef8b736429b1",
+  "tests/e2e/web-server.spec.ts": "0f0f1a7e62ee2a85a106442bc4d7ac2eb1aac8528e9bd85087b27e784139ae88"
+}

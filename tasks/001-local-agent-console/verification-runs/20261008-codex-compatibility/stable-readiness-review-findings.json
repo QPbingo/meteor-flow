@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-08",
+  "reviewer": "/root/technical_review",
+  "path": "tests/integration/real-agent.test.ts",
+  "sha256": "3a18fb937eb675217380b7f39676958f6a5c8a1594dee2f78029f07e090a703c",
+  "finding": {
+    "id": "SR01",
+    "severity": "medium",
+    "status": "fixed",
+    "title": "就绪窗口未拒绝采样间隙及读取后的陈旧观测",
+    "lines": [
+      121,
+      139,
+      142
+    ],
+    "trigger": "首个ready样本后RPC/调度延迟超过3秒；第二个相同fingerprint的ready样本直接满足Date.now-readySince>=3000。读取屏幕花费的时间也未计入观测陈旧性。",
+    "impact": "不影响产品最终安全检查，但不能证明本次测试声称的连续新鲜采样前置条件。",
+    "requested_fix": "使用单调窗口，显式限定采样间隙并检查读屏后的观测年龄；缺口重置，保持整体35秒期限。",
+    "resolution": "采用performance.now窗口，读屏后observedAt年龄限制[0,1000)ms，相邻ready采样>1000ms重置；独立直接提取当前循环的9种虚拟计时场景通过。",
+    "closure_evidence": "stable-readiness-review-probe.json"
+  },
+  "evidence": "只读检查控制流，无模型/产品代码修改。",
+  "final_sha256": "3a18fb937eb675217380b7f39676958f6a5c8a1594dee2f78029f07e090a703c",
+  "initial_baseline_correction": "stable-readiness-review-baseline-correction.json",
+  "initial_sha256_unavailable": true
+}

@@ -1,0 +1,31 @@
+{
+  "type": "codex",
+  "date": "2026-10-07T02:13:03.308Z",
+  "session": "meteor-flow-test-codex-e6214a13",
+  "cwd": "/private/tmp/mf-agent-k1eoki/project",
+  "isolation": "dedicated herdr XDG/session/cwd; Claude config isolated; user config writes denied",
+  "status": "failed",
+  "timeline": [
+    {
+      "terminalId": "term_65d36a7b6c77c1",
+      "paneId": "w1:p1",
+      "type": "unknown",
+      "status": "unknown",
+      "cwd": "/private/tmp/mf-agent-k1eoki/project",
+      "pid": null,
+      "processStart": null,
+      "agentSessionPresent": false,
+      "sequence": 0,
+      "launchPending": true,
+      "interactiveReady": false
+    }
+  ],
+  "versions": {
+    "herdr": "herdr 0.9.3",
+    "agent": "codex-cli 0.160.1",
+    "node": "v24.21.0"
+  },
+  "target": "term_65d36a7b6c77c1",
+  "error": "agent.read: invalid/error response",
+  "protectedConfigurationUnchanged": true
+}

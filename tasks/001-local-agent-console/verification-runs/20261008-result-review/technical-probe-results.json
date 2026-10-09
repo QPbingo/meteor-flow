@@ -1,0 +1,48 @@
+{
+  "conflict": {
+    "afterError": {
+      "phase": "needs_confirmation",
+      "occupies": true,
+      "paused": true
+    },
+    "afterIdle": {
+      "phase": "succeeded",
+      "occupies": false,
+      "paused": true,
+      "resultHash": "original-hash"
+    }
+  },
+  "startRace": {
+    "session": "new",
+    "receipt": {
+      "id": "28a76bbd-1bf1-47b3-9744-666ca53c3d00",
+      "projectId": "b5eb8144-82b9-41f1-829d-95e62b9c50b0",
+      "type": "codex",
+      "cwd": "/private/tmp/mf-start-review-VgBgGo/project/agent",
+      "label": "review",
+      "status": "intent",
+      "target": null,
+      "reason": "启动意图已保存",
+      "createdAt": 1791444675969
+    },
+    "status": "intent",
+    "startCalls": [
+      {
+        "session": "old",
+        "calls": 0
+      },
+      {
+        "session": "new",
+        "calls": 0
+      }
+    ],
+    "switchError": {
+      "code": "OCCUPIED",
+      "message": "活动执行或未决启动阻止切换会话"
+    },
+    "restartError": {
+      "code": "START_UNKNOWN",
+      "message": "此目录存在未决启动，请先核对"
+    }
+  }
+}

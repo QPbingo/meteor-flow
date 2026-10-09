@@ -1,0 +1,15 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ ✓ apps/server/src/storage/store.test.ts > dedicated real database writer > does not create a writer when close wins the asynchronous opening boundary 2ms
+ ✓ apps/server/src/storage/store.test.ts > dedicated real database writer > serializes concurrent identical operations to one persisted project (V03) 92ms
+ ✓ apps/server/src/storage/store.test.ts > dedicated real database writer > keeps the writer healthy after a domain conflict 84ms
+ ✓ apps/server/src/storage/store.test.ts > dedicated real database writer > recovers a committed-but-unacknowledged transaction without creating a second writer or replaying work (V04/V24) 662ms
+ ✓ apps/server/src/storage/store.test.ts > fails closed on a real SQLITE_FULL commit failure without publishing or recording the operation (V25) 149ms
+ ✓ tests/integration/cli.test.ts > CLI rejects duplicate data/session owners and releases locks on shutdown (V26) 1135ms
+
+ Test Files  2 passed (2)
+      Tests  6 passed (6)
+   Start at  10:40:13
+   Duration  1.32s (transform 62ms, setup 0ms, collect 148ms, tests 2.13s, environment 0ms, prepare 89ms)
+

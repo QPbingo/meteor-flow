@@ -1,0 +1,27 @@
+[
+  {
+    "command": "python3 - <<'PY'\nfrom pathlib import Path\nimport hashlib, json, os, subprocess, shutil\nroot=Path.cwd()\nbase=root/'tasks/001-local-agent-console/verification-runs'\nprior=base/'20261007-final'\nrun=base/'20261007-review-delivery'\ndata=json.loads((prior/'report.json').read_text())\nchanged={'README.md','tasks/001-local-agent-console/implementation-progress.md','tasks/001-local-agent-console/technical-review.md','tasks/001-local-agent-console/verification-status.md'}\nold={entry['path']:entry['sha256'] for entry in data['review']['files']}\nnames=set(subprocess.check_output(['git','ls-files','-z','--cached','--others','--exclude-standard']).split(b'\\0'))\ncurrent=hashlib.sha256(); reconstructed=hashlib.sha256(); files=[]\nfor name in sorted(n for n in names if n):\n    rel=Path(os.fsdecode(name))\n    if len(rel.parts)>=4 and rel.parts[0]=='tasks' and rel.parts[2]=='verification-runs': continue\n    path=root/rel\n    if path.is_symlink(): mode,content=b'link',os.fsencode(os.readlink(path))\n    elif path.is_file(): mode,content=b'executable' if path.stat().st_mode&0o111 else b'file',path.read_bytes()\n    elif not path.exists(): mode,content=b'deleted',b''\n    else: raise AssertionError(str(path))\n    sha=hashlib.sha256(content).hexdigest()\n    previous=old[str(rel)] if str(rel) in changed else sha\n    current.update(name+b'\\0'+mode+b'\\0'+bytes.fromhex(sha))\n    reconstructed.update(name+b'\\0'+mode+b'\\0'+bytes.fromhex(previous))\n    if str(rel) in changed: files.append({'path':str(rel),'previous_sha256':previous,'current_sha256':sha})\nassert reconstructed.hexdigest()==data['baseline']['content_sha256'], 'Unexpected change beyond four documentation files'\nassert current.hexdigest()==json.loads((run/'report.json').read_text())['baseline']['content_sha256']\nverified=[]\nfor relative,expected in data['evidence'].items():\n    actual=hashlib.sha256((prior/relative).read_bytes()).hexdigest()\n    assert actual==expected, f'Evidence changed: {relative}'\n    verified.append({'path':relative,'sha256':actual})\nfor source,destination in [('report.json','previous-final-report.json'),('summary.md','previous-final-summary.md')]: shutil.copyfile(prior/source,run/destination)\ndiff=subprocess.run(['git','diff','--check'],capture_output=True,text=True)\nassert diff.returncode==0,diff.stdout+diff.stderr\nresult={'status':'pass','date':'2026-10-07','current_baseline':current.hexdigest(),'reconstructed_previous_baseline':reconstructed.hexdigest(),'previous_run':'../20261007-final','only_changed_files':files,'product_and_test_files_unchanged':True,'prior_evidence_verified':verified,'prior_evidence_count':len(verified),'git_diff_check_exit_code':diff.returncode,'test_reruns':0,'reason':'Only documentation status and navigation changed; previous execution remains evidence for byte-identical runtime, tests, dependencies and constraints. No new test execution is claimed.'}\n(run/'baseline-and-evidence-audit.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\\n')\nprint(json.dumps({k:v for k,v in result.items() if k!='prior_evidence_verified'},ensure_ascii=False,indent=2))\nPY",
+    "status": "pass",
+    "exit_code": 0,
+    "evidence": [
+      "baseline-and-evidence-audit.json"
+    ],
+    "reason": "初次审计临时脚本摘要编码错误已定位并修正，原错误保留 audit-initial-error.json；本命令为修正后的实际成功执行。"
+  },
+  {
+    "command": "python3 scripts/workflow/check.py doctor",
+    "status": "pass",
+    "exit_code": 0,
+    "evidence": [
+      "doctor.log"
+    ]
+  },
+  {
+    "command": "git diff --check",
+    "status": "pass",
+    "exit_code": 0,
+    "evidence": [
+      "baseline-and-evidence-audit.json"
+    ]
+  }
+]

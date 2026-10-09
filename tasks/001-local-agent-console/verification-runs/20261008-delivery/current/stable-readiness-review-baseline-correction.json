@@ -1,0 +1,6 @@
+{
+  "corrected_at": "2026-10-08T10:04:22.294493+00:00",
+  "record": "stable-readiness-review-initial.json",
+  "correction": "发现文案基于当时只读工具输出的初版循环；保存JSON时作者已并发修订，记录中的SHA实际是修订后最终源码，不能作为初版或real-claude-stable启动时的harness SHA。原记录保留，当前最终源码与虚拟探针SHA一致；初版完整源码SHA未由reviewer捕获。",
+  "actual_final_sha256": "3a18fb937eb675217380b7f39676958f6a5c8a1594dee2f78029f07e090a703c"
+}

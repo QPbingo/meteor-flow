@@ -1,0 +1,40 @@
+{
+  "conflict": {
+    "afterError": {
+      "phase": "needs_confirmation",
+      "occupies": true,
+      "paused": true
+    },
+    "afterIdle": {
+      "phase": "needs_confirmation",
+      "occupies": true,
+      "paused": true,
+      "resultHash": "original-hash"
+    }
+  },
+  "startRace": {
+    "session": "new",
+    "receipt": {
+      "id": "84e1f0a5-276a-4b18-9a00-4b050215a888",
+      "projectId": "8e04276a-e275-4814-b37f-509dedd1bbec",
+      "type": "codex",
+      "cwd": "/private/tmp/mf-start-review-JoFEET/project/agent",
+      "label": "review",
+      "status": "intent",
+      "target": null,
+      "reason": "启动意图已保存",
+      "createdAt": 1791445913842
+    },
+    "status": "started",
+    "startCalls": [
+      {
+        "session": "old",
+        "calls": 0
+      },
+      {
+        "session": "new",
+        "calls": 1
+      }
+    ]
+  }
+}

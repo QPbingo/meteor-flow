@@ -1,0 +1,191 @@
+$ vitest run --reporter=verbose
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ ↓ tests/integration/performance.test.ts > 1000 history tasks and two 1 MiB/s terminals for 30 seconds keep local operations responsive
+ ↓ tests/integration/real-agent.test.ts > real isolated codex: startup, readiness, structured result and durable archive
+ ↓ tests/integration/real-agent.test.ts > real isolated claude: startup, readiness, structured result and durable archive
+ ↓ apps/server/src/adapters/herdr/real-herdr.test.ts > connects, snapshots and subscribes to an isolated real herdr 0.9.3 server
+ ↓ apps/server/src/adapters/herdr/real-herdr.test.ts > uses real official terminal observe/control streams in a dedicated shell without model calls
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > quarantines a candidate if cancel changes while atomic rename is pending 463ms
+ ✓ apps/server/src/http/server.test.ts > requires a cookie for reads, rejects external Origin/Host, and enforces JSON/CSRF for writes 260ms
+ ✓ apps/server/src/http/server.test.ts > rotates the single-use entry, protects the cookie, and persists an operation exactly once 154ms
+ ✓ apps/server/src/http/server.test.ts > rejects cross-site and unauthenticated WebSocket upgrades before starting a CLI 140ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > quarantines a candidate if close changes while atomic rename is pending 477ms
+ ✓ tests/integration/dev.test.ts > development proxy serves the browser with authenticated API/WS while rejecting foreign boundaries 1210ms
+ ✓ apps/server/src/http/server.test.ts > keeps observers read-only, gives every page a redraw, and arbitrates two controllers with revocation 454ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > quarantines a candidate if storage changes while atomic rename is pending 438ms
+ ✓ apps/server/src/http/server.test.ts > closes a controller on disconnect without resuming dispatch, while observer closure has no scheduling side effect 225ms
+ ✓ apps/server/src/http/server.test.ts > rejects authenticated terminal upgrades with missing or null Origin 114ms
+ ✓ tests/integration/dev.test.ts > dev requires an explicit session and never starts services after a failed initial build 418ms
+ ✓ apps/server/src/http/server.test.ts > provides versioned resources, an operation receipt and an actionable directory error 121ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > does not publish if cancel changes at the post-verification boundary 409ms
+ ✓ apps/server/src/http/server.test.ts > replays an accepted session receipt despite discovery failure or disappearance and rejects changed payloads 126ms
+ ✓ apps/server/src/http/server.test.ts > announces snapshot calibration and replays durable SSE IDs after reconnect 112ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > does not publish if close changes at the post-verification boundary 418ms
+ ✓ apps/server/src/http/server.test.ts > holds all four download slots until slow responses finish and aborts them on service close 799ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > does not publish if storage changes at the post-verification boundary 540ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > reclaims a previously orphaned slot only after observing the real child exit 205ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > allows explicitly confirmed existing agents even without managed interactive readiness 252ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > a manual switch after preparation but before final dispatch prevents all prompt input 199ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > archives complete artifacts, preserves source ownership and freezes independent downstream copies (V09/V17) 562ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > accepts cancel while prompt acknowledgement is pending, sends one interrupt and retains occupancy (V03/V11/V12) 257ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > rejects traversal without publishing a partial archive (V09/V13/V22) 290ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > never retries a prompt with a lost acknowledgement, including after service restart (V04/V05/V24) 261ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > rejects symlink without publishing a partial archive (V09/V13/V22) 286ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > persists a startup intent once and preserves an unknown startup without repeating it (V03/V06) 136ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > rejects fifo without publishing a partial archive (V09/V13/V22) 278ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > runs an independent task behind an unmet dependency on another binding (V14) 324ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > rejects confirming an agent whose work directory overlaps private service data (V21/V22) 86ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > rejects extra output roots overlapping private service data (V22) 85ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > rejects oversized without publishing a partial archive (V09/V13/V22) 297ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > does not start an external agent after storage fails immediately after the durable startup intent 79ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > does not send an unrecorded emergency interrupt after storage recovers during identity observation 155ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > does not dispatch when a real work directory refuses frozen-input writes (V25) 191ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > rejects missing-required without publishing a partial archive (V09/V13/V22) 310ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > rejects old-attempt without publishing a partial archive (V09/V13/V22) 287ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > waits for process exit and channel closure after a successful candidate message 178ms
+ ✓ tests/integration/cli.test.ts > CLI rejects duplicate data/session owners and releases locks on shutdown (V26) 930ms
+ ✓ packages/posix-fs/test/index.test.ts > safe file collection > rejects an authorized root replaced by a symlink before reading or creating a run 4ms
+ ✓ packages/posix-fs/test/index.test.ts > safe file collection > rejects a destination parent symlink without writing outside staging 1ms
+ ✓ packages/posix-fs/test/index.test.ts > safe file collection > reads nested bytes with SHA-256 and exact bigint identities 2ms
+ ✓ packages/posix-fs/test/index.test.ts > safe file collection > reads and copies empty files at the exact zero-byte quota 8ms
+ ✓ packages/posix-fs/test/index.test.ts > safe file collection > rejects unsafe relative path "../outside" 1ms
+ ✓ packages/posix-fs/test/index.test.ts > safe file collection > rejects unsafe relative path "/etc/passwd" 1ms
+ ✓ packages/posix-fs/test/index.test.ts > safe file collection > rejects unsafe relative path "nested/../result" 1ms
+ ✓ packages/posix-fs/test/index.test.ts > safe file collection > rejects unsafe relative path "nested//result" 1ms
+ ✓ packages/posix-fs/test/index.test.ts > safe file collection > rejects unsafe relative path "./result" 1ms
+ ✓ packages/posix-fs/test/index.test.ts > safe file collection > rejects unsafe relative path "nested/result\u0000suffix" 1ms
+ ✓ packages/posix-fs/test/index.test.ts > safe file collection > rejects unsafe relative path "" 1ms
+ ✓ packages/posix-fs/test/index.test.ts > safe file collection > rejects invalid quota -1 1ms
+ ✓ packages/posix-fs/test/index.test.ts > safe file collection > rejects invalid quota 1.5 1ms
+ ✓ packages/posix-fs/test/index.test.ts > safe file collection > rejects invalid quota null 1ms
+ ✓ packages/posix-fs/test/index.test.ts > safe file collection > rejects invalid quota null 1ms
+ ✓ packages/posix-fs/test/index.test.ts > safe file collection > rejects invalid quota 9007199254740992 1ms
+ ✓ packages/posix-fs/test/index.test.ts > safe file collection > enforces file quota before returning or leaving staging bytes 2ms
+ ✓ packages/posix-fs/test/index.test.ts > safe file collection > rejects leaf and intermediate symlinks, hard links, and directories 2ms
+ ✓ packages/posix-fs/test/index.test.ts > safe file collection > rejects FIFO without a writer and continues serving valid files 4ms
+ ✓ packages/posix-fs/test/index.test.ts > safe file collection > rejects a regular leaf swapped to a writerless FIFO after its nofollow precheck 4ms
+ ✓ packages/posix-fs/test/index.test.ts > safe file collection > rejects an opened parent replaced by FIFO before the first file read 4ms
+ ✓ packages/posix-fs/test/index.test.ts > safe file collection > copies in bounded blocks, preserves hash, and creates a private file 487ms
+ ✓ packages/posix-fs/test/index.test.ts > safe file collection > never follows or deletes an existing destination symlink 2ms
+ ✓ packages/posix-fs/test/index.test.ts > safe file collection > rejects same-size source mutation after reading begins 2ms
+ ✓ packages/posix-fs/test/index.test.ts > safe file collection > rejects growth beyond quota during reading and removes staging 2ms
+ ✓ packages/posix-fs/test/index.test.ts > safe file collection > rejects source deletion after opening and removes staging 2ms
+ ✓ packages/posix-fs/test/index.test.ts > safe file collection > rejects a moved parent replaced by an outside symlink 3ms
+ ✓ packages/posix-fs/test/index.test.ts > safe file collection > rejects replacement of the authorized root while a file is open 2ms
+ ✓ packages/posix-fs/test/index.test.ts > safe file collection > removes only its own staging file on disk failure and allows a later retry 10ms
+ ✓ packages/posix-fs/test/index.test.ts > safe file collection > closes all tracked descriptors after a failed collection 2ms
+ ✓ packages/posix-fs/test/index.test.ts > directory identity and overlap > resolves aliases and detects equality, containment, and distinct prefixes 4ms
+ ✓ packages/posix-fs/test/index.test.ts > directory identity and overlap > creates private attempt directories exclusively and preserves earlier contents 12ms
+ ✓ packages/posix-fs/test/index.test.ts > directory identity and overlap > rejects traversal IDs and symlink internal directories 3ms
+ ✓ packages/posix-fs/test/index.test.ts > directory identity and overlap > rejects an existing regular file or symlink at the attempt name 9ms
+ ✓ packages/posix-fs/test/index.test.ts > directory identity and overlap > rejects moved parents at directory creation and removes only the empty new run 2ms
+ ✓ packages/posix-fs/test/index.test.ts > process locks and recovery identity > holds one inode and makes release idempotent 2ms
+ ✓ packages/posix-fs/test/index.test.ts > process locks and recovery identity > refuses symlink and hardlink lock paths 2ms
+ ✓ packages/posix-fs/test/index.test.ts > process locks and recovery identity > rejects a second process then allows it after explicit release 145ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > kills and reaps a timed-out writer even after it sent a success candidate 1579ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > reserves capacity for an unidentified orphan instead of spawning another writer 74ms
+ ✓ packages/posix-fs/test/index.test.ts > process locks and recovery identity > releases on owner crash while its exec descendant is still alive 109ms
+ ✓ packages/posix-fs/test/index.test.ts > process locks and recovery identity > returns stable PID/start evidence and null for nonexistent or invalid PIDs 7ms
+ ✓ packages/posix-fs/test/index.test.ts > proves live descendants and rejects unrelated, vanished or reused identities 45ms
+ ✓ packages/posix-fs/test/index.test.ts > rejects a changed start identity anywhere in an observed ancestry chain 4ms
+ ✓ tests/integration/dev.test.ts > reaps a resistant build descendant after the build is failed 5443ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > reserves capacity atomically when two preparations arrive together 139ms
+ ✓ apps/server/src/storage/store.test.ts > dedicated real database writer > does not create a writer when close wins the asynchronous opening boundary 3ms
+ ✓ apps/server/src/storage/store.test.ts > dedicated real database writer > serializes concurrent identical operations to one persisted project (V03) 81ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > reads split UTF-8 frames and supports the 0.9.0 contract without completion_seq 12ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > rejects unsupported server metadata {"version":"0.9.3","protocol":23} 2ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > rejects unsupported server metadata {"version":"0.10.0","protocol":22} 1ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > invalidates a wrong-id reply 1ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > invalidates a oversized reply 11ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > invalidates a invalid-json reply 1ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > invalidates a wrong-type reply 1ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > does not replay prompt after timeout and closes the observation generation 58ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > does not replay prompt after disconnect and closes the observation generation 7ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > sends one explicit Ctrl-C and does not claim the agent has stopped 7ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > rejects a successful-looking prompt acknowledgement associated with another terminal 7ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > invalidates incomplete observations instead of accepting guessed fields 1ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > returns the new terminal only after one successful start acknowledgement 2ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > preserves known target after a single failed start, following creation of a separate shell 1ms
+ ✓ apps/server/src/storage/store.test.ts > dedicated real database writer > keeps the writer healthy after a domain conflict 74ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > waits for a new shell to finish initialization before making a single start call 105ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > does not continue an old shell startup after reconnecting during the shell wait 1ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > requires a fresh same-generation snapshot and resolves movement to the current public pane 12ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > keeps identity across pane movement but changes it for replacement, session and reconnect 18ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > leaves missing process evidence observation-only 1ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > rejects an older concurrent snapshot after a newer snapshot was requested 5ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > subscribes before calibration, follows moved panes and reports disconnect once 10ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > rejects in-flight responses when a caller closes the client 1ms
+ ✓ apps/server/src/storage/store.test.ts > dedicated real database writer > recovers a committed-but-unacknowledged transaction without creating a second writer or replaying work (V04/V24) 671ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > validates session names and removes inherited target environment for fixed-argv CLI discovery 616ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > accepts an Agent with its own MCP child but rejects unrelated pipelines and duplicate Agents 45ms
+ ✓ apps/server/src/storage/store.test.ts > fails closed on a real SQLITE_FULL commit failure without publishing or recording the operation (V25) 143ms
+ ✓ apps/server/src/storage/database.test.ts > real SQLite transactional repository > persists one operation and one task for duplicate browser submissions (V03) 11ms
+ ✓ apps/server/src/storage/database.test.ts > real SQLite transactional repository > rolls back state, events and operation record when any FK write fails 5ms
+ ✓ apps/server/src/storage/database.test.ts > real SQLite transactional repository > rejects a cycle without mutating task revision, dependencies or timeline (V16) 4ms
+ ✓ apps/server/src/storage/database.test.ts > real SQLite transactional repository > stores a dispatch intent once and denies another active attempt on the binding 5ms
+ ✓ apps/server/src/storage/database.test.ts > real SQLite transactional repository > backs up an existing v0 database before migration and refuses a future version 6ms
+ ✓ apps/server/src/terminal/bridge.test.ts > starts observe at epoch zero and versions every state/output/error frame 5ms
+ ✓ apps/server/src/terminal/bridge.test.ts > rejects an expired 'input' before the interval runs 2ms
+ ✓ apps/server/src/terminal/bridge.test.ts > rejects an expired 'resize' before the interval runs 1ms
+ ✓ apps/server/src/terminal/bridge.test.ts > rejects an expired 'heartbeat' before the interval runs 1ms
+ ✓ apps/server/src/terminal/bridge.test.ts > renews a live lease, routes valid input/resize once, and rejects token/epoch/connection theft 1ms
+ ✓ apps/server/src/terminal/bridge.test.ts > closes unknown protocol or malformed request 0 without control side effects 1ms
+ ✓ apps/server/src/terminal/bridge.test.ts > closes unknown protocol or malformed request 1 without control side effects 0ms
+ ✓ apps/server/src/terminal/bridge.test.ts > closes unknown protocol or malformed request 2 without control side effects 0ms
+ ✓ apps/server/src/terminal/bridge.test.ts > closes unknown protocol or malformed request 3 without control side effects 0ms
+ ✓ apps/server/src/terminal/bridge.test.ts > closes unknown protocol or malformed request 4 without control side effects 1ms
+ ✓ apps/server/src/terminal/bridge.test.ts > closes unknown protocol or malformed request 5 without control side effects 0ms
+ ✓ apps/server/src/terminal/bridge.test.ts > rejects malformed JSON and makes queued requests after closure inert 0ms
+ ✓ apps/server/src/terminal/bridge.test.ts > fences old observer bytes and coalesces attaches until close, including exit-before-close 1ms
+ ✓ apps/server/src/terminal/bridge.test.ts > escalates a stuck observer to SIGKILL and waits for close before its replacement 2ms
+ ✓ apps/server/src/terminal/bridge.test.ts > retains unclosed children in the global budget under repeated attachment 2ms
+ ✓ apps/server/src/terminal/bridge.test.ts > close waits for all observers/controllers, and repeated close is harmless after completion 1ms
+ ✓ apps/server/src/terminal/bridge.test.ts > reports shutdown timeout without freeing a process whose close is unconfirmed 1ms
+ ✓ apps/server/src/terminal/bridge.test.ts > invalidates a pending claim at the pause barrier without spawning a controller 0ms
+ ✓ apps/server/src/terminal/bridge.test.ts > invalidates a pending claim at the refresh barrier without spawning a controller 0ms
+ ✓ apps/server/src/terminal/bridge.test.ts > rejects a pending claim after storage generation changes without requiring an invalidate event 0ms
+ ✓ apps/server/src/terminal/bridge.test.ts > rejects replacement of the binding identity while the control claim is waiting 0ms
+ ✓ apps/server/src/terminal/bridge.test.ts > does not let an old claim completion clear a new connection claim 1ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > accepts a complete summary without file artifacts (V10) 2ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects unknown version (V09/V13/V27) 0ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects wrong task (V09/V13/V27) 0ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects old attempt (V09/V13/V27) 0ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects unknown outcome (V09/V13/V27) 0ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects missing summary (V09/V13/V27) 0ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects unknown property (V09/V13/V27) 0ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects duplicate JSON keys before object construction 0ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects duplicate JSON keys before object construction 0ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects duplicate JSON keys before object construction 0ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects duplicate JSON keys before object construction 0ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects partial, commented, trailing-comma and trailing-value JSON 0ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects partial, commented, trailing-comma and trailing-value JSON 0ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects partial, commented, trailing-comma and trailing-value JSON 0ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects partial, commented, trailing-comma and trailing-value JSON 0ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects malformed UTF-8 rather than replacing bytes 0ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects duplicate artifact ownership paths and more than 100 files 2ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > uses the confirmed 1 MiB result-file limit 0ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > enforces the confirmed summary limit in UTF-8 bytes 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > keeps cancelled work occupied after the 15 second deadline and only reminds after 30 minutes 2ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > accepts existing agents without managed readiness but rejects future/stale observations 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > does not infer success from activity followed by idle without a result (V08) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > holds occupancy for a submitted result until this execution ends (V09/V10) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > requires activity from after the final dispatch baseline 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > a committed success remains successful when cancel arrives later (V11) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > an accepted cancel keeps later success as late information and waits for stop (V11/V12) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > keeps manual declarations separate from unproven stop evidence 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > recovery invalidates dispatch intent, startup intent, workers and authorization without releasing occupancy (V04/V06/V24) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > revokes authorization when another occupant replaces a running agent (V07) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > late old-attempt results do not overwrite a newly dispatched retry (V13) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > allows independent tasks behind dependency blockers, but freezes started task descriptions (V14/V16) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > rejects dependency cycles and cross-project task associations (V16) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > business failure releases occupancy while uncertain delivery pauses the binding (V15) 0ms
+ ✓ tests/integration/dev.test.ts > reaps a resistant build descendant after the build is interrupted 5399ms
+ ✓ tests/integration/dev.test.ts > dev builds first, forwards CLI options, restarts on child-code changes and reaps its process groups 6156ms
+
+ Test Files  12 passed | 3 skipped (15)
+      Tests  176 passed | 5 skipped (181)
+   Start at  11:13:19
+   Duration  19.20s (transform 246ms, setup 0ms, collect 1.33s, tests 34.18s, environment 1ms, prepare 520ms)
+

@@ -1,0 +1,154 @@
+--- /tmp/meteor-flow-node-design-before-20261006/technical-design.md	2026-10-06 20:24:17
++++ tasks/001-local-agent-console/technical-design.md	2026-10-06 20:39:03
+@@ -2,32 +2,38 @@
+ 
+ | 项目 | 内容 |
+ | --- | --- |
+-| 方案版本 | 0.1 |
++| 方案版本 | 0.2 |
+ | 日期 | 2026-10-06 |
+-| 状态 | 待人工确认；不是已实现能力 |
++| 状态 | Node 生态优先方向已明确；本版具体选型和实现逻辑待人工确认；不是已实现能力 |
+ | 适用范围 | 已确认需求 0.2，R01—R14、V01—V29 |
+ | 实现授权 | 用户本轮明确要求实现 task 001；保留该授权，技术方案确认后无需再次询问是否开始 |
+-| 关联 | [需求](requirements.md)、[需求 review](review.md)、[实现计划与验收映射](implementation-plan.md)、[接口事实](herdr-compatibility.md)、[准备记录](verification-runs/20261006-implementation-preparation/skill-readiness.md) |
++| 关联 | [需求](requirements.md)、[需求 review](review.md)、[实现计划与验收映射](implementation-plan.md)、[接口事实](herdr-compatibility.md)、[技术 review](technical-review.md)、[本轮准备记录](verification-runs/20261006-node-design/skill-readiness.md) |
+ 
+ 本方案不改变已确认产品行为。下列技术、默认值、兼容目标作为一组建议提交确认。产品编码在方案获确认且适用技能实际就绪后开始。
+ 
++0.2 修订依据：用户明确要求“尽量使用 node 系进行开发”。产品前后端、CLI 和测试统一使用 TypeScript/Node；SQLite 与 POSIX 能力通过 npm 原生模块接入。已有 Python 工作流脚本继续作为开发工具。0.1 的投递、归档、隔离和恢复要求继续有效；旧版技术审查不自动证明新选型可行。
++
+ ## 1. 建议选型与取舍
+ 
+ | 部分 | 建议 | 选择理由与代价 |
+ | --- | --- | --- |
+-| 本地服务 | Python 3.12、FastAPI、Uvicorn，单进程单 worker | asyncio 管理 socket、CLI 流和浏览器连接；标准库具备 SQLite、进程锁、基于目录描述符的文件操作。禁止多 worker 产生多个调度器 |
+-| 持久化 | 标准库 sqlite3，WAL、foreign_keys=ON、synchronous=FULL，显式 SQL 迁移 | 单机事务、外键、唯一索引适合任务执行记录；无需额外数据库服务。文件归档与 DB 无跨资源事务，须实现恢复协调 |
+-| 前端 | React 19、TypeScript、Vite，普通 CSS tokens | 列表、详情、终端及多页面状态有明确边界；不需要 SSR。增加 Python/TypeScript 两套工具链，但前后端契约由 OpenAPI 生成类型 |
++| 本地服务 | Node.js 24 LTS、TypeScript、Fastify 5，单一调度主进程 | node:net 管理 Unix socket，child_process 管理 CLI 流；禁止 cluster/多实例各自启动调度器。采集子进程和 DB worker 没有调度权 |
++| 持久化 | better-sqlite3，独立 DB worker；WAL、foreign_keys=ON、synchronous=FULL，显式 SQL 迁移 | npm 原生模块提供 SQLite，无需额外数据库服务。同步 SQL 不阻塞主事件循环；文件归档与 DB 仍须实现恢复协调 |
++| 前端 | React 19、TypeScript、Vite，普通 CSS tokens | 列表、详情、终端及多页面状态有明确边界；不需要 SSR，前后端统一语言与工具链 |
++| 接口契约 | TypeBox、Fastify Type Provider、@fastify/swagger；共享 packages/contracts | 同一 JSON Schema 推导 TypeScript 类型并执行运行时校验；HTTP、WS/SSE、结果文件都不能只靠静态类型 |
++| OS 能力 | Koffi npm 原生 FFI 模块，封装固定 POSIX openat/flock/fcntl 调用 | Node 标准 fs 没有完整目录描述符相对打开与 flock 接口；使用一个窄 TypeScript 适配包，不另建 Python/Rust 服务或自写 C 扩展 |
+ | 页面路由与数据 | React Router、TanStack Query | 明确详情 URL 与刷新恢复；缓存不参与调度决策，写操作关闭自动重试 |
+ | 界面组件 | 原生表单/表格；Radix Dialog、AlertDialog、Tabs；Lucide 图标 | 复用焦点管理和键盘行为；仅引入实际使用的组件，不安装完整后台模板 |
+ | 网页终端 | @xterm/xterm、@xterm/addon-fit | 展示 ANSI 流和产生用户输入；控制方才发送尺寸变化，只读方仅调整自己的显示区域 |
+ | herdr 管理接口 | Unix socket 上的逐行 JSON API；终端通过固定路径 herdr CLI 的 observe/control JSON 流 | API 适合持久订阅与显式请求；CLI 已处理二进制终端协议，避免自行复制其编码器。CLI 与服务端需匹配受支持版本 |
+ | 预览 | Markdown 解析关闭 raw HTML，DOMPurify 白名单净化；JSON/文本转义；图片只预览 PNG/JPEG/WebP/GIF | 不执行 HTML/SVG，不自动加载远程图片、字体、嵌入内容；其他文件走下载 |
+-| 测试 | pytest、pytest-asyncio、HTTPX；Playwright Test；Impeccable audit/critique；OCR 委托 | 分别验证业务、真实本地资源、浏览器及独立审查；沿用已确认开发工作流 |
+-| 工具管理 | uv 管理 Python/uv.lock；pnpm 管理前端/pnpm-lock.yaml；Node 24 LTS 用于前端工具 | 所有执行依赖锁定。当前系统 Node 25 和 Python 3.9 只证明已有工具，不能冒充候选运行时已验证 |
++| 测试 | Vitest、Fastify inject、真实 HTTP/WS；Playwright Test；Impeccable audit/critique；OCR 委托 | 分别验证业务、真实本地资源、浏览器及独立审查；inject 不替代真实端口/连接测试 |
++| 工具管理 | pnpm workspace、单一 pnpm-lock.yaml；Node 24 LTS | 前后端和 CLI 共用依赖管理；固定 packageManager、Node 版本及允许构建的原生包。系统 Node 25 不作为兼容验证依据 |
+ 
+-备选评估：全 TypeScript/Fastify 可共享更多类型，但安全文件采集的逐级目录描述符操作、POSIX 进程锁需要额外适配；Rust/Axum 适合打包，但本项目通过官方终端 CLI 已可避免二进制协议实现，首版引入 Rust 的收益不足。第一版不引入 Redis、Celery、容器、ORM、插件体系或桌面壳。
++Fastify 提供独立常驻服务和明确的 schema/插件边界，适合本项目 socket、终端流及调度；首版无需 NestJS 的额外模块框架或 Next.js 的服务端渲染。第一版不引入 Redis、任务队列服务、容器、ORM、插件体系或桌面壳。
+ 
++原生适配只接收经过验证的目录描述符、单个路径组件和固定操作，不接受用户指定的动态库、符号、指针或 flags。原生模块加载或平台能力检查失败时关闭自动管理，不降级为 realpath 检查后直接按路径读取。Koffi 是增加的安装/ABI 成本，必须在目标 macOS arm64、固定 Node 版本下实测；Linux 仍为待验证目标。
++
+ 组件的具体稳定补丁版本在方案确认后的依赖准备步骤核验、锁定并记录；补丁选择不能改变本方案能力边界，重大替换需另行说明。
+ 
+ ## 2. 兼容与部署范围
+@@ -38,27 +44,33 @@
+ - 本次只核验了 CLI 和静态 schema，未连接用户现有 session。CLI 版本不等于运行中 herdr 服务端版本。
+ - 服务只绑定 `127.0.0.1`，默认端口 4317；单进程同时提供构建后的前端与 `/api/v1`。关闭浏览器不停止服务。
+ - 默认数据目录 macOS 为 `~/Library/Application Support/Meteor Flow`，支持显式 `--data-dir`。目录 0700、私有文件 0600；数据目录与所有 agent 工作目录/授权输出目录不得重叠。
+-- 启动命令拟为 `uv run meteor-flow serve --session <已选择会话>`；源码开发额外运行 Vite，使用同源代理。此命令尚未实现。
++- 启动命令拟为 `pnpm build` 后 `pnpm start -- --session <已选择会话>`；`pnpm dev` 启动服务与 Vite 同源代理，CLI 提供 `meteor-flow serve/open`。这些命令尚未实现。
+ - 不安装系统常驻服务，不自动启动、停止、升级用户已有 herdr。用户可单独保持 Meteor Flow 进程运行。
+ 
+ ## 3. 模块边界
+ 
+ ```text
+-web/                       页面、API 类型、xterm 终端组件
+-src/meteor_flow/
++apps/web/                  页面、共享契约调用、xterm 终端组件、浏览器 e2e
++apps/server/src/
+   api/                     HTTP/WS 鉴权、参数校验、错误响应
+-  domain/                  状态、命令、依赖图、不变量；不导入 FastAPI/herdr
++  domain/                  状态、命令、依赖图、不变量；不导入 Fastify/herdr/SQLite
+   application/             串行命令处理、调度、启动恢复、超时处理
+   adapters/herdr/           JSON RPC、事件订阅、身份与能力判断
+   terminal/                observe/control 子进程、控制权与有界帧队列
+   results/                 结果协议、文件采集、归档发布、恢复扫描
+   storage/                 SQLite 仓储、迁移、备份、OS 进程锁
++  cli/                     serve/open、本地配置与固定参数解析
++packages/contracts/        TypeBox schema、协议类型、运行时验证入口
++packages/posix-fs/          窄 POSIX 适配、平台能力检查；只供服务端使用
+ tests/                     单元、隔离集成、真实 herdr 与故障测试
+-web/e2e/                   浏览器用户流程与后台验证
+ ```
+ 
+-业务命令都进入一个服务端命令处理器，按接受顺序提交数据库。SQLite 操作在独立单线程执行器中串行执行；文件复制、散列和 CLI 输出分别使用受限 worker/异步读取，不能堵塞调度。跨系统副作用必须先登记 intent，离开事务后调用，响应再作为新命令回到处理器；事务中不等待 herdr、浏览器或大文件。
++业务命令都进入一个服务端命令处理器，按接受顺序提交数据库。单一 `worker_threads` DB worker 独占 better-sqlite3 连接；主进程向它发送完整事务命令，而非可交错的 begin/SQL/commit 消息。事务函数同步执行，事务中不等待 herdr、浏览器、IPC 或大文件。跨系统副作用必须先登记 intent 并收到持久化确认，离开事务后调用，响应再作为新命令回到处理器。
+ 
++DB worker 的每条命令/回复绑定 `storage_generation` 与 request ID，operation ID 仍用于持久化幂等。异常或确认丢失时立即关闭派发入口、标记存储状态未知并使该代失效；拒绝该代所有迟到回复及其后续副作用，不凭 Promise 超时重发外部命令。先停止入队并请求终止旧 worker，只有观察到其 `exit` 后才能建立下一代唯一 writer；调用 terminate 或等待超时都不算退出。不能确认退出时保持暂停，必要时退出整个服务，由新主进程重新取得 OS 锁后恢复。即使主进程仍持有 flock，也不得绕过该退出屏障重开 writer。恢复后按 operation/intent 查询已提交事实，并执行第 9 节核对流程。
++
++文件复制与散列由数量受限的 Node 子进程执行，主进程负责 deadline、取消、终止和回收；子进程只能写指定 staging，不派生其他写进程、不访问业务 DB、不投递 prompt、不发布归档。采集 job 绑定 service generation、不可复用 job ID、attempt、独立 staging 与进程 PID/启动时间；先记录 job intent，子进程等待启动握手，主进程持久化进程身份后才许可写入。IPC 断开时子进程主动退出，但不能假设此回调能打断阻塞中的原生调用。IPC 完成消息只是候选结果，必须满足第 8 节退出屏障才可发布。CLI 输出异步读取且有界，采集或终端背压不能堵塞主调度。
++
+ ## 4. 存储、不变量与幂等
+ 
+ 主要表：
+@@ -83,7 +95,7 @@
+ 3. 独立的新建任务允许内容相同；同一创建动作在重发时必须保留同一个 operation_id，不能按说明文本去重。
+ 4. 修改未开始任务需携带 revision。首次尝试进入投递前冻结说明、指派、依赖与必要产物；曾开始过的任务修改说明使用复制。重试新建 attempt，保留任务说明及旧记录。
+ 5. 建边与验环、所属项目校验在同一写事务内；运行中不更换输入引用。归档只设标记，不级联删除。
+-6. 同一 realpath 数据目录持有全进程生命周期的 `fcntl.flock(LOCK_EX|LOCK_NB)`。第二实例失败退出；锁文件不靠超时删除，不用容易误抢占的心跳租约替代 OS 锁。
++6. 同一 realpath 数据目录由主进程经 Koffi 调用 `flock(LOCK_EX|LOCK_NB)`，持有全生命周期的文件描述符。第二实例失败退出；锁文件不删除或替换 inode，不用心跳超时抢锁。描述符设置 close-on-exec，不传给采集/CLI 子进程；主进程退出后锁必须可重新获取，子进程不能延长锁生命周期。
+ 7. 对本服务管理的选定 herdr session 再持有用户级 session 锁，避免不同数据目录的两个 Meteor Flow 实例同时接管同一 session；无法约束其他 API 客户端或原生输入。
+ 
+ ## 5. 状态与命令时序
+@@ -114,7 +126,7 @@
+ 
+ ## 6. herdr 适配与身份连续性
+ 
+-管理 API 通过服务端选定 session 的 socket 使用 NDJSON，不通过浏览器传入任意 socket/CLI 参数，不依赖当前焦点。逐请求使用 ID、大小限制和独立 deadline，未知方法/报文/必需字段失败时关闭相关能力。
++管理 API 使用 `node:net` 连接服务端选定 session 的 Unix socket 并处理 NDJSON，不通过浏览器传入任意 socket/CLI 参数，不依赖当前焦点。逐请求使用 ID、大小限制和独立 deadline，未知方法/报文/必需字段失败时关闭相关能力。
+ 
+ 身份依据包括 session/socket 归属、本次连接 generation、terminal_id、agent 类型、可获得的 agent_session、shell/前台进程 PID、由操作系统读取的进程启动时间和真实 cwd。公开 pane_id 只是可变化的位置。PID 单独不能防复用；证据不足时只观察。进程启动时间通过固定参数的只读系统调用/命令取得，不构造 shell 字符串。
+ 
+@@ -159,20 +171,22 @@
+ 
+ 采集步骤：
+ 
+-1. 按固定根目录描述符逐级 `openat`（Python `os.open(..., dir_fd=...)`）；父目录使用 O_DIRECTORY|O_NOFOLLOW 并固定身份。叶子先 nofollow stat 拒绝已知特殊对象，再以 O_RDONLY|O_NONBLOCK|O_NOFOLLOW 打开，立即 fstat 校验仍是同一普通文件，再开始读取；禁止先阻塞 open FIFO 再检查类型。拒绝绝对路径、`..`、符号链接组件、非普通文件。根自身与工作目录/其他输出根进行 realpath、inode、父子包含检查。首版拒绝硬链接文件，避免来源归属歧义。
+-2. 打开后先 fstat，再按有限块读取到私有 staging，计算 SHA-256。复制后再次检查原文件描述符及路径的 inode、size、mtime_ns、ctime_ns；变化、移走、删除、超限一律收集异常。不得先读后补范围校验。
+-3. 全部文件和 manifest 成功后 fsync 文件及目录，同文件系统原子 rename 到不可变 archive generation；最后 DB 事务登记发布。恢复时识别未登记的完整 generation，校验后补登记；未完成 staging 不对下游可见。
++1. Node 采集子进程通过 Koffi 封装按固定根目录描述符逐级 `openat`；父目录使用 O_DIRECTORY|O_NOFOLLOW 并固定身份。叶子先 nofollow stat 拒绝已知特殊对象，再以 O_RDONLY|O_NONBLOCK|O_NOFOLLOW 打开，立即 `fs.fstatSync(fd, {bigint: true})` 校验仍是同一普通文件，再开始读取；禁止先阻塞 open FIFO 再检查类型。拒绝 NUL、绝对路径、`..`、符号链接组件、非普通文件。根自身与工作目录/其他输出根进行 realpath、inode、父子包含检查。首版拒绝硬链接文件，避免来源归属歧义。
++2. 打开后先 fstat，再按有限块读取到私有 staging，计算 SHA-256。复制后再次检查原文件描述符及路径的 dev、inode、size、mtimeNs、ctimeNs；变化、移走、删除、超限一律收集异常。相关值使用 bigint，进入 JSON/manifest 时转换为十进制字符串，不能用 Number 舍入身份信息。不得先读后补范围校验。
++3. 子进程完成全部文件、manifest 和 fsync 后关闭描述符并退出。主进程收到候选完成消息后，必须等待 child `exit` 和 stdio/IPC `close`，核对退出成功、job/service generation/attempt 仍有效，重新验证 staging 文件与 manifest 的类型、大小、hash，并 fsync 文件及目录，才可在同一文件系统原子 rename 到不可变 archive generation；最后 DB 事务登记发布。完成消息不证明写入者已关闭，超时、取消或失效代的消息一律不能发布。恢复只补登记已经 rename 的完整 archive generation，仍须核对有效结果、manifest 及当前业务状态；未发布 staging 不对下游可见。
+ 4. 下游派发前从已发布归档复制并校验 hash，再冻结关联；不链接回工作文件，不使用可变的 latest 路径。下载只接受 artifact ID，由服务端定位已登记归档文件。
+ 
+ 该采集策略防止常见越界和复制期间变化，但不宣称可防御同一系统用户的恶意进程；符合 R10 的隔离边界。人工补录结果经过同一收集校验。
+ 
+-同样的安全打开与大小限制用于 result.json、恢复扫描和输入副本源文件，不能只保护 artifacts。所有错误路径关闭描述符；取消采集使用有限块、deadline 与可停止 worker，不把仅取消 asyncio 等待当作底层阻塞线程已停止。无 writer FIFO、目录组件被替换为 FIFO/符号链接的竞争用例必须及时失败，不能耗尽采集 worker。
++同样的安全打开与大小限制用于 result.json、恢复扫描和输入副本源文件，不能只保护 artifacts。所有错误路径关闭描述符；取消采集使用有限块、deadline 与可终止的子进程，不把 Promise 超时或 AbortSignal 当作原生调用已停止。超时先终止并回收子进程，未能确认退出时不补充无限新 worker，保持容量上限和收集异常。无 writer FIFO、目录组件被替换为 FIFO/符号链接的竞争用例必须及时失败，不能耗尽采集进程。
+ 
++服务重启使旧 generation 的所有采集 job 失效，使用新的 staging 路径；旧 staging 不复用、不直接发布。根据已登记 PID/进程启动时间核对遗留采集者，能确认身份时才请求终止，并确认该进程已经退出后才清理其 staging；身份或退出无法确认时隔离保留、显示待处理，不能按 PID 盲杀或边写边清理。未确认退出的旧 job/启动 intent 计入采集容量，达到上限即暂停新采集，不能通过重启绕过容量限制。该检查在恢复新采集入口前完成。
++
+ 预览只读已归档内容。Markdown 图片全部经 artifact ID 映射，外链只显示可点击文本且需用户主动打开；下载使用 attachment、nosniff；HTML/SVG 仅下载。预览容器设置 CSP，禁脚本、网络、表单与嵌入；不开放任意文件路径 API。
+ 
+ ## 9. 恢复、存储异常与迁移
+ 
+-服务启动顺序：获得数据/session 锁 → 检查/备份/迁移数据库 → 标记连接与控制权失效 → 订阅和快照校准 → 扫描活动及历史 attempt 的待处理结果和归档 generation → 核对占用 → 仅开放可确定的调度。不会自动重放 prompt/start/interrupt。
++服务启动顺序：获得数据/session 锁 → 检查/备份/迁移数据库 → 标记连接与控制权失效 → 核对并隔离旧采集 job/遗留进程 → 订阅和快照校准 → 扫描活动及历史 attempt 的待处理结果和已发布 archive generation → 核对占用 → 仅开放可确定的调度。DB worker 原地恢复须先满足第 3 节旧 writer 退出屏障；新服务实例不接收旧 job 回复、不复用其 staging。不会自动重放 prompt/start/interrupt。
+ 
+ 连接断开立即过期。心跳/循环延迟检测到休眠或明显时间跳变时关闭派发入口、重建观测；超时以单调时钟度量，休眠恢复先核对，不以经历时间直接失败。无法确认历史时记录观测缺口与待确认原因。
+ 
+@@ -207,7 +221,7 @@
+ | `/events`（SSE） | 持久化业务事件含本地接受序号；支持 Last-Event-ID 校准，重连先取资源快照；不混入 ANSI 帧 |
+ | `/terminals/{binding_id}`（WS） | 认证后默认 observe；接管/释放/输入/尺寸均带 connection 与 epoch 验证；浏览器不能指定任意终端目标 |
+ 
+-后端 Pydantic 模型作为 OpenAPI 契约来源，前端类型生成命令随锁定依赖固定；WS/SSE 消息另有 protocol/version 与判别字段，未知版本关闭对应连接并提示升级。HTTP 路由不会透传任意 herdr 方法。
++共享 TypeBox schema 作为 HTTP 验证及 OpenAPI 契约来源，由 Fastify Type Provider 推导处理器类型；前端只依赖共享契约，不导入服务端实现。WS/SSE 消息另有 protocol/version 与判别字段，入站消息和结果文件都做运行时校验；结果解析额外拒绝重复 JSON key，不能仅靠 JSON.parse 后的 schema 验证。未知版本关闭对应连接并提示升级。HTTP 路由不会透传任意 herdr 方法。
+ 
+ ## 11. 默认值与性能验收目标（待确认）
+ 
+@@ -242,6 +256,6 @@
+ 
+ ## 13. 确认项
+ 
+-建议一次确认：Python/FastAPI/SQLite + React/TypeScript 的组合、官方 herdr CLI JSON 终端桥接、首批 macOS/Codex/Claude 范围、协议 v1 和上述默认值。确认后按照实现计划推进全部 R01—R14，并完成对应测试与独立审查；不把阶段性样例或模拟通过作为完整交付。
++Node 生态优先已由用户明确，不再重复确认该方向。本版待确认的是具体组合：Node 24/TypeScript/Fastify + better-sqlite3/Koffi + React/Vite、官方 herdr CLI JSON 终端桥接、首批 macOS/Codex/Claude 范围、协议 v1 和上述默认值。确认后按照实现计划推进全部 R01—R14，并完成对应测试与独立审查；不把阶段性样例或模拟通过作为完整交付。
+ 
+-官方参考：[FastAPI](https://fastapi.tiangolo.com/)、[SQLite 事务](https://www.sqlite.org/lang_transaction.html)、[Python 文件描述符操作](https://docs.python.org/3.12/library/os.html#files-and-directories)、[React 版本](https://react.dev/versions)、[Vite](https://vite.dev/guide/)、[xterm](https://xtermjs.org/docs/)。herdr 的版本化来源和实测边界单列在 [接口事实](herdr-compatibility.md)。
++官方参考：[Fastify Type Provider](https://fastify.dev/docs/latest/Reference/Type-Providers/)、[better-sqlite3 API](https://github.com/WiseLibs/better-sqlite3/blob/master/docs/api.md)、[SQLite 事务](https://www.sqlite.org/lang_transaction.html)、[Node 24 文件操作](https://nodejs.org/docs/latest-v24.x/api/fs.html)、[Koffi 函数调用](https://koffi.dev/load)、[React 版本](https://react.dev/versions)、[Vite](https://vite.dev/guide/)、[xterm](https://xtermjs.org/docs/)。具体依赖锁定后按对应版本再次核对，不将滚动文档当作产品验证。herdr 的版本化来源和实测边界单列在 [接口事实](herdr-compatibility.md)。

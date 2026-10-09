@@ -1,0 +1,137 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > persists first-session identification with the active attempt and never restores authorization after reopening 331ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > releases an old attempt only after its own process exits even when its terminal now contains a replacement 216ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > requires fresh observations and explicit manual evidence to resolve an unknown start without any external side effect 149ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > starts on the session accepted by the command queue when a session switch finishes first 138ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > keeps a conflicting result pending across idle observations and restart until an explicit manual conclusion 640ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > allows explicitly confirmed existing agents even without managed interactive readiness 199ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > a manual switch after preparation but before final dispatch prevents all prompt input 200ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > accepts cancel while prompt acknowledgement is pending, sends one interrupt and retains occupancy (V03/V11/V12) 247ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > never retries a prompt with a lost acknowledgement, including after service restart (V04/V05/V24) 273ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > persists a startup intent once and preserves an unknown startup without repeating it (V03/V06) 133ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > runs an independent task behind an unmet dependency on another binding (V14) 318ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > rejects confirming an agent whose work directory overlaps private service data (V21/V22) 80ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > rejects extra output roots overlapping private service data (V22) 83ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > does not start an external agent after storage fails immediately after the durable startup intent 78ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > does not send an unrecorded emergency interrupt after storage recovers during identity observation 153ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > does not dispatch when a real work directory refuses frozen-input writes (V25) 185ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > uses only supported fixed Codex startup arguments: 'Options:\n --no-daemon  Run without s…' 7ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > uses only supported fixed Codex startup arguments: 'Options:\n -c, --config <key=value>' 2ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > uses only supported fixed Codex startup arguments: 'Options:\n --no-daemon\n --config <ke…' 1ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > uses only supported fixed Codex startup arguments: 'This old CLI does not support --no-da…' 1ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > does not create any external workspace when Codex capability discovery fails 1ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > rejects an explicit test execution policy when its flags are unavailable 1ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > rejects a connection change during Codex discovery before creating any workspace 1ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > exposes continuous instance evidence when an initially absent session becomes available 12ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > reads split UTF-8 frames and supports the 0.9.0 contract without completion_seq 9ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > rejects unsupported server metadata {"version":"0.9.3","protocol":23} 1ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > rejects unsupported server metadata {"version":"0.10.0","protocol":22} 1ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > invalidates a wrong-id reply 1ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > invalidates a oversized reply 12ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > invalidates a invalid-json reply 1ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > invalidates a wrong-type reply 1ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > does not replay prompt after timeout and closes the observation generation 57ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > does not replay prompt after disconnect and closes the observation generation 7ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > sends one explicit Ctrl-C and does not claim the agent has stopped 6ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > rejects a successful-looking prompt acknowledgement associated with another terminal 8ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > invalidates incomplete observations instead of accepting guessed fields 1ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > returns the new terminal only after one successful start acknowledgement 1ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > preserves known target after a single failed start, following creation of a separate shell 1ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > waits for a new shell to finish initialization before making a single start call 104ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > does not continue an old shell startup after reconnecting during the shell wait 2ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > requires a fresh same-generation snapshot and resolves movement to the current public pane 23ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > keeps identity across pane movement but changes it for replacement, session and reconnect 43ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > leaves missing process evidence observation-only 1ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > rejects an older concurrent snapshot after a newer snapshot was requested 6ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > subscribes before calibration, follows moved panes and reports disconnect once 11ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > rejects in-flight responses when a caller closes the client 1ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > herdr NDJSON management adapter > validates session names and removes inherited target environment for fixed-argv CLI discovery 371ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts > accepts an Agent with its own MCP child but rejects unrelated pipelines and duplicate Agents 51ms
+ ✓ tests/integration/agent-test-screen.test.ts > blocks a non-task screen before any prompt is sent: Update available! 0.160.1 → 0.161.0
+1. Update now
+2. Skip 1ms
+ ✓ tests/integration/agent-test-screen.test.ts > blocks a non-task screen before any prompt is sent: Updating Codex via brew upgrade --cask codex...
+Auto-updating Homebrew... 0ms
+ ✓ tests/integration/agent-test-screen.test.ts > blocks a non-task screen before any prompt is sent: 沙箱阻止了执行（sandbox_apply: Operation not permitted），尚未创建 hello.txt。 0ms
+ ✓ tests/integration/agent-test-screen.test.ts > blocks a non-task screen before any prompt is sent: Error: Cannot use the shared background server: This session requires api_key_model_discovery to be disabled. 0ms
+ ✓ tests/integration/agent-test-screen.test.ts > blocks a non-task screen before any prompt is sent: Do you trust the contents of this folder?
+1. Yes
+2. No 0ms
+ ✓ tests/integration/agent-test-screen.test.ts > blocks a non-task screen before any prompt is sent: Would you like to run the following command?
+1. Yes, proceed
+2. No 0ms
+ ✓ tests/integration/agent-test-screen.test.ts > blocks a non-task screen before any prompt is sent: Sign in with ChatGPT to continue 0ms
+ ✓ tests/integration/agent-test-screen.test.ts > does not treat an echoed task permission instruction or ordinary ready prompt as an approval request 0ms
+ ✓ tests/integration/agent-test-screen.test.ts > sends no task when a non-task screen appears at the actual input boundary: Update available! Update now 1ms
+ ✓ tests/integration/agent-test-screen.test.ts > sends no task when a non-task screen appears at the actual input boundary: Would you like to run the following command? 0ms
+ ✓ tests/integration/agent-test-screen.test.ts > keeps the input gate closed when monitoring stops a pending screen read 0ms
+ ✓ tests/integration/agent-test-screen.test.ts > fails closed on a screen read failure and sends exactly once on a ready screen 0ms
+ ✓ tests/integration/agent-test-screen.test.ts > blocks an already queued real application task before external input: Update available! Update now 285ms
+ ✓ tests/integration/agent-test-screen.test.ts > blocks an already queued real application task before external input: Would you like to run the following command? 265ms
+ ✓ apps/server/src/terminal/bridge.test.ts > starts observe at epoch zero and versions every state/output/error frame 4ms
+ ✓ apps/server/src/terminal/bridge.test.ts > rejects an expired 'input' before the interval runs 1ms
+ ✓ apps/server/src/terminal/bridge.test.ts > rejects an expired 'resize' before the interval runs 1ms
+ ✓ apps/server/src/terminal/bridge.test.ts > rejects an expired 'heartbeat' before the interval runs 1ms
+ ✓ apps/server/src/terminal/bridge.test.ts > renews a live lease, routes valid input/resize once, and rejects token/epoch/connection theft 1ms
+ ✓ apps/server/src/terminal/bridge.test.ts > closes unknown protocol or malformed request 0 without control side effects 1ms
+ ✓ apps/server/src/terminal/bridge.test.ts > closes unknown protocol or malformed request 1 without control side effects 0ms
+ ✓ apps/server/src/terminal/bridge.test.ts > closes unknown protocol or malformed request 2 without control side effects 0ms
+ ✓ apps/server/src/terminal/bridge.test.ts > closes unknown protocol or malformed request 3 without control side effects 0ms
+ ✓ apps/server/src/terminal/bridge.test.ts > closes unknown protocol or malformed request 4 without control side effects 0ms
+ ✓ apps/server/src/terminal/bridge.test.ts > closes unknown protocol or malformed request 5 without control side effects 0ms
+ ✓ apps/server/src/terminal/bridge.test.ts > rejects malformed JSON and makes queued requests after closure inert 0ms
+ ✓ apps/server/src/terminal/bridge.test.ts > fences old observer bytes and coalesces attaches until close, including exit-before-close 1ms
+ ✓ apps/server/src/terminal/bridge.test.ts > escalates a stuck observer to SIGKILL and waits for close before its replacement 2ms
+ ✓ apps/server/src/terminal/bridge.test.ts > retains unclosed children in the global budget under repeated attachment 1ms
+ ✓ apps/server/src/terminal/bridge.test.ts > close waits for all observers/controllers, and repeated close is harmless after completion 1ms
+ ✓ apps/server/src/terminal/bridge.test.ts > reports shutdown timeout without freeing a process whose close is unconfirmed 1ms
+ ✓ apps/server/src/terminal/bridge.test.ts > invalidates a pending claim at the pause barrier without spawning a controller 1ms
+ ✓ apps/server/src/terminal/bridge.test.ts > invalidates a pending claim at the refresh barrier without spawning a controller 0ms
+ ✓ apps/server/src/terminal/bridge.test.ts > rejects a pending claim after storage generation changes without requiring an invalidate event 0ms
+ ✓ apps/server/src/terminal/bridge.test.ts > rejects replacement of the binding identity while the control claim is waiting 0ms
+ ✓ apps/server/src/terminal/bridge.test.ts > does not let an old claim completion clear a new connection claim 1ms
+ ✓ apps/server/src/domain/model.test.ts > first session identification without granting new authority > identifies the same continuously observed instance once and lets its submitted result finish 3ms
+ ✓ apps/server/src/domain/model.test.ts > first session identification without granting new authority > rejects incomplete or discontinuous identity {} 0ms
+ ✓ apps/server/src/domain/model.test.ts > first session identification without granting new authority > rejects incomplete or discontinuous identity {"instanceFingerprint":"new-connection"} 0ms
+ ✓ apps/server/src/domain/model.test.ts > first session identification without granting new authority > rejects incomplete or discontinuous identity {"pid":null} 0ms
+ ✓ apps/server/src/domain/model.test.ts > first session identification without granting new authority > rejects incomplete or discontinuous identity {"pid":101} 0ms
+ ✓ apps/server/src/domain/model.test.ts > first session identification without granting new authority > rejects incomplete or discontinuous identity {"processStart":"reused-pid"} 0ms
+ ✓ apps/server/src/domain/model.test.ts > first session identification without granting new authority > rejects incomplete or discontinuous identity {"cwd":"/tmp/another"} 0ms
+ ✓ apps/server/src/domain/model.test.ts > first session identification without granting new authority > rejects incomplete or discontinuous identity {"type":"claude"} 0ms
+ ✓ apps/server/src/domain/model.test.ts > first session identification without granting new authority > rejects incomplete or discontinuous identity {"sequence":9} 0ms
+ ✓ apps/server/src/domain/model.test.ts > first session identification without granting new authority > rejects incomplete or discontinuous identity {"observedAt":1} 0ms
+ ✓ apps/server/src/domain/model.test.ts > first session identification without granting new authority > does not wash out a missing gap with a fresh null observation 0ms
+ ✓ apps/server/src/domain/model.test.ts > first session identification without granting new authority > does not wash out a disconnect gap with a fresh null observation 0ms
+ ✓ apps/server/src/domain/model.test.ts > first session identification without granting new authority > does not wash out a stale gap with a fresh null observation 0ms
+ ✓ apps/server/src/domain/model.test.ts > first session identification without granting new authority > does not wash out a recover gap with a fresh null observation 0ms
+ ✓ apps/server/src/domain/model.test.ts > first session identification without granting new authority > revokes confirmation on a later session change to different-session 0ms
+ ✓ apps/server/src/domain/model.test.ts > first session identification without granting new authority > revokes confirmation on a later session change to null 0ms
+ ✓ apps/server/src/domain/model.test.ts > first session identification without granting new authority > retains manual mode and requires explicit confirmation to reset an identification gap 0ms
+ ✓ apps/server/src/domain/model.test.ts > first session identification without granting new authority > reserves the pre-batch session even if its previous owner is revoked first (reverse=false) 0ms
+ ✓ apps/server/src/domain/model.test.ts > first session identification without granting new authority > reserves the pre-batch session even if its previous owner is revoked first (reverse=true) 0ms
+ ✓ apps/server/src/domain/model.test.ts > first session identification without granting new authority > rejects a first session claimed by another observation in the same batch 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > keeps published terminal results immutable while persisting and pausing on a later conflicting declaration 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > does not let collection retry clear a conflict but still allows cancellation to complete after proven activity and stop 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > rejects retrying an archived task and allows copying it into a new active task 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > keeps cancelled work occupied after the 15 second deadline and only reminds after 30 minutes 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > accepts existing agents without managed readiness but rejects future/stale observations 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > does not infer success from activity followed by idle without a result (V08) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > holds occupancy for a submitted result until this execution ends (V09/V10) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > requires activity from after the final dispatch baseline 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > a committed success remains successful when cancel arrives later (V11) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > an accepted cancel keeps later success as late information and waits for stop (V11/V12) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > keeps manual declarations separate from unproven stop evidence 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > recovery invalidates dispatch intent, startup intent, workers and authorization without releasing occupancy (V04/V06/V24) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > revokes authorization when another occupant replaces a running agent (V07) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > late old-attempt results do not overwrite a newly dispatched retry (V13) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > allows independent tasks behind dependency blockers, but freezes started task descriptions (V14/V16) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > rejects dependency cycles and cross-project task associations (V16) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > business failure releases occupancy while uncertain delivery pauses the binding (V15) 0ms
+
+ Test Files  5 passed (5)
+      Tests  121 passed (121)
+   Start at  17:34:00
+   Duration  5.86s (transform 150ms, setup 0ms, collect 448ms, tests 4.75s, environment 0ms, prepare 180ms)
+

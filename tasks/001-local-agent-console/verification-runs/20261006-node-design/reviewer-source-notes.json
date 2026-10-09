@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-06",
+  "scope": "Review reasoning and evidence notes; not product verification",
+  "original_design_excerpt_N01": "DB worker 异常或确认丢失时立即关闭派发入口、标记存储状态未知；不凭 Promise 超时重发外部命令。恢复需持锁重开数据库、按 operation/intent 查询事实，并执行第 9 节核对流程。",
+  "original_design_excerpt_N02": "全部文件和 manifest 成功后 fsync 文件及目录，同文件系统原子 rename 到不可变 archive generation；最后 DB 事务登记发布。恢复时识别未登记的完整 generation，校验后补登记；未完成 staging 不对下游可见。",
+  "excerpt_origin": "Initial full-text read of technical-design.md, before author N01/N02 revisions; copied from actual reviewer tool output. Initial preview reports 257 lines.",
+  "references": [
+    {
+      "url": "https://nodejs.org/docs/latest-v24.x/api/worker_threads.html#workerterminate",
+      "observed_version": "24.21.0",
+      "finding": "terminate is asynchronous; its Promise resolves when exit is emitted."
+    },
+    {
+      "url": "https://github.com/nodejs/node/blob/v24.21.0/doc/api/child_process.md#event-close",
+      "finding": "Child lifecycle/message/close are distinct; publishing requires explicit writer-exit ordering."
+    },
+    {
+      "url": "https://github.com/WiseLibs/better-sqlite3/blob/v13.0.3/docs/api.md",
+      "finding": "Synchronous transactions are compatible with a dedicated DB worker and should not span await."
+    },
+    {
+      "url": "https://fastify.dev/docs/latest/Reference/Type-Providers/",
+      "finding": "TypeBox schema type inference is available; runtime validation still required."
+    }
+  ]
+}

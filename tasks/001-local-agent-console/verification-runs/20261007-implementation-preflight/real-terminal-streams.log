@@ -1,0 +1,27 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ ✓ apps/server/src/adapters/herdr/real-herdr.test.ts > connects, snapshots and subscribes to an isolated real herdr 0.9.3 server 807ms
+ × apps/server/src/adapters/herdr/real-herdr.test.ts > uses real official terminal observe/control streams in a dedicated shell without model calls 1513ms
+   → expected +0 not to be +0 // Object.is equality
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  apps/server/src/adapters/herdr/real-herdr.test.ts > uses real official terminal observe/control streams in a dedicated shell without model calls
+AssertionError: expected +0 not to be +0 // Object.is equality
+ ❯ apps/server/src/adapters/herdr/real-herdr.test.ts:89:190
+     87|     controller.child.stdin.write(JSON.stringify({type:'terminal.input'…
+     88|     await expect.poll(()=>readFile(join(directory,'after.txt'),'utf8')…
+     89|     const competitor=terminal('control',target,80,20);await competitor…
+       |                                                                                                                                                                                              ^
+     90|     controller.child.stdin.end(JSON.stringify({type:'terminal.release'…
+     91|     expect(observer.child.exitCode).toBeNull();expect(secondObserver.c…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 1 passed (2)
+   Start at  10:47:20
+   Duration  2.53s (transform 49ms, setup 0ms, collect 60ms, tests 2.32s, environment 0ms, prepare 43ms)
+

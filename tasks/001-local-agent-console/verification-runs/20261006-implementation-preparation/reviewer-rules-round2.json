@@ -1,0 +1,19 @@
+{
+  "schema_version": "1",
+  "groups": [
+    {
+      "group_id": 1,
+      "source": "custom",
+      "pattern": "**/*",
+      "files": [
+        "AGENTS.md",
+        "README.md",
+        "tasks/001-local-agent-console/herdr-compatibility.md",
+        "tasks/001-local-agent-console/implementation-plan.md",
+        "tasks/001-local-agent-console/technical-design.md",
+        "tasks/001-local-agent-console/technical-review.md"
+      ],
+      "rule": "## System-Specific Rules (Mandatory)\n\n#### Correctness\nIs the logic correct? Are there missing boundary conditions?\nAre exceptions handled properly?\nIs it thread-safe in concurrent scenarios?\n\n#### Security\nAre there security vulnerabilities such as SQL injection or XSS?\nIs sensitive information handled correctly?\nIs permission validation complete?\n\n#### Performance\nAre there obvious performance issues (e.g., N+1 queries, unnecessary loops)?\nAre resources properly released?\n\n#### Maintainability\nIs the code clear and easy to understand?\nDo names accurately express intent?\nDoes it follow the project’s existing code style and architecture patterns?\n\n#### Test Coverage\nDo critical logic paths have corresponding test cases?\nDo test cases cover boundary conditions?\n\n---\n\n## User-Specific Rules (Mandatory)\n\nRead AGENTS.md and the confirmed requirement and acceptance records for this task. Review state transitions, idempotency, event ordering, crash/reconnect recovery, entity/artifact associations, and workdir/session/test-resource isolation. Record applicability, concrete evidence, and requirement gaps; do not invent product semantics. Inspect tests as well as implementation, callers and deletion effects. Check module boundaries, dependency direction, error handling, migration/compatibility, maintainability and confirmed extension needs; avoid speculative abstractions. Apply language/framework builtins only when they fit the actual project. Review requires an independent context; keep evidence and false-positive rationale. File coverage is not semantic or test coverage."
+    }
+  ]
+}

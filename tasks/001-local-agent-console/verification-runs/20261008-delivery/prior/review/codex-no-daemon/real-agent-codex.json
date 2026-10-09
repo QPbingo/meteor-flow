@@ -1,0 +1,208 @@
+{
+  "type": "codex",
+  "date": "2026-10-08T08:03:40.488Z",
+  "session": "meteor-flow-test-codex-bdb700a3",
+  "cwd": "/private/tmp/mf-agent-EHzYU0/project",
+  "isolation": "dedicated herdr XDG/session/cwd; existing model configuration read-only; user config writes denied",
+  "status": "failed",
+  "timeline": [
+    {
+      "terminalId": "term_65d4fab79be031",
+      "paneId": "w1:p1",
+      "type": "unknown",
+      "status": "unknown",
+      "cwd": "/private/tmp/mf-agent-EHzYU0/project",
+      "pid": null,
+      "processStart": null,
+      "agentSessionPresent": false,
+      "sequence": 0,
+      "launchPending": true,
+      "interactiveReady": false
+    },
+    {
+      "terminalId": "term_65d4fab79be031",
+      "paneId": "w1:p1",
+      "type": "codex",
+      "status": "unknown",
+      "cwd": "/private/tmp/mf-agent-EHzYU0/project",
+      "pid": 64885,
+      "processStart": "64885:1791446621:268129",
+      "agentSessionPresent": false,
+      "sequence": 0,
+      "launchPending": true,
+      "interactiveReady": false
+    },
+    {
+      "terminalId": "term_65d4fab79be031",
+      "paneId": "w1:p1",
+      "type": "codex",
+      "status": "unknown",
+      "cwd": "/private/tmp/mf-agent-EHzYU0/project",
+      "pid": 64885,
+      "processStart": "64885:1791446621:268129",
+      "agentSessionPresent": false,
+      "sequence": 0,
+      "launchPending": false,
+      "interactiveReady": true
+    },
+    {
+      "terminalId": "term_65d4fab79be031",
+      "paneId": "w1:p1",
+      "type": "codex",
+      "status": "idle",
+      "cwd": "/private/tmp/mf-agent-EHzYU0/project",
+      "pid": 64885,
+      "processStart": "64885:1791446621:268129",
+      "agentSessionPresent": false,
+      "sequence": 1,
+      "launchPending": false,
+      "interactiveReady": true
+    }
+  ],
+  "diagnosticStartupArgs": [
+    "--no-daemon"
+  ],
+  "versions": {
+    "herdr": "herdr 0.9.3",
+    "agent": "codex-cli 0.160.1",
+    "node": "v24.21.0"
+  },
+  "target": "term_65d4fab79be031",
+  "screenSha256": "b8dee70682be13470f54013f88731c0567b659b8dd31fb8ff70201986ba5a150",
+  "screenReason": null,
+  "diagnosticErrorLines": "  settings, or start any other task. If any permission is needed, stop and wait for the human.\n    \"summary\": \"请填写真实完成摘要；失败填写原因并将 outcome 改为 failed\",",
+  "foregroundProcesses": [
+    {
+      "pid": 64885,
+      "name": "codex"
+    }
+  ],
+  "taskId": "def1103a-535a-455e-98b1-293366ff46b0",
+  "diagnosticObservation": {
+    "health": {
+      "storage": false,
+      "connected": false,
+      "version": "0.9.3",
+      "error": "服务正在关闭",
+      "lastObservation": 1791446721257
+    },
+    "observations": [
+      {
+        "terminalId": "term_65d4fab79be031",
+        "paneId": "w1:p1",
+        "type": "codex",
+        "status": "working",
+        "cwd": "/private/tmp/mf-agent-EHzYU0/project",
+        "pid": 64885,
+        "processStart": "64885:1791446621:268129",
+        "agentSessionPresent": true,
+        "sequence": 4,
+        "launchPending": false,
+        "interactiveReady": true
+      }
+    ]
+  },
+  "error": "expected 'needs_confirmation' to be 'succeeded' // Object.is equality",
+  "tasks": [
+    {
+      "id": "def1103a-535a-455e-98b1-293366ff46b0",
+      "phase": "needs_confirmation",
+      "reason": "执行身份已变化"
+    }
+  ],
+  "attempts": [
+    {
+      "id": "88f27e1f-a4e5-409c-ba55-62003bb2331c",
+      "phase": "needs_confirmation",
+      "reason": "执行身份已变化",
+      "dispatch": "submitted",
+      "seenActivity": false,
+      "archived": false
+    }
+  ],
+  "events": [
+    {
+      "seq": 1,
+      "time": 1791446630138,
+      "type": "recover",
+      "message": "启动恢复：观测缺口与旧控制权已失效",
+      "taskId": null,
+      "attemptId": null
+    },
+    {
+      "seq": 2,
+      "time": 1791446630520,
+      "type": "project.create",
+      "message": "创建项目 Real codex",
+      "taskId": null,
+      "attemptId": null
+    },
+    {
+      "seq": 3,
+      "time": 1791446630652,
+      "type": "binding.create",
+      "message": "接入 Real codex，当前只观察",
+      "taskId": null,
+      "attemptId": null
+    },
+    {
+      "seq": 4,
+      "time": 1791446630797,
+      "type": "binding.action",
+      "message": "Real codex：已确认接入，请启用自动调度",
+      "taskId": null,
+      "attemptId": null
+    },
+    {
+      "seq": 5,
+      "time": 1791446631174,
+      "type": "binding.action",
+      "message": "Real codex：自动调度",
+      "taskId": null,
+      "attemptId": null
+    },
+    {
+      "seq": 6,
+      "time": 1791446631175,
+      "type": "task.create",
+      "message": "创建任务 Write one integration-test artifact",
+      "taskId": "def1103a-535a-455e-98b1-293366ff46b0",
+      "attemptId": null
+    },
+    {
+      "seq": 7,
+      "time": 1791446631547,
+      "type": "dispatch",
+      "message": "投递意图已持久化",
+      "taskId": "def1103a-535a-455e-98b1-293366ff46b0",
+      "attemptId": "88f27e1f-a4e5-409c-ba55-62003bb2331c"
+    },
+    {
+      "seq": 8,
+      "time": 1791446632078,
+      "type": "dispatch.result",
+      "message": "herdr 已确认接收",
+      "taskId": "def1103a-535a-455e-98b1-293366ff46b0",
+      "attemptId": "88f27e1f-a4e5-409c-ba55-62003bb2331c"
+    },
+    {
+      "seq": 9,
+      "time": 1791446632754,
+      "type": "agent.paused",
+      "message": "Agent 身份已变化，需重新接入确认",
+      "taskId": null,
+      "attemptId": null
+    }
+  ],
+  "sourceFiles": [
+    {
+      "path": "hello.txt",
+      "size": null
+    },
+    {
+      "path": ".meteor-flow/runs/88f27e1f-a4e5-409c-ba55-62003bb2331c/result.json",
+      "size": null
+    }
+  ],
+  "protectedConfigurationUnchanged": true
+}

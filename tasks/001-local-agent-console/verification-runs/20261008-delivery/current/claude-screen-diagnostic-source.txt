@@ -1,0 +1,169 @@
+import { spawn, execFile } from 'node:child_process';
+import { createHash, randomUUID } from 'node:crypto';
+import { once } from 'node:events';
+import { mkdir, mkdtemp, readFile, realpath, rm, writeFile, stat } from 'node:fs/promises';
+import { createConnection } from 'node:net';
+import { homedir } from 'node:os';
+import { join } from 'node:path';
+import { setTimeout as delay } from 'node:timers/promises';
+import { promisify } from 'node:util';
+import { expect, it } from 'vitest';
+import type { Binding, Task } from '@meteor-flow/contracts';
+import { AgentConsole } from '../../apps/server/dist/application/console.js';
+import { HerdrClient, type AgentObservation } from '../../apps/server/src/adapters/herdr/index.js';
+import { guardAgentInput, screenBlocker as reason } from './helpers/agent-test-screen.js';
+
+const execute = promisify(execFile);
+const enabled = process.env.METEOR_FLOW_REAL_AGENTS === '1';
+const standaloneCodex = process.env.METEOR_FLOW_CODEX_STANDALONE === '1';
+const evidenceDirectory = process.env.METEOR_FLOW_REAL_AGENT_EVIDENCE;
+type Evidence = Record<string, unknown>;
+
+// This test never sends a trust, login, permission, or update confirmation.
+// It creates a fresh headless session and requests one tiny result only after readiness.
+// Build contracts, posix-fs and server first. Opt-in is separate from the mock suite.
+async function rpc(socketPath: string, method: string, params: Record<string, unknown> = {}): Promise<Record<string, any>> {
+  const id = randomUUID();
+  return await new Promise((resolve, reject) => {
+    const socket = createConnection(socketPath);
+    let bytes = '';
+    const finish = (error?: Error, result?: Record<string, any>) => {
+      clearTimeout(timeout); socket.destroy(); error ? reject(error) : resolve(result!);
+    };
+    const timeout = setTimeout(() => finish(new Error(`${method}: timeout`)), 3000);
+    socket.on('error', error => finish(error));
+    socket.on('connect', () => socket.write(JSON.stringify({ id, method, params }) + '\n'));
+    socket.on('data', chunk => {
+      bytes += chunk.toString('utf8');
+      if (Buffer.byteLength(bytes) > 1024 * 1024) return finish(new Error('diagnostic response too large'));
+      const newline = bytes.indexOf('\n'); if (newline < 0) return;
+      try {
+        const response = JSON.parse(bytes.slice(0, newline));
+        if (response.id !== id || response.error || !response.result) return finish(new Error(`${method}: ${response.error?.code ?? 'invalid response'}`));
+        finish(undefined, response.result);
+      } catch (error) { finish(error as Error); }
+    });
+  });
+}
+async function hash(file: string) {
+  try { return createHash('sha256').update(await readFile(file)).digest('hex'); }
+  catch (error) { if ((error as NodeJS.ErrnoException).code === 'ENOENT') return null; throw error; }
+}
+function summary(observation: AgentObservation) {
+  return { terminalId: observation.terminalId, paneId: observation.paneId, type: observation.type, status: observation.status,
+    cwd: observation.cwd, pid: observation.pid, processStart: observation.processStart, agentSessionPresent: !!observation.agentSession,
+    sequence: observation.sequence, launchPending: observation.launchPending, interactiveReady: observation.interactiveReady };
+}
+
+for (const type of ['claude'] as const) {
+  it.runIf(enabled)(`diagnostic ${type}: startup screen only; no task input`, async context => {
+    if (type === 'codex' && !standaloneCodex) context.skip('Codex standalone test requires explicit METEOR_FLOW_CODEX_STANDALONE=1 authorization; its own workspace-write/on-request sandbox replaces the test outer sandbox');
+    const directory = await realpath(await mkdtemp('/tmp/mf-agent-'));
+    const session = `meteor-flow-test-${type}-${randomUUID().slice(0, 8)}`;
+    const cwd = join(directory, 'project'); const dataDir = join(directory, 'data');
+    await mkdir(cwd); await mkdir(dataDir);
+    const socketPath = join(directory, 'config/herdr/sessions', session, 'herdr.sock');
+    const env: NodeJS.ProcessEnv = { ...process.env, XDG_CONFIG_HOME: join(directory, 'config'), XDG_STATE_HOME: join(directory, 'state') };
+    for (const key of ['HERDR_SESSION', 'HERDR_SOCKET_PATH', 'HERDR_CLIENT_SOCKET_PATH', 'HERDR_PANE_ID', 'HERDR_WORKSPACE_ID', 'HERDR_TERMINAL_ID']) delete env[key];
+    // Use configured model services without changing global configuration.
+    // Codex uses its own sandbox; only Claude retains the outer write denial.
+    const protectedFiles = ['.codex/config.toml', '.codex/auth.json', '.claude.json', '.claude/settings.json', '.claude/.credentials.json'].map(file => join(homedir(), file));
+    const before = await Promise.all(protectedFiles.map(hash));
+    const profile = `(version 1)(allow default)(deny file-write* ${protectedFiles.map(file => `(literal ${JSON.stringify(file)})`).join(' ')})`;
+    const evidence: Evidence = { type, date: new Date().toISOString(), session, cwd, isolation: type === 'codex' ? 'dedicated herdr XDG/session/cwd; explicit Codex workspace-write/on-request; NO outer sandbox; configuration hash comparison only' : 'dedicated herdr XDG/session/cwd; existing model configuration read-only; user config writes denied', status: 'running', timeline: [] };
+    const timeline = evidence.timeline as Evidence[];
+    const child = type === 'codex'
+      ? spawn('herdr', ['--session', session, 'server'], { cwd: directory, env, stdio: ['ignore', 'ignore', 'pipe'] })
+      : spawn('/usr/bin/sandbox-exec', ['-p', profile, 'herdr', '--session', session, 'server'], { cwd: directory, env, stdio: ['ignore', 'ignore', 'pipe'] });
+    let stderr = ''; let spawnError: Error | undefined;
+    child.stderr.on('data', chunk => { stderr = (stderr + String(chunk)).slice(-2048); });
+    child.on('error', error => { spawnError = error; });
+    const client = new HerdrClient({ session, socketPath, timeoutMs: 5000, ...(type === 'codex' ? { codexExecutionPolicy: 'workspace-write' as const } : {}) });
+    let app: AgentConsole | undefined;
+    let target: string | undefined;
+    let inputGuard: ReturnType<typeof guardAgentInput> | undefined;
+    const recordBlock = (message: string) => { evidence.status = 'blocked'; evidence.blocked = message; };
+    async function block(message: string) {
+      inputGuard?.stop(message); recordBlock(message);
+      const last = timeline.at(-1);
+      if (last?.paneId) {
+        const info = await rpc(socketPath, 'pane.process_info', { pane_id: last.paneId });
+        evidence.foregroundProcesses = (info.process_info?.foreground_processes ?? []).map((row: any) => ({ pid: row.pid, name: row.name }));
+      }
+      evidence.status = 'blocked'; evidence.blocked = message;
+      console.info(`REAL_AGENT_BLOCKED ${type}: ${message}`);
+      context.skip(message);
+    }
+    async function screen(requestedTarget = target) {
+      if (!target || requestedTarget !== target) throw new Error('unexpected diagnostic input target');
+      const paneId = app ? app.discoveries.find(row => row.terminalId === requestedTarget)?.paneId : timeline.at(-1)?.paneId;
+      if (!paneId) throw new Error('isolated target is not visible');
+      // A new managed launch can still be a shell in herdr's agent registry.
+      // The known pane exists throughout startup and can expose trust/onboarding.
+      const response = await rpc(socketPath, 'pane.read', { pane_id: paneId, source: 'visible', format: 'text', strip_ansi: true });
+      const text = String(response.read?.text ?? '');
+      evidence.screenSha256 = createHash('sha256').update(text).digest('hex');
+      evidence.screenReason = reason(text);
+      evidence.updateLines = text.split('\n').filter(line => /updat|brew|press|skip|enter|install/i.test(line)).map(line => line.replace(/(?:sk-|sess-)[A-Za-z0-9_-]+/g, '[REDACTED]').replace(/Bearer\s+\S+/gi, 'Bearer [REDACTED]'));
+      return text;
+    }
+    try {
+      const versions = await Promise.all(['herdr', type].map(async executable => (await execute(executable, ['--version'], { timeout: 5000 })).stdout.trim()));
+      evidence.versions = { herdr: versions[0], agent: versions[1], node: process.version };
+      await expect.poll(async () => {
+        if (spawnError) throw spawnError;
+        if (child.exitCode !== null) throw new Error(`isolated herdr exited: ${stderr}`);
+        try { return await client.connect(); } catch { return null; }
+      }, { timeout: 10_000, interval: 100 }).toEqual({ version: '0.9.3', protocol: 22 });
+      expect(await client.listAgents()).toEqual([]);
+      target = (await client.start(type, cwd)).target;
+      evidence.target = target;
+      let ready: AgentObservation | undefined;
+      const deadline = Date.now() + 35_000;
+      while (Date.now() < deadline) {
+        const observation = (await client.listAgents()).find(agent => agent.terminalId === target);
+        if (observation) {
+          // herdr first reports the new shell before foreground detection catches
+          // up. Unknown during startup is observation-only, never readiness.
+          if(observation.type!=='unknown')expect(observation.type).toBe(type);
+          expect(observation.cwd).toBe(cwd);
+          const row = summary(observation);
+          if (JSON.stringify(timeline.at(-1)) !== JSON.stringify(row)) timeline.push(row);
+          const blocker = reason(await screen());
+          if (blocker) await block(blocker);
+          if (observation.type===type&&!observation.launchPending && observation.interactiveReady && ['idle', 'done'].includes(observation.status)) { ready = observation; break; }
+        }
+        await delay(250);
+      }
+      if (!ready) await block('startup did not establish interactive readiness within 35 seconds');
+      const observationDeadline = Date.now() + 15_000;
+      while (Date.now() < observationDeadline) {
+        const blocker = reason(await screen());
+        if (blocker) await block(blocker);
+        await delay(250);
+      }
+      evidence.status = 'observed';
+    } catch (error) {
+      if (evidence.status !== 'blocked') { evidence.status = 'failed'; evidence.error = error instanceof Error ? error.message : String(error); }
+      throw error;
+    } finally {
+      if(app){
+        evidence.tasks=app.store.state.tasks.map(t=>({id:t.id,phase:t.phase,reason:t.reason}));
+        evidence.attempts=app.store.state.attempts.map(a=>({id:a.id,phase:a.phase,reason:a.reason,dispatch:a.dispatch,seenActivity:a.seenActivity,archived:!!a.archiveId}));
+        evidence.events=app.store.state.events;
+        evidence.sourceFiles=await Promise.all(['hello.txt',...app.store.state.attempts.map(a=>`.meteor-flow/runs/${a.id}/result.json`)].map(async path=>({path,size:await stat(join(cwd,path)).then(s=>s.size).catch(()=>null)})));
+      }
+      await app?.close(); client.close();
+      if (child.exitCode === null && !spawnError) {
+        const closed = once(child, 'close');
+        const timeout = setTimeout(() => child.kill('SIGTERM'), 2000);
+        try { await rpc(socketPath, 'server.stop'); } catch { /* shutdown may close the reply socket */ }
+        await closed; clearTimeout(timeout);
+      }
+      evidence.protectedConfigurationUnchanged = JSON.stringify(await Promise.all(protectedFiles.map(hash))) === JSON.stringify(before);
+      if (evidenceDirectory) { await mkdir(evidenceDirectory, { recursive: true }); await writeFile(join(evidenceDirectory, `real-agent-${type}.json`), JSON.stringify(evidence, null, 2) + '\n', { mode: 0o600 }); }
+      await rm(directory, { recursive: true, force: true });
+      expect(evidence.protectedConfigurationUnchanged).toBe(true);
+    }
+  }, 155_000);
+}

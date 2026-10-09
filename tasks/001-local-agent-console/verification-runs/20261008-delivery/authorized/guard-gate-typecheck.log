@@ -1,0 +1,2 @@
+tests/integration/agent-test-screen.test.ts(44,49): error TS2554: Expected 0 arguments, but got 2.
+tests/integration/agent-test-screen.test.ts(54,35): error TS2554: Expected 0 arguments, but got 2.

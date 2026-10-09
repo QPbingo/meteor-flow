@@ -1,0 +1,55 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > releases an old attempt only after its own process exits even when its terminal now contains a replacement 233ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > requires fresh observations and explicit manual evidence to resolve an unknown start without any external side effect 148ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > starts on the session accepted by the command queue when a session switch finishes first 135ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > keeps a conflicting result pending across idle observations and restart until an explicit manual conclusion 650ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > allows explicitly confirmed existing agents even without managed interactive readiness 199ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > a manual switch after preparation but before final dispatch prevents all prompt input 194ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > accepts cancel while prompt acknowledgement is pending, sends one interrupt and retains occupancy (V03/V11/V12) 253ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > never retries a prompt with a lost acknowledgement, including after service restart (V04/V05/V24) 275ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > persists a startup intent once and preserves an unknown startup without repeating it (V03/V06) 135ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > runs an independent task behind an unmet dependency on another binding (V14) 335ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > rejects confirming an agent whose work directory overlaps private service data (V21/V22) 82ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > rejects extra output roots overlapping private service data (V22) 81ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > does not start an external agent after storage fails immediately after the durable startup intent 81ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > does not send an unrecorded emergency interrupt after storage recovers during identity observation 153ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > does not dispatch when a real work directory refuses frozen-input writes (V25) 180ms
+ ✓ tests/integration/cli.test.ts > CLI rejects duplicate data/session owners and releases locks on shutdown (V26) 1000ms
+ ✓ tests/integration/cli.test.ts > exits after the HTTP listener opens but authentication bootstrap persistence fails 361ms
+ ✓ apps/server/src/http/server.test.ts > requires a cookie for reads, rejects external Origin/Host, and enforces JSON/CSRF for writes 241ms
+ ✓ apps/server/src/http/server.test.ts > rotates the single-use entry, protects the cookie, and persists an operation exactly once 144ms
+ ✓ apps/server/src/http/server.test.ts > rejects cross-site and unauthenticated WebSocket upgrades before starting a CLI 120ms
+ ✓ apps/server/src/http/server.test.ts > keeps observers read-only, gives every page a redraw, and arbitrates two controllers with revocation 433ms
+ ✓ apps/server/src/http/server.test.ts > closes a controller on disconnect without resuming dispatch, while observer closure has no scheduling side effect 234ms
+ ✓ apps/server/src/http/server.test.ts > rejects authenticated terminal upgrades with missing or null Origin 116ms
+ ✓ apps/server/src/http/server.test.ts > provides versioned resources, an operation receipt and an actionable directory error 116ms
+ ✓ apps/server/src/http/server.test.ts > replays an accepted session receipt despite discovery failure or disappearance and rejects changed payloads 114ms
+ ✓ apps/server/src/http/server.test.ts > replays a created project after its directory moves without duplicating records or revalidating an accepted operation 116ms
+ ✓ apps/server/src/http/server.test.ts > announces snapshot calibration and replays durable SSE IDs after reconnect 112ms
+ ✓ apps/server/src/http/server.test.ts > requires explicit confirmation to resolve an unknown start over HTTP and replays the recorded manual evidence 172ms
+ ✓ apps/server/src/http/server.test.ts > holds all four download slots until slow responses finish and aborts them on service close 724ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > keeps published terminal results immutable while persisting and pausing on a later conflicting declaration 2ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > does not let collection retry clear a conflict but still allows cancellation to complete after proven activity and stop 1ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > rejects retrying an archived task and allows copying it into a new active task 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > keeps cancelled work occupied after the 15 second deadline and only reminds after 30 minutes 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > accepts existing agents without managed readiness but rejects future/stale observations 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > does not infer success from activity followed by idle without a result (V08) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > holds occupancy for a submitted result until this execution ends (V09/V10) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > requires activity from after the final dispatch baseline 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > a committed success remains successful when cancel arrives later (V11) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > an accepted cancel keeps later success as late information and waits for stop (V11/V12) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > keeps manual declarations separate from unproven stop evidence 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > recovery invalidates dispatch intent, startup intent, workers and authorization without releasing occupancy (V04/V06/V24) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > revokes authorization when another occupant replaces a running agent (V07) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > late old-attempt results do not overwrite a newly dispatched retry (V13) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > allows independent tasks behind dependency blockers, but freezes started task descriptions (V14/V16) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > rejects dependency cycles and cross-project task associations (V16) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > business failure releases occupancy while uncertain delivery pauses the binding (V15) 0ms
+
+ Test Files  4 passed (4)
+      Tests  46 passed (46)
+   Start at  15:49:58
+   Duration  8.11s (transform 122ms, setup 0ms, collect 404ms, tests 7.14s, environment 0ms, prepare 145ms)
+

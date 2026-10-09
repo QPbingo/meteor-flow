@@ -1,0 +1,53 @@
+$ vitest run
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ ↓ tests/integration/performance.test.ts (1 test | 1 skipped)
+ ↓ tests/integration/real-agent.test.ts (2 tests | 2 skipped)
+ ✓ apps/server/src/application/console.test.ts (15 tests) 4179ms
+   ✓ application orchestration against real DB and collectors > releases an old attempt only after its own process exits even when its terminal now contains a replacement  323ms
+   ✓ application orchestration against real DB and collectors > keeps a conflicting result pending across idle observations and restart until an explicit manual conclusion  822ms
+   ✓ application orchestration against real DB and collectors > accepts cancel while prompt acknowledgement is pending, sends one interrupt and retains occupancy (V03/V11/V12)  317ms
+   ✓ application orchestration against real DB and collectors > never retries a prompt with a lost acknowledgement, including after service restart (V04/V05/V24)  420ms
+   ✓ application orchestration against real DB and collectors > runs an independent task behind an unmet dependency on another binding (V14)  579ms
+ ✓ apps/server/src/http/server.test.ts (12 tests) 2803ms
+   ✓ keeps observers read-only, gives every page a redraw, and arbitrates two controllers with revocation  445ms
+   ✓ holds all four download slots until slow responses finish and aborts them on service close  823ms
+ ↓ apps/server/src/adapters/herdr/real-herdr.test.ts (2 tests | 2 skipped)
+ ✓ apps/server/src/results/collector.test.ts (18 tests) 8144ms
+   ✓ real process result collection and immutable archives > quarantines a candidate if cancel changes while atomic rename is pending  569ms
+   ✓ real process result collection and immutable archives > quarantines a candidate if close changes while atomic rename is pending  537ms
+   ✓ real process result collection and immutable archives > quarantines a candidate if storage changes while atomic rename is pending  557ms
+   ✓ real process result collection and immutable archives > does not publish if cancel changes at the post-verification boundary  513ms
+   ✓ real process result collection and immutable archives > does not publish if close changes at the post-verification boundary  519ms
+   ✓ real process result collection and immutable archives > does not publish if storage changes at the post-verification boundary  838ms
+   ✓ real process result collection and immutable archives > archives complete artifacts, preserves source ownership and freezes independent downstream copies (V09/V17)  584ms
+   ✓ real process result collection and immutable archives > rejects fifo without publishing a partial archive (V09/V13/V22)  318ms
+   ✓ real process result collection and immutable archives > rejects missing-required without publishing a partial archive (V09/V13/V22)  300ms
+   ✓ real process result collection and immutable archives > rejects old-attempt without publishing a partial archive (V09/V13/V22)  315ms
+   ✓ real process result collection and immutable archives > kills and reaps a timed-out writer even after it sent a success candidate  1579ms
+ ✓ tests/integration/cli.test.ts (2 tests) 1424ms
+   ✓ CLI rejects duplicate data/session owners and releases locks on shutdown (V26)  1065ms
+   ✓ exits after the HTTP listener opens but authentication bootstrap persistence fails  359ms
+ ✓ packages/posix-fs/test/index.test.ts (42 tests) 955ms
+   ✓ safe file collection > copies in bounded blocks, preserves hash, and creates a private file  509ms
+ ✓ apps/server/src/adapters/herdr/index.test.ts (24 tests) 889ms
+   ✓ herdr NDJSON management adapter > validates session names and removes inherited target environment for fixed-argv CLI discovery  545ms
+ ✓ apps/server/src/storage/store.test.ts (6 tests) 1111ms
+   ✓ dedicated real database writer > recovers a committed-but-unacknowledged transaction without creating a second writer or replaying work (V04/V24)  657ms
+ ✓ apps/server/src/storage/database.test.ts (5 tests) 35ms
+ ✓ apps/server/src/terminal/bridge.test.ts (22 tests) 21ms
+ ✓ apps/server/src/domain/model.test.ts (17 tests) 6ms
+ ✓ apps/server/src/results/protocol.test.ts (19 tests) 6ms
+ ✓ tests/integration/dev.test.ts (5 tests) 19382ms
+   ✓ development proxy serves the browser with authenticated API/WS while rejecting foreign boundaries  1866ms
+   ✓ dev requires an explicit session and never starts services after a failed initial build  462ms
+   ✓ reaps a resistant build descendant after the build is failed  5642ms
+   ✓ reaps a resistant build descendant after the build is interrupted  5450ms
+   ✓ dev builds first, forwards CLI options, restarts on child-code changes and reaps its process groups  5961ms
+
+ Test Files  12 passed | 3 skipped (15)
+      Tests  187 passed | 5 skipped (192)
+   Start at  16:22:41
+   Duration  20.09s (transform 285ms, setup 0ms, collect 1.59s, tests 38.95s, environment 1ms, prepare 577ms)
+

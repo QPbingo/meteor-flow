@@ -1,0 +1,6 @@
+{
+  "action": "first audit attempt",
+  "error": "IsADirectoryError on .claude/skills/impeccable",
+  "cause": "reviewer hash helper treated symlink-to-directory as a regular file",
+  "resolution": "hash symlink target bytes, consistent with existing independent manifests and workspace fingerprint; no candidate or source-evidence change"
+}

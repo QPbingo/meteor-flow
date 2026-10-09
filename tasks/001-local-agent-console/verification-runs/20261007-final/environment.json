@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-07T03:13:32.015Z",
+  "node": "v24.21.0",
+  "abi": "137",
+  "platform": "darwin",
+  "arch": "arm64",
+  "sqlite": "3.53.4",
+  "versions": {
+    "pnpm": "11.9.0",
+    "herdr": "herdr 0.9.3",
+    "codex": "codex-cli 0.160.1",
+    "claude": "2.1.195 (Claude Code)"
+  }
+}

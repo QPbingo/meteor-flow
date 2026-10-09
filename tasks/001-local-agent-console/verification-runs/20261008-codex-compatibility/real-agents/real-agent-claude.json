@@ -1,0 +1,196 @@
+{
+  "type": "claude",
+  "date": "2026-10-08T09:37:25.494Z",
+  "session": "meteor-flow-test-claude-8b719e66",
+  "cwd": "/private/tmp/mf-agent-DsJuxG/project",
+  "isolation": "dedicated herdr XDG/session/cwd; existing model configuration read-only; user config writes denied",
+  "status": "blocked",
+  "timeline": [
+    {
+      "terminalId": "term_65d50fac1381f1",
+      "paneId": "w1:p1",
+      "type": "unknown",
+      "status": "unknown",
+      "cwd": "/private/tmp/mf-agent-DsJuxG/project",
+      "pid": null,
+      "processStart": null,
+      "agentSessionPresent": false,
+      "sequence": 0,
+      "launchPending": true,
+      "interactiveReady": false
+    },
+    {
+      "terminalId": "term_65d50fac1381f1",
+      "paneId": "w1:p1",
+      "type": "claude",
+      "status": "unknown",
+      "cwd": "/private/tmp/mf-agent-DsJuxG/project",
+      "pid": null,
+      "processStart": null,
+      "agentSessionPresent": false,
+      "sequence": 0,
+      "launchPending": true,
+      "interactiveReady": false
+    },
+    {
+      "terminalId": "term_65d50fac1381f1",
+      "paneId": "w1:p1",
+      "type": "claude",
+      "status": "unknown",
+      "cwd": "/private/tmp/mf-agent-DsJuxG/project",
+      "pid": 82971,
+      "processStart": "82971:1791452246:316454",
+      "agentSessionPresent": true,
+      "sequence": 0,
+      "launchPending": true,
+      "interactiveReady": false
+    },
+    {
+      "terminalId": "term_65d50fac1381f1",
+      "paneId": "w1:p1",
+      "type": "claude",
+      "status": "idle",
+      "cwd": "/private/tmp/mf-agent-DsJuxG/project",
+      "pid": 82971,
+      "processStart": "82971:1791452246:316454",
+      "agentSessionPresent": true,
+      "sequence": 1,
+      "launchPending": false,
+      "interactiveReady": true
+    }
+  ],
+  "versions": {
+    "herdr": "herdr 0.9.3",
+    "agent": "2.1.195 (Claude Code)",
+    "node": "v24.21.0"
+  },
+  "target": "term_65d50fac1381f1",
+  "screenSha256": "f0eea72108f212ec89f4b0bcd37bee7a45b113a21f45bb16864e520c13d76251",
+  "screenReason": "software update requires human interaction",
+  "foregroundProcesses": [
+    {
+      "pid": 83334,
+      "name": "caffeinate"
+    },
+    {
+      "pid": 83008,
+      "name": "mcp-server-darw"
+    },
+    {
+      "pid": 82971,
+      "name": "claude"
+    }
+  ],
+  "taskId": "39725a8a-f704-4730-a9c6-c3b74fc6c32a",
+  "blocked": "software update requires human interaction",
+  "tasks": [
+    {
+      "id": "39725a8a-f704-4730-a9c6-c3b74fc6c32a",
+      "phase": "running",
+      "reason": "执行中"
+    }
+  ],
+  "attempts": [
+    {
+      "id": "b0884acd-23ad-4802-98cd-80565465f49c",
+      "phase": "running",
+      "reason": "执行中",
+      "dispatch": "submitted",
+      "seenActivity": true,
+      "archived": false
+    }
+  ],
+  "events": [
+    {
+      "seq": 1,
+      "time": 1791452250307,
+      "type": "recover",
+      "message": "启动恢复：观测缺口与旧控制权已失效",
+      "taskId": null,
+      "attemptId": null
+    },
+    {
+      "seq": 2,
+      "time": 1791452250907,
+      "type": "project.create",
+      "message": "创建项目 Real claude",
+      "taskId": null,
+      "attemptId": null
+    },
+    {
+      "seq": 3,
+      "time": 1791452251037,
+      "type": "binding.create",
+      "message": "接入 Real claude，当前只观察",
+      "taskId": null,
+      "attemptId": null
+    },
+    {
+      "seq": 4,
+      "time": 1791452251177,
+      "type": "binding.action",
+      "message": "Real claude：已确认接入，请启用自动调度",
+      "taskId": null,
+      "attemptId": null
+    },
+    {
+      "seq": 5,
+      "time": 1791452251446,
+      "type": "binding.action",
+      "message": "Real claude：自动调度",
+      "taskId": null,
+      "attemptId": null
+    },
+    {
+      "seq": 6,
+      "time": 1791452251558,
+      "type": "task.create",
+      "message": "创建任务 Write one integration-test artifact",
+      "taskId": "39725a8a-f704-4730-a9c6-c3b74fc6c32a",
+      "attemptId": null
+    },
+    {
+      "seq": 7,
+      "time": 1791452251804,
+      "type": "dispatch",
+      "message": "投递意图已持久化",
+      "taskId": "39725a8a-f704-4730-a9c6-c3b74fc6c32a",
+      "attemptId": "b0884acd-23ad-4802-98cd-80565465f49c"
+    },
+    {
+      "seq": 8,
+      "time": 1791452252225,
+      "type": "dispatch.result",
+      "message": "herdr 已确认接收",
+      "taskId": "39725a8a-f704-4730-a9c6-c3b74fc6c32a",
+      "attemptId": "b0884acd-23ad-4802-98cd-80565465f49c"
+    },
+    {
+      "seq": 9,
+      "time": 1791452252577,
+      "type": "agent.observed",
+      "message": "Real claude：unknown",
+      "taskId": "39725a8a-f704-4730-a9c6-c3b74fc6c32a",
+      "attemptId": "b0884acd-23ad-4802-98cd-80565465f49c"
+    },
+    {
+      "seq": 10,
+      "time": 1791452255263,
+      "type": "agent.observed",
+      "message": "Real claude：working",
+      "taskId": "39725a8a-f704-4730-a9c6-c3b74fc6c32a",
+      "attemptId": "b0884acd-23ad-4802-98cd-80565465f49c"
+    }
+  ],
+  "sourceFiles": [
+    {
+      "path": "hello.txt",
+      "size": null
+    },
+    {
+      "path": ".meteor-flow/runs/b0884acd-23ad-4802-98cd-80565465f49c/result.json",
+      "size": null
+    }
+  ],
+  "protectedConfigurationUnchanged": true
+}

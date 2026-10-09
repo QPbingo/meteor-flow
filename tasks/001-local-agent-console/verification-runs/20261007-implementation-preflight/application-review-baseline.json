@@ -1,0 +1,19 @@
+{
+  "head": "618607de5d6b3b22d44258950236273c37bd8079",
+  "files": {
+    "apps/server/src/application/console.test.ts": "e4f8f1791779d46682ec00c351cdd31752cf7cceb5cdca2524ee62d9fde31592",
+    "apps/server/src/application/console.ts": "ee263dadf06a313ea114c5409a9bff7408be24e5207ba1254d19e62a3d3fc1c7",
+    "apps/server/src/application/process.ts": "cd4f3fecff8a7a0c92cab6eb5740fa8561374981b62ede738594cbb4dabc358a",
+    "apps/server/src/cli/main.ts": "2ce89ec6f8ece842885131af351973b735f1d7cd8b0340bc33b5ff8ce507c707",
+    "apps/server/src/http/auth.ts": "0efe8e83f54dddadd86896f94758d074b4a56df4cdf32208672e1b36b2f9bd17",
+    "apps/server/src/http/file-child.ts": "e2b94aeb6ab4796f6d4e4533f1afb9213b0bf1995656108fcf8cfaba474cc3d2",
+    "apps/server/src/http/files.ts": "67c9e3833b468e15f1ca1a60a7ca96c54df88bc4c2625f2df79bcd18519c8728",
+    "apps/server/src/http/server.test.ts": "d180a4259cc8396e442ca07caf14fd002ffdfb007d56ed609eaa7d20c1bb3422",
+    "apps/server/src/http/server.ts": "b52cc5e3a984af6a85c2eb016ba866ea1278603342f488503cc636375a39eca1",
+    "apps/server/src/terminal/bridge.ts": "34aeb2efb8b6bf09a69c8934bb88825aa647955e9d3f39b949b850eb1a38e234",
+    "tests/fixtures/fake-herdr.ts": "8da39a7ba407b36edbb87a98282de20d7335b301b38b7f807d3a3092309d4143",
+    "tests/fixtures/review-server.ts": "b21036263a20d06bb36d615b7b208e6f490db6ab406a43622c2411aaab8a5cc8",
+    "tests/fixtures/terminal-cli.mjs": "84f4ea62d2ae59e9da5c31f3aa526c055d48e44d6766fd6084f4def641ff5f9b",
+    "tests/integration/real-agent.test.ts": "665adb4ac9636c67f78409ccb721c4889c9c22f2c8aa85cf576267c59fae0ff7"
+  }
+}

@@ -1,0 +1,77 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ ❯ packages/posix-fs/test/index.test.ts (38 tests | 2 failed) 757ms
+   ✓ safe file collection > reads nested bytes with SHA-256 and exact bigint identities 4ms
+   ✓ safe file collection > reads and copies empty files at the exact zero-byte quota 13ms
+   ✓ safe file collection > rejects unsafe relative path "../outside" 2ms
+   ✓ safe file collection > rejects unsafe relative path "/etc/passwd" 1ms
+   ✓ safe file collection > rejects unsafe relative path "nested/../result" 1ms
+   ✓ safe file collection > rejects unsafe relative path "nested//result" 1ms
+   ✓ safe file collection > rejects unsafe relative path "./result" 1ms
+   ✓ safe file collection > rejects unsafe relative path "nested/result\u0000suffix" 1ms
+   ✓ safe file collection > rejects unsafe relative path "" 1ms
+   ✓ safe file collection > rejects invalid quota -1 1ms
+   ✓ safe file collection > rejects invalid quota 1.5 1ms
+   ✓ safe file collection > rejects invalid quota null 1ms
+   ✓ safe file collection > rejects invalid quota null 1ms
+   ✓ safe file collection > rejects invalid quota 9007199254740992 1ms
+   ✓ safe file collection > enforces file quota before returning or leaving staging bytes 3ms
+   ✓ safe file collection > rejects leaf and intermediate symlinks, hard links, and directories 4ms
+   ✓ safe file collection > rejects FIFO without a writer and continues serving valid files 5ms
+   ✓ safe file collection > rejects a regular leaf swapped to a writerless FIFO after its nofollow precheck 4ms
+   ✓ safe file collection > rejects an opened parent replaced by FIFO before the first file read 4ms
+   ✓ safe file collection > copies in bounded blocks, preserves hash, and creates a private file  486ms
+   ✓ safe file collection > never follows or deletes an existing destination symlink 2ms
+   ✓ safe file collection > rejects same-size source mutation after reading begins 3ms
+   ✓ safe file collection > rejects growth beyond quota during reading and removes staging 3ms
+   ✓ safe file collection > rejects source deletion after opening and removes staging 2ms
+   ✓ safe file collection > rejects a moved parent replaced by an outside symlink 3ms
+   ✓ safe file collection > rejects replacement of the authorized root while a file is open 2ms
+   ✓ safe file collection > removes only its own staging file on disk failure and allows a later retry 13ms
+   ✓ safe file collection > closes all tracked descriptors after a failed collection 4ms
+   ✓ directory identity and overlap > resolves aliases and detects equality, containment, and distinct prefixes 4ms
+   ✓ directory identity and overlap > creates private attempt directories exclusively and preserves earlier contents 16ms
+   ✓ directory identity and overlap > rejects traversal IDs and symlink internal directories 2ms
+   ✓ directory identity and overlap > rejects an existing regular file or symlink at the attempt name 9ms
+   ✓ directory identity and overlap > rejects moved parents at directory creation and removes only the empty new run 3ms
+   ✓ process locks and recovery identity > holds one inode and makes release idempotent 2ms
+   ✓ process locks and recovery identity > refuses symlink and hardlink lock paths 2ms
+   ✓ process locks and recovery identity > rejects a second process then allows it after explicit release 147ms
+   × process locks and recovery identity > releases on owner crash while its exec descendant is still alive 4ms
+     → listen EPERM: operation not permitted /private/var/folders/zz/x9yvm9fs0wjbmxrh_2hw470w0000gn/T/meteor-posix-test-n7Nn4z/child.sock
+   × process locks and recovery identity > returns stable PID/start evidence and null for nonexistent or invalid PIDs 2ms
+     → .toMatch() expects to receive a string, but got object
+
+ Test Files  1 failed (1)
+      Tests  2 failed | 36 passed (38)
+   Start at  09:41:51
+   Duration  956ms (transform 43ms, setup 0ms, collect 53ms, tests 757ms, environment 0ms, prepare 42ms)
+
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  packages/posix-fs/test/index.test.ts > process locks and recovery identity > releases on owner crash while its exec descendant is still alive
+Error: listen EPERM: operation not permitted /private/var/folders/zz/x9yvm9fs0wjbmxrh_2hw470w0000gn/T/meteor-posix-test-n7Nn4z/child.sock
+ ❯ packages/posix-fs/test/index.test.ts:364:12
+    362|     const socketPath = path.join(temp, 'child.sock');
+    363|     const server = net.createServer();
+    364|     server.listen(socketPath);
+       |            ^
+    365|     await once(server, 'listening');
+    366|     const owner = childLock(lockPath);
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+ FAIL  packages/posix-fs/test/index.test.ts > process locks and recovery identity > returns stable PID/start evidence and null for nonexistent or invalid PIDs
+TypeError: .toMatch() expects to receive a string, but got object
+ ❯ packages/posix-fs/test/index.test.ts:394:22
+    392|   it('returns stable PID/start evidence and null for nonexistent or in…
+    393|     const identity = processIdentity(process.pid);
+    394|     expect(identity).toMatch(new RegExp(`^${process.pid}:`));
+       |                      ^
+    395|     expect(processIdentity(process.pid)).toBe(identity);
+    396|     expect(processIdentity(2_147_483_647)).toBeNull();
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/2]⎯
+

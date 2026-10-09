@@ -1,0 +1,105 @@
+{
+  "checked_at": "2026-10-08T08:39:05.995283+00:00",
+  "candidate_count": 9,
+  "candidate_changes": [],
+  "local_links": [
+    {
+      "target": "backend-review.md",
+      "exists": true
+    },
+    {
+      "target": "storage-review-doctor.log",
+      "exists": true
+    },
+    {
+      "target": "storage-review-version.log",
+      "exists": true
+    },
+    {
+      "target": "storage-review-preview-final.json",
+      "exists": true
+    },
+    {
+      "target": "storage-review-rules-final.json",
+      "exists": true
+    },
+    {
+      "target": "storage-reviewed-files.json",
+      "exists": true
+    },
+    {
+      "target": "storage-review-coverage.json",
+      "exists": true
+    },
+    {
+      "target": "storage-review-tests.log",
+      "exists": true
+    },
+    {
+      "target": "storage-review-test-baseline.json",
+      "exists": true
+    },
+    {
+      "target": "storage-review-test-check.json",
+      "exists": true
+    },
+    {
+      "target": "storage-performance-evidence.json",
+      "exists": true
+    },
+    {
+      "target": "storage-review-findings.json",
+      "exists": true
+    },
+    {
+      "target": "storage-review-closeout.json",
+      "exists": true
+    }
+  ],
+  "files": [
+    {
+      "path": "storage-review.md",
+      "sha256": "ca52dda3500132fb79818fd24ebd397079f33c530345f70e4a9fc61b18dbb60d"
+    },
+    {
+      "path": "storage-reviewed-files.json",
+      "sha256": "cf48753c54b1f8fb3d6f1394e790ae0dce0c25568cfce088080fee786edaa06a"
+    },
+    {
+      "path": "storage-review-coverage.json",
+      "sha256": "db050d488836ba3eaf00b00f30b2e024e2f5f9efe69f376e2828e8ac39eda185"
+    },
+    {
+      "path": "storage-review-findings.json",
+      "sha256": "0ce4e99bb874cb59dc50c98cfb121744ff8fb1cf8fb460c00787714e99ab280d"
+    },
+    {
+      "path": "storage-review-closeout.json",
+      "sha256": "98e0f83dee77cc55133542d28c96806186d34c625589a99b71f605805652e7b0"
+    },
+    {
+      "path": "storage-review-preview-final.json",
+      "sha256": "80e47797a350d9ac268b17e3b4e0ce2ca6212bfa7bfb50259e5b3f762c9d2964"
+    },
+    {
+      "path": "storage-review-rules-final.json",
+      "sha256": "2131594df093eecb6359da63403f92ac921e09c4a719e87e6789c5b03f2bc206"
+    },
+    {
+      "path": "storage-review-tests.log",
+      "sha256": "c4fff0d20481bc459c4c476a42adb301740096a8e137b0ea9c7ff9a6d0e226d1"
+    },
+    {
+      "path": "storage-review-test-baseline.json",
+      "sha256": "151b1f27d9ea618028b3e12ffa837b8a7aad71a86f75595b1ffd7a933bb8652e"
+    },
+    {
+      "path": "storage-review-test-check.json",
+      "sha256": "5af54c0bb86cda24186dc9617ef46bf8bffd2050be45230c0f986308a65d5b09"
+    },
+    {
+      "path": "storage-performance-evidence.json",
+      "sha256": "ed8cb2c8791c0d89b333015905c762d492db8f1d545cf097a595be37f950e2b9"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > quarantines a candidate if cancel changes while atomic rename is pending 475ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > quarantines a candidate if close changes while atomic rename is pending 380ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > quarantines a candidate if storage changes while atomic rename is pending 384ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > does not publish if cancel changes at the post-verification boundary 378ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > does not publish if close changes at the post-verification boundary 382ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > does not publish if storage changes at the post-verification boundary 395ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > reclaims a previously orphaned slot only after observing the real child exit 177ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > archives complete artifacts, preserves source ownership and freezes independent downstream copies (V09/V17) 519ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > rejects traversal without publishing a partial archive (V09/V13/V22) 272ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > rejects symlink without publishing a partial archive (V09/V13/V22) 281ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > rejects fifo without publishing a partial archive (V09/V13/V22) 265ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > rejects oversized without publishing a partial archive (V09/V13/V22) 275ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > rejects missing-required without publishing a partial archive (V09/V13/V22) 288ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > rejects old-attempt without publishing a partial archive (V09/V13/V22) 286ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > waits for process exit and channel closure after a successful candidate message 179ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > kills and reaps a timed-out writer even after it sent a success candidate 1594ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > reserves capacity for an unidentified orphan instead of spawning another writer 110ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > reserves capacity atomically when two preparations arrive together 124ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > releases an old attempt only after its own process exits even when its terminal now contains a replacement 228ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > requires fresh observations and explicit manual evidence to resolve an unknown start without any external side effect 145ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > starts on the session accepted by the command queue when a session switch finishes first 128ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > keeps a conflicting result pending across idle observations and restart until an explicit manual conclusion 637ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > allows explicitly confirmed existing agents even without managed interactive readiness 187ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > a manual switch after preparation but before final dispatch prevents all prompt input 190ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > accepts cancel while prompt acknowledgement is pending, sends one interrupt and retains occupancy (V03/V11/V12) 246ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > never retries a prompt with a lost acknowledgement, including after service restart (V04/V05/V24) 259ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > persists a startup intent once and preserves an unknown startup without repeating it (V03/V06) 130ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > runs an independent task behind an unmet dependency on another binding (V14) 305ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > rejects confirming an agent whose work directory overlaps private service data (V21/V22) 79ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > rejects extra output roots overlapping private service data (V22) 78ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > does not start an external agent after storage fails immediately after the durable startup intent 77ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > does not send an unrecorded emergency interrupt after storage recovers during identity observation 146ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > does not dispatch when a real work directory refuses frozen-input writes (V25) 177ms
+ ✓ apps/server/src/storage/store.test.ts > dedicated real database writer > publishes exactly the committed database state across updates, replays, rejected writes and reopening 141ms
+ ✓ apps/server/src/storage/store.test.ts > dedicated real database writer > does not create a writer when close wins the asynchronous opening boundary 1ms
+ ✓ apps/server/src/storage/store.test.ts > dedicated real database writer > serializes concurrent identical operations to one persisted project (V03) 66ms
+ ✓ apps/server/src/storage/store.test.ts > dedicated real database writer > keeps the writer healthy after a domain conflict 72ms
+ ✓ apps/server/src/storage/store.test.ts > dedicated real database writer > recovers a committed-but-unacknowledged transaction without creating a second writer or replaying work (V04/V24) 684ms
+ ✓ apps/server/src/storage/store.test.ts > fails closed on a real SQLITE_FULL commit failure without publishing or recording the operation (V25) 128ms
+ ✓ apps/server/src/storage/database.test.ts > real SQLite transactional repository > persists one operation and one task for duplicate browser submissions (V03) 11ms
+ ✓ apps/server/src/storage/database.test.ts > real SQLite transactional repository > rolls back state, events and operation record when any FK write fails 5ms
+ ✓ apps/server/src/storage/database.test.ts > real SQLite transactional repository > rejects a cycle without mutating task revision, dependencies or timeline (V16) 4ms
+ ✓ apps/server/src/storage/database.test.ts > real SQLite transactional repository > stores a dispatch intent once and denies another active attempt on the binding 5ms
+ ✓ apps/server/src/storage/database.test.ts > real SQLite transactional repository > backs up an existing v0 database before migration and refuses a future version 6ms
+
+ Test Files  4 passed (4)
+      Tests  44 passed (44)
+   Start at  16:26:10
+   Duration  11.84s (transform 138ms, setup 0ms, collect 410ms, tests 10.90s, environment 0ms, prepare 146ms)
+

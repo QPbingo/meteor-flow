@@ -1,0 +1,15 @@
+{
+  "kind": "final-document-check-only",
+  "checkedFiles": [
+    "AGENTS.md",
+    "README.md",
+    "tasks/001-local-agent-console/technical-design.md",
+    "tasks/001-local-agent-console/implementation-plan.md",
+    "tasks/001-local-agent-console/herdr-compatibility.md",
+    "tasks/001-local-agent-console/technical-review.md",
+    "tasks/001-local-agent-console/verification-runs/20261006-node-design/skill-readiness.md"
+  ],
+  "localLinks": 41,
+  "acceptanceCases": 29,
+  "errors": []
+}

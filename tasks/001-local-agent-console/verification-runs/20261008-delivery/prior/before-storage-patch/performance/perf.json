@@ -1,0 +1,2220 @@
+{
+  "kind": "isolated-performance-test",
+  "diagnostic": null,
+  "workerTelemetry": false,
+  "date": "2026-10-08T08:15:35.140Z",
+  "node": "v24.21.0",
+  "platform": "darwin",
+  "arch": "arm64",
+  "externalBoundary": "FakeHerdr; no model or user session",
+  "status": "failed",
+  "historyTasks": 1000,
+  "targets": {
+    "listP95Ms": 200,
+    "operationP95Ms": 500,
+    "streams": 2,
+    "taskWrites": true,
+    "bytesPerSecondPerStream": 1048576,
+    "durationMs": 30000
+  },
+  "memoryMethod": {
+    "scope": "service process including SQLite worker; excludes clients and CLI children",
+    "warmupSeconds": 10,
+    "maxPostWarmupSlopeMiBPerSecond": 1,
+    "maxRetainedGrowthMiB": 32,
+    "windows": [
+      "10–30 seconds"
+    ],
+    "acceptanceWindow": "10–30 seconds",
+    "proofLimit": "finite observation; not an infinite-duration memory-leak proof",
+    "workloadStartServerElapsedMs": 384.6044921875
+  },
+  "list": {
+    "samples": [
+      2.5672080000000506,
+      1.1626249999999345,
+      0.9090419999999995,
+      1.0774169999999685,
+      1.6215419999999767,
+      2.3968750000000227,
+      0.9141250000000127,
+      1.114417000000003,
+      1.1219160000000556,
+      0.7121670000000222,
+      0.4808340000000726,
+      0.5250829999999951,
+      0.6725410000000238,
+      0.7148750000000064,
+      0.7370829999999842,
+      0.5057920000000422,
+      0.6216249999999945,
+      0.5487500000000409,
+      0.4257920000000013,
+      0.39770899999996345,
+      0.39666699999997945,
+      0.5160000000000764,
+      0.5035420000000386,
+      0.4661670000000413,
+      0.45966699999996763,
+      0.4135840000000144,
+      0.49845799999991414,
+      0.6520829999999478,
+      0.6681250000000318,
+      0.6038750000000164,
+      0.6058750000000828,
+      0.5116249999999809,
+      0.6238749999999982,
+      0.7375419999999622,
+      0.6661669999999731,
+      0.5365840000000617,
+      0.47695899999996527,
+      0.5623339999999644,
+      0.6020419999999831,
+      0.644916999999964,
+      0.6263750000000528,
+      0.5962920000000622,
+      0.5341670000000249,
+      0.5112089999998943,
+      0.5972910000000411,
+      4.141375000000039,
+      0.6505829999999833,
+      1.17025000000001,
+      0.6571250000000646,
+      0.5104999999999791,
+      0.48979099999996834,
+      0.49737500000003365,
+      0.45637499999998,
+      0.4355000000000473,
+      0.4426250000000209,
+      0.5132919999999785,
+      0.7659579999999551,
+      0.5361669999999776,
+      0.41962499999999636,
+      0.4147499999999127,
+      0.41933400000004895,
+      0.4395000000000664,
+      0.4930419999999458,
+      0.4654160000000047,
+      0.421875,
+      0.5570000000000164,
+      0.6409169999999449,
+      0.5667499999999563,
+      0.5323750000000018,
+      0.5420829999999341,
+      0.6372920000000022,
+      0.6288749999999936,
+      0.5022500000000036,
+      0.4576250000000073,
+      0.4367089999999507,
+      0.44479200000000674,
+      0.4181670000000395,
+      0.3786250000000564,
+      0.4343749999999318,
+      0.4123329999999896,
+      0.3739579999999023,
+      0.41449999999997544,
+      1.1462080000000014,
+      0.5333329999999705,
+      0.4618749999999636,
+      0.41733400000009624,
+      0.39941699999997127,
+      0.41708299999993415,
+      0.3692909999999756,
+      0.3795839999999089,
+      0.4129169999999931,
+      0.37495899999998983,
+      0.3524170000000595,
+      0.3406250000000455,
+      0.376041999999984,
+      0.43145799999990686,
+      0.39220800000009604,
+      0.45562500000005457,
+      0.46583399999997255,
+      0.5104159999999638
+    ],
+    "p95Ms": 1.1626249999999345,
+    "maxMs": 4.141375000000039
+  },
+  "operations": {
+    "samples": [
+      {
+        "kind": "create",
+        "ms": 15.071457999999893,
+        "taskId": "89349e00-3a6d-4a4f-9e82-fa45284043c4"
+      },
+      {
+        "kind": "cancel",
+        "ms": 6.129374999999982,
+        "taskId": "89349e00-3a6d-4a4f-9e82-fa45284043c4"
+      },
+      {
+        "kind": "create",
+        "ms": 33.96329200000014,
+        "taskId": "344b5fce-2f22-477d-8f72-cdb36aff6bf1"
+      },
+      {
+        "kind": "cancel",
+        "ms": 12.593249999999898,
+        "taskId": "344b5fce-2f22-477d-8f72-cdb36aff6bf1"
+      },
+      {
+        "kind": "create",
+        "ms": 28.400333000000046,
+        "taskId": "83d61ef1-45ca-4620-801b-833407dccaf1"
+      },
+      {
+        "kind": "cancel",
+        "ms": 10.320541999999932,
+        "taskId": "83d61ef1-45ca-4620-801b-833407dccaf1"
+      },
+      {
+        "kind": "create",
+        "ms": 20.68270799999982,
+        "taskId": "3320b92d-8b60-41c2-8548-95b97cf2f6fe"
+      },
+      {
+        "kind": "cancel",
+        "ms": 12.292667000000165,
+        "taskId": "3320b92d-8b60-41c2-8548-95b97cf2f6fe"
+      },
+      {
+        "kind": "create",
+        "ms": 17.385416000000077,
+        "taskId": "4fac9a6f-a36e-41c1-895b-76d41478522e"
+      },
+      {
+        "kind": "cancel",
+        "ms": 13.404415999999856,
+        "taskId": "4fac9a6f-a36e-41c1-895b-76d41478522e"
+      },
+      {
+        "kind": "create",
+        "ms": 22.761083999999755,
+        "taskId": "f16bdb24-343e-43fc-9133-fdd1915c7a73"
+      },
+      {
+        "kind": "cancel",
+        "ms": 11.614666999999827,
+        "taskId": "f16bdb24-343e-43fc-9133-fdd1915c7a73"
+      },
+      {
+        "kind": "create",
+        "ms": 20.58016600000019,
+        "taskId": "13fca9f2-b3cb-4ad9-b5bd-d908d3a77c47"
+      },
+      {
+        "kind": "cancel",
+        "ms": 11.269917000000078,
+        "taskId": "13fca9f2-b3cb-4ad9-b5bd-d908d3a77c47"
+      },
+      {
+        "kind": "create",
+        "ms": 11.192375000000084,
+        "taskId": "0bc185bf-c610-4c6d-a4df-4f472860faea"
+      },
+      {
+        "kind": "cancel",
+        "ms": 8.603999999999814,
+        "taskId": "0bc185bf-c610-4c6d-a4df-4f472860faea"
+      },
+      {
+        "kind": "create",
+        "ms": 15.690082999999959,
+        "taskId": "512455d7-b0b0-48eb-9aba-c441fd956416"
+      },
+      {
+        "kind": "cancel",
+        "ms": 11.155833000000257,
+        "taskId": "512455d7-b0b0-48eb-9aba-c441fd956416"
+      },
+      {
+        "kind": "create",
+        "ms": 16.54183299999977,
+        "taskId": "8c1069a8-8a52-44f7-8615-6415203597db"
+      },
+      {
+        "kind": "cancel",
+        "ms": 12.080459000000246,
+        "taskId": "8c1069a8-8a52-44f7-8615-6415203597db"
+      },
+      {
+        "kind": "create",
+        "ms": 10.55133399999977,
+        "taskId": "bfaabdb0-ed08-4001-bf40-dee2d766bc3d"
+      },
+      {
+        "kind": "cancel",
+        "ms": 6.7840000000001055,
+        "taskId": "bfaabdb0-ed08-4001-bf40-dee2d766bc3d"
+      },
+      {
+        "kind": "create",
+        "ms": 13.673999999999978,
+        "taskId": "cf3e29e4-e989-4e49-ad56-d6c0788c59e3"
+      },
+      {
+        "kind": "cancel",
+        "ms": 10.409208000000035,
+        "taskId": "cf3e29e4-e989-4e49-ad56-d6c0788c59e3"
+      },
+      {
+        "kind": "create",
+        "ms": 23.664958999999726,
+        "taskId": "3dcd7611-835a-4027-9536-1d192d706628"
+      },
+      {
+        "kind": "cancel",
+        "ms": 12.296666000000187,
+        "taskId": "3dcd7611-835a-4027-9536-1d192d706628"
+      },
+      {
+        "kind": "create",
+        "ms": 13.484375,
+        "taskId": "cab84551-6ce4-4468-bae2-4d842326097d"
+      },
+      {
+        "kind": "cancel",
+        "ms": 9.790375000000495,
+        "taskId": "cab84551-6ce4-4468-bae2-4d842326097d"
+      },
+      {
+        "kind": "create",
+        "ms": 15.682749999999942,
+        "taskId": "156a3926-ec79-47f9-a45a-f24181eb968e"
+      },
+      {
+        "kind": "cancel",
+        "ms": 10.034208000000035,
+        "taskId": "156a3926-ec79-47f9-a45a-f24181eb968e"
+      },
+      {
+        "kind": "create",
+        "ms": 18.194375000000036,
+        "taskId": "221b4447-0fd1-4809-9cef-4b120887281d"
+      },
+      {
+        "kind": "cancel",
+        "ms": 10.71704199999931,
+        "taskId": "221b4447-0fd1-4809-9cef-4b120887281d"
+      },
+      {
+        "kind": "create",
+        "ms": 11.286832999999206,
+        "taskId": "82dfe6fd-2c0a-44ca-af8d-a5c6f4cd365f"
+      },
+      {
+        "kind": "cancel",
+        "ms": 9.522291000000223,
+        "taskId": "82dfe6fd-2c0a-44ca-af8d-a5c6f4cd365f"
+      },
+      {
+        "kind": "create",
+        "ms": 22.590916000000107,
+        "taskId": "65e8f341-42bd-4d69-bf03-f3a4de77fe31"
+      },
+      {
+        "kind": "cancel",
+        "ms": 12.381583000000319,
+        "taskId": "65e8f341-42bd-4d69-bf03-f3a4de77fe31"
+      },
+      {
+        "kind": "create",
+        "ms": 12.661583000000064,
+        "taskId": "1fd2214c-e33e-4ed0-9d62-ad498f76191e"
+      },
+      {
+        "kind": "cancel",
+        "ms": 11.51679200000035,
+        "taskId": "1fd2214c-e33e-4ed0-9d62-ad498f76191e"
+      },
+      {
+        "kind": "create",
+        "ms": 16.308665999999903,
+        "taskId": "0834261e-792d-4490-9767-fb2edf2a6c2c"
+      },
+      {
+        "kind": "cancel",
+        "ms": 11.755833000000166,
+        "taskId": "0834261e-792d-4490-9767-fb2edf2a6c2c"
+      },
+      {
+        "kind": "create",
+        "ms": 13.999667000000045,
+        "taskId": "2f51f727-d590-410d-bfe8-d818465d90bd"
+      },
+      {
+        "kind": "cancel",
+        "ms": 11.250291999999718,
+        "taskId": "2f51f727-d590-410d-bfe8-d818465d90bd"
+      },
+      {
+        "kind": "create",
+        "ms": 21.181415999999444,
+        "taskId": "7e3a22a8-5a32-4ed4-9fe8-148fe6c1acca"
+      },
+      {
+        "kind": "cancel",
+        "ms": 12.274499999999534,
+        "taskId": "7e3a22a8-5a32-4ed4-9fe8-148fe6c1acca"
+      },
+      {
+        "kind": "create",
+        "ms": 19.045500000000175,
+        "taskId": "4decc9ef-3684-4c14-9464-12476e5ebf3d"
+      },
+      {
+        "kind": "cancel",
+        "ms": 12.616500000000087,
+        "taskId": "4decc9ef-3684-4c14-9464-12476e5ebf3d"
+      },
+      {
+        "kind": "create",
+        "ms": 20.186957999999322,
+        "taskId": "de26d9fb-7aa4-4156-bbee-fe9393e01408"
+      },
+      {
+        "kind": "cancel",
+        "ms": 15.998874999999316,
+        "taskId": "de26d9fb-7aa4-4156-bbee-fe9393e01408"
+      },
+      {
+        "kind": "create",
+        "ms": 31.26091599999927,
+        "taskId": "91558a03-2a1d-425f-b08c-03236d0a5900"
+      },
+      {
+        "kind": "cancel",
+        "ms": 8.022082999999839,
+        "taskId": "91558a03-2a1d-425f-b08c-03236d0a5900"
+      },
+      {
+        "kind": "create",
+        "ms": 11.233791000000565,
+        "taskId": "332653c8-f19a-4b83-942a-e470190ca477"
+      },
+      {
+        "kind": "cancel",
+        "ms": 7.5495000000009895,
+        "taskId": "332653c8-f19a-4b83-942a-e470190ca477"
+      },
+      {
+        "kind": "create",
+        "ms": 29.60008299999936,
+        "taskId": "e5aa1b3d-7fe0-4eaa-9bd8-ac7ab65b0727"
+      },
+      {
+        "kind": "cancel",
+        "ms": 10.775249999998778,
+        "taskId": "e5aa1b3d-7fe0-4eaa-9bd8-ac7ab65b0727"
+      },
+      {
+        "kind": "create",
+        "ms": 15.497792000000118,
+        "taskId": "74206fe2-19dc-4859-801f-5894b41e19f1"
+      },
+      {
+        "kind": "cancel",
+        "ms": 11.335583000000042,
+        "taskId": "74206fe2-19dc-4859-801f-5894b41e19f1"
+      },
+      {
+        "kind": "create",
+        "ms": 23.876916999999594,
+        "taskId": "6efad471-ad66-4255-8d88-ceda91a291bd"
+      },
+      {
+        "kind": "cancel",
+        "ms": 6.905000000000655,
+        "taskId": "6efad471-ad66-4255-8d88-ceda91a291bd"
+      },
+      {
+        "kind": "create",
+        "ms": 25.317250000000058,
+        "taskId": "dbd99200-5a4d-48b3-ab01-7c971dc476ad"
+      },
+      {
+        "kind": "cancel",
+        "ms": 12.26995800000077,
+        "taskId": "dbd99200-5a4d-48b3-ab01-7c971dc476ad"
+      },
+      {
+        "kind": "create",
+        "ms": 13.80450000000019,
+        "taskId": "57c10f25-148f-4d13-b9cb-3174d5920a5f"
+      },
+      {
+        "kind": "cancel",
+        "ms": 9.784958000000188,
+        "taskId": "57c10f25-148f-4d13-b9cb-3174d5920a5f"
+      },
+      {
+        "kind": "create",
+        "ms": 14.391125000000102,
+        "taskId": "5d79e590-3067-4a30-bf46-95745a0be23b"
+      },
+      {
+        "kind": "cancel",
+        "ms": 11.87933300000077,
+        "taskId": "5d79e590-3067-4a30-bf46-95745a0be23b"
+      },
+      {
+        "kind": "create",
+        "ms": 9.763290999999299,
+        "taskId": "54b6bd13-18b7-4d5f-b141-a8362ed7f8c5"
+      },
+      {
+        "kind": "cancel",
+        "ms": 15.371375000000626,
+        "taskId": "54b6bd13-18b7-4d5f-b141-a8362ed7f8c5"
+      },
+      {
+        "kind": "create",
+        "ms": 10.784292000000278,
+        "taskId": "fa7b2a95-251d-4993-9236-a83b5f12e70d"
+      },
+      {
+        "kind": "cancel",
+        "ms": 9.265833000001294,
+        "taskId": "fa7b2a95-251d-4993-9236-a83b5f12e70d"
+      },
+      {
+        "kind": "create",
+        "ms": 14.924541000000318,
+        "taskId": "bd1a0105-3dca-47ac-aad2-0e7e9975d12f"
+      },
+      {
+        "kind": "cancel",
+        "ms": 13.574750000001586,
+        "taskId": "bd1a0105-3dca-47ac-aad2-0e7e9975d12f"
+      },
+      {
+        "kind": "create",
+        "ms": 8.755999999999403,
+        "taskId": "ee295d8f-9e88-4cae-8419-3dae460e9924"
+      },
+      {
+        "kind": "cancel",
+        "ms": 7.2213749999991705,
+        "taskId": "ee295d8f-9e88-4cae-8419-3dae460e9924"
+      },
+      {
+        "kind": "create",
+        "ms": 15.132958000000144,
+        "taskId": "66e0aa8b-ece2-4a03-8a66-899ea8caf3ca"
+      },
+      {
+        "kind": "cancel",
+        "ms": 12.91254200000003,
+        "taskId": "66e0aa8b-ece2-4a03-8a66-899ea8caf3ca"
+      },
+      {
+        "kind": "create",
+        "ms": 27.13654200000019,
+        "taskId": "8842d964-9f5f-416a-909e-aad217f538d7"
+      },
+      {
+        "kind": "cancel",
+        "ms": 12.987375000000611,
+        "taskId": "8842d964-9f5f-416a-909e-aad217f538d7"
+      },
+      {
+        "kind": "create",
+        "ms": 40.75879200000054,
+        "taskId": "e7ce85e5-a9d2-44b1-bc87-6961dceb4436"
+      },
+      {
+        "kind": "cancel",
+        "ms": 11.089041999999608,
+        "taskId": "e7ce85e5-a9d2-44b1-bc87-6961dceb4436"
+      },
+      {
+        "kind": "create",
+        "ms": 27.874250000000757,
+        "taskId": "0ce8add3-653d-47b0-96b6-36d7d60e4921"
+      },
+      {
+        "kind": "cancel",
+        "ms": 15.011082999999417,
+        "taskId": "0ce8add3-653d-47b0-96b6-36d7d60e4921"
+      },
+      {
+        "kind": "create",
+        "ms": 27.520249999999578,
+        "taskId": "db17acd3-e045-4f8d-9f1a-82e4c396f043"
+      },
+      {
+        "kind": "cancel",
+        "ms": 14.220291999999972,
+        "taskId": "db17acd3-e045-4f8d-9f1a-82e4c396f043"
+      },
+      {
+        "kind": "create",
+        "ms": 15.212666999999783,
+        "taskId": "c37600e8-c697-4544-a8a4-d59e3e23a43a"
+      },
+      {
+        "kind": "cancel",
+        "ms": 11.814041999999972,
+        "taskId": "c37600e8-c697-4544-a8a4-d59e3e23a43a"
+      },
+      {
+        "kind": "create",
+        "ms": 31.65312499999891,
+        "taskId": "1af4f04a-1f19-4325-8cd3-5effb8969639"
+      },
+      {
+        "kind": "cancel",
+        "ms": 15.431416000001263,
+        "taskId": "1af4f04a-1f19-4325-8cd3-5effb8969639"
+      },
+      {
+        "kind": "create",
+        "ms": 31.86595800000032,
+        "taskId": "dc73cc15-b7d2-4332-abb4-2c098020ed0a"
+      },
+      {
+        "kind": "cancel",
+        "ms": 14.683250000000044,
+        "taskId": "dc73cc15-b7d2-4332-abb4-2c098020ed0a"
+      },
+      {
+        "kind": "create",
+        "ms": 19.46612500000083,
+        "taskId": "81a55ed2-0169-4d77-b65d-2d0cd2a0ec26"
+      },
+      {
+        "kind": "cancel",
+        "ms": 11.93108299999949,
+        "taskId": "81a55ed2-0169-4d77-b65d-2d0cd2a0ec26"
+      },
+      {
+        "kind": "create",
+        "ms": 20.317790999999488,
+        "taskId": "b7e68c89-7ddc-4a8b-99a1-e3454927490f"
+      },
+      {
+        "kind": "cancel",
+        "ms": 11.93554199999926,
+        "taskId": "b7e68c89-7ddc-4a8b-99a1-e3454927490f"
+      },
+      {
+        "kind": "create",
+        "ms": 13.990750000000844,
+        "taskId": "c108c852-f855-46ea-998c-b770ae9119eb"
+      },
+      {
+        "kind": "cancel",
+        "ms": 10.238874999999098,
+        "taskId": "c108c852-f855-46ea-998c-b770ae9119eb"
+      },
+      {
+        "kind": "create",
+        "ms": 37.10212500000125,
+        "taskId": "d07600e0-af1a-4841-832f-7cbbfea3fbb6"
+      },
+      {
+        "kind": "cancel",
+        "ms": 14.418875000001208,
+        "taskId": "d07600e0-af1a-4841-832f-7cbbfea3fbb6"
+      },
+      {
+        "kind": "create",
+        "ms": 14.757125000000087,
+        "taskId": "82aad45b-2e9a-4c55-9f57-683af467f3f7"
+      },
+      {
+        "kind": "cancel",
+        "ms": 12.422458000000915,
+        "taskId": "82aad45b-2e9a-4c55-9f57-683af467f3f7"
+      },
+      {
+        "kind": "create",
+        "ms": 20.539083000001483,
+        "taskId": "40d96d69-5821-4b3c-bfca-ce65dea81b2c"
+      },
+      {
+        "kind": "cancel",
+        "ms": 10.376249999999345,
+        "taskId": "40d96d69-5821-4b3c-bfca-ce65dea81b2c"
+      },
+      {
+        "kind": "create",
+        "ms": 30.804291000000376,
+        "taskId": "5f54256b-cb33-442f-9c62-1833dff55aee"
+      },
+      {
+        "kind": "cancel",
+        "ms": 11.796958000000814,
+        "taskId": "5f54256b-cb33-442f-9c62-1833dff55aee"
+      },
+      {
+        "kind": "create",
+        "ms": 10.645291999999245,
+        "taskId": "5041234b-538f-4f1c-a1ff-4eba0a6edeb8"
+      },
+      {
+        "kind": "cancel",
+        "ms": 10.053874999999607,
+        "taskId": "5041234b-538f-4f1c-a1ff-4eba0a6edeb8"
+      },
+      {
+        "kind": "create",
+        "ms": 26.22179199999846,
+        "taskId": "59573a04-67df-42ef-9c51-b76adc65be2a"
+      },
+      {
+        "kind": "cancel",
+        "ms": 7.77441700000054,
+        "taskId": "59573a04-67df-42ef-9c51-b76adc65be2a"
+      },
+      {
+        "kind": "create",
+        "ms": 16.91466599999876,
+        "taskId": "1709863a-bedf-4d29-9361-6b13b14de1f5"
+      },
+      {
+        "kind": "cancel",
+        "ms": 9.552625000000262,
+        "taskId": "1709863a-bedf-4d29-9361-6b13b14de1f5"
+      },
+      {
+        "kind": "create",
+        "ms": 22.483000000000175,
+        "taskId": "f3a7bf3c-d30b-493a-85b9-817992170512"
+      },
+      {
+        "kind": "cancel",
+        "ms": 14.619000000002416,
+        "taskId": "f3a7bf3c-d30b-493a-85b9-817992170512"
+      },
+      {
+        "kind": "create",
+        "ms": 21.169792000000598,
+        "taskId": "f1befbe5-09bd-4586-b3e2-5cca076ecb39"
+      },
+      {
+        "kind": "cancel",
+        "ms": 12.676791999998386,
+        "taskId": "f1befbe5-09bd-4586-b3e2-5cca076ecb39"
+      },
+      {
+        "kind": "create",
+        "ms": 31.843959000001632,
+        "taskId": "efbb9631-476e-4c7e-a736-b464c994705f"
+      },
+      {
+        "kind": "cancel",
+        "ms": 12.092540999998164,
+        "taskId": "efbb9631-476e-4c7e-a736-b464c994705f"
+      },
+      {
+        "kind": "create",
+        "ms": 15.166333000001032,
+        "taskId": "c1b901ae-2024-445f-9714-c0b0145e3ac9"
+      },
+      {
+        "kind": "cancel",
+        "ms": 13.747791999998299,
+        "taskId": "c1b901ae-2024-445f-9714-c0b0145e3ac9"
+      },
+      {
+        "kind": "create",
+        "ms": 24.613249999998516,
+        "taskId": "521a6d9c-c0eb-486a-afac-7b172c887e15"
+      },
+      {
+        "kind": "cancel",
+        "ms": 13.215333999996801,
+        "taskId": "521a6d9c-c0eb-486a-afac-7b172c887e15"
+      },
+      {
+        "kind": "create",
+        "ms": 20.167499999999563,
+        "taskId": "d249d09d-ff1d-44cf-b11a-e29414409fc3"
+      },
+      {
+        "kind": "cancel",
+        "ms": 14.791917000002286,
+        "taskId": "d249d09d-ff1d-44cf-b11a-e29414409fc3"
+      },
+      {
+        "kind": "create",
+        "ms": 9.91241699999955,
+        "taskId": "d23f5f81-ffe1-45e6-a818-d2503b24d692"
+      },
+      {
+        "kind": "cancel",
+        "ms": 16.680625000000873,
+        "taskId": "d23f5f81-ffe1-45e6-a818-d2503b24d692"
+      },
+      {
+        "kind": "create",
+        "ms": 9.688375000001543,
+        "taskId": "1b6cf32d-6c4c-4b7a-9ea4-ef0b80e3b2c3"
+      },
+      {
+        "kind": "cancel",
+        "ms": 10.388458999997965,
+        "taskId": "1b6cf32d-6c4c-4b7a-9ea4-ef0b80e3b2c3"
+      },
+      {
+        "kind": "create",
+        "ms": 15.61383399999977,
+        "taskId": "373cd1e8-edd3-4c5d-8fd4-3650d0950dad"
+      },
+      {
+        "kind": "cancel",
+        "ms": 11.803166999998211,
+        "taskId": "373cd1e8-edd3-4c5d-8fd4-3650d0950dad"
+      },
+      {
+        "kind": "create",
+        "ms": 23.102624999999534,
+        "taskId": "a8bfadf5-c8e2-4439-ad12-130a8996b6a2"
+      },
+      {
+        "kind": "cancel",
+        "ms": 9.176290999999765,
+        "taskId": "a8bfadf5-c8e2-4439-ad12-130a8996b6a2"
+      },
+      {
+        "kind": "create",
+        "ms": 22.72991700000057,
+        "taskId": "92813101-64af-469c-b4a5-59d877e06fac"
+      },
+      {
+        "kind": "cancel",
+        "ms": 12.61212499999965,
+        "taskId": "92813101-64af-469c-b4a5-59d877e06fac"
+      },
+      {
+        "kind": "create",
+        "ms": 21.937834000000294,
+        "taskId": "071ebeb6-d187-407e-96e7-de6bacd47543"
+      },
+      {
+        "kind": "cancel",
+        "ms": 14.259459000000788,
+        "taskId": "071ebeb6-d187-407e-96e7-de6bacd47543"
+      },
+      {
+        "kind": "create",
+        "ms": 19.75075000000288,
+        "taskId": "ad3df906-d63d-4a27-953f-4e1ec27ce5f1"
+      },
+      {
+        "kind": "cancel",
+        "ms": 12.879624999997759,
+        "taskId": "ad3df906-d63d-4a27-953f-4e1ec27ce5f1"
+      },
+      {
+        "kind": "create",
+        "ms": 30.81366699999853,
+        "taskId": "74187f78-195c-4c5e-b45d-12a986836b89"
+      },
+      {
+        "kind": "cancel",
+        "ms": 18.41649999999936,
+        "taskId": "74187f78-195c-4c5e-b45d-12a986836b89"
+      },
+      {
+        "kind": "create",
+        "ms": 34.688333000001876,
+        "taskId": "11fb0406-7191-4117-b220-f09a7f6d5fa5"
+      },
+      {
+        "kind": "cancel",
+        "ms": 15.006875000002765,
+        "taskId": "11fb0406-7191-4117-b220-f09a7f6d5fa5"
+      },
+      {
+        "kind": "create",
+        "ms": 17.255167000002984,
+        "taskId": "ecd7a3d8-7d97-4cd5-989e-db1e5af06dc7"
+      },
+      {
+        "kind": "cancel",
+        "ms": 11.781416999998328,
+        "taskId": "ecd7a3d8-7d97-4cd5-989e-db1e5af06dc7"
+      },
+      {
+        "kind": "create",
+        "ms": 28.102833000000828,
+        "taskId": "ab0a8177-2cab-453f-9b62-e684aec1f80f"
+      },
+      {
+        "kind": "cancel",
+        "ms": 15.898582999998325,
+        "taskId": "ab0a8177-2cab-453f-9b62-e684aec1f80f"
+      },
+      {
+        "kind": "create",
+        "ms": 16.04950000000099,
+        "taskId": "c0b40757-2b96-4fa6-b1fa-02d575f0e718"
+      },
+      {
+        "kind": "cancel",
+        "ms": 11.685915999998542,
+        "taskId": "c0b40757-2b96-4fa6-b1fa-02d575f0e718"
+      },
+      {
+        "kind": "create",
+        "ms": 29.67883300000176,
+        "taskId": "ccb76621-d819-4f43-a857-bd0e7cfbcdc1"
+      },
+      {
+        "kind": "cancel",
+        "ms": 14.212040999998862,
+        "taskId": "ccb76621-d819-4f43-a857-bd0e7cfbcdc1"
+      },
+      {
+        "kind": "create",
+        "ms": 22.818583000000217,
+        "taskId": "9711865e-dc41-424c-9fde-2aabd220ff2a"
+      },
+      {
+        "kind": "cancel",
+        "ms": 9.814916999999696,
+        "taskId": "9711865e-dc41-424c-9fde-2aabd220ff2a"
+      },
+      {
+        "kind": "create",
+        "ms": 18.586332999999286,
+        "taskId": "58ac9b87-b1c7-4214-a7ec-13afa9775d20"
+      },
+      {
+        "kind": "cancel",
+        "ms": 14.59454199999891,
+        "taskId": "58ac9b87-b1c7-4214-a7ec-13afa9775d20"
+      },
+      {
+        "kind": "create",
+        "ms": 23.980083000002196,
+        "taskId": "2af7eadf-bb71-4f53-a9a2-55d9f51aa54e"
+      },
+      {
+        "kind": "cancel",
+        "ms": 12.988375000000815,
+        "taskId": "2af7eadf-bb71-4f53-a9a2-55d9f51aa54e"
+      },
+      {
+        "kind": "create",
+        "ms": 14.87670799999978,
+        "taskId": "bf45fef5-5fad-45b3-8b0f-c0c7d5d675bf"
+      },
+      {
+        "kind": "cancel",
+        "ms": 12.327291000001424,
+        "taskId": "bf45fef5-5fad-45b3-8b0f-c0c7d5d675bf"
+      },
+      {
+        "kind": "create",
+        "ms": 36.72220799999923,
+        "taskId": "1f63bf70-8f26-481a-b02f-3ec9a06d5bfa"
+      },
+      {
+        "kind": "cancel",
+        "ms": 15.308708000000479,
+        "taskId": "1f63bf70-8f26-481a-b02f-3ec9a06d5bfa"
+      },
+      {
+        "kind": "create",
+        "ms": 26.815749999997934,
+        "taskId": "e8f7c750-ea2f-4775-8b78-faf87b63a9dd"
+      },
+      {
+        "kind": "cancel",
+        "ms": 14.084082999997918,
+        "taskId": "e8f7c750-ea2f-4775-8b78-faf87b63a9dd"
+      },
+      {
+        "kind": "create",
+        "ms": 25.33970799999952,
+        "taskId": "3f36a6a5-589e-4bec-8c38-adda213cb196"
+      },
+      {
+        "kind": "cancel",
+        "ms": 15.330332999998063,
+        "taskId": "3f36a6a5-589e-4bec-8c38-adda213cb196"
+      },
+      {
+        "kind": "create",
+        "ms": 12.238040999996883,
+        "taskId": "9bbdfe11-5461-4029-a32c-83e13eaa99db"
+      },
+      {
+        "kind": "cancel",
+        "ms": 9.465040999999474,
+        "taskId": "9bbdfe11-5461-4029-a32c-83e13eaa99db"
+      },
+      {
+        "kind": "create",
+        "ms": 18.316208000000188,
+        "taskId": "740ce8ef-5c15-4c90-a95e-87b398e1ea5d"
+      },
+      {
+        "kind": "cancel",
+        "ms": 10.970124999999825,
+        "taskId": "740ce8ef-5c15-4c90-a95e-87b398e1ea5d"
+      },
+      {
+        "kind": "create",
+        "ms": 37.081458000000566,
+        "taskId": "b612440e-96b0-446c-9ab9-e564001ed59a"
+      },
+      {
+        "kind": "cancel",
+        "ms": 14.366042000001471,
+        "taskId": "b612440e-96b0-446c-9ab9-e564001ed59a"
+      },
+      {
+        "kind": "create",
+        "ms": 15.486915999998018,
+        "taskId": "b6fe7e33-69b1-44b9-8216-e79cfbfcadc5"
+      },
+      {
+        "kind": "cancel",
+        "ms": 12.47229199999856,
+        "taskId": "b6fe7e33-69b1-44b9-8216-e79cfbfcadc5"
+      },
+      {
+        "kind": "create",
+        "ms": 20.16020800000115,
+        "taskId": "90d9b878-5c00-4c49-8263-00e3469e7adb"
+      },
+      {
+        "kind": "cancel",
+        "ms": 14.317791000001307,
+        "taskId": "90d9b878-5c00-4c49-8263-00e3469e7adb"
+      },
+      {
+        "kind": "create",
+        "ms": 18.13679200000115,
+        "taskId": "3eeefb55-1c74-410b-95af-0c73301f3b14"
+      },
+      {
+        "kind": "cancel",
+        "ms": 10.10333399999945,
+        "taskId": "3eeefb55-1c74-410b-95af-0c73301f3b14"
+      },
+      {
+        "kind": "create",
+        "ms": 15.07691700000214,
+        "taskId": "94af7d4b-1ef7-4f2f-8594-e27566647efd"
+      },
+      {
+        "kind": "cancel",
+        "ms": 13.482082999998966,
+        "taskId": "94af7d4b-1ef7-4f2f-8594-e27566647efd"
+      },
+      {
+        "kind": "create",
+        "ms": 22.524750000000495,
+        "taskId": "0a15b554-9dd6-415b-9da2-61cd4b59f81d"
+      },
+      {
+        "kind": "cancel",
+        "ms": 13.84795899999881,
+        "taskId": "0a15b554-9dd6-415b-9da2-61cd4b59f81d"
+      },
+      {
+        "kind": "create",
+        "ms": 14.878584000001865,
+        "taskId": "277b55f2-d598-4e43-9b54-78586549b4a2"
+      },
+      {
+        "kind": "cancel",
+        "ms": 14.325458000002982,
+        "taskId": "277b55f2-d598-4e43-9b54-78586549b4a2"
+      },
+      {
+        "kind": "create",
+        "ms": 32.256750000000466,
+        "taskId": "74a279d4-6efa-4911-8c04-0a58be3663ab"
+      },
+      {
+        "kind": "cancel",
+        "ms": 15.43408400000044,
+        "taskId": "74a279d4-6efa-4911-8c04-0a58be3663ab"
+      },
+      {
+        "kind": "create",
+        "ms": 11.297249999999622,
+        "taskId": "75cc0f66-1558-4709-9e17-3f83612e5601"
+      },
+      {
+        "kind": "cancel",
+        "ms": 12.92170900000201,
+        "taskId": "75cc0f66-1558-4709-9e17-3f83612e5601"
+      },
+      {
+        "kind": "create",
+        "ms": 35.40016699999978,
+        "taskId": "7cf1560d-d9bf-4369-935c-4301ef3352e7"
+      },
+      {
+        "kind": "cancel",
+        "ms": 9.597459000000526,
+        "taskId": "7cf1560d-d9bf-4369-935c-4301ef3352e7"
+      },
+      {
+        "kind": "create",
+        "ms": 17.121666999999434,
+        "taskId": "7bf4de87-a5a1-44d5-8c1f-96877610a4a3"
+      },
+      {
+        "kind": "cancel",
+        "ms": 13.324958000001061,
+        "taskId": "7bf4de87-a5a1-44d5-8c1f-96877610a4a3"
+      },
+      {
+        "kind": "create",
+        "ms": 23.60991699999795,
+        "taskId": "47ca063d-9bd9-41dc-97d3-b4ee9b96be9a"
+      },
+      {
+        "kind": "cancel",
+        "ms": 14.702374999997119,
+        "taskId": "47ca063d-9bd9-41dc-97d3-b4ee9b96be9a"
+      },
+      {
+        "kind": "create",
+        "ms": 38.35920900000201,
+        "taskId": "fcd4ce5e-d4f1-4ff2-bfc9-f7eb94dfc7e1"
+      },
+      {
+        "kind": "cancel",
+        "ms": 9.199791999999434,
+        "taskId": "fcd4ce5e-d4f1-4ff2-bfc9-f7eb94dfc7e1"
+      },
+      {
+        "kind": "create",
+        "ms": 13.653749999997672,
+        "taskId": "9a89fcba-4d80-4a0d-b7a8-8e4c43871555"
+      },
+      {
+        "kind": "cancel",
+        "ms": 11.353917000000365,
+        "taskId": "9a89fcba-4d80-4a0d-b7a8-8e4c43871555"
+      },
+      {
+        "kind": "create",
+        "ms": 22.4521670000031,
+        "taskId": "6099f79f-cf00-497d-98c2-7b07381dd21f"
+      },
+      {
+        "kind": "cancel",
+        "ms": 14.586749999998574,
+        "taskId": "6099f79f-cf00-497d-98c2-7b07381dd21f"
+      },
+      {
+        "kind": "create",
+        "ms": 13.019458999999188,
+        "taskId": "428512a1-a747-402c-b820-192bee808333"
+      },
+      {
+        "kind": "cancel",
+        "ms": 13.180584000001545,
+        "taskId": "428512a1-a747-402c-b820-192bee808333"
+      },
+      {
+        "kind": "create",
+        "ms": 22.088000000003376,
+        "taskId": "b04c9343-7da0-45d2-8e92-137f45cdef05"
+      },
+      {
+        "kind": "cancel",
+        "ms": 14.49687499999709,
+        "taskId": "b04c9343-7da0-45d2-8e92-137f45cdef05"
+      },
+      {
+        "kind": "create",
+        "ms": 24.308790999999474,
+        "taskId": "6b49791b-6a91-441e-abf7-5dc4d683a216"
+      },
+      {
+        "kind": "cancel",
+        "ms": 14.794000000001688,
+        "taskId": "6b49791b-6a91-441e-abf7-5dc4d683a216"
+      },
+      {
+        "kind": "create",
+        "ms": 27.20183299999917,
+        "taskId": "16274537-238c-4a98-aa6d-e44a2d6bfada"
+      },
+      {
+        "kind": "cancel",
+        "ms": 14.498999999999796,
+        "taskId": "16274537-238c-4a98-aa6d-e44a2d6bfada"
+      },
+      {
+        "kind": "create",
+        "ms": 18.869541999996727,
+        "taskId": "5f24697a-7ac0-4eea-b4f4-1d7594e71bc9"
+      },
+      {
+        "kind": "cancel",
+        "ms": 14.361207999998442,
+        "taskId": "5f24697a-7ac0-4eea-b4f4-1d7594e71bc9"
+      },
+      {
+        "kind": "create",
+        "ms": 26.08783399999811,
+        "taskId": "487fe0b4-8af0-432d-b29b-3c0f615095f7"
+      },
+      {
+        "kind": "cancel",
+        "ms": 11.79912499999773,
+        "taskId": "487fe0b4-8af0-432d-b29b-3c0f615095f7"
+      },
+      {
+        "kind": "create",
+        "ms": 17.87091700000019,
+        "taskId": "193a5e58-540d-4b6d-8603-a55a4fd2fa44"
+      },
+      {
+        "kind": "cancel",
+        "ms": 14.569833000001381,
+        "taskId": "193a5e58-540d-4b6d-8603-a55a4fd2fa44"
+      },
+      {
+        "kind": "create",
+        "ms": 22.83679100000154,
+        "taskId": "70baf125-6e59-4436-9b1c-ac9a54884e1f"
+      },
+      {
+        "kind": "cancel",
+        "ms": 13.515791999998328,
+        "taskId": "70baf125-6e59-4436-9b1c-ac9a54884e1f"
+      },
+      {
+        "kind": "create",
+        "ms": 28.32720899999913,
+        "taskId": "0636f199-a7f0-4a3c-884b-557117d6932b"
+      },
+      {
+        "kind": "cancel",
+        "ms": 14.56616700000086,
+        "taskId": "0636f199-a7f0-4a3c-884b-557117d6932b"
+      }
+    ],
+    "p95Ms": 31.843959000001632,
+    "maxMs": 40.75879200000054,
+    "count": 212
+  },
+  "output": {
+    "totals": [
+      31457280,
+      31457280
+    ],
+    "cli": [
+      {
+        "target": "flood-one",
+        "bytes": 31457280,
+        "durationMs": 30003.491875
+      },
+      {
+        "target": "flood-two",
+        "bytes": 31457280,
+        "durationMs": 30001.244708
+      }
+    ],
+    "samples": [
+      {
+        "elapsedMs": 1001.1986660000002,
+        "bytes": [
+          983040,
+          983040
+        ]
+      },
+      {
+        "elapsedMs": 2001.2727909999999,
+        "bytes": [
+          2031616,
+          2031616
+        ]
+      },
+      {
+        "elapsedMs": 3001.0227080000004,
+        "bytes": [
+          3080192,
+          3080192
+        ]
+      },
+      {
+        "elapsedMs": 4001.505625,
+        "bytes": [
+          4128768,
+          4194304
+        ]
+      },
+      {
+        "elapsedMs": 5001.662291,
+        "bytes": [
+          5242880,
+          5177344
+        ]
+      },
+      {
+        "elapsedMs": 6001.8595000000005,
+        "bytes": [
+          6291456,
+          6225920
+        ]
+      },
+      {
+        "elapsedMs": 7001.8087080000005,
+        "bytes": [
+          7274496,
+          7274496
+        ]
+      },
+      {
+        "elapsedMs": 8002.033708000001,
+        "bytes": [
+          8323072,
+          8388608
+        ]
+      },
+      {
+        "elapsedMs": 9001.595958,
+        "bytes": [
+          9437184,
+          9371648
+        ]
+      },
+      {
+        "elapsedMs": 10001.811375,
+        "bytes": [
+          10420224,
+          10485760
+        ]
+      },
+      {
+        "elapsedMs": 11002.434333,
+        "bytes": [
+          11468800,
+          11534336
+        ]
+      },
+      {
+        "elapsedMs": 12004.326541,
+        "bytes": [
+          12517376,
+          12517376
+        ]
+      },
+      {
+        "elapsedMs": 13004.062708,
+        "bytes": [
+          13631488,
+          13631488
+        ]
+      },
+      {
+        "elapsedMs": 14003.395875,
+        "bytes": [
+          14680064,
+          14680064
+        ]
+      },
+      {
+        "elapsedMs": 15003.419125,
+        "bytes": [
+          15663104,
+          15728640
+        ]
+      },
+      {
+        "elapsedMs": 16007.873624999998,
+        "bytes": [
+          16777216,
+          16777216
+        ]
+      },
+      {
+        "elapsedMs": 17007.761291000003,
+        "bytes": [
+          17825792,
+          17825792
+        ]
+      },
+      {
+        "elapsedMs": 18009.720666,
+        "bytes": [
+          18874368,
+          18808832
+        ]
+      },
+      {
+        "elapsedMs": 19009.850291000002,
+        "bytes": [
+          19922944,
+          19922944
+        ]
+      },
+      {
+        "elapsedMs": 20010.38925,
+        "bytes": [
+          20971520,
+          20971520
+        ]
+      },
+      {
+        "elapsedMs": 21011.282,
+        "bytes": [
+          22020096,
+          22020096
+        ]
+      },
+      {
+        "elapsedMs": 22013.136874999997,
+        "bytes": [
+          23003136,
+          23003136
+        ]
+      },
+      {
+        "elapsedMs": 23014.490040999997,
+        "bytes": [
+          24117248,
+          24117248
+        ]
+      },
+      {
+        "elapsedMs": 24014.439541,
+        "bytes": [
+          25165824,
+          25165824
+        ]
+      },
+      {
+        "elapsedMs": 25015.525374999997,
+        "bytes": [
+          26214400,
+          26214400
+        ]
+      },
+      {
+        "elapsedMs": 26016.609875000002,
+        "bytes": [
+          27262976,
+          27262976
+        ]
+      },
+      {
+        "elapsedMs": 27017.093583,
+        "bytes": [
+          28311552,
+          28311552
+        ]
+      },
+      {
+        "elapsedMs": 28016.989833,
+        "bytes": [
+          29360128,
+          29360128
+        ]
+      },
+      {
+        "elapsedMs": 29017.769375000003,
+        "bytes": [
+          30408704,
+          30408704
+        ]
+      },
+      {
+        "elapsedMs": 30018.735416000003,
+        "bytes": [
+          31457280,
+          31457280
+        ]
+      },
+      {
+        "elapsedMs": 30202.025875,
+        "bytes": [
+          31457280,
+          31457280
+        ]
+      }
+    ]
+  },
+  "memory": {
+    "samples": [
+      {
+        "type": "sample",
+        "elapsedMs": 1001.591875,
+        "rss": 182321152,
+        "heapTotal": 64307200,
+        "heapUsed": 41188584,
+        "external": 11228003,
+        "arrayBuffers": 7868789
+      },
+      {
+        "type": "sample",
+        "elapsedMs": 2003.9959159999999,
+        "rss": 189939712,
+        "heapTotal": 64307200,
+        "heapUsed": 33280200,
+        "external": 7118913,
+        "arrayBuffers": 3759659
+      },
+      {
+        "type": "sample",
+        "elapsedMs": 3004.503333,
+        "rss": 190218240,
+        "heapTotal": 64307200,
+        "heapUsed": 41456496,
+        "external": 11096971,
+        "arrayBuffers": 7737717
+      },
+      {
+        "type": "sample",
+        "elapsedMs": 4007.1252910000003,
+        "rss": 191971328,
+        "heapTotal": 64307200,
+        "heapUsed": 34112432,
+        "external": 7730813,
+        "arrayBuffers": 4371559
+      },
+      {
+        "type": "sample",
+        "elapsedMs": 5007.62775,
+        "rss": 192036864,
+        "heapTotal": 64569344,
+        "heapUsed": 42799080,
+        "external": 12014821,
+        "arrayBuffers": 8655567
+      },
+      {
+        "type": "sample",
+        "elapsedMs": 6009.097583,
+        "rss": 193069056,
+        "heapTotal": 64569344,
+        "heapUsed": 36768880,
+        "external": 8343067,
+        "arrayBuffers": 4983813
+      },
+      {
+        "type": "sample",
+        "elapsedMs": 7013.96325,
+        "rss": 193642496,
+        "heapTotal": 64569344,
+        "heapUsed": 30428736,
+        "external": 12014821,
+        "arrayBuffers": 2535859
+      },
+      {
+        "type": "sample",
+        "elapsedMs": 8013.674166,
+        "rss": 194297856,
+        "heapTotal": 64569344,
+        "heapUsed": 39185680,
+        "external": 9108022,
+        "arrayBuffers": 5748768
+      },
+      {
+        "type": "sample",
+        "elapsedMs": 9015.652541000001,
+        "rss": 197967872,
+        "heapTotal": 98123776,
+        "heapUsed": 46300072,
+        "external": 12932671,
+        "arrayBuffers": 9573417
+      },
+      {
+        "type": "sample",
+        "elapsedMs": 10016.273916,
+        "rss": 201736192,
+        "heapTotal": 97861632,
+        "heapUsed": 28901512,
+        "external": 7119000,
+        "arrayBuffers": 3759746
+      },
+      {
+        "type": "sample",
+        "elapsedMs": 11017.262916000001,
+        "rss": 203407360,
+        "heapTotal": 97861632,
+        "heapUsed": 31643240,
+        "external": 8342720,
+        "arrayBuffers": 4983466
+      },
+      {
+        "type": "sample",
+        "elapsedMs": 12016.637166,
+        "rss": 212008960,
+        "heapTotal": 97861632,
+        "heapUsed": 27110632,
+        "external": 6375948,
+        "arrayBuffers": 3016694
+      },
+      {
+        "type": "sample",
+        "elapsedMs": 13016.712375000001,
+        "rss": 216170496,
+        "heapTotal": 97337344,
+        "heapUsed": 27378376,
+        "external": 7118913,
+        "arrayBuffers": 3759659
+      },
+      {
+        "type": "sample",
+        "elapsedMs": 14016.728541,
+        "rss": 216465408,
+        "heapTotal": 97337344,
+        "heapUsed": 50838448,
+        "external": 16910729,
+        "arrayBuffers": 13551475
+      },
+      {
+        "type": "sample",
+        "elapsedMs": 15016.946,
+        "rss": 217317376,
+        "heapTotal": 97599488,
+        "heapUsed": 46279448,
+        "external": 15686575,
+        "arrayBuffers": 12327321
+      },
+      {
+        "type": "sample",
+        "elapsedMs": 16016.049625,
+        "rss": 216907776,
+        "heapTotal": 97075200,
+        "heapUsed": 47574792,
+        "external": 15681743,
+        "arrayBuffers": 12327675
+      },
+      {
+        "type": "sample",
+        "elapsedMs": 17016.734333,
+        "rss": 217628672,
+        "heapTotal": 96550912,
+        "heapUsed": 45584648,
+        "external": 15985880,
+        "arrayBuffers": 12633271
+      },
+      {
+        "type": "sample",
+        "elapsedMs": 18016.945333,
+        "rss": 222085120,
+        "heapTotal": 96288768,
+        "heapUsed": 25286584,
+        "external": 6500375,
+        "arrayBuffers": 3147766
+      },
+      {
+        "type": "sample",
+        "elapsedMs": 19016.86975,
+        "rss": 222789632,
+        "heapTotal": 96550912,
+        "heapUsed": 28007040,
+        "external": 7724168,
+        "arrayBuffers": 4371559
+      },
+      {
+        "type": "sample",
+        "elapsedMs": 20017.599708,
+        "rss": 222887936,
+        "heapTotal": 96288768,
+        "heapUsed": 31623808,
+        "external": 8948322,
+        "arrayBuffers": 5595713
+      },
+      {
+        "type": "sample",
+        "elapsedMs": 21018.704833,
+        "rss": 228900864,
+        "heapTotal": 96813056,
+        "heapUsed": 25162864,
+        "external": 7112268,
+        "arrayBuffers": 3759659
+      },
+      {
+        "type": "sample",
+        "elapsedMs": 22019.877083,
+        "rss": 229064704,
+        "heapTotal": 96813056,
+        "heapUsed": 25575560,
+        "external": 6500448,
+        "arrayBuffers": 3147839
+      },
+      {
+        "type": "sample",
+        "elapsedMs": 23020.5955,
+        "rss": 230473728,
+        "heapTotal": 96813056,
+        "heapUsed": 30063632,
+        "external": 7724255,
+        "arrayBuffers": 4371646
+      },
+      {
+        "type": "sample",
+        "elapsedMs": 24020.447875,
+        "rss": 230522880,
+        "heapTotal": 96550912,
+        "heapUsed": 32938712,
+        "external": 8948329,
+        "arrayBuffers": 5595720
+      },
+      {
+        "type": "sample",
+        "elapsedMs": 25021.053041,
+        "rss": 230637568,
+        "heapTotal": 97075200,
+        "heapUsed": 32815768,
+        "external": 9713197,
+        "arrayBuffers": 6360588
+      },
+      {
+        "type": "sample",
+        "elapsedMs": 26021.925875,
+        "rss": 232112128,
+        "heapTotal": 96813056,
+        "heapUsed": 28741464,
+        "external": 7112622,
+        "arrayBuffers": 3760013
+      },
+      {
+        "type": "sample",
+        "elapsedMs": 27022.920125,
+        "rss": 232210432,
+        "heapTotal": 96550912,
+        "heapUsed": 25266112,
+        "external": 7112268,
+        "arrayBuffers": 3759659
+      },
+      {
+        "type": "sample",
+        "elapsedMs": 28025.179375,
+        "rss": 235454464,
+        "heapTotal": 96550912,
+        "heapUsed": 50839584,
+        "external": 16904084,
+        "arrayBuffers": 13551475
+      },
+      {
+        "type": "sample",
+        "elapsedMs": 29026.459208,
+        "rss": 235470848,
+        "heapTotal": 96550912,
+        "heapUsed": 46079936,
+        "external": 14172083,
+        "arrayBuffers": 10819474
+      },
+      {
+        "type": "sample",
+        "elapsedMs": 30026.8155,
+        "rss": 235487232,
+        "heapTotal": 96288768,
+        "heapUsed": 45737536,
+        "external": 14456210,
+        "arrayBuffers": 11103601
+      }
+    ],
+    "postWarmupSamples": 20,
+    "slopeMiBPerSecond": 1.3943491093829594,
+    "retainedGrowthMiB": 18.390625,
+    "peakRssMiB": 224.578125
+  },
+  "socketErrors": [],
+  "sampleErrors": [],
+  "error": "expected 1.3943491093829594 to be less than or equal to 1",
+  "shutdown": {
+    "type": "stopped",
+    "tasks": 1106,
+    "prompts": 0
+  },
+  "stderr": "",
+  "memorySamples": [
+    {
+      "type": "sample",
+      "elapsedMs": 1001.591875,
+      "rss": 182321152,
+      "heapTotal": 64307200,
+      "heapUsed": 41188584,
+      "external": 11228003,
+      "arrayBuffers": 7868789
+    },
+    {
+      "type": "sample",
+      "elapsedMs": 2003.9959159999999,
+      "rss": 189939712,
+      "heapTotal": 64307200,
+      "heapUsed": 33280200,
+      "external": 7118913,
+      "arrayBuffers": 3759659
+    },
+    {
+      "type": "sample",
+      "elapsedMs": 3004.503333,
+      "rss": 190218240,
+      "heapTotal": 64307200,
+      "heapUsed": 41456496,
+      "external": 11096971,
+      "arrayBuffers": 7737717
+    },
+    {
+      "type": "sample",
+      "elapsedMs": 4007.1252910000003,
+      "rss": 191971328,
+      "heapTotal": 64307200,
+      "heapUsed": 34112432,
+      "external": 7730813,
+      "arrayBuffers": 4371559
+    },
+    {
+      "type": "sample",
+      "elapsedMs": 5007.62775,
+      "rss": 192036864,
+      "heapTotal": 64569344,
+      "heapUsed": 42799080,
+      "external": 12014821,
+      "arrayBuffers": 8655567
+    },
+    {
+      "type": "sample",
+      "elapsedMs": 6009.097583,
+      "rss": 193069056,
+      "heapTotal": 64569344,
+      "heapUsed": 36768880,
+      "external": 8343067,
+      "arrayBuffers": 4983813
+    },
+    {
+      "type": "sample",
+      "elapsedMs": 7013.96325,
+      "rss": 193642496,
+      "heapTotal": 64569344,
+      "heapUsed": 30428736,
+      "external": 12014821,
+      "arrayBuffers": 2535859
+    },
+    {
+      "type": "sample",
+      "elapsedMs": 8013.674166,
+      "rss": 194297856,
+      "heapTotal": 64569344,
+      "heapUsed": 39185680,
+      "external": 9108022,
+      "arrayBuffers": 5748768
+    },
+    {
+      "type": "sample",
+      "elapsedMs": 9015.652541000001,
+      "rss": 197967872,
+      "heapTotal": 98123776,
+      "heapUsed": 46300072,
+      "external": 12932671,
+      "arrayBuffers": 9573417
+    },
+    {
+      "type": "sample",
+      "elapsedMs": 10016.273916,
+      "rss": 201736192,
+      "heapTotal": 97861632,
+      "heapUsed": 28901512,
+      "external": 7119000,
+      "arrayBuffers": 3759746
+    },
+    {
+      "type": "sample",
+      "elapsedMs": 11017.262916000001,
+      "rss": 203407360,
+      "heapTotal": 97861632,
+      "heapUsed": 31643240,
+      "external": 8342720,
+      "arrayBuffers": 4983466
+    },
+    {
+      "type": "sample",
+      "elapsedMs": 12016.637166,
+      "rss": 212008960,
+      "heapTotal": 97861632,
+      "heapUsed": 27110632,
+      "external": 6375948,
+      "arrayBuffers": 3016694
+    },
+    {
+      "type": "sample",
+      "elapsedMs": 13016.712375000001,
+      "rss": 216170496,
+      "heapTotal": 97337344,
+      "heapUsed": 27378376,
+      "external": 7118913,
+      "arrayBuffers": 3759659
+    },
+    {
+      "type": "sample",
+      "elapsedMs": 14016.728541,
+      "rss": 216465408,
+      "heapTotal": 97337344,
+      "heapUsed": 50838448,
+      "external": 16910729,
+      "arrayBuffers": 13551475
+    },
+    {
+      "type": "sample",
+      "elapsedMs": 15016.946,
+      "rss": 217317376,
+      "heapTotal": 97599488,
+      "heapUsed": 46279448,
+      "external": 15686575,
+      "arrayBuffers": 12327321
+    },
+    {
+      "type": "sample",
+      "elapsedMs": 16016.049625,
+      "rss": 216907776,
+      "heapTotal": 97075200,
+      "heapUsed": 47574792,
+      "external": 15681743,
+      "arrayBuffers": 12327675
+    },
+    {
+      "type": "sample",
+      "elapsedMs": 17016.734333,
+      "rss": 217628672,
+      "heapTotal": 96550912,
+      "heapUsed": 45584648,
+      "external": 15985880,
+      "arrayBuffers": 12633271
+    },
+    {
+      "type": "sample",
+      "elapsedMs": 18016.945333,
+      "rss": 222085120,
+      "heapTotal": 96288768,
+      "heapUsed": 25286584,
+      "external": 6500375,
+      "arrayBuffers": 3147766
+    },
+    {
+      "type": "sample",
+      "elapsedMs": 19016.86975,
+      "rss": 222789632,
+      "heapTotal": 96550912,
+      "heapUsed": 28007040,
+      "external": 7724168,
+      "arrayBuffers": 4371559
+    },
+    {
+      "type": "sample",
+      "elapsedMs": 20017.599708,
+      "rss": 222887936,
+      "heapTotal": 96288768,
+      "heapUsed": 31623808,
+      "external": 8948322,
+      "arrayBuffers": 5595713
+    },
+    {
+      "type": "sample",
+      "elapsedMs": 21018.704833,
+      "rss": 228900864,
+      "heapTotal": 96813056,
+      "heapUsed": 25162864,
+      "external": 7112268,
+      "arrayBuffers": 3759659
+    },
+    {
+      "type": "sample",
+      "elapsedMs": 22019.877083,
+      "rss": 229064704,
+      "heapTotal": 96813056,
+      "heapUsed": 25575560,
+      "external": 6500448,
+      "arrayBuffers": 3147839
+    },
+    {
+      "type": "sample",
+      "elapsedMs": 23020.5955,
+      "rss": 230473728,
+      "heapTotal": 96813056,
+      "heapUsed": 30063632,
+      "external": 7724255,
+      "arrayBuffers": 4371646
+    },
+    {
+      "type": "sample",
+      "elapsedMs": 24020.447875,
+      "rss": 230522880,
+      "heapTotal": 96550912,
+      "heapUsed": 32938712,
+      "external": 8948329,
+      "arrayBuffers": 5595720
+    },
+    {
+      "type": "sample",
+      "elapsedMs": 25021.053041,
+      "rss": 230637568,
+      "heapTotal": 97075200,
+      "heapUsed": 32815768,
+      "external": 9713197,
+      "arrayBuffers": 6360588
+    },
+    {
+      "type": "sample",
+      "elapsedMs": 26021.925875,
+      "rss": 232112128,
+      "heapTotal": 96813056,
+      "heapUsed": 28741464,
+      "external": 7112622,
+      "arrayBuffers": 3760013
+    },
+    {
+      "type": "sample",
+      "elapsedMs": 27022.920125,
+      "rss": 232210432,
+      "heapTotal": 96550912,
+      "heapUsed": 25266112,
+      "external": 7112268,
+      "arrayBuffers": 3759659
+    },
+    {
+      "type": "sample",
+      "elapsedMs": 28025.179375,
+      "rss": 235454464,
+      "heapTotal": 96550912,
+      "heapUsed": 50839584,
+      "external": 16904084,
+      "arrayBuffers": 13551475
+    },
+    {
+      "type": "sample",
+      "elapsedMs": 29026.459208,
+      "rss": 235470848,
+      "heapTotal": 96550912,
+      "heapUsed": 46079936,
+      "external": 14172083,
+      "arrayBuffers": 10819474
+    },
+    {
+      "type": "sample",
+      "elapsedMs": 30026.8155,
+      "rss": 235487232,
+      "heapTotal": 96288768,
+      "heapUsed": 45737536,
+      "external": 14456210,
+      "arrayBuffers": 11103601
+    }
+  ],
+  "outputSamples": [
+    {
+      "elapsedMs": 1001.1986660000002,
+      "bytes": [
+        983040,
+        983040
+      ]
+    },
+    {
+      "elapsedMs": 2001.2727909999999,
+      "bytes": [
+        2031616,
+        2031616
+      ]
+    },
+    {
+      "elapsedMs": 3001.0227080000004,
+      "bytes": [
+        3080192,
+        3080192
+      ]
+    },
+    {
+      "elapsedMs": 4001.505625,
+      "bytes": [
+        4128768,
+        4194304
+      ]
+    },
+    {
+      "elapsedMs": 5001.662291,
+      "bytes": [
+        5242880,
+        5177344
+      ]
+    },
+    {
+      "elapsedMs": 6001.8595000000005,
+      "bytes": [
+        6291456,
+        6225920
+      ]
+    },
+    {
+      "elapsedMs": 7001.8087080000005,
+      "bytes": [
+        7274496,
+        7274496
+      ]
+    },
+    {
+      "elapsedMs": 8002.033708000001,
+      "bytes": [
+        8323072,
+        8388608
+      ]
+    },
+    {
+      "elapsedMs": 9001.595958,
+      "bytes": [
+        9437184,
+        9371648
+      ]
+    },
+    {
+      "elapsedMs": 10001.811375,
+      "bytes": [
+        10420224,
+        10485760
+      ]
+    },
+    {
+      "elapsedMs": 11002.434333,
+      "bytes": [
+        11468800,
+        11534336
+      ]
+    },
+    {
+      "elapsedMs": 12004.326541,
+      "bytes": [
+        12517376,
+        12517376
+      ]
+    },
+    {
+      "elapsedMs": 13004.062708,
+      "bytes": [
+        13631488,
+        13631488
+      ]
+    },
+    {
+      "elapsedMs": 14003.395875,
+      "bytes": [
+        14680064,
+        14680064
+      ]
+    },
+    {
+      "elapsedMs": 15003.419125,
+      "bytes": [
+        15663104,
+        15728640
+      ]
+    },
+    {
+      "elapsedMs": 16007.873624999998,
+      "bytes": [
+        16777216,
+        16777216
+      ]
+    },
+    {
+      "elapsedMs": 17007.761291000003,
+      "bytes": [
+        17825792,
+        17825792
+      ]
+    },
+    {
+      "elapsedMs": 18009.720666,
+      "bytes": [
+        18874368,
+        18808832
+      ]
+    },
+    {
+      "elapsedMs": 19009.850291000002,
+      "bytes": [
+        19922944,
+        19922944
+      ]
+    },
+    {
+      "elapsedMs": 20010.38925,
+      "bytes": [
+        20971520,
+        20971520
+      ]
+    },
+    {
+      "elapsedMs": 21011.282,
+      "bytes": [
+        22020096,
+        22020096
+      ]
+    },
+    {
+      "elapsedMs": 22013.136874999997,
+      "bytes": [
+        23003136,
+        23003136
+      ]
+    },
+    {
+      "elapsedMs": 23014.490040999997,
+      "bytes": [
+        24117248,
+        24117248
+      ]
+    },
+    {
+      "elapsedMs": 24014.439541,
+      "bytes": [
+        25165824,
+        25165824
+      ]
+    },
+    {
+      "elapsedMs": 25015.525374999997,
+      "bytes": [
+        26214400,
+        26214400
+      ]
+    },
+    {
+      "elapsedMs": 26016.609875000002,
+      "bytes": [
+        27262976,
+        27262976
+      ]
+    },
+    {
+      "elapsedMs": 27017.093583,
+      "bytes": [
+        28311552,
+        28311552
+      ]
+    },
+    {
+      "elapsedMs": 28016.989833,
+      "bytes": [
+        29360128,
+        29360128
+      ]
+    },
+    {
+      "elapsedMs": 29017.769375000003,
+      "bytes": [
+        30408704,
+        30408704
+      ]
+    },
+    {
+      "elapsedMs": 30018.735416000003,
+      "bytes": [
+        31457280,
+        31457280
+      ]
+    },
+    {
+      "elapsedMs": 30202.025875,
+      "bytes": [
+        31457280,
+        31457280
+      ]
+    }
+  ]
+}

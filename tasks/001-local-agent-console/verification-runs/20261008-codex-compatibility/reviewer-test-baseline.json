@@ -1,0 +1,60 @@
+{
+  "files": [
+    {
+      "path": "packages/contracts/src/index.ts",
+      "sha256": "9208696d9d3be414f62f477cbcbceaab6ca8c2e144326af7bae7d6683add0b6c"
+    },
+    {
+      "path": "apps/server/src/adapters/herdr/index.ts",
+      "sha256": "2033bcba8a61e1a039a19fd53d0b167f9c6c474b7c7e293a6a8acbea4a0061f2"
+    },
+    {
+      "path": "apps/server/src/adapters/herdr/index.test.ts",
+      "sha256": "7f66678943693dd3d64d63ead26808f2a12be95a550bbf0a6fcb943bafbf830d"
+    },
+    {
+      "path": "apps/server/src/domain/model.ts",
+      "sha256": "3580e4b50c0895f0b26080e4ae12749ee068e8eac0bfe7d38545a682f5fb6fb3"
+    },
+    {
+      "path": "apps/server/src/domain/model.test.ts",
+      "sha256": "3200233e045779aca45c7fd806601259d985b960187ae044418e0e216fea331c"
+    },
+    {
+      "path": "apps/server/src/application/console.test.ts",
+      "sha256": "f47ba39a0dce0e79dc3a8b10907239ba2a8bdb043ac74e10e369474d85ae5742"
+    },
+    {
+      "path": "tests/integration/real-agent.test.ts",
+      "sha256": "5a43822c7fef71ba97b8bd518063eba121f11778a6fefc00420aeb60d0b549d3"
+    },
+    {
+      "path": "tasks/001-local-agent-console/technical-design.md",
+      "sha256": "a2b5dff0e30e7f6e7e58c6a27d2352fff3d676cefcac6470a375e1ea80749ec0"
+    },
+    {
+      "path": "tasks/001-local-agent-console/usage.md",
+      "sha256": "5257bfcb2801cf1cae38aab319ee07332cc93826ed1479ac8d96b510549cf6ef"
+    },
+    {
+      "path": "apps/server/dist/domain/model.js",
+      "sha256": "0f60f6c5dda83dc09ea8fc0b551002412e28193d215313841a4cb5ed582eb8c9"
+    },
+    {
+      "path": "apps/server/dist/adapters/herdr/index.js",
+      "sha256": "43fa0ad3cf0e86255416865966b9ac4a90f117c591f8e6a7269c8c50d40a0131"
+    },
+    {
+      "path": "apps/server/dist/application/console.js",
+      "sha256": "6d370c7058798d72ff6bcdfc35b49abd868fdd425ea503c593dfe1a9b983a4ca"
+    },
+    {
+      "path": "apps/server/dist/storage/worker.js",
+      "sha256": "088a377995782ecf2dd601f631a42b5152cac0298f02c7845304b674fb24b8ce"
+    },
+    {
+      "path": "packages/contracts/dist/index.js",
+      "sha256": "23369f5e65a5fb6050b55296a75832c016e464fd6e6067a6da8668760c9cc5c4"
+    }
+  ]
+}

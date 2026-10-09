@@ -1,0 +1,212 @@
+{
+  "type": "claude",
+  "date": "2026-10-07T03:18:04.096Z",
+  "session": "meteor-flow-test-claude-6e0e2a66",
+  "cwd": "/private/tmp/mf-agent-8mlgyp/project",
+  "isolation": "dedicated herdr XDG/session/cwd; existing model configuration read-only; user config writes denied",
+  "status": "passed",
+  "timeline": [
+    {
+      "terminalId": "term_65d37903b1b901",
+      "paneId": "w1:p1",
+      "type": "unknown",
+      "status": "unknown",
+      "cwd": "/private/tmp/mf-agent-8mlgyp/project",
+      "pid": null,
+      "processStart": null,
+      "agentSessionPresent": false,
+      "sequence": 0,
+      "launchPending": true,
+      "interactiveReady": false
+    },
+    {
+      "terminalId": "term_65d37903b1b901",
+      "paneId": "w1:p1",
+      "type": "claude",
+      "status": "unknown",
+      "cwd": "/private/tmp/mf-agent-8mlgyp/project",
+      "pid": 79955,
+      "processStart": "79955:1791343084:746728",
+      "agentSessionPresent": true,
+      "sequence": 0,
+      "launchPending": true,
+      "interactiveReady": false
+    },
+    {
+      "terminalId": "term_65d37903b1b901",
+      "paneId": "w1:p1",
+      "type": "claude",
+      "status": "idle",
+      "cwd": "/private/tmp/mf-agent-8mlgyp/project",
+      "pid": 79955,
+      "processStart": "79955:1791343084:746728",
+      "agentSessionPresent": true,
+      "sequence": 1,
+      "launchPending": false,
+      "interactiveReady": true
+    }
+  ],
+  "versions": {
+    "herdr": "herdr 0.9.3",
+    "agent": "2.1.195 (Claude Code)",
+    "node": "v24.21.0"
+  },
+  "target": "term_65d37903b1b901",
+  "screenSha256": "02c95df638363c717b9c366314e77d781d6eb9bf161d919cbfb7ed7c3926da55",
+  "screenReason": null,
+  "foregroundProcesses": [
+    {
+      "pid": 79978,
+      "name": "mcp-server-darw"
+    },
+    {
+      "pid": 79955,
+      "name": "claude"
+    }
+  ],
+  "taskId": "e3bd2d59-3275-452f-b281-f3c27596908b",
+  "attemptId": "ca772219-ec2d-483c-86bf-ca89aebb0fbc",
+  "artifactSha256": "931ba2c2c947f89db1b01a9fdd9b3f44ea1af1fd266b1ac93f68f3946acf3875",
+  "tasks": [
+    {
+      "id": "e3bd2d59-3275-452f-b281-f3c27596908b",
+      "phase": "succeeded",
+      "reason": "在授权输出根 workdir 创建了 hello.txt，内容精确为 meteor-flow-real-agent-ok 并以换行符结尾，集成测试产物交付完成。"
+    }
+  ],
+  "attempts": [
+    {
+      "id": "ca772219-ec2d-483c-86bf-ca89aebb0fbc",
+      "phase": "succeeded",
+      "reason": "在授权输出根 workdir 创建了 hello.txt，内容精确为 meteor-flow-real-agent-ok 并以换行符结尾，集成测试产物交付完成。",
+      "dispatch": "submitted",
+      "seenActivity": true,
+      "archived": true
+    }
+  ],
+  "events": [
+    {
+      "seq": 1,
+      "time": 1791343089233,
+      "type": "recover",
+      "message": "启动恢复：观测缺口与旧控制权已失效",
+      "taskId": null,
+      "attemptId": null
+    },
+    {
+      "seq": 2,
+      "time": 1791343089585,
+      "type": "project.create",
+      "message": "创建项目 Real claude",
+      "taskId": null,
+      "attemptId": null
+    },
+    {
+      "seq": 3,
+      "time": 1791343089599,
+      "type": "binding.create",
+      "message": "接入 Real claude，当前只观察",
+      "taskId": null,
+      "attemptId": null
+    },
+    {
+      "seq": 4,
+      "time": 1791343089612,
+      "type": "binding.action",
+      "message": "Real claude：已确认接入，请启用自动调度",
+      "taskId": null,
+      "attemptId": null
+    },
+    {
+      "seq": 5,
+      "time": 1791343089729,
+      "type": "binding.action",
+      "message": "Real claude：自动调度",
+      "taskId": null,
+      "attemptId": null
+    },
+    {
+      "seq": 6,
+      "time": 1791343089730,
+      "type": "task.create",
+      "message": "创建任务 Write one integration-test artifact",
+      "taskId": "e3bd2d59-3275-452f-b281-f3c27596908b",
+      "attemptId": null
+    },
+    {
+      "seq": 7,
+      "time": 1791343089988,
+      "type": "dispatch",
+      "message": "投递意图已持久化",
+      "taskId": "e3bd2d59-3275-452f-b281-f3c27596908b",
+      "attemptId": "ca772219-ec2d-483c-86bf-ca89aebb0fbc"
+    },
+    {
+      "seq": 8,
+      "time": 1791343090422,
+      "type": "dispatch.result",
+      "message": "herdr 已确认接收",
+      "taskId": "e3bd2d59-3275-452f-b281-f3c27596908b",
+      "attemptId": "ca772219-ec2d-483c-86bf-ca89aebb0fbc"
+    },
+    {
+      "seq": 9,
+      "time": 1791343090964,
+      "type": "agent.observed",
+      "message": "Real claude：working",
+      "taskId": "e3bd2d59-3275-452f-b281-f3c27596908b",
+      "attemptId": "ca772219-ec2d-483c-86bf-ca89aebb0fbc"
+    },
+    {
+      "seq": 10,
+      "time": 1791343096749,
+      "type": "agent.observed",
+      "message": "Real claude：unknown",
+      "taskId": "e3bd2d59-3275-452f-b281-f3c27596908b",
+      "attemptId": "ca772219-ec2d-483c-86bf-ca89aebb0fbc"
+    },
+    {
+      "seq": 11,
+      "time": 1791343099816,
+      "type": "agent.observed",
+      "message": "Real claude：working",
+      "taskId": "e3bd2d59-3275-452f-b281-f3c27596908b",
+      "attemptId": "ca772219-ec2d-483c-86bf-ca89aebb0fbc"
+    },
+    {
+      "seq": 12,
+      "time": 1791343123505,
+      "type": "result",
+      "message": "结果及归档已保存，等待结束证据",
+      "taskId": "e3bd2d59-3275-452f-b281-f3c27596908b",
+      "attemptId": "ca772219-ec2d-483c-86bf-ca89aebb0fbc"
+    },
+    {
+      "seq": 13,
+      "time": 1791343127960,
+      "type": "agent.observed",
+      "message": "Real claude：idle",
+      "taskId": "e3bd2d59-3275-452f-b281-f3c27596908b",
+      "attemptId": "ca772219-ec2d-483c-86bf-ca89aebb0fbc"
+    },
+    {
+      "seq": 14,
+      "time": 1791343127960,
+      "type": "attempt.ended",
+      "message": "在授权输出根 workdir 创建了 hello.txt，内容精确为 meteor-flow-real-agent-ok 并以换行符结尾，集成测试产物交付完成。",
+      "taskId": "e3bd2d59-3275-452f-b281-f3c27596908b",
+      "attemptId": "ca772219-ec2d-483c-86bf-ca89aebb0fbc"
+    }
+  ],
+  "sourceFiles": [
+    {
+      "path": "hello.txt",
+      "size": 26
+    },
+    {
+      "path": ".meteor-flow/runs/ca772219-ec2d-483c-86bf-ca89aebb0fbc/result.json",
+      "size": 458
+    }
+  ],
+  "protectedConfigurationUnchanged": true
+}

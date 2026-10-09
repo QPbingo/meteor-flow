@@ -1,0 +1,204 @@
+import { spawn, execFile } from 'node:child_process';
+import { createHash, randomUUID } from 'node:crypto';
+import { once } from 'node:events';
+import { mkdir, mkdtemp, readFile, realpath, rm, writeFile, stat } from 'node:fs/promises';
+import { createConnection } from 'node:net';
+import { homedir } from 'node:os';
+import { join } from 'node:path';
+import { setTimeout as delay } from 'node:timers/promises';
+import { promisify } from 'node:util';
+import { expect, it } from 'vitest';
+import { ResultSchema, Value, type Binding, type Task } from '@meteor-flow/contracts';
+import { AgentConsole } from '../../apps/server/dist/application/console.js';
+import { HerdrClient, type AgentObservation } from '../../apps/server/src/adapters/herdr/index.js';
+import { guardAgentInput, screenBlocker as reason } from './helpers/agent-test-screen.js';
+
+const execute = promisify(execFile);
+const enabled = process.env.METEOR_FLOW_REAL_AGENTS === '1';
+const evidenceDirectory = process.env.METEOR_FLOW_REAL_AGENT_EVIDENCE;
+type Evidence = Record<string, unknown>;
+
+// This test never sends a trust, login, permission, or update confirmation.
+// It creates a fresh headless session and requests one tiny result only after readiness.
+// Build contracts, posix-fs and server first. Opt-in is separate from the mock suite.
+async function rpc(socketPath: string, method: string, params: Record<string, unknown> = {}): Promise<Record<string, any>> {
+  const id = randomUUID();
+  return await new Promise((resolve, reject) => {
+    const socket = createConnection(socketPath);
+    let bytes = '';
+    const finish = (error?: Error, result?: Record<string, any>) => {
+      clearTimeout(timeout); socket.destroy(); error ? reject(error) : resolve(result!);
+    };
+    const timeout = setTimeout(() => finish(new Error(`${method}: timeout`)), 3000);
+    socket.on('error', error => finish(error));
+    socket.on('connect', () => socket.write(JSON.stringify({ id, method, params }) + '\n'));
+    socket.on('data', chunk => {
+      bytes += chunk.toString('utf8');
+      if (Buffer.byteLength(bytes) > 1024 * 1024) return finish(new Error('diagnostic response too large'));
+      const newline = bytes.indexOf('\n'); if (newline < 0) return;
+      try {
+        const response = JSON.parse(bytes.slice(0, newline));
+        if (response.id !== id || response.error || !response.result) return finish(new Error(`${method}: ${response.error?.code ?? 'invalid response'}`));
+        finish(undefined, response.result);
+      } catch (error) { finish(error as Error); }
+    });
+  });
+}
+async function hash(file: string) {
+  try { return createHash('sha256').update(await readFile(file)).digest('hex'); }
+  catch (error) { if ((error as NodeJS.ErrnoException).code === 'ENOENT') return null; throw error; }
+}
+function summary(observation: AgentObservation) {
+  return { terminalId: observation.terminalId, paneId: observation.paneId, type: observation.type, status: observation.status,
+    cwd: observation.cwd, pid: observation.pid, processStart: observation.processStart, agentSessionPresent: !!observation.agentSession,
+    sequence: observation.sequence, launchPending: observation.launchPending, interactiveReady: observation.interactiveReady };
+}
+
+for (const type of ['codex'] as const) {
+  it.runIf(enabled)(`diagnostic ${type}: authorized standalone executor creates the fixed files`, async context => {
+    const directory = await realpath(await mkdtemp('/tmp/mf-agent-'));
+    const session = `meteor-flow-test-${type}-${randomUUID().slice(0, 8)}`;
+    const cwd = join(directory, 'project'); const dataDir = join(directory, 'data');
+    await mkdir(cwd); await mkdir(dataDir);
+    const socketPath = join(directory, 'config/herdr/sessions', session, 'herdr.sock');
+    const env: NodeJS.ProcessEnv = { ...process.env, XDG_CONFIG_HOME: join(directory, 'config'), XDG_STATE_HOME: join(directory, 'state') };
+    for (const key of ['HERDR_SESSION', 'HERDR_SOCKET_PATH', 'HERDR_CLIENT_SOCKET_PATH', 'HERDR_PANE_ID', 'HERDR_WORKSPACE_ID', 'HERDR_TERMINAL_ID']) delete env[key];
+    // Use the user's configured model services for both CLIs, read-only.
+    // Only herdr state/session and the task work directory are new.
+    const protectedFiles = ['.codex/config.toml', '.codex/auth.json', '.claude.json', '.claude/settings.json', '.claude/.credentials.json'].map(file => join(homedir(), file));
+    const before = await Promise.all(protectedFiles.map(hash));
+    const evidence: Evidence = { type, date: new Date().toISOString(), session, cwd, isolation: 'dedicated herdr XDG/session/cwd; Codex workspace-write/on-request; NO outer sandbox; configuration hash comparison only', status: 'running', timeline: [] };
+    const timeline = evidence.timeline as Evidence[];
+    const child = spawn('herdr', ['--session', session, 'server'], { cwd: directory, env, stdio: ['ignore', 'ignore', 'pipe'] });
+    let stderr = ''; let spawnError: Error | undefined;
+    child.stderr.on('data', chunk => { stderr = (stderr + String(chunk)).slice(-2048); });
+    child.on('error', error => { spawnError = error; });
+    const client = new HerdrClient({ session, socketPath, timeoutMs: 5000 });
+    // Temporary diagnostic injection only; production launch/identity policies remain intact.
+    const diagnosticArgs = ['--no-daemon', '-c', 'check_for_update_on_startup=false', '--sandbox', 'workspace-write', '--ask-for-approval', 'on-request'];
+    const request = (client as any).request.bind(client);
+    (client as any).request = (method: string, params: Record<string, unknown>, ...rest: unknown[]) => request(method, method === 'agent.start' ? { ...params, args: diagnosticArgs } : params, ...rest);
+    evidence.diagnosticStartupArgs = diagnosticArgs;
+    let app: AgentConsole | undefined;
+    let target: string | undefined;
+    let inputGuard: ReturnType<typeof guardAgentInput> | undefined;
+    const recordBlock = (message: string) => { evidence.status = 'blocked'; evidence.blocked = message; };
+    async function block(message: string) {
+      inputGuard?.stop(message); recordBlock(message);
+      const last = timeline.at(-1);
+      if (last?.paneId) {
+        const info = await rpc(socketPath, 'pane.process_info', { pane_id: last.paneId });
+        evidence.foregroundProcesses = (info.process_info?.foreground_processes ?? []).map((row: any) => ({ pid: row.pid, name: row.name }));
+      }
+      evidence.status = 'blocked'; evidence.blocked = message;
+      console.info(`REAL_AGENT_BLOCKED ${type}: ${message}`);
+      context.skip(message);
+    }
+    async function screen(requestedTarget = target) {
+      if (!target || requestedTarget !== target) throw new Error('unexpected diagnostic input target');
+      const paneId = app ? app.discoveries.find(row => row.terminalId === requestedTarget)?.paneId : timeline.at(-1)?.paneId;
+      if (!paneId) throw new Error('isolated target is not visible');
+      // A new managed launch can still be a shell in herdr's agent registry.
+      // The known pane exists throughout startup and can expose trust/onboarding.
+      const response = await rpc(socketPath, 'pane.read', { pane_id: paneId, source: 'visible', format: 'text', strip_ansi: true });
+      const text = String(response.read?.text ?? '');
+      evidence.screenSha256 = createHash('sha256').update(text).digest('hex');
+      evidence.screenReason = reason(text);
+      evidence.diagnosticLastScreen = text.slice(-8000).replace(/(?:sk-|sess-)[A-Za-z0-9_-]+/g, '[REDACTED]').replace(/Bearer\s+\S+/gi, 'Bearer [REDACTED]').replace(/[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/g, '[EMAIL]');
+      if (app) evidence.diagnosticObservation = { health: { ...app.health }, observations: app.snapshot().discoveries.map(summary) };
+      if (evidenceDirectory) { await mkdir(evidenceDirectory, { recursive: true }); await writeFile(join(evidenceDirectory, 'live.json'), JSON.stringify({ screen: evidence.diagnosticLastScreen, observation: evidence.diagnosticObservation }, null, 2), { mode: 0o600 }); }
+      return text;
+    }
+    try {
+      const versions = await Promise.all(['herdr', type].map(async executable => (await execute(executable, ['--version'], { timeout: 5000 })).stdout.trim()));
+      evidence.versions = { herdr: versions[0], agent: versions[1], node: process.version };
+      await expect.poll(async () => {
+        if (spawnError) throw spawnError;
+        if (child.exitCode !== null) throw new Error(`isolated herdr exited: ${stderr}`);
+        try { return await client.connect(); } catch { return null; }
+      }, { timeout: 10_000, interval: 100 }).toEqual({ version: '0.9.3', protocol: 22 });
+      expect(await client.listAgents()).toEqual([]);
+      target = (await client.start(type, cwd)).target;
+      evidence.target = target;
+      let ready: AgentObservation | undefined;
+      const deadline = Date.now() + 35_000;
+      while (Date.now() < deadline) {
+        const observation = (await client.listAgents()).find(agent => agent.terminalId === target);
+        if (observation) {
+          // herdr first reports the new shell before foreground detection catches
+          // up. Unknown during startup is observation-only, never readiness.
+          if(observation.type!=='unknown')expect(observation.type).toBe(type);
+          expect(observation.cwd).toBe(cwd);
+          const row = summary(observation);
+          if (JSON.stringify(timeline.at(-1)) !== JSON.stringify(row)) timeline.push(row);
+          const blocker = reason(await screen());
+          if (blocker) await block(blocker);
+          if (observation.type===type&&!observation.launchPending && observation.interactiveReady && ['idle', 'done'].includes(observation.status)) { ready = observation; break; }
+        }
+        await delay(250);
+      }
+      if (!ready) await block('startup did not establish interactive readiness within 35 seconds');
+      const processInfo = await rpc(socketPath, 'pane.process_info', { pane_id: ready!.paneId });
+      evidence.foregroundProcesses = (processInfo.process_info?.foreground_processes ?? []).map((row: any) => ({ pid: row.pid, name: row.name }));
+      if (!ready!.pid || !ready!.processStart) await block('adapter cannot establish a unique live foreground agent identity');
+      client.close();
+      app = new AgentConsole({ dataDir, session, executable: 'herdr', portFactory: () => {
+        const guard = guardAgentInput(new HerdrClient({ session, socketPath }), screen, recordBlock);
+        inputGuard = guard; return guard.port;
+      }, pollMs: 250, minFreeBytes: 0 });
+      await app.open(); expect(app.health.connected).toBe(true);
+      const project = await app.createProject({ operation_id: randomUUID(), name: `Real ${type}`, root: cwd });
+      const binding = await app.attach({ operation_id: randomUUID(), projectId: project.id, terminalId: target, label: `Real ${type}` }) as Binding;
+      await app.bindingAction(binding.id, { operation_id: randomUUID(), action: 'confirm', evidence: 'isolated test cwd/session and live identity checked by this opt-in test' });
+      await app.bindingAction(binding.id, { operation_id: randomUUID(), action: 'automatic' });
+      const beforeSubmit = reason(await screen());
+      if (beforeSubmit) await block(beforeSubmit);
+      const task = await app.saveTask({ operation_id: randomUUID(), projectId: project.id, bindingId: binding.id, title: 'Write one integration-test artifact', instructions: 'Create only hello.txt in the current work directory, containing exactly meteor-flow-real-agent-ok followed by a newline. Deliver the required structured result. Do not access any other directories, use external services, change settings, or start any other task. If any permission is needed, stop and wait for the human.', dependencies: [], requiredArtifacts: ['hello.txt'], outputRoots: [] }) as Task;
+      evidence.taskId = task.id;
+      const completionDeadline = Date.now() + 90_000;
+      while (Date.now() < completionDeadline) {
+        const current = app.store.state.tasks.find(row => row.id === task.id)!;
+        const blocker = inputGuard?.blockedReason ?? reason(await screen()); if (blocker) await block(blocker);
+        const active = app.store.state.attempts[0];
+        if (active && await stat(join(cwd, 'hello.txt')).catch(() => null) && await stat(join(cwd, '.meteor-flow/runs', active.id, 'result.json')).catch(() => null)) break;
+        // A ready observation can reach the DB before the supervised collector
+        // publishes an already-written result; allow collection to settle.
+        if (['failed', 'cancelled'].includes(current.phase)) throw new Error(`real task ended in ${current.phase}: ${current.reason}`);
+        await delay(250);
+      }
+      expect(app.store.state.attempts).toHaveLength(1);
+      const attempt = app.store.state.attempts[0]!;
+      expect(await readFile(join(cwd, 'hello.txt'), 'utf8')).toBe('meteor-flow-real-agent-ok\n');
+      const declaration = JSON.parse(await readFile(join(cwd, '.meteor-flow/runs', attempt.id, 'result.json'), 'utf8'));
+      expect(Value.Check(ResultSchema, declaration)).toBe(true);
+      expect(declaration).toMatchObject({ protocol: 'meteor-flow.result/v1', task_id: task.id, attempt_id: attempt.id, outcome: 'succeeded' });
+      expect(declaration.artifacts).toEqual([expect.objectContaining({ path: 'hello.txt' })]);
+      expect(attempt.input.roots.some(root => root.id === declaration.artifacts[0].root_id && root.path === cwd)).toBe(true);
+      evidence.status = 'model-output-verified'; evidence.attemptId = attempt.id;
+      evidence.applicationPhase = app.store.state.tasks.find(row => row.id === task.id)?.phase;
+      evidence.diagnosticOnly = true;
+      console.info('CODEX_DIAGNOSTIC_OUTPUT_VERIFIED: fixed files valid; this is not a product end-to-end pass');
+    } catch (error) {
+      if (evidence.status !== 'blocked') { evidence.status = 'failed'; evidence.error = error instanceof Error ? error.message : String(error); }
+      throw error;
+    } finally {
+      if(app){
+        evidence.tasks=app.store.state.tasks.map(t=>({id:t.id,phase:t.phase,reason:t.reason}));
+        evidence.attempts=app.store.state.attempts.map(a=>({id:a.id,phase:a.phase,reason:a.reason,dispatch:a.dispatch,seenActivity:a.seenActivity,archived:!!a.archiveId}));
+        evidence.events=app.store.state.events;
+        evidence.sourceFiles=await Promise.all(['hello.txt',...app.store.state.attempts.map(a=>`.meteor-flow/runs/${a.id}/result.json`)].map(async path=>({path,size:await stat(join(cwd,path)).then(s=>s.size).catch(()=>null)})));
+      }
+      await app?.close(); client.close();
+      if (child.exitCode === null && !spawnError) {
+        const closed = once(child, 'close');
+        const timeout = setTimeout(() => child.kill('SIGTERM'), 2000);
+        try { await rpc(socketPath, 'server.stop'); } catch { /* shutdown may close the reply socket */ }
+        await closed; clearTimeout(timeout);
+      }
+      evidence.protectedConfigurationUnchanged = JSON.stringify(await Promise.all(protectedFiles.map(hash))) === JSON.stringify(before);
+      if (evidenceDirectory) { await mkdir(evidenceDirectory, { recursive: true }); await writeFile(join(evidenceDirectory, `real-agent-${type}.json`), JSON.stringify(evidence, null, 2) + '\n', { mode: 0o600 }); }
+      await rm(directory, { recursive: true, force: true });
+      expect(evidence.protectedConfigurationUnchanged).toBe(true);
+    }
+  }, 155_000);
+}

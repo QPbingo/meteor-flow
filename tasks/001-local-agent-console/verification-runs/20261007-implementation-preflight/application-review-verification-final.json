@@ -1,0 +1,36 @@
+{
+  "node": "v24.21.0",
+  "platform": "darwin arm64",
+  "posix_build_exit": 0,
+  "server_build_exit": 0,
+  "runs": [
+    {
+      "log": "application-review-process-tests.log",
+      "passed": 66,
+      "suites": [
+        "posix 42",
+        "adapter 24"
+      ]
+    },
+    {
+      "log": "application-review-tests-final.log",
+      "passed": 46,
+      "suites": [
+        "application 10",
+        "HTTP 9",
+        "terminal 22",
+        "Store 5"
+      ]
+    }
+  ],
+  "distinct_independent_tests": 112,
+  "changes_after_tests": {
+    "files": [],
+    "test_dependency_context": [
+      "apps/server/src/storage/database.ts"
+    ]
+  },
+  "real_models": "not run by reviewer",
+  "cli": "source reviewed; author final 1-case evidence in cli-full-regression-fixed.log; excluded from independent test count",
+  "performance": "test assets reviewed; author RSS slope assertion failed; no independent performance rerun"
+}

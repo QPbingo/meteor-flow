@@ -1,0 +1,13 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+stdout | tests/integration/codex-standalone.test.ts > diagnostic codex: authorized standalone executor creates the fixed files
+CODEX_DIAGNOSTIC_OUTPUT_VERIFIED: fixed files valid; this is not a product end-to-end pass
+
+ ✓ tests/integration/codex-standalone.test.ts > diagnostic codex: authorized standalone executor creates the fixed files 49222ms
+
+ Test Files  1 passed (1)
+      Tests  1 passed (1)
+   Start at  17:09:07
+   Duration  49.64s (transform 105ms, setup 0ms, collect 214ms, tests 49.22s, environment 0ms, prepare 48ms)
+

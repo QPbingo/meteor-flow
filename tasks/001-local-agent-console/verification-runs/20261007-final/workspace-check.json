@@ -1,0 +1,9 @@
+{
+  "git_diff_check_exit_code": 0,
+  "git_diff_check_output": "",
+  "current_content_sha256": "28c43c0fde7b1a567235baa1e71b1717c73899a6e8338600587f37ffcb9bdcc2",
+  "recorded_content_sha256": "28c43c0fde7b1a567235baa1e71b1717c73899a6e8338600587f37ffcb9bdcc2",
+  "content_matches": true,
+  "committed": false,
+  "human_acceptance": "pending"
+}

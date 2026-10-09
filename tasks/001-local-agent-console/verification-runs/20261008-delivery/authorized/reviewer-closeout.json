@@ -1,0 +1,60 @@
+{
+  "checked_at": "2026-10-08T09:11:34.172771+00:00",
+  "candidate_changes": [],
+  "local_links": [
+    {
+      "path": "reviewer-preview.json",
+      "exists": true
+    },
+    {
+      "path": "reviewer-rules.json",
+      "exists": true
+    },
+    {
+      "path": "reviewer-initial-baseline.json",
+      "exists": true
+    },
+    {
+      "path": "reviewer-scope-initial.json",
+      "exists": true
+    },
+    {
+      "path": "reviewer-preview-fixed.json",
+      "exists": true
+    },
+    {
+      "path": "reviewer-rules-fixed.json",
+      "exists": true
+    },
+    {
+      "path": "reviewer-fixed-baseline.json",
+      "exists": true
+    },
+    {
+      "path": "reviewer-scope.json",
+      "exists": true
+    },
+    {
+      "path": "reviewer-findings-initial.json",
+      "exists": true
+    },
+    {
+      "path": "reviewer-guard-tests.log",
+      "exists": true
+    },
+    {
+      "path": "reviewer-guard-tests-host.log",
+      "exists": true
+    },
+    {
+      "path": "reviewer-tested-baseline-check.json",
+      "exists": true
+    },
+    {
+      "path": "reviewer-findings.json",
+      "exists": true
+    }
+  ],
+  "report_sha256": "5f1a8b910a0f37f2a11e037ecd26fa4668ad6982a4e510d87b53b265afe76c2d",
+  "model_calls_by_reviewer": 0
+}

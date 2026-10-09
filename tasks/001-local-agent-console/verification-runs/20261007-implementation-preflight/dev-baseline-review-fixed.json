@@ -1,0 +1,30 @@
+[
+  {
+    "path": "scripts/dev.mjs",
+    "sha256": "6738b08530380146e68b75bd9d900797ddd47a96daf967ecfac226e3c8a0824e"
+  },
+  {
+    "path": "package.json",
+    "sha256": "c9f8eecb01c691b0aac2e0af1ffa57267884edc5332b1b69e835961965c0d0ad"
+  },
+  {
+    "path": "apps/server/package.json",
+    "sha256": "c6816da2de3a596da38271f9f30e15c7a092ab41b92e584f564385e813668440"
+  },
+  {
+    "path": "apps/web/vite.config.ts",
+    "sha256": "9c05cfe0274205096ee4757006c619a344e34f8e128e9bd41b2aacc95b17a1a6"
+  },
+  {
+    "path": "tests/integration/dev.test.ts",
+    "sha256": "915f1621b09b688539e80776f6dfc69817885d6b60b45ad56c932c0eb62300d1"
+  },
+  {
+    "path": "tests/fixtures/dev-build.mjs",
+    "sha256": "48daf142f99d8eebd542e1e911c0bf80a026920a1e82a74123f04f546bf3a8f5"
+  },
+  {
+    "path": "tests/fixtures/dev-server.mjs",
+    "sha256": "68486edaa6ca96aafc952d80bff438410f8fa9f03023ae94d521314139456ff4"
+  }
+]

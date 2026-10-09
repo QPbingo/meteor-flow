@@ -1,0 +1,13 @@
+{
+  "captured_at": "2026-10-08T09:46:33.695161+00:00",
+  "files": [
+    {
+      "path": "tests/integration/helpers/agent-test-screen.ts",
+      "sha256": "3077d647923d3dd925b7a76eb047c934f1c486cb0596cb8427dec374e9e69170"
+    },
+    {
+      "path": "tests/integration/agent-test-screen.test.ts",
+      "sha256": "9d392f98444bf88339a866a23a912633e29f04192e62447582706b21ae26d129"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > accepts existing agents without managed readiness but rejects future/stale observations 1ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > does not infer success from activity followed by idle without a result (V08) 1ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > holds occupancy for a submitted result until this execution ends (V09/V10) 1ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > requires activity from after the final dispatch baseline 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > a committed success remains successful when cancel arrives later (V11) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > an accepted cancel keeps later success as late information and waits for stop (V11/V12) 1ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > keeps manual declarations separate from unproven stop evidence 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > recovery invalidates dispatch intent, startup intent, workers and authorization without releasing occupancy (V04/V06/V24) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > revokes authorization when another occupant replaces a running agent (V07) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > late old-attempt results do not overwrite a newly dispatched retry (V13) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > allows independent tasks behind dependency blockers, but freezes started task descriptions (V14/V16) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > rejects dependency cycles and cross-project task associations (V16) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > business failure releases occupancy while uncertain delivery pauses the binding (V15) 0ms
+ ✓ apps/server/src/storage/database.test.ts > real SQLite transactional repository > persists one operation and one task for duplicate browser submissions (V03) 17ms
+ ✓ apps/server/src/storage/database.test.ts > real SQLite transactional repository > rolls back state, events and operation record when any FK write fails 7ms
+ ✓ apps/server/src/storage/database.test.ts > real SQLite transactional repository > rejects a cycle without mutating task revision, dependencies or timeline (V16) 6ms
+ ✓ apps/server/src/storage/database.test.ts > real SQLite transactional repository > stores a dispatch intent once and denies another active attempt on the binding 6ms
+ ✓ apps/server/src/storage/database.test.ts > real SQLite transactional repository > backs up an existing v0 database before migration and refuses a future version 7ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > accepts a complete summary without file artifacts (V10) 2ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects unknown version (V09/V13/V27) 0ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects wrong task (V09/V13/V27) 0ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects old attempt (V09/V13/V27) 0ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects unknown outcome (V09/V13/V27) 0ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects missing summary (V09/V13/V27) 0ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects unknown property (V09/V13/V27) 0ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects duplicate JSON keys before object construction 0ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects duplicate JSON keys before object construction 0ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects duplicate JSON keys before object construction 0ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects duplicate JSON keys before object construction 0ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects partial, commented, trailing-comma and trailing-value JSON 0ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects partial, commented, trailing-comma and trailing-value JSON 0ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects partial, commented, trailing-comma and trailing-value JSON 0ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects partial, commented, trailing-comma and trailing-value JSON 0ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects malformed UTF-8 rather than replacing bytes 0ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects duplicate artifact ownership paths and more than 100 files 1ms
+ × apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > uses the confirmed 1 MiB result-file limit 4ms
+   → expected 262144 to be 1048576 // Object.is equality
+ × apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > enforces the confirmed summary limit in UTF-8 bytes 1ms
+   → expected [Function] to throw an error
+ × apps/server/src/results/collector.test.ts > real process result collection and immutable archives > archives complete artifacts, preserves source ownership and freezes independent downstream copies (V09/V17) 205ms
+   → Attempt ID must be a UUID
+ ✓ apps/server/src/storage/store.test.ts > dedicated real database writer > serializes concurrent identical operations to one persisted project (V03) 85ms
+ ✓ apps/server/src/storage/store.test.ts > dedicated real database writer > keeps the writer healthy after a domain conflict 79ms
+ × apps/server/src/results/collector.test.ts > real process result collection and immutable archives > rejects traversal without publishing a partial archive (V09/V13/V22) 175ms
+   → Attempt ID must be a UUID
+ × apps/server/src/results/collector.test.ts > real process result collection and immutable archives > rejects symlink without publishing a partial archive (V09/V13/V22) 169ms
+   → Attempt ID must be a UUID
+ × apps/server/src/results/collector.test.ts > real process result collection and immutable archives > rejects fifo without publishing a partial archive (V09/V13/V22) 176ms
+   → Attempt ID must be a UUID
+ × apps/server/src/results/collector.test.ts > real process result collection and immutable archives > rejects oversized without publishing a partial archive (V09/V13/V22) 168ms
+   → Attempt ID must be a UUID
+ ✓ apps/server/src/storage/store.test.ts > dedicated real database writer > recovers a committed-but-unacknowledged transaction without creating a second writer or replaying work (V04/V24) 646ms
+ × apps/server/src/results/collector.test.ts > real process result collection and immutable archives > rejects missing-required without publishing a partial archive (V09/V13/V22) 173ms
+   → Attempt ID must be a UUID
+ × apps/server/src/results/collector.test.ts > real process result collection and immutable archives > rejects old-attempt without publishing a partial archive (V09/V13/V22) 172ms
+   → Attempt ID must be a UUID
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > waits for process exit and channel closure after a successful candidate message 178ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > kills and reaps a timed-out writer even after it sent a success candidate 1610ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > reserves capacity for an unidentified orphan instead of spawning another writer 98ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 9 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  apps/server/src/results/collector.test.ts > real process result collection and immutable archives > archives complete artifacts, preserves source ownership and freezes independent downstream copies (V09/V17)
+ FAIL  apps/server/src/results/collector.test.ts > real process result collection and immutable archives > rejects traversal without publishing a partial archive (V09/V13/V22)
+ FAIL  apps/server/src/results/collector.test.ts > real process result collection and immutable archives > rejects symlink without publishing a partial archive (V09/V13/V22)
+ FAIL  apps/server/src/results/collector.test.ts > real process result collection and immutable archives > rejects fifo without publishing a partial archive (V09/V13/V22)
+ FAIL  apps/server/src/results/collector.test.ts > real process result collection and immutable archives > rejects oversized without publishing a partial archive (V09/V13/V22)
+ FAIL  apps/server/src/results/collector.test.ts > real process result collection and immutable archives > rejects missing-required without publishing a partial archive (V09/V13/V22)
+ FAIL  apps/server/src/results/collector.test.ts > real process result collection and immutable archives > rejects old-attempt without publishing a partial archive (V09/V13/V22)
+Error: Attempt ID must be a UUID
+ ❯ apps/server/src/results/collector.ts:119:50
+    117|         const valid=exitSeen&&code===0&&candidate?.ok&&!failure&&this.…
+    118|         if(this.store.healthy)await this.store.command({type:'job',job…
+    119|         if(valid)resolve(candidate!);else reject(new Error(failure??ca…
+       |                                                  ^
+    120|       })().catch(reject);});
+    121|     });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/9]⎯
+
+ FAIL  apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > uses the confirmed 1 MiB result-file limit
+AssertionError: expected 262144 to be 1048576 // Object.is equality
+
+- Expected
++ Received
+
+- 1048576
++ 262144
+
+ ❯ apps/server/src/results/protocol.test.ts:47:27
+     45|   });
+     46|   it('uses the confirmed 1 MiB result-file limit', () => {
+     47|     expect(limits.result).toBe(1024 * 1024);
+       |                           ^
+     48|   });
+     49|   it('enforces the confirmed summary limit in UTF-8 bytes', () => {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/9]⎯
+
+ FAIL  apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > enforces the confirmed summary limit in UTF-8 bytes
+AssertionError: expected [Function] to throw an error
+ ❯ apps/server/src/results/protocol.test.ts:52:56
+     50|     const summary = '中'.repeat(11_000);
+     51|     expect(Buffer.byteLength(summary)).toBeGreaterThan(32 * 1024);
+     52|     expect(() => parse({ ...declaration(), summary })).toThrow();
+       |                                                        ^
+     53|   });
+     54| });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/9]⎯
+
+
+ Test Files  2 failed | 3 passed (5)
+      Tests  9 failed | 41 passed (50)
+   Start at  09:42:37
+   Duration  3.47s (transform 154ms, setup 0ms, collect 591ms, tests 4.00s, environment 0ms, prepare 204ms)
+

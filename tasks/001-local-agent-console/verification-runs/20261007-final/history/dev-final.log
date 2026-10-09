@@ -1,0 +1,12 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ ✓ tests/integration/dev.test.ts > development proxy serves the browser with authenticated API/WS while rejecting foreign boundaries 1089ms
+ ✓ tests/integration/dev.test.ts > dev requires an explicit session and never starts services after a failed initial build 377ms
+ ✓ tests/integration/dev.test.ts > dev builds first, forwards CLI options, restarts on child-code changes and reaps its process groups 5913ms
+
+ Test Files  1 passed (1)
+      Tests  3 passed (3)
+   Start at  11:01:23
+   Duration  7.95s (transform 78ms, setup 0ms, collect 407ms, tests 7.38s, environment 0ms, prepare 37ms)
+

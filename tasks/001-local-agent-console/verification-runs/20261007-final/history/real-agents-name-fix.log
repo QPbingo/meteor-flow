@@ -1,0 +1,48 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ × tests/integration/real-agent.test.ts > real isolated codex: startup, readiness, structured result and durable archive 1318ms
+   → expected 'unknown' to be 'codex' // Object.is equality
+ × tests/integration/real-agent.test.ts > real isolated claude: startup, readiness, structured result and durable archive 1930ms
+   → expected 'unknown' to be 'claude' // Object.is equality
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/integration/real-agent.test.ts > real isolated codex: startup, readiness, structured result and durable archive
+AssertionError: expected 'unknown' to be 'codex' // Object.is equality
+
+Expected: "codex"
+Received: "unknown"
+
+ ❯ tests/integration/real-agent.test.ts:122:36
+    120|         const observation = (await client.listAgents()).find(agent => …
+    121|         if (observation) {
+    122|           expect(observation.type).toBe(type); expect(observation.cwd)…
+       |                                    ^
+    123|           const row = summary(observation);
+    124|           if (JSON.stringify(timeline.at(-1)) !== JSON.stringify(row))…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+ FAIL  tests/integration/real-agent.test.ts > real isolated claude: startup, readiness, structured result and durable archive
+AssertionError: expected 'unknown' to be 'claude' // Object.is equality
+
+Expected: "claude"
+Received: "unknown"
+
+ ❯ tests/integration/real-agent.test.ts:122:36
+    120|         const observation = (await client.listAgents()).find(agent => …
+    121|         if (observation) {
+    122|           expect(observation.type).toBe(type); expect(observation.cwd)…
+       |                                    ^
+    123|           const row = summary(observation);
+    124|           if (JSON.stringify(timeline.at(-1)) !== JSON.stringify(row))…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/2]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  2 failed (2)
+   Start at  10:08:58
+   Duration  3.60s (transform 82ms, setup 0ms, collect 175ms, tests 3.25s, environment 0ms, prepare 51ms)
+

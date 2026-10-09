@@ -1,0 +1,18 @@
+{
+  "focusAfterEscapeAndTab": {
+    "tag": "A",
+    "text": "跳到主要内容",
+    "name": null
+  },
+  "placeholder": {
+    "foreground": "rgb(110, 122, 138)",
+    "background": "rgb(255, 255, 255)",
+    "font": "14px"
+  },
+  "text200": {
+    "width": 1440,
+    "scroll": 1440,
+    "font": "28px",
+    "sidebar": 226
+  }
+}

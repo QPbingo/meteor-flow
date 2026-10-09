@@ -1,0 +1,131 @@
+{
+  "browser": "153.0.8010.12",
+  "node": "v24.21.0",
+  "errors": [],
+  "focus": [
+    {
+      "action": "Escape",
+      "returned": true
+    },
+    {
+      "action": "取消",
+      "returned": true
+    },
+    {
+      "action": "关闭对话框",
+      "returned": true
+    }
+  ],
+  "screenshots": {
+    "ui-final-desktop.png": "19a7c8466d03012e6f6cadbebd7c8f5afe01034ea8b48c9f036aba4ad49411ef",
+    "ui-final-narrow-detail.png": "1dcb55d96a6c59527bdfc5ff69ab1671a888bdc9f41e90e5724848a9cc38553a",
+    "ui-final-narrow-viewport.png": "f1fa40f96b70121b43f93f03c4bdf552b0f92649bab9eedda64e6dfd84de8a7f",
+    "ui-final-narrow.png": "0a14c38d30fa98289caad97adbb2f45d21568c2aa4dd95d817167361b0fc006e",
+    "ui-final-text200.png": "4e5e5c051afe5629b485d17255984680c90080fcc0927d3da1e9aa2d10ed8989",
+    "ui-final-agents.png": "4af1066a4f26f9e7f771cb4b169b8f6d505f238258707d34284aee6961db5e31"
+  },
+  "assets": [
+    "/assets/index-BgaYm1Rr.js",
+    "/assets/index-CaGdyP3D.css"
+  ],
+  "stateCounts": {
+    "projects": 1,
+    "tasks": 2,
+    "bindings": 2,
+    "artifacts": 0
+  },
+  "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' blob:; connect-src 'self'; font-src 'self'; frame-ancestors 'none'; object-src 'none'; base-uri 'none'; form-action 'self'",
+  "placeholder": {
+    "color": "rgb(100, 112, 132)",
+    "background": "rgb(255, 255, 255)"
+  },
+  "detail": {
+    "bounds": {
+      "x": 37,
+      "y": 17.625,
+      "width": 185.0625,
+      "height": 23.90625
+    },
+    "focused": true,
+    "visibleInViewport": true,
+    "returned": true
+  },
+  "closeSize": {
+    "x": 309,
+    "y": 17.625,
+    "width": 44,
+    "height": 44
+  },
+  "narrowControls": [
+    {
+      "label": "本地控制台 · 评估样例",
+      "height": 44,
+      "width": 144
+    },
+    {
+      "label": "创建项目",
+      "height": 44,
+      "width": 100
+    },
+    {
+      "label": "任务",
+      "height": 44,
+      "width": 172.5
+    },
+    {
+      "label": "Agent",
+      "height": 44,
+      "width": 172.5
+    },
+    {
+      "label": "选择 / 切换会话",
+      "height": 44,
+      "width": 167.5
+    },
+    {
+      "label": "调度设置",
+      "height": 44,
+      "width": 105
+    },
+    {
+      "label": "全局已暂停",
+      "height": 44,
+      "width": 119
+    },
+    {
+      "label": "新建任务",
+      "height": 44,
+      "width": 106
+    },
+    {
+      "label": "搜索任务",
+      "height": 44,
+      "width": 316.265625
+    },
+    {
+      "label": "筛选任务状态",
+      "height": 44,
+      "width": 271
+    },
+    {
+      "label": "核对任务结果和文件产物",
+      "height": 44,
+      "width": 150.921875
+    },
+    {
+      "label": "根据核对结果补充启动说明",
+      "height": 44,
+      "width": 164.640625
+    }
+  ],
+  "narrowWidth": {
+    "innerWidth": 390,
+    "scrollWidth": 390
+  },
+  "text200": {
+    "innerWidth": 1440,
+    "scrollWidth": 1440,
+    "font": "28px"
+  },
+  "cookieReuse": true
+}

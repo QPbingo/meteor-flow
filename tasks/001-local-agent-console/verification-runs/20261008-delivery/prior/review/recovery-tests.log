@@ -1,0 +1,24 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > releases an old attempt only after its own process exits even when its terminal now contains a replacement 238ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > requires fresh observations and explicit manual evidence to resolve an unknown start without any external side effect 141ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > starts on the session accepted by the command queue when a session switch finishes first 130ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > keeps a conflicting result pending across idle observations and restart until an explicit manual conclusion 561ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > allows explicitly confirmed existing agents even without managed interactive readiness 178ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > a manual switch after preparation but before final dispatch prevents all prompt input 184ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > accepts cancel while prompt acknowledgement is pending, sends one interrupt and retains occupancy (V03/V11/V12) 237ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > never retries a prompt with a lost acknowledgement, including after service restart (V04/V05/V24) 251ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > persists a startup intent once and preserves an unknown startup without repeating it (V03/V06) 128ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > runs an independent task behind an unmet dependency on another binding (V14) 298ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > rejects confirming an agent whose work directory overlaps private service data (V21/V22) 72ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > rejects extra output roots overlapping private service data (V22) 75ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > does not start an external agent after storage fails immediately after the durable startup intent 73ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > does not send an unrecorded emergency interrupt after storage recovers during identity observation 137ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > does not dispatch when a real work directory refuses frozen-input writes (V25) 164ms
+
+ Test Files  1 passed (1)
+      Tests  15 passed (15)
+   Start at  15:42:29
+   Duration  3.19s (transform 70ms, setup 0ms, collect 162ms, tests 2.87s, environment 0ms, prepare 44ms)
+

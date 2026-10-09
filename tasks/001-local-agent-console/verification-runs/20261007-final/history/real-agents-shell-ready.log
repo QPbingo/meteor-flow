@@ -1,0 +1,29 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ × tests/integration/real-agent.test.ts > real isolated codex: startup, readiness, structured result and durable archive 1670ms
+   → agent.read: invalid/error response
+ × tests/integration/real-agent.test.ts > real isolated claude: startup, readiness, structured result and durable archive 2115ms
+   → agent.read: invalid/error response
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/integration/real-agent.test.ts > real isolated codex: startup, readiness, structured result and durable archive
+ FAIL  tests/integration/real-agent.test.ts > real isolated claude: startup, readiness, structured result and durable archive
+Error: agent.read: invalid/error response
+ ❯ Socket.<anonymous> tests/integration/real-agent.test.ts:40:85
+     38|       try {
+     39|         const response = JSON.parse(bytes.slice(0, newline));
+     40|         if (response.id !== id || response.error || !response.result) …
+       |                                                                                     ^
+     41|         finish(undefined, response.result);
+     42|       } catch (error) { finish(error as Error); }
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  2 failed (2)
+   Start at  10:13:02
+   Duration  4.14s (transform 79ms, setup 0ms, collect 175ms, tests 3.79s, environment 0ms, prepare 48ms)
+

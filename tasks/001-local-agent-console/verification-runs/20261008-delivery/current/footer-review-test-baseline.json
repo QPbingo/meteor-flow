@@ -1,0 +1,17 @@
+{
+  "captured_at": "2026-10-08T09:49:20.496648+00:00",
+  "files": [
+    {
+      "path": "tests/integration/helpers/agent-test-screen.ts",
+      "sha256": "56fe1fc6f4ff16ae4297cbc1b7b86445be798730f8ba5ee25a8d82f8b6c0c9f9"
+    },
+    {
+      "path": "tests/integration/agent-test-screen.test.ts",
+      "sha256": "9e274f90fe6db32b8e0645a7dab56f65d572c42c0d086feb100591d8243581bb"
+    },
+    {
+      "path": "tests/integration/real-agent.test.ts",
+      "sha256": "1ab7f98140a34a3c84dec2781ec72790cac1211f37b11ef5c0617bdf95c91922"
+    }
+  ]
+}

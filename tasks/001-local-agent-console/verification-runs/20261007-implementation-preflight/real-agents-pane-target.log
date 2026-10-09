@@ -1,0 +1,27 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ × tests/integration/real-agent.test.ts > real isolated codex: startup, readiness, structured result and durable archive 25705ms
+   → real task ended in needs_confirmation: Agent 空闲但缺少有效结果
+ ↓ tests/integration/real-agent.test.ts > real isolated claude: startup, readiness, structured result and durable archive
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/integration/real-agent.test.ts > real isolated codex: startup, readiness, structured result and durable archive
+Error: real task ended in needs_confirmation: Agent 空闲但缺少有效结果
+ ❯ tests/integration/real-agent.test.ts:154:90
+    152|         if (current.phase === 'succeeded') break;
+    153|         const blocker = reason(await screen()); if (blocker) await blo…
+    154|         if (['failed', 'cancelled', 'needs_confirmation'].includes(cur…
+       |                                                                                          ^
+    155|         await delay(250);
+    156|       }
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 1 skipped (2)
+   Start at  10:24:59
+   Duration  26.04s (transform 81ms, setup 0ms, collect 165ms, tests 25.71s, environment 0ms, prepare 47ms)
+

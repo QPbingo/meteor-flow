@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-08",
+  "reviewer": "/root/technical_review",
+  "source_root": "/tmp/meteor-flow-upstream-20261006/herdr-v0.9.3",
+  "source_files": [
+    {
+      "path": "/tmp/meteor-flow-upstream-20261006/herdr-v0.9.3/src/app/agents.rs",
+      "sha256": "2cca0ba0f1b6b065ac9e882b3a2f6b87d40aef74adbe589701971e7423105ea1"
+    },
+    {
+      "path": "/tmp/meteor-flow-upstream-20261006/herdr-v0.9.3/src/app/api/panes.rs",
+      "sha256": "a893f3e4710b8cdc7b8669b0a6725c9da5fc021dc6bb31027d2c0b6f552b93d9"
+    },
+    {
+      "path": "/tmp/meteor-flow-upstream-20261006/herdr-v0.9.3/src/platform/mod.rs",
+      "sha256": "c727ac8ed3610a63b5877acdd48dd586264f0f1b2d528d7c20df69ee05bc4a58"
+    },
+    {
+      "path": "/tmp/meteor-flow-upstream-20261006/herdr-v0.9.3/src/platform/macos.rs",
+      "sha256": "0067d0add0911990429ade377864d093ed48e85f7996aae4c0fccb0093c1092f"
+    },
+    {
+      "path": "/tmp/meteor-flow-upstream-20261006/herdr-v0.9.3/src/cli/agent.rs",
+      "sha256": "652568964b4b035f93a013a4da8219d50d9d6e22bbeb703660e9787e98bb2353"
+    }
+  ],
+  "adapter_sha256": "2033bcba8a61e1a039a19fd53d0b167f9c6c474b7c7e293a6a8acbea4a0061f2",
+  "failure_evidence": "real-agents-ready/real-agent-claude.json",
+  "failure_evidence_sha256": "135e114d43265b076fe88728ad24c0c4ec23ed068ec28cf391942fa1bcafa726",
+  "conclusion": "no demonstrated waitForShell implementation defect; explicit upstream rejection before agent input, conservative propagation conforms to existing single-send startup contract",
+  "limits": "Actual failure does not retain shell snapshot or structured error code/target; cannot assert exact transient cause. A new isolated normal-path test cannot erase this failed result.",
+  "models_executed_by_reviewer": 0
+}

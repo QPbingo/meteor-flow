@@ -1,0 +1,137 @@
+{
+  "checked_at": "2026-10-08T10:06:34.959028+00:00",
+  "links": [
+    {
+      "source": "README.md",
+      "target": "tasks/001-local-agent-console/verification-status.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "tasks/001-local-agent-console/usage.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "tasks/001-local-agent-console/requirements.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "tasks/001-local-agent-console/review.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "tasks/001-local-agent-console/technical-design.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "tasks/001-local-agent-console/technical-review.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "tasks/001-local-agent-console/implementation-plan.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "tasks/001-local-agent-console/implementation-progress.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "tasks/001-local-agent-console/herdr-compatibility.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "tasks/001-local-agent-console/DESIGN.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "tasks/002-development-workflow/workflow.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "tasks/002-development-workflow/skill-prerequisites.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "tasks/002-development-workflow/mandatory-scenarios.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "AGENTS.md",
+      "exists": true
+    },
+    {
+      "source": "tasks/001-local-agent-console/codex-integration-followup.md",
+      "target": "verification-runs/20261008-delivery/report.json",
+      "exists": true
+    },
+    {
+      "source": "tasks/001-local-agent-console/implementation-progress.md",
+      "target": "verification-status.md",
+      "exists": true
+    },
+    {
+      "source": "tasks/001-local-agent-console/implementation-progress.md",
+      "target": "verification-runs/20261008-delivery/report.json",
+      "exists": true
+    },
+    {
+      "source": "tasks/001-local-agent-console/implementation-progress.md",
+      "target": "verification-runs/20261008-delivery/summary.md",
+      "exists": true
+    },
+    {
+      "source": "tasks/001-local-agent-console/usage.md",
+      "target": "verification-status.md",
+      "exists": true
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-status.md",
+      "target": "verification-runs/20261008-delivery/report.json",
+      "exists": true
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-status.md",
+      "target": "verification-runs/20261008-delivery/summary.md",
+      "exists": true
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-status.md",
+      "target": "verification-runs/20261007-final/report.json",
+      "exists": true
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-status.md",
+      "target": "verification-runs/20261007-review-delivery/summary.md",
+      "exists": true
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-status.md",
+      "target": "codex-integration-followup.md",
+      "exists": true
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-status.md",
+      "target": "verification-runs/20261007-implementation-preflight/",
+      "exists": true
+    },
+    {
+      "source": "tasks/001-local-agent-console/verification-status.md",
+      "target": "verification-runs/20261007-performance-worker-young16/report.md",
+      "exists": true
+    }
+  ],
+  "missing": [],
+  "note": "26个本地链接均存在；delivery汇总的内容与来源仍待后续aggregate核查。"
+}

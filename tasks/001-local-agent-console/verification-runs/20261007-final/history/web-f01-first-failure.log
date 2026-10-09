@@ -1,0 +1,60 @@
+
+Running 3 tests using 1 worker
+
+(node:70430) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/e2e/web-console.spec.ts:127:1 › details keep attempt ownership and strip active Markdown and remote resources (384ms)
+  ✘  2 tests/e2e/web-console.spec.ts:142:1 › Markdown image mapping respects attempt, root, frozen IDs, MIME and size boundaries (5.2s)
+(node:70452) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  3 tests/e2e/web-server.spec.ts:13:1 › browser creates project, confirms agent, completes a file task and reads durable evidence (7.2s)
+
+
+  1) tests/e2e/web-console.spec.ts:142:1 › Markdown image mapping respects attempt, root, frozen IDs, MIME and size boundaries 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 0
+
+    Call Log:
+    - Timeout 5000ms exceeded while waiting on the predicate
+
+      156 |   await page.getByRole('tab', { name: '结果与产物' }).click();
+      157 |   const image = page.getByRole('tabpanel').getByRole('img', { name: 'current', exact: true });
+    > 158 |   await expect.poll(() => image.evaluate(element => (element as HTMLImageElement).naturalWidth)).toBe(1);
+          |                                                                                                  ^
+      159 |   await expect(page.getByRole('tabpanel').locator('.markdown img')).toHaveCount(1);
+      160 |   expect(requests.sort()).toEqual(['current-id', 'text-id']);
+      161 |   for (const alt of ['ambiguous', 'old', 'foreign', 'oversize', 'wrong MIME', 'escaped', 'remote']) await expect(page.getByRole('tabpanel').locator('.markdown')).toContainText(alt);
+        at /Users/heybox/Documents/herdrflow/meteor-flow/tests/e2e/web-console.spec.ts:158:98
+
+    Error Context: test-results/tests-e2e-web-console-Mark-6cc90-Ds-MIME-and-size-boundaries/error-context.md
+
+    Error Context: test-results/tests-e2e-web-console-Mark-6cc90-Ds-MIME-and-size-boundaries/error-context.md
+
+  2) tests/e2e/web-server.spec.ts:13:1 › browser creates project, confirms agent, completes a file task and reads durable evidence 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 0
+
+    Call Log:
+    - Timeout 5000ms exceeded while waiting on the predicate
+
+      114 |     await page.getByRole('tab', { name: '结果与产物' }).click();
+      115 |     await expect(page.getByRole('tabpanel')).toContainText('已交付测试报告。');
+    > 116 |     await expect.poll(() => page.getByRole('img', { name: '归档结果图片' }).evaluate(element => (element as HTMLImageElement).naturalWidth)).toBe(1);
+          |                                                                                                                                        ^
+      117 |     await page.getByRole('button', { name: 'report.txt', exact: true }).click();
+      118 |     await expect(page.getByRole('dialog').locator('pre')).toContainText('隔离浏览器测试的归档证据');
+      119 |     await page.getByRole('button', { name: '关闭对话框' }).click();
+        at /Users/heybox/Documents/herdrflow/meteor-flow/tests/e2e/web-server.spec.ts:116:136
+
+    Error Context: test-results/tests-e2e-web-server-brows-45ee2--and-reads-durable-evidence/error-context.md
+
+  2 failed
+    tests/e2e/web-console.spec.ts:142:1 › Markdown image mapping respects attempt, root, frozen IDs, MIME and size boundaries 
+    tests/e2e/web-server.spec.ts:13:1 › browser creates project, confirms agent, completes a file task and reads durable evidence 
+  1 passed (14.1s)

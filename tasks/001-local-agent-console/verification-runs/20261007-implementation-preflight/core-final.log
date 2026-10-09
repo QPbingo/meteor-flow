@@ -1,0 +1,69 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ ✓ apps/server/src/storage/store.test.ts > dedicated real database writer > serializes concurrent identical operations to one persisted project (V03) 80ms
+ ✓ apps/server/src/storage/store.test.ts > dedicated real database writer > keeps the writer healthy after a domain conflict 74ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > allows explicitly confirmed existing agents even without managed interactive readiness 242ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > a manual switch after preparation but before final dispatch prevents all prompt input 209ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > archives complete artifacts, preserves source ownership and freezes independent downstream copies (V09/V17) 499ms
+ ✓ apps/server/src/storage/store.test.ts > dedicated real database writer > recovers a committed-but-unacknowledged transaction without creating a second writer or replaying work (V04/V24) 660ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > accepts cancel while prompt acknowledgement is pending, sends one interrupt and retains occupancy (V03/V11/V12) 252ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > rejects traversal without publishing a partial archive (V09/V13/V22) 284ms
+ ✓ apps/server/src/storage/database.test.ts > real SQLite transactional repository > persists one operation and one task for duplicate browser submissions (V03) 12ms
+ ✓ apps/server/src/storage/database.test.ts > real SQLite transactional repository > rolls back state, events and operation record when any FK write fails 6ms
+ ✓ apps/server/src/storage/database.test.ts > real SQLite transactional repository > rejects a cycle without mutating task revision, dependencies or timeline (V16) 6ms
+ ✓ apps/server/src/storage/database.test.ts > real SQLite transactional repository > stores a dispatch intent once and denies another active attempt on the binding 6ms
+ ✓ apps/server/src/storage/database.test.ts > real SQLite transactional repository > backs up an existing v0 database before migration and refuses a future version 7ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > never retries a prompt with a lost acknowledgement, including after service restart (V04/V05/V24) 277ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > rejects symlink without publishing a partial archive (V09/V13/V22) 292ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > accepts a complete summary without file artifacts (V10) 2ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects unknown version (V09/V13/V27) 0ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects wrong task (V09/V13/V27) 0ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects old attempt (V09/V13/V27) 0ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects unknown outcome (V09/V13/V27) 0ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects missing summary (V09/V13/V27) 0ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects unknown property (V09/V13/V27) 0ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects duplicate JSON keys before object construction 0ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects duplicate JSON keys before object construction 0ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects duplicate JSON keys before object construction 0ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects duplicate JSON keys before object construction 0ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects partial, commented, trailing-comma and trailing-value JSON 0ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects partial, commented, trailing-comma and trailing-value JSON 0ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects partial, commented, trailing-comma and trailing-value JSON 0ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects partial, commented, trailing-comma and trailing-value JSON 0ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects malformed UTF-8 rather than replacing bytes 0ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > rejects duplicate artifact ownership paths and more than 100 files 1ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > uses the confirmed 1 MiB result-file limit 0ms
+ ✓ apps/server/src/results/protocol.test.ts > strict attempt-bound result declaration > enforces the confirmed summary limit in UTF-8 bytes 0ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > persists a startup intent once and preserves an unknown startup without repeating it (V03/V06) 139ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > accepts existing agents without managed readiness but rejects future/stale observations 1ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > does not infer success from activity followed by idle without a result (V08) 1ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > holds occupancy for a submitted result until this execution ends (V09/V10) 1ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > requires activity from after the final dispatch baseline 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > a committed success remains successful when cancel arrives later (V11) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > an accepted cancel keeps later success as late information and waits for stop (V11/V12) 1ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > keeps manual declarations separate from unproven stop evidence 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > recovery invalidates dispatch intent, startup intent, workers and authorization without releasing occupancy (V04/V06/V24) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > revokes authorization when another occupant replaces a running agent (V07) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > late old-attempt results do not overwrite a newly dispatched retry (V13) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > allows independent tasks behind dependency blockers, but freezes started task descriptions (V14/V16) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > rejects dependency cycles and cross-project task associations (V16) 0ms
+ ✓ apps/server/src/domain/model.test.ts > task and observation state invariants > business failure releases occupancy while uncertain delivery pauses the binding (V15) 0ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > rejects fifo without publishing a partial archive (V09/V13/V22) 296ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > runs an independent task behind an unmet dependency on another binding (V14) 351ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > rejects confirming an agent whose work directory overlaps private service data (V21/V22) 84ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > rejects extra output roots overlapping private service data (V22) 81ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > does not start an external agent after storage fails immediately after the durable startup intent 80ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > rejects oversized without publishing a partial archive (V09/V13/V22) 320ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > rejects missing-required without publishing a partial archive (V09/V13/V22) 288ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > rejects old-attempt without publishing a partial archive (V09/V13/V22) 275ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > waits for process exit and channel closure after a successful candidate message 173ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > kills and reaps a timed-out writer even after it sent a success candidate 1606ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > reserves capacity for an unidentified orphan instead of spawning another writer 96ms
+ ✓ apps/server/src/results/collector.test.ts > real process result collection and immutable archives > reserves capacity atomically when two preparations arrive together 127ms
+
+ Test Files  6 passed (6)
+      Tests  60 passed (60)
+   Start at  09:53:36
+   Duration  4.54s (transform 164ms, setup 0ms, collect 594ms, tests 6.84s, environment 1ms, prepare 217ms)
+

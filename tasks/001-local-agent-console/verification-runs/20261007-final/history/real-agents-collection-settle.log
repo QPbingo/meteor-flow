@@ -1,0 +1,14 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+stdout | tests/integration/real-agent.test.ts > real isolated codex: startup, readiness, structured result and durable archive
+REAL_AGENT_PASSED codex: structured result and archive committed
+
+ ✓ tests/integration/real-agent.test.ts > real isolated codex: startup, readiness, structured result and durable archive 39655ms
+ ↓ tests/integration/real-agent.test.ts > real isolated claude: startup, readiness, structured result and durable archive
+
+ Test Files  1 passed (1)
+      Tests  1 passed | 1 skipped (2)
+   Start at  10:26:24
+   Duration  39.98s (transform 78ms, setup 0ms, collect 161ms, tests 39.66s, environment 0ms, prepare 46ms)
+

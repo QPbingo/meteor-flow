@@ -1,0 +1,37 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ ✓ tests/integration/dev.test.ts > development proxy serves the browser with authenticated API/WS while rejecting foreign boundaries 1239ms
+ ✓ tests/integration/dev.test.ts > dev requires an explicit session and never starts services after a failed initial build 389ms
+ ✓ tests/integration/dev.test.ts > reaps a resistant build descendant after the build is failed 5441ms
+ ✓ tests/integration/dev.test.ts > reaps a resistant build descendant after the build is interrupted 5429ms
+ × tests/integration/dev.test.ts > dev builds first, forwards CLI options, restarts on child-code changes and reaps its process groups 956ms
+   → expected 1 to be +0 // Object.is equality
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/integration/dev.test.ts > dev builds first, forwards CLI options, restarts on child-code changes and reaps its process groups
+AssertionError: expected 1 to be +0 // Object.is equality
+
+- Expected
++ Received
+
+- 0
++ 1
+
+ ❯ tests/integration/dev.test.ts:195:54
+    193|     await expect.poll(async () => (await fixture.rows()).filter(row =>…
+    194|     const pids = await descendants(child.pid!); expect(pids.length).to…
+    195|     child.kill('SIGTERM'); expect((await closed)[0]).toBe(0);
+       |                                                      ^
+    196|     for (const pid of pids) await expect.poll(() => live(pid)).toBe(fa…
+    197|     for (const row of (await fixture.rows()).filter(row => row.kind ==…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 4 passed (5)
+   Start at  11:06:17
+   Duration  14.05s (transform 82ms, setup 0ms, collect 434ms, tests 13.45s, environment 0ms, prepare 41ms)
+

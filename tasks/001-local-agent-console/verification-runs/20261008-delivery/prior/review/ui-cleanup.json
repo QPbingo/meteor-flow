@@ -1,0 +1,11 @@
+{
+  "emptyFailedLaunchDirectoriesRemoved": [
+    "/var/folders/zz/x9yvm9fs0wjbmxrh_2hw470w0000gn/T/meteor-ui-review-4famtI"
+  ],
+  "startedServicesClosedInFinally": true,
+  "temporaryProbePaths": [
+    "/tmp/meteor-flow-ui-review-20261008.mts",
+    "/tmp/meteor-flow-ui-recovery-20261008.mts"
+  ],
+  "note": "临时复现器保留供作者修复后增量复查；无业务代码写入证据目录"
+}

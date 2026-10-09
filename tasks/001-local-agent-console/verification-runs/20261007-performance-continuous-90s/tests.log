@@ -1,0 +1,14 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+stdout | tests/integration/performance.test.ts > 1000 history tasks and two 1 MiB/s terminals for 90 seconds keep local operations responsive
+{"listP95Ms":1.025957999999946,"operationP95Ms":24.725333000002138,"operations":640,"outputBytes":[94371840,94371840],"rssSlopeMiBPerSecond":1.0441257577314198,"retainedGrowthMiB":68.90625,"peakRssMiB":310.1875,"windows":[{"fromSeconds":10,"toSeconds":90,"samples":80,"slopeMiBPerSecond":1.0441257577314198,"retainedGrowthMiB":68.90625,"withinOriginalNumericalLimits":false},{"fromSeconds":60,"toSeconds":90,"samples":30,"slopeMiBPerSecond":0.8323187812283256,"retainedGrowthMiB":19.484375,"withinOriginalNumericalLimits":true}]}
+
+ ✓ tests/integration/performance.test.ts (1 test) 91238ms
+   ✓ 1000 history tasks and two 1 MiB/s terminals for 90 seconds keep local operations responsive  91238ms
+
+ Test Files  1 passed (1)
+      Tests  1 passed (1)
+   Start at  10:52:50
+   Duration  91.41s (transform 24ms, setup 0ms, collect 27ms, tests 91.24s, environment 0ms, prepare 37ms)
+

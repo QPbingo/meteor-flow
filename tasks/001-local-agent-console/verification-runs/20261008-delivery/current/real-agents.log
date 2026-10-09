@@ -1,0 +1,17 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+stdout | tests/integration/real-agent.test.ts > real isolated codex: startup, readiness, structured result and durable archive
+REAL_AGENT_PASSED codex: structured result and archive committed
+
+ ✓ tests/integration/real-agent.test.ts > real isolated codex: startup, readiness, structured result and durable archive 35260ms
+stdout | tests/integration/real-agent.test.ts > real isolated claude: startup, readiness, structured result and durable archive
+REAL_AGENT_BLOCKED claude: software update requires human interaction
+
+ ↓ tests/integration/real-agent.test.ts > real isolated claude: startup, readiness, structured result and durable archive 12332ms [software update requires human interaction]
+
+ Test Files  1 passed (1)
+      Tests  1 passed | 1 skipped (2)
+   Start at  17:36:49
+   Duration  47.92s (transform 87ms, setup 0ms, collect 177ms, tests 47.59s, environment 0ms, prepare 46ms)
+

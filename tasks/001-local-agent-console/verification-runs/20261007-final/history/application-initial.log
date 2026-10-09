@@ -1,0 +1,109 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > allows explicitly confirmed existing agents even without managed interactive readiness 249ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > a manual switch after preparation but before final dispatch prevents all prompt input 189ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > accepts cancel while prompt acknowledgement is pending, sends one interrupt and retains occupancy (V03/V11/V12) 258ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > never retries a prompt with a lost acknowledgement, including after service restart (V04/V05/V24) 275ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > persists a startup intent once and preserves an unknown startup without repeating it (V03/V06) 133ms
+ ✓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > runs an independent task behind an unmet dependency on another binding (V14) 325ms
+ × apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > rejects confirming an agent whose work directory overlaps private service data (V21/V22) 82ms
+   → promise resolved "{ …(16) }" instead of rejecting
+ × apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > rejects extra output roots overlapping private service data (V22) 78ms
+   → promise resolved "{ …(15) }" instead of rejecting
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > rejects confirming an agent whose work directory overlaps private service data (V21/V22)
+AssertionError: promise resolved "{ …(16) }" instead of rejecting
+
+- Expected
++ Received
+
+- Error {
+-   "message": "rejected promise",
++ {
++   "agentSession": "session-terminal-1",
++   "confirmed": true,
++   "cwd": "/private/tmp/mf-console-QvB2Tr/data",
++   "fingerprint": "c13fe5b0-086e-47a1-9fc0-665de9987c78",
++   "id": "ec6f9b05-36c3-413a-a4fb-4ae0ad371a14",
++   "label": "private data overlap",
++   "managed": false,
++   "mode": "manual",
++   "observation": {
++     "agentSession": "session-terminal-1",
++     "cwd": "/private/tmp/mf-console-QvB2Tr/data",
++     "fingerprint": "c13fe5b0-086e-47a1-9fc0-665de9987c78",
++     "interactiveReady": true,
++     "launchPending": false,
++     "observedAt": 1791337780875,
++     "paneId": "pane-terminal-1",
++     "pid": 45975,
++     "processStart": "45975:1791337779:63318",
++     "sequence": 1,
++     "status": "idle",
++     "terminalId": "terminal-1",
++     "type": "codex",
++   },
++   "paused": true,
++   "projectId": "aa3f9899-73d3-4d64-b29a-a22f8a08d16a",
++   "reason": "已确认接入，请启用自动调度",
++   "revision": 2,
++   "session": "meteor-flow-test-state",
++   "terminalId": "terminal-1",
++   "type": "codex",
+  }
+
+ ❯ apps/server/src/application/console.test.ts:133:131
+    131|     context.fake.agents.get('terminal-1')!.cwd = context.dataDir;
+    132|     const b = await context.console.attach({ operation_id: 'attach-pri…
+    133|     await expect(context.console.bindingAction(b.id, { operation_id: '…
+       |                                                                                                                                   ^
+    134|     expect(context.console.store.state.bindings[0]!.confirmed).toBe(fa…
+    135|   });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+ FAIL  apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > rejects extra output roots overlapping private service data (V22)
+AssertionError: promise resolved "{ …(15) }" instead of rejecting
+
+- Expected
++ Received
+
+- Error {
+-   "message": "rejected promise",
++ {
++   "archived": false,
++   "bindingId": "f6e6eff1-de39-48eb-9dc3-ba6dce17ef14",
++   "createdAt": 1791337780957,
++   "currentAttemptId": null,
++   "dependencies": [],
++   "id": "075660d3-0249-4331-a6c0-9b8348e53aea",
++   "instructions": "test",
++   "order": 1,
++   "outputRoots": [
++     {
++       "id": "private-data",
++       "path": "/private/tmp/mf-console-4L3uBI/data",
++     },
++   ],
++   "phase": "queued",
++   "projectId": "95d9feb5-663d-47cc-9599-1798feab3810",
++   "reason": "",
++   "requiredArtifacts": [],
++   "revision": 1,
++   "title": "unsafe output",
+  }
+
+ ❯ apps/server/src/application/console.test.ts:139:274
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/2]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  2 failed | 6 passed (8)
+   Start at  09:49:39
+   Duration  1.91s (transform 73ms, setup 0ms, collect 158ms, tests 1.59s, environment 0ms, prepare 48ms)
+

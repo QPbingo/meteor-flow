@@ -1,0 +1,54 @@
+{
+  "scope": "Real browser + HTTP + SQLite + filesystem, isolated FakeHerdr and terminal CLI fixture; no user agents",
+  "checks": [
+    {
+      "name": "historical_artifact_removal",
+      "passed": true,
+      "metadataSeeded": true,
+      "actualOld": "c2755270-195b-4d46-b36e-34721249a575",
+      "actualCurrent": "ed2ca410-d229-4fe7-aee2-3d3637438176"
+    },
+    {
+      "name": "archived_retry_api",
+      "status": 409,
+      "body": {
+        "error": {
+          "code": "ARCHIVED",
+          "message": "已归档任务不能重试，请复制为新任务",
+          "current": {
+            "storage": true,
+            "connected": true
+          },
+          "recoveryActions": [
+            "refresh-and-check"
+          ]
+        }
+      }
+    },
+    {
+      "name": "unknown_start_visible_guard",
+      "preserved": true,
+      "evidencePreserved": "独立核对原窗格与进程，本次仅保存声明"
+    },
+    {
+      "name": "unknown_start_stale_guard",
+      "preserved": true
+    },
+    {
+      "name": "unknown_start_lost_response_replay",
+      "status": "dismissed",
+      "manualResolution": {
+        "source": "manual",
+        "evidence": "独立核对原窗格与进程，本次仅保存声明",
+        "at": 1791446182250
+      },
+      "startCalls": 1,
+      "interruptCalls": 0,
+      "resolutionEvents": 1
+    },
+    {
+      "name": "unknown_start_refresh",
+      "persisted": true
+    }
+  ]
+}

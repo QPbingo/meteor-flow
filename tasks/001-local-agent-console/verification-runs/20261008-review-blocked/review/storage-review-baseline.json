@@ -1,0 +1,25 @@
+{
+  "captured_at": "2026-10-08T08:24:00.245716+00:00",
+  "files": [
+    {
+      "path": "apps/server/src/storage/database.ts",
+      "sha256": "e3916cd86d93dae8142f9d8f4cef7250862dd1b9a82ec2c3d801bc635b6313df"
+    },
+    {
+      "path": "apps/server/src/storage/worker.ts",
+      "sha256": "cde27bfdf67417c6c64b604fb72922b3d8bdfa320972811dfe9275a5a0f4cf01"
+    },
+    {
+      "path": "apps/server/src/storage/store.ts",
+      "sha256": "80a4e3a6577f7a379cfcbd5601cf3efb9695d509e3fb5cd28407a71b4870109b"
+    },
+    {
+      "path": "apps/server/src/storage/state-patch.ts",
+      "sha256": "30635e6124b8f9b584dd1ccd90905054e4bfe890c92b22799a8fd78bfe962db6"
+    },
+    {
+      "path": "apps/server/src/storage/store.test.ts",
+      "sha256": "1b8acc66e2d101d8e6dda360d9982d3b7623d755f023d8bb6f17480bdfd7912f"
+    }
+  ]
+}

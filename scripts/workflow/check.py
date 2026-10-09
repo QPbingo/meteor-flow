@@ -12,7 +12,7 @@ import sys
 SCENARIOS = ('state-transition', 'idempotency', 'ordering', 'recovery', 'association', 'isolation')
 CHECKS = ('backend', 'e2e', 'ui', 'architecture')
 STATUSES = ('pass', 'fail', 'blocked', 'not-run', 'not-applicable')
-SKILLS = ('test-master', 'open-code-review-delegate', 'meteor-flow-verification')
+SKILLS = ('test-master', 'open-code-review-delegate', 'meteor-flow-verification', 'playwright-cli', 'impeccable')
 
 
 def git(root, *args):

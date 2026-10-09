@@ -1,0 +1,70 @@
+
+ RUN  v3.2.7 /Users/heybox/Documents/herdrflow/meteor-flow
+
+ × apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > starts on the session accepted by the command queue when a session switch finishes first 1112ms
+   → Matcher did not succeed in time.
+ × apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > keeps a conflicting result pending across idle observations and restart until an explicit manual conclusion 482ms
+   → expected { …(25) } to match object { phase: 'needs_confirmation', …(2) }
+(38 matching properties omitted from actual)
+ ↓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > allows explicitly confirmed existing agents even without managed interactive readiness
+ ↓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > a manual switch after preparation but before final dispatch prevents all prompt input
+ ↓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > accepts cancel while prompt acknowledgement is pending, sends one interrupt and retains occupancy (V03/V11/V12)
+ ↓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > never retries a prompt with a lost acknowledgement, including after service restart (V04/V05/V24)
+ ↓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > persists a startup intent once and preserves an unknown startup without repeating it (V03/V06)
+ ↓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > runs an independent task behind an unmet dependency on another binding (V14)
+ ↓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > rejects confirming an agent whose work directory overlaps private service data (V21/V22)
+ ↓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > rejects extra output roots overlapping private service data (V22)
+ ↓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > does not start an external agent after storage fails immediately after the durable startup intent
+ ↓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > does not send an unrecorded emergency interrupt after storage recovers during identity observation
+ ↓ apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > does not dispatch when a real work directory refuses frozen-input writes (V25)
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > starts on the session accepted by the command queue when a session switch finishes first
+Error: Matcher did not succeed in time.
+ ❯ apps/server/src/application/console.test.ts:43:101
+     41|     const starting=context.console.start({operation_id:'queued-start',…
+     42|     release.release();await switching;const intent=await starting;
+     43|     await expect.poll(()=>context.console.store.state.starts.find(row=…
+       |                                                                                                     ^
+     44|     expect(context.fake.starts).toEqual([]);expect(nextPort.starts).to…
+     45|     expect(context.console.store.state.settings.session).toBe(nextPort…
+
+Caused by: AssertionError: expected 'intent' to be 'started' // Object.is equality
+
+Expected: "started"
+Received: "intent"
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+ FAIL  apps/server/src/application/console.test.ts > application orchestration against real DB and collectors > keeps a conflicting result pending across idle observations and restart until an explicit manual conclusion
+AssertionError: expected { …(25) } to match object { phase: 'needs_confirmation', …(2) }
+(38 matching properties omitted from actual)
+
+- Expected
++ Received
+
+  {
+-   "occupies": true,
+-   "phase": "needs_confirmation",
++   "occupies": false,
++   "phase": "succeeded",
+    "resultHash": "c8ac6ce9b128f884157fe1339ef6ac06a5924e5e492d4afc062889fe60b90886",
+  }
+
+ ❯ apps/server/src/application/console.test.ts:60:53
+     58|     expect(context.console.store.state.attempts[0]!.phase).toBe('needs…
+     59|     context.fake.setStatus('terminal-1','idle');await context.console.…
+     60|     expect(context.console.store.state.attempts[0]).toMatchObject({pha…
+       |                                                     ^
+     61|     await context.console.close();
+     62|     const recovered=new AgentConsole({...context.console.options,portF…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/2]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  2 failed | 11 skipped (13)
+   Start at  15:33:20
+   Duration  1.93s (transform 77ms, setup 0ms, collect 160ms, tests 1.59s, environment 0ms, prepare 48ms)
+

@@ -1,0 +1,201 @@
+{
+  "type": "claude",
+  "date": "2026-10-08T09:54:05.366Z",
+  "session": "meteor-flow-test-claude-1b5c5e5c",
+  "cwd": "/private/tmp/mf-agent-MOipOI/project",
+  "isolation": "dedicated herdr XDG/session/cwd; existing model configuration read-only; user config writes denied",
+  "status": "failed",
+  "timeline": [
+    {
+      "terminalId": "term_65d51365cd1721",
+      "paneId": "w1:p1",
+      "type": "unknown",
+      "status": "unknown",
+      "cwd": "/private/tmp/mf-agent-MOipOI/project",
+      "pid": null,
+      "processStart": null,
+      "agentSessionPresent": false,
+      "sequence": 0,
+      "launchPending": true,
+      "interactiveReady": false
+    },
+    {
+      "terminalId": "term_65d51365cd1721",
+      "paneId": "w1:p1",
+      "type": "claude",
+      "status": "unknown",
+      "cwd": "/private/tmp/mf-agent-MOipOI/project",
+      "pid": null,
+      "processStart": null,
+      "agentSessionPresent": false,
+      "sequence": 0,
+      "launchPending": true,
+      "interactiveReady": false
+    },
+    {
+      "terminalId": "term_65d51365cd1721",
+      "paneId": "w1:p1",
+      "type": "claude",
+      "status": "unknown",
+      "cwd": "/private/tmp/mf-agent-MOipOI/project",
+      "pid": 87576,
+      "processStart": "87576:1791453246:376686",
+      "agentSessionPresent": true,
+      "sequence": 0,
+      "launchPending": true,
+      "interactiveReady": false
+    },
+    {
+      "terminalId": "term_65d51365cd1721",
+      "paneId": "w1:p1",
+      "type": "claude",
+      "status": "idle",
+      "cwd": "/private/tmp/mf-agent-MOipOI/project",
+      "pid": 87576,
+      "processStart": "87576:1791453246:376686",
+      "agentSessionPresent": true,
+      "sequence": 1,
+      "launchPending": false,
+      "interactiveReady": true
+    }
+  ],
+  "versions": {
+    "herdr": "herdr 0.9.3",
+    "agent": "2.1.195 (Claude Code)",
+    "node": "v24.21.0"
+  },
+  "target": "term_65d51365cd1721",
+  "screenSha256": "214aadf11de881e887a169da68813a2def92757875798ee4b8438ba098d30386",
+  "screenReason": null,
+  "foregroundProcesses": [
+    {
+      "pid": 87599,
+      "name": "mcp-server-darw"
+    },
+    {
+      "pid": 87576,
+      "name": "claude"
+    }
+  ],
+  "readinessRejections": 0,
+  "taskId": "8f1e478a-f99f-4b46-ac79-4a05c6bddd00",
+  "error": "expected 'needs_confirmation' to be 'succeeded' // Object.is equality",
+  "tasks": [
+    {
+      "id": "8f1e478a-f99f-4b46-ac79-4a05c6bddd00",
+      "phase": "needs_confirmation",
+      "reason": "最终检查失败，未投递：Error: 最终检查已变化，未调用投递"
+    }
+  ],
+  "attempts": [
+    {
+      "id": "12577023-978a-4d76-ad2f-1bfc99cc73af",
+      "phase": "needs_confirmation",
+      "reason": "最终检查失败，未投递：Error: 最终检查已变化，未调用投递",
+      "dispatch": "not_sent",
+      "seenActivity": false,
+      "archived": false
+    }
+  ],
+  "events": [
+    {
+      "seq": 1,
+      "time": 1791453250377,
+      "type": "recover",
+      "message": "启动恢复：观测缺口与旧控制权已失效",
+      "taskId": null,
+      "attemptId": null
+    },
+    {
+      "seq": 2,
+      "time": 1791453250763,
+      "type": "project.create",
+      "message": "创建项目 Real claude",
+      "taskId": null,
+      "attemptId": null
+    },
+    {
+      "seq": 3,
+      "time": 1791453250911,
+      "type": "binding.create",
+      "message": "接入 Real claude，当前只观察",
+      "taskId": null,
+      "attemptId": null
+    },
+    {
+      "seq": 4,
+      "time": 1791453251037,
+      "type": "binding.action",
+      "message": "Real claude：已确认接入，请启用自动调度",
+      "taskId": null,
+      "attemptId": null
+    },
+    {
+      "seq": 5,
+      "time": 1791453251406,
+      "type": "binding.action",
+      "message": "Real claude：自动调度",
+      "taskId": null,
+      "attemptId": null
+    },
+    {
+      "seq": 6,
+      "time": 1791453251514,
+      "type": "task.create",
+      "message": "创建任务 Write one integration-test artifact",
+      "taskId": "8f1e478a-f99f-4b46-ac79-4a05c6bddd00",
+      "attemptId": null
+    },
+    {
+      "seq": 7,
+      "time": 1791453251731,
+      "type": "dispatch",
+      "message": "投递意图已持久化",
+      "taskId": "8f1e478a-f99f-4b46-ac79-4a05c6bddd00",
+      "attemptId": "12577023-978a-4d76-ad2f-1bfc99cc73af"
+    },
+    {
+      "seq": 8,
+      "time": 1791453251844,
+      "type": "agent.observed",
+      "message": "Real claude：unknown",
+      "taskId": "8f1e478a-f99f-4b46-ac79-4a05c6bddd00",
+      "attemptId": "12577023-978a-4d76-ad2f-1bfc99cc73af"
+    },
+    {
+      "seq": 9,
+      "time": 1791453251845,
+      "type": "agent.paused",
+      "message": "最终检查失败，未投递：Error: 最终检查已变化，未调用投递",
+      "taskId": null,
+      "attemptId": null
+    },
+    {
+      "seq": 10,
+      "time": 1791453251845,
+      "type": "dispatch.result",
+      "message": "最终检查失败，未投递：Error: 最终检查已变化，未调用投递",
+      "taskId": "8f1e478a-f99f-4b46-ac79-4a05c6bddd00",
+      "attemptId": "12577023-978a-4d76-ad2f-1bfc99cc73af"
+    },
+    {
+      "seq": 11,
+      "time": 1791453255118,
+      "type": "agent.observed",
+      "message": "Real claude：idle",
+      "taskId": "8f1e478a-f99f-4b46-ac79-4a05c6bddd00",
+      "attemptId": "12577023-978a-4d76-ad2f-1bfc99cc73af"
+    }
+  ],
+  "sourceFiles": [
+    {
+      "path": "hello.txt",
+      "size": null
+    },
+    {
+      "path": ".meteor-flow/runs/12577023-978a-4d76-ad2f-1bfc99cc73af/result.json",
+      "size": null
+    }
+  ],
+  "protectedConfigurationUnchanged": true
+}
